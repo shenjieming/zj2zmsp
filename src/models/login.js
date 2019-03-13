@@ -7,7 +7,7 @@ import { REQUEST_SUCCESS_CODE } from '../utils/config'
 
 const initialState = {
   // 当前tab
-  tab: 'account',
+  tab: 'login',
   passwordVisible: false,
   countDownStatus: false,
   quickLoginButtonLoading: false,

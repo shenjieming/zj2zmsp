@@ -19,11 +19,11 @@ function LoginPage({ children }) {
       <div className={styles.content}>
         {children}
       </div>
-      <div className={styles.footer}>
-        <div className={styles.footerText}>
-          {footerText.split('\n').map((text, i) => <div key={i}>{text}</div>)}
-        </div>
-      </div>
+      {/*<div className={styles.footer}>*/}
+        {/*<div className={styles.footerText}>*/}
+          {/*{footerText.split('\n').map((text, i) => <div key={i}>{text}</div>)}*/}
+        {/*</div>*/}
+      {/*</div>*/}
     </div>
   )
 }

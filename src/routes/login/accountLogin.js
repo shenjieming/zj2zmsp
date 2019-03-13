@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'dva/router'
-import { Form, Input, Button, Icon } from 'antd'
+import { Form, Input, Button, Icon, Row, Col } from 'antd'
 import { get, trim } from 'lodash'
 import styles from './index.less'
 
@@ -44,8 +44,9 @@ const AccountLogin = ({
       })(
         <Input
           size="large"
+          style={{height: "45px", padding: "5px"}}
           placeholder="用户名/邮箱"
-          prefix={<Icon type="user" />}
+          prefix={<Icon type="user"  style={{fontSize: "16px"}}/>}
           suffix={
             getFieldValue(USERNAME) && (
               <Icon
@@ -89,9 +90,10 @@ const AccountLogin = ({
       })(
         <Input
           size="large"
+          style={{height: "45px", padding: "5px"}}
           type={passwordVisible ? 'text' : PASSWORD}
           className={styles.passwordInput}
-          prefix={<Icon type="lock" />}
+          prefix={<Icon type="lock" style={{fontSize: "16px"}} />}
           suffix={
             <div>
               {getFieldValue(PASSWORD) && (
@@ -114,23 +116,42 @@ const AccountLogin = ({
         />,
       )}
     </div>
-    <div className="aek-space-between" style={{ paddingTop: 5 }}>
-      <Link to="/regist">立即注册</Link>
-      <Link to="/forgetPasd" className={styles.forget}>
-        忘记密码?
-      </Link>
+    <div className="aek-space-between" style={{ paddingTop: 20 }}>
+      <Row>
+        <Col span={12}>
+          <Link to="/forgetPasd" style={{
+            color:'rgb(124, 114, 114)'
+          }}>忘记密码?
+            <p>forget the password ?</p>
+          </Link>
+        </Col>
+        <Col span={12}>
+          <Button
+            className={styles.forget}
+            type="primary"
+            htmlType="submit"
+            size="large"
+            loading={loginLoading}
+          >
+            登录
+          </Button>
+        </Col>
+      </Row>
+      {/*<Link to="/forgetPasd" className={styles.forget}>*/}
+        {/*忘记密码?*/}
+      {/*</Link>*/}
     </div>
-    <div className="aek-mtb20">
-      <Button
-        className={styles.loginButton}
-        type="primary"
-        htmlType="submit"
-        size="large"
-        loading={loginLoading}
-      >
-        登录
-      </Button>
-    </div>
+    {/*<div className="aek-mtb20">*/}
+      {/*<Button*/}
+        {/*className={styles.loginButton}*/}
+        {/*type="primary"*/}
+        {/*htmlType="submit"*/}
+        {/*size="large"*/}
+        {/*loading={loginLoading}*/}
+      {/*>*/}
+        {/*登录*/}
+      {/*</Button>*/}
+    {/*</div>*/}
   </Form>
 )
 

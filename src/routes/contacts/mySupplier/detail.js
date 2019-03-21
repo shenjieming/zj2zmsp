@@ -149,7 +149,7 @@ function MySupplierDetail({
                   if (arr[arr.length - 1] && arr[arr.length - 1].toLowerCase().includes('pdf')) {
                     imgUrl = PDF
                   } else {
-                    imgUrl = `${item}${IMG_COMPRESS}/max/280`
+                    imgUrl = `${item}${IMG_COMPRESS}`
                   }
                   return (
                     <div
@@ -158,6 +158,7 @@ function MySupplierDetail({
                       key={item}
                     >
                       <img
+                        style={{width: '280px', height: '200px'}}
                         src={imgUrl}
                         alt="证件"
                       />

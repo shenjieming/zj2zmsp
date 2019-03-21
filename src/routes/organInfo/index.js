@@ -203,14 +203,17 @@ function OrganInfo({ organInfo, addressList, loading }) {
     },
     orgName,
   }
+  const formData = new FormData()
   // 限制图片大小
   const handleBeforeUpload = (file) => {
-    const isLtLimit = file.size / 1024 / 2014 < IMG_SIZE_LIMIT
+    const isLtLimit = file.size / 1024 / 1024 < IMG_SIZE_LIMIT
     if (!isLtLimit) {
       Modal.error({
         content: `您只能上传小于${IMG_SIZE_LIMIT}MB的文件`,
         maskClosable: true,
       })
+    } else {
+      formData.append('files[]', file)
     }
     return isLtLimit
   }
@@ -220,8 +223,8 @@ function OrganInfo({ organInfo, addressList, loading }) {
     headers: {
       'X-Requested-With': null,
     },
-    data: getUploadAuth(),
-    action: `${IMG_UPLOAD}/${UPYUN_BUCKET}`,
+    data: formData,
+    action: `${IMG_UPLOAD}`,
     accept: '.jpg,.png,.bmp,.pdf',
     beforeUpload: handleBeforeUpload,
     showUploadList: false,
@@ -230,7 +233,7 @@ function OrganInfo({ organInfo, addressList, loading }) {
         dispatchAction({
           type: 'uploadImage',
           payload: {
-            logoUrl: `${IMG_ORIGINAL}/${info.file.response.url}`,
+            logoUrl: `${IMG_ORIGINAL}/${info.file.response.content}`,
           },
         })
       } else if (info.file.status === 'error') {

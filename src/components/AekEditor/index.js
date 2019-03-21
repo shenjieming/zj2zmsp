@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { message } from 'antd'
-import Editor from 'aek-react-umeditor'
+// import Editor from 'aek-react-umeditor'
 import './index.less'
 import {
   IMG_UPLOAD,
@@ -79,31 +79,32 @@ class Test extends React.Component {
    render() {
      const icons = this.getIcons()
      const plugins = this.getPlugins()
-     return (<Editor
-       icons={icons}
-       value={this.state.content.editor}
-       onChange={this.handleChange}
-       plugins={plugins}
-       uploadImageCallback={(file) => {
-         const requesData = this.requestFormData(file)
-         return fetch(`${IMG_UPLOAD}/${UPYUN_BUCKET}`, {
-           method: 'POST',
-           body: requesData,
-         }).then(response => response.json())
-           .then((data) => {
-             const { url } = data
-             return {
-               status: 'success',
-               data: {
-                 image_src: `${IMG_ORIGINAL}/${url}`,
-               },
-             }
-           }).catch((error) => {
-             message.error('图片上传失败')
-             return error
-           })
-       }}
-     />
+     return (
+       {/*<Editor*/}
+       {/*icons={icons}*/}
+       {/*value={this.state.content.editor}*/}
+       {/*onChange={this.handleChange}*/}
+       {/*plugins={plugins}*/}
+       {/*uploadImageCallback={(file) => {*/}
+         {/*const requesData = this.requestFormData(file)*/}
+         {/*return fetch(`${IMG_UPLOAD}/${UPYUN_BUCKET}`, {*/}
+           {/*method: 'POST',*/}
+           {/*body: requesData,*/}
+         {/*}).then(response => response.json())*/}
+           {/*.then((data) => {*/}
+             {/*const { url } = data*/}
+             {/*return {*/}
+               {/*status: 'success',*/}
+               {/*data: {*/}
+                 {/*image_src: `${IMG_ORIGINAL}/${url}`,*/}
+               {/*},*/}
+             {/*}*/}
+           {/*}).catch((error) => {*/}
+             {/*message.error('图片上传失败')*/}
+             {/*return error*/}
+           {/*})*/}
+       {/*}}*/}
+     {/*/>*/}
      )
    }
 }

@@ -66,6 +66,7 @@ function PersonInfo({ personInfo, loading }) {
     })
     return ret
   }
+  const formData = new FormData()
   // 限制图片大小
   const handleBeforeUpload = (file) => {
     const isLtLimit = file.size / 1024 / 1024 < IMG_SIZE_LIMIT
@@ -74,6 +75,8 @@ function PersonInfo({ personInfo, loading }) {
         content: `您只能上传小于${IMG_SIZE_LIMIT}MB的文件`,
         maskClosable: true,
       })
+    } else {
+      formData.append('files[]', file)
     }
     return isLtLimit
   }
@@ -82,14 +85,14 @@ function PersonInfo({ personInfo, loading }) {
     headers: {
       'X-Requested-With': null,
     },
-    data: getUploadAuth(),
-    action: `${IMG_UPLOAD}/${UPYUN_BUCKET}`,
+    data: formData,
+    action: `${IMG_UPLOAD}`,
     accept: '.jpg,.png,.bmp,.pdf',
     beforeUpload: handleBeforeUpload,
     showUploadList: false,
     onChange(info) {
       if (info.file.status === 'done') {
-        toAction({ imgUrl: `${IMG_ORIGINAL}/${info.file.response.url}` }, 'imgUrl')
+        toAction({ imgUrl: `${IMG_ORIGINAL}/${info.file.response.content}` }, 'imgUrl')
       } else if (info.file.status === 'error') {
         Modal.error({
           content: '图片上传失败',

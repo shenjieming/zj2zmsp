@@ -8,6 +8,7 @@ import Hospital from './hospital'
 import styles from './page.less'
 import Success from './countDown'
 import Page from './page'
+import { Link } from 'dva/router'
 
 const Regist = ({ regist, dispatch, effects }) => {
   const {
@@ -133,14 +134,23 @@ const Regist = ({ regist, dispatch, effects }) => {
     <Page>
       <div className={styles.form}>
         <div className={styles.contentWrap}>
+          <div className={styles.title}>用户登录</div>
+          <div className={styles.titlebutton}>
+            <Link to="/login">
+              <Button type="primary" className={styles["button-active"]}  >已有账户？ 请登陆</Button >
+            </Link>
+            <Button type="primary"  style={{marginLeft: "57px"}} >初次账户？ 请注册</Button >
+          </div>
           <div className={styles.formContent}>
+            <span  className={styles.underline}></span>
             <div className={styles.regist}>
               {pageVisible ? (
                 <Success {...successProps} />
               ) : (
                 <div>
                   <div className={styles.left}>
-                    <Button type={`${pageDefaultVisible ? 'primary' : ''}`} onClick={() => { onChange(true) }} key="supplier" className={`${styles.registTabsButton}`}>我是供应商</Button>
+                    <Button type={`${pageDefaultVisible ? '' +
+                      '' : ''}`} onClick={() => { onChange(true) }} key="supplier" className={`${styles.registTabsButton}`}>我是供应商</Button>
                     <Button type={`${pageDefaultVisible ? '' : 'primary'}`} onClick={() => { onChange(false) }} key="hospital" className={`${styles.registTabsButton} aek-mt10`}>我是医院</Button>
                   </div>
                   <div className={styles.right}>

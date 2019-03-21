@@ -103,8 +103,8 @@ const Login = ({ login, dispatch }) => {
             </div>
           )}
           {tab == 'regist' && (
-            <div>
-              <linl to="/login">
+            <div className={styles.titlebutton}>
+              <linl to="/login" >
                 <Button type="primary" className={styles["button-active"]} onClick={buttonLogin}>已有账户？ 请登陆</Button >
               </linl>
               <Link to="/regist">
@@ -121,6 +121,9 @@ const Login = ({ login, dispatch }) => {
             )}
             {
               tab == 'login' && (<AccountLogin {...accountLoginProps} />)
+            }
+            {
+              tab == 'regist' && (<AccountLogin {...accountLoginProps} />)
             }
           </div>
         </div>

@@ -31,12 +31,27 @@ const handleBeforeUpload = size => (file) => {
   return isLtLimit
 }
 
+const formData = new FormData()
+// 限制图片大小
+const handleBeforeUploadImg = (file) => {
+  const isLtLimit = file.size / 1024 / 1024 < IMG_SIZE_LIMIT
+  if (!isLtLimit) {
+    Modal.error({
+      content: `您只能上传小于${IMG_SIZE_LIMIT}MB的文件`,
+      maskClosable: true,
+    })
+  } else {
+    formData.append('files[]', file)
+  }
+  return isLtLimit
+}
+
 const uploadProps = {
   name: 'file',
   multiple: true,
-  data: getUploadAuth(),
+  // data: getUploadAuth(),
   headers: { 'X-Requested-With': null },
-  action: `${IMG_UPLOAD}/${UPYUN_BUCKET}`,
+  action: `${IMG_UPLOAD}`,
   listType: 'picture-card',
   accept: '.jpg,.png,.bmp,.pdf',
   beforeUpload: handleBeforeUpload(IMG_SIZE_LIMIT),
@@ -51,8 +66,8 @@ const uploadProps = {
 const uploadExcelProps = {
   ...uploadProps,
   beforeUpload: handleBeforeUpload(EXCEL_SIZE_LIMIT),
-  action: `${IMG_UPLOAD}/${UPYUN_BUCKET_EXCEL}`,
-  data: getUploadAuth('excel'),
+  action: `${IMG_UPLOAD}`,
+  // data: getUploadAuth('excel'),
   accept: '.xlsx,.xls',
   listType: undefined,
 }
@@ -60,8 +75,8 @@ const uploadZipProps = {
   ...uploadProps,
   multiple: false,
   beforeUpload: handleBeforeUpload(ZIP_SIZE_LIMIT),
-  action: `${IMG_UPLOAD}/${UPYUN_BUCKET_ZIP}`,
-  data: getUploadAuth('zip'),
+  action: `${IMG_UPLOAD}`,
+  // data: getUploadAuth('zip'),
   accept: '.rar,.zip',
   listType: undefined,
 }

@@ -296,7 +296,7 @@ const RegistApprove = ({
     onOk: submitHandler,
     maskClosable: false,
     width: 1100,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
 
   if (detailData && detailData.certificate && detailData.certificate.platformAuthStatus === 2) {

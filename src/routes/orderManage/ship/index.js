@@ -449,7 +449,7 @@ class Ship extends React.Component {
           }
           return i + 1
         },
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         width: 50,
         fixed: 'left',
       },
@@ -516,7 +516,7 @@ class Ship extends React.Component {
               {get(certificateNos, idx, []).map(item => <Option key={item}>{item}</Option>)}
             </Select>
             <Input
-              className="aek-mt10"
+              className="lkc-mt10"
               placeholder="省标编号"
               value={row[INVITE_NO]}
               onChange={(e) => {
@@ -687,7 +687,7 @@ class Ship extends React.Component {
         title: '操作',
         key: 'action',
         fixed: 'right',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         width: 80,
         render: (_, row) => (
           <a
@@ -702,7 +702,7 @@ class Ship extends React.Component {
     ]
 
     const barcodeInputProps = {
-      className: 'aek-barcode',
+      className: 'lkc-barcode',
       ref: (input) => {
         barcodeInput = input
       },
@@ -735,7 +735,7 @@ class Ship extends React.Component {
     const tempSaveButton = (
       <Button
         disabled={!isSetCustomer}
-        className="aek-mlr15"
+        className="lkc-mlr15"
         loading={getLoading('tempSave')}
         onClick={() => {
           const values = getFieldsValue()
@@ -748,8 +748,8 @@ class Ship extends React.Component {
     )
 
     const oprationPanel = (
-      <div className={classnames({ 'aek-fullScreen': isFullScreen })}>
-        <div className="aek-pb15 barcodeContainer">
+      <div className={classnames({ 'lkc-fullScreen': isFullScreen })}>
+        <div className="lkc-pb15 barcodeContainer">
           {getFieldValue(RECEIVE_DEPT_NAME) ? (
             <Spin style={{ width: '400px' }} spinning={getLoading('scanBarcode')}>
               <Input {...barcodeInputProps} disabled={getLoading('scanBarcode')} />
@@ -792,9 +792,9 @@ class Ship extends React.Component {
           />
         </div>
         <div className={classnames({ [Styles.bottom]: isFullScreen })}>
-          <div style={{ textAlign: 'right' }} className="aek-ptb15">
+          <div style={{ textAlign: 'right' }} className="lkc-ptb15">
             配送金额共计：
-            <span className="aek-red aek-font-large aek-pl10">￥{totalMoney}</span>
+            <span className="lkc-red lkc-font-large lkc-pl10">￥{totalMoney}</span>
           </div>
           <div style={{ textAlign: 'right' }}>
             <Button
@@ -912,7 +912,7 @@ class Ship extends React.Component {
       spin: getLoading('scanBarcode'),
     }
     return (
-      <div className="aek-layout" id="containerElement">
+      <div className="lkc-layout" id="containerElement">
         <div className="bread">
           <Breadcrumb />
         </div>

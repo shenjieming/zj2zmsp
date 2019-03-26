@@ -120,7 +120,7 @@ const formData = ({
         ],
       },
       component: {
-        name: 'AekRadioButton',
+        name: 'LkcRadioButton',
         props: {
           options: registTypeList.filter(item =>
             Number(item.dicValue) > 0 && !item.dicValueStatus).map(item =>
@@ -173,7 +173,7 @@ const formData = ({
           }),
         },
       },
-    }, <Row className="aek-mb20">
+    }, <Row className="lkc-mb20">
       {other.length && <Col offset={6}>如果资质没有证号请选择：</Col>}
     </Row>, <Row>
       <Col offset={6}>
@@ -190,7 +190,7 @@ const formData = ({
     </Row>,
     ],
     2: [
-      (firstFormData.oldCertificateId && status === 3) && <div className="aek-form-head">老证信息</div>,
+      (firstFormData.oldCertificateId && status === 3) && <div className="lkc-form-head">老证信息</div>,
       {
         label: '证件编号',
         layout: formItemLayout,
@@ -210,11 +210,11 @@ const formData = ({
           name: 'Input',
         },
       },
-      <div className="aek-form-head">
+      <div className="lkc-form-head">
         <span style={{ float: 'left' }}>基础信息</span>
         { (platformAuthStatus === 2 && status !== 4) && <Button
           style={{ float: 'right' }}
-          className="aek-mr30"
+          className="lkc-mr30"
           icon="reload"
           size="small"
           disabled={!standardCertificateId}
@@ -240,11 +240,11 @@ const formData = ({
         viewRender() {
           return (
             <div>
-              <span className="aek-mr20">{certificateNo || undefined}</span>
+              <span className="lkc-mr20">{certificateNo || undefined}</span>
               {
                 (status === 1 && Number(certificateType) > 0) ?
                   <a
-                    className="aek-ml20"
+                    className="lkc-ml20"
                     onClick={handleBack}
                   >编辑证号</a>
                   : undefined
@@ -504,7 +504,7 @@ const formData = ({
           },
         },
       },
-      <div className="aek-form-head">
+      <div className="lkc-form-head">
       证件图片信息
         <div
           style={{
@@ -547,7 +547,7 @@ const formData = ({
           },
         },
       },
-      replacedCertificateNo && <div className="aek-form-head">新证信息</div>,
+      replacedCertificateNo && <div className="lkc-form-head">新证信息</div>,
       {
         options: {
           initialValue: (
@@ -560,7 +560,7 @@ const formData = ({
                 {replacedCertificateNo}
               </a>
               <a
-                className="aek-ml30"
+                className="lkc-ml30"
                 onClick={() => {
                   handleRelieve(certificateId)
                 }}

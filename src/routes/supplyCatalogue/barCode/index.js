@@ -25,7 +25,7 @@ const BarCode = ({
   const addModalProp = {
     title: '条码维护',
     visible: codeBarVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     width: 600,
     maskClosable: false,
     footer: null,
@@ -66,7 +66,7 @@ const BarCode = ({
       key: 'index',
       dataIndex: 'index',
       title: '序号',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, record, index) => index + 1,
     },
@@ -84,7 +84,7 @@ const BarCode = ({
       key: 'operation',
       dataIndex: 'operation',
       title: '操作',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record, index) => {
         const flag = false
         return (
@@ -131,7 +131,7 @@ const BarCode = ({
                     ref={(input) => {
                       inputRef = input
                     }}
-                    className="aek-barcode"
+                    className="lkc-barcode"
                   />,
                 )}
               </FormItem>

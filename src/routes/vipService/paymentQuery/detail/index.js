@@ -29,7 +29,7 @@ const PaymentQueryDetail = ({ paymentQueryDetail, loading }) => {
       {
         title: '序号',
         key: 'index',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         width: 50,
         render: (value, row, index) => index + 1,
       },
@@ -44,7 +44,7 @@ const PaymentQueryDetail = ({ paymentQueryDetail, loading }) => {
       {
         title: '明细金额',
         dataIndex: 'totalAmount',
-        className: 'aek-text-right',
+        className: 'lkc-text-right',
         render(data) {
           return formatNum(data)
         },
@@ -52,7 +52,7 @@ const PaymentQueryDetail = ({ paymentQueryDetail, loading }) => {
       {
         title: '明细余额',
         dataIndex: 'stockInBalance',
-        className: 'aek-text-right',
+        className: 'lkc-text-right',
         render(data) {
           return formatNum(data)
         },
@@ -60,7 +60,7 @@ const PaymentQueryDetail = ({ paymentQueryDetail, loading }) => {
       {
         title: '本次付款',
         dataIndex: 'itemAmount',
-        className: 'aek-text-right',
+        className: 'lkc-text-right',
         render(data) {
           return formatNum(data)
         },
@@ -75,7 +75,7 @@ const PaymentQueryDetail = ({ paymentQueryDetail, loading }) => {
     loading: getLoading('getDetail'),
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

@@ -48,7 +48,7 @@ class Logistics extends React.Component {
       logisticsList,
     } = this.state.logistics
     return (
-      <div className="aek-layout">
+      <div className="lkc-layout">
         <div className="bread">
           <Breadcrumb />
         </div>
@@ -56,7 +56,7 @@ class Logistics extends React.Component {
           <APanel title="配送" height={'220px'}>
             <div className={style.wrap}>
               <p>
-                配送方式：<span className="aek-primary-color">物流配送</span>
+                配送方式：<span className="lkc-primary-color">物流配送</span>
               </p>
               <p>
                 快递公司：<span>{deliverCompany}</span>
@@ -70,7 +70,7 @@ class Logistics extends React.Component {
           <APanel title="配送">
             <div className={style.wrap}>
               <p>
-                配送方式：<span className="aek-primary-color">自送</span>
+                配送方式：<span className="lkc-primary-color">自送</span>
               </p>
               <p>
                 配送人：<span>{deliverName}</span>

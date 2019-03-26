@@ -21,18 +21,18 @@ class Fourth extends React.Component {
     return (
       <Row>
         <Col span="9">
-          <div className="aek-text-right">
+          <div className="lkc-text-right">
             <img src={success} alt="密码重置成功" />
           </div>
         </Col>
         <Col span="15">
-          <h2 className="aek-text-left" style={{ marginTop: '20px' }}>
+          <h2 className="lkc-text-left" style={{ marginTop: '20px' }}>
           密码设置成功
           </h2>
-          <p className="aek-text-help aek-text-left aek-mtb10 aek-font-small">
+          <p className="lkc-text-help lkc-text-left lkc-mtb10 lkc-font-small">
             请牢记您设置的新密码
           </p>
-          <p className="aek-text-left aek-text-help aek-mt30 aek-font-small">
+          <p className="lkc-text-left lkc-text-help lkc-mt30 lkc-font-small">
             <Button
               type="primary"
               onClick={() => { dispatch(routerRedux.replace({ pathname: '/login' })) }}
@@ -40,7 +40,7 @@ class Fourth extends React.Component {
               立即登录
             </Button>
             <CountDown
-              className="aek-ml20"
+              className="lkc-ml20"
               start={30}
               end={0}
               duration={30}

@@ -1,0 +1,631 @@
+@import './vars.less';
+@import '/iconfont/iconfont.css';
+
+// AEK自定义样式
+:global {
+  /* 布局样式 */
+  .lkc-horizontal-block {
+    padding: 5px 0 10px;
+  }
+
+  .lkc-layout {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 0 15px 15px 15px;
+    background: #f9f9f9;
+
+    & > .bread {
+      line-height: 50px;
+      height: 50px;
+    }
+
+    & > .content {
+      position: relative;
+      min-height: calc(~'100% - 50px');
+      padding: 10px;
+      box-shadow: @lkc-shadow;
+      background: #fff;
+
+      & > .lkc-layout-hor {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        height: auto;
+      }
+    }
+
+    & > .full-content {
+      .content;
+      min-height: inherit;
+      height: calc(~'100% - 50px');
+      padding: 0;
+      box-shadow: unset;
+    }
+  }
+
+  .home-banner-alert {
+    & + .lkc-layout {
+      height: calc(~'100% - 34px');
+    }
+  }
+
+  .lkc-layout-hor {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+
+    .left {
+      display: inline-block;
+      width: 290px;
+      height: 100%;
+      border-right: 1px dashed @border-color-split;
+      overflow: auto;
+      box-sizing: border-box;
+    }
+
+    .right {
+      display: inline-block;
+      width: calc(~'100% - 290px');
+      height: 100%;
+      overflow: auto;
+    }
+  }
+
+  /* end */
+
+  /* 阴影 */
+  .lkc-table-shadow {
+    .ant-table {
+      box-shadow: @lkc-shadow;
+    }
+  }
+
+  .lkc-shadow {
+    box-shadow: @lkc-shadow;
+  }
+
+  .lkc-shadow-top {
+    box-shadow: @shadow-1-up;
+  }
+
+  .lkc-shadow-bottom {
+    box-shadow: @shadow-1-down;
+  }
+
+  .lkc-shadow-left {
+    box-shadow: @shadow-1-left;
+  }
+
+  .lkc-shadow-right {
+    box-shadow: @shadow-1-right;
+  }
+
+  /* 组件 */
+
+  .lkc-input-border-bottom {
+    .ant-input {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-radius: 0;
+
+      &:focus {
+        box-shadow: 0 0 0 transparent !important;
+      }
+    }
+  }
+
+  .lkc-table-no-allcheck {
+    .ant-table-thead {
+      .ant-table-selection {
+        display: none;
+      }
+    }
+  }
+
+  // 标题
+  .lkc-sub-head {
+    margin: 10px 10px 10px 0;
+    font-size: 15px;
+
+    &::before {
+      content: '';
+      padding: 0 4px 0 0;
+      margin: 0 0.5em 0 0;
+      height: 1em;
+      background: @primary-color;
+    }
+  }
+  // 表单信息分栏标题
+  .lkc-form-head {
+    color: @text-color-secondary;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  // 背景
+  .lkc-barcode {
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    width: 400px;
+    border: 1px solid #757575;
+    background: url(../assets/barcode.png) repeat-x 0 0 !important;
+  }
+
+  // 模态框
+  .lkc-modal {
+    .ant-modal {
+      top: 0;
+      padding: 0;
+      height: 100%;
+
+      .ant-modal-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+      }
+
+      .ant-modal-body {
+        max-height: 80vh;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  .lkc-modal-scroll {
+    .lkc-modal;
+    .ant-modal-body {
+      height: 80vh;
+      overflow-y: none;
+      padding: 0;
+    }
+  }
+
+  // 全屏操作
+  .lkc-fullScreen {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 15px;
+    overflow-x: auto;
+  }
+
+  // 占位填充
+  .lkc-fill-15 {
+    display: inline-block;
+    width: 15px;
+  }
+
+  /*
+    设置div间距
+    命名规则 lkc-(m: margin, p: padding)(方向 tb: 上下, lr: 左右, t: 上, 下: b, 左: l, 右: r)(大小)
+  */
+  .lkc-m10 {
+    margin: 10px;
+  }
+  .lkc-m15 {
+    margin: 15px;
+  }
+  .lkc-m20 {
+    margin: 20px;
+  }
+  .lkc-m30 {
+    margin: 30px;
+  }
+
+  .lkc-p10 {
+    padding: 10px;
+  }
+  .lkc-p15 {
+    padding: 15px;
+  }
+  .lkc-p20 {
+    padding: 20px;
+  }
+  .lkc-p30 {
+    padding: 30px;
+  }
+
+  .lkc-mtb10 {
+    margin: 10px 0;
+  }
+  .lkc-mtb15 {
+    margin: 15px 0;
+  }
+  .lkc-mtb20 {
+    margin: 20px 0;
+  }
+  .lkc-mtb30 {
+    margin: 30px 0;
+  }
+
+  .lkc-ptb10 {
+    padding: 10px 0;
+  }
+  .lkc-ptb15 {
+    padding: 15px 0;
+  }
+  .lkc-ptb20 {
+    padding: 20px 0;
+  }
+  .lkc-ptb30 {
+    padding: 0 30px;
+  }
+
+  .lkc-mlr10 {
+    margin: 0 10px;
+  }
+  .lkc-mlr15 {
+    margin: 0 15px;
+  }
+  .lkc-mlr20 {
+    margin: 0 20px;
+  }
+  .lkc-mlr30 {
+    margin: 0 30px;
+  }
+
+  .lkc-plr10 {
+    padding: 0 10px;
+  }
+  .lkc-plr15 {
+    padding: 0 15px;
+  }
+  .lkc-plr20 {
+    padding: 0 20px;
+  }
+  .lkc-plr30 {
+    padding: 0 30px;
+  }
+
+  .lkc-mt10 {
+    margin: 10px 0 0 0;
+  }
+  .lkc-mt15 {
+    margin: 15px 0 0 0;
+  }
+  .lkc-mt20 {
+    margin: 20px 0 0 0;
+  }
+  .lkc-mt30 {
+    margin: 30px 0 0 0;
+  }
+
+  .lkc-pt10 {
+    padding: 10px 0 0 0;
+  }
+  .lkc-pt15 {
+    padding: 15px 0 0 0;
+  }
+  .lkc-pt20 {
+    padding: 20px 0 0 0;
+  }
+  .lkc-pt30 {
+    padding: 30px 0 0 0;
+  }
+
+  .lkc-mb10 {
+    margin: 0 0 10px 0;
+  }
+  .lkc-mb15 {
+    margin: 0 0 15px 0;
+  }
+  .lkc-mb20 {
+    margin: 0 0 20px 0;
+  }
+  .lkc-mb30 {
+    margin: 0 0 30px 0;
+  }
+
+  .lkc-pb10 {
+    padding: 0 0 10px 0;
+  }
+  .lkc-pb15 {
+    padding: 0 0 15px 0;
+  }
+  .lkc-pb20 {
+    padding: 0 0 20px 0;
+  }
+  .lkc-pb30 {
+    padding: 0 0 30px 0;
+  }
+
+  .lkc-ml10 {
+    margin: 0 0 0 10px;
+  }
+  .lkc-ml15 {
+    margin: 0 0 0 15px;
+  }
+  .lkc-ml20 {
+    margin: 0 0 0 20px;
+  }
+  .lkc-ml30 {
+    margin: 0 0 0 30px;
+  }
+
+  .lkc-pl10 {
+    padding: 0 0 0 10px;
+  }
+  .lkc-pl15 {
+    padding: 0 0 0 15px;
+  }
+  .lkc-pl20 {
+    padding: 0 0 0 20px;
+  }
+  .lkc-pl30 {
+    padding: 0 0 0 30px;
+  }
+
+  .lkc-mr10 {
+    margin: 0 10px 0 0;
+  }
+  .lkc-mr15 {
+    margin: 0 15px 0 0;
+  }
+  .lkc-mr20 {
+    margin: 0 20px 0 0;
+  }
+  .lkc-mr30 {
+    margin: 0 30px 0 0;
+  }
+
+  .lkc-pr10 {
+    padding: 0 10px 0 0;
+  }
+  .lkc-pr15 {
+    padding: 0 15px 0 0;
+  }
+  .lkc-pr20 {
+    padding: 0 20px 0 0;
+  }
+  .lkc-pr30 {
+    padding: 0 30px 0 0;
+  }
+
+  //左右浮动
+  .lkc-fl {
+    float: left;
+  }
+  .lkc-fr {
+    float: right;
+  }
+  .lkc-clearfix {
+    &::after {
+      content: ' ';
+      display: table;
+      clear: both;
+    }
+  }
+
+  // 行内
+  .lkc-inline-block {
+    display: inline-block;
+  }
+  // 链接
+  .lkc-link {
+    color: @primary-color;
+    text-decoration: underline;
+
+    &:hover {
+      color: @primary-5;
+      text-decoration: unset;
+    }
+  }
+
+  // 颜色
+  .lkc-primary-color {
+    color: @primary-color;
+  }
+
+  .lkc-deep-blue {
+    color: #008aff;
+  }
+
+  .lkc-green {
+    color: #5cb85c;
+  }
+
+  .lkc-gray {
+    color: @gray;
+  }
+
+  .lkc-red {
+    color: @red;
+  }
+
+  .lkc-orange {
+    color: @orange;
+  }
+
+  .lkc-light-gray {
+    color: @light-gray;
+  }
+
+  // 文本大小
+  .lkc-font-large {
+    font-size: @font-large;
+  }
+
+  .lkc-font-mid {
+    font-size: 14px;
+  }
+
+  .lkc-font-small {
+    font-size: @font-small;
+  }
+
+  // 文本样式
+  .lkc-text-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 5px;
+  }
+
+  .lkc-text-bold {
+    font-weight: 600;
+  }
+
+  .lkc-text-right {
+    text-align: right;
+  }
+
+  .lkc-text-center {
+    text-align: center;
+  }
+  /* 三种文本样式 1.主要文本 2.辅助文本　3.不可用文本 */
+  .lkc-text-primary {
+    color: @text-color;
+  }
+
+  .lkc-text-help {
+    color: @text-color-secondary;
+  }
+
+  .lkc-text-disable {
+    color: @last-text-color;
+  }
+
+  .lkc-border-bottom {
+    height: 30px;
+    line-height: 20px;
+    border-bottom: 1px solid #bebebe;
+    font-weight: 600;
+    .lkc-border-bottom-left {
+      font-weight: normal;
+      float: left;
+    }
+    .lkc-border-bottom-right {
+      float: right;
+      text-align: right;
+      font-weight: normal;
+    }
+  }
+  // 色块状态 启用
+  .lkc-status-on {
+    background-color: @primary-color;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  // 版本对比table首列背景
+  .lkc-bg-columns {
+    background-color: #f6f7fb;
+  }
+  // 版本对比table差异背景
+  .lkc-bg-difference.ant-table-row-level-0 {
+    background-color: #e5eef5;
+    &:nth-child(even) {
+      background-color: #e5eef5;
+    }
+  }
+  // 字符串换行
+  .lkc-word-break {
+    word-break: break-all;
+  }
+  // 高度固定
+  .lkc-full-height {
+    height: @full-screen;
+  }
+
+  /* 表格行状态函数 */
+  .tr-status(@image) {
+    position: relative;
+
+    &::after {
+      content: ' ';
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(@image);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      z-index: 999;
+    }
+  }
+
+  // 加急
+  td.lkc-urgent {
+    .tr-status('../assets/urgent.png');
+  }
+  // 停用
+  td.lkc-disabled {
+    .tr-status('../assets/disabled.png');
+  }
+  // 已添加
+  td.lkc-added {
+    .tr-status('../assets/added.png');
+  }
+
+  /* 打印 */
+  .lkc-print-title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  // 文本标题
+  .lkc-content-title {
+    border-bottom: 1px solid #bebebe;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    .lkc-clearfix;
+    .lkc-title-left {
+      .lkc-fl;
+    }
+    .lkc-title-right {
+      .lkc-fr;
+      font-weight: normal;
+    }
+  }
+  // 头像描边
+  .lkc-avatar-border {
+    border: 2px solid @orange;
+  }
+  // 表格选中行高亮
+  .lkc-tr-selected {
+    & > td {
+      background: @light-blue;
+    }
+  }
+  // card组件样式修改（减小默认padding和高度）
+  .lkc-card {
+    box-sizing: border-box;
+    box-shadow: @box-shadow-base;
+    & + .lkc-card {
+      margin-top: 15px;
+    }
+    &.ant-card-bordered {
+      border: 0;
+    }
+    &.ant-card-wider-padding .ant-card-head,
+    .ant-card-head {
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid @border-color-base;
+      padding: 0 15px;
+    }
+    &.ant-card-wider-padding .ant-card-body,
+    .ant-card-body {
+      padding: 10px 15px 20px;
+    }
+  }
+  .lkc-full-card {
+    .lkc-card;
+    min-height: calc(~'100% - 50px');
+  }
+}

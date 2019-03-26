@@ -11,7 +11,7 @@ const formData = (detail = {}) => {
     layout: formItemLayout,
     field: 'chanceIntentionOrgId',
     component: {
-      name: 'AekSelect',
+      name: 'LkcSelect',
       props: {
         url: '/organization/option/exclude/my-all ',
         optionConfig: { idStr: 'orgId', nameStr: 'orgName' },

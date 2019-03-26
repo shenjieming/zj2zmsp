@@ -71,7 +71,7 @@ function NewContactsRelation({
     visible: modalVisible,
     confirmLoading: getLoading('relationStatus'),
     afterClose: resetFields,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     onCancel() {
       toAction({ modalVisible: false })
     },

@@ -38,7 +38,7 @@ const CertificatePush = ({ certificatePush, loading }) => {
           initialValue: undefined,
         },
         component: {
-          name: 'AekSelect',
+          name: 'LkcSelect',
           props: {
             url: '/contacts/options/customers',
             optionConfig: { idStr: 'customerOrgId', nameStr: 'customerOrgName' },
@@ -53,7 +53,7 @@ const CertificatePush = ({ certificatePush, loading }) => {
     {
       title: '序号',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, row, index) => index + 1,
     },
@@ -95,7 +95,7 @@ const CertificatePush = ({ certificatePush, loading }) => {
     dataSource: data,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

@@ -51,7 +51,7 @@ function OrganInfo({ organInfo, addressList, loading }) {
         : `${obj.startDate || ''}~${obj.endDate || ''}`,
     }
     return (
-      <div key={obj.certificateType} className={Styles['aek-plain-item']}>
+      <div key={obj.certificateType} className={Styles['lkc-plain-item']}>
         <PlainForm data={props} />
       </div>
     )
@@ -273,12 +273,12 @@ function OrganInfo({ organInfo, addressList, loading }) {
     </a>
   )
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
-        <div className="aek-fl">
+        <div className="lkc-fl">
           <Bread />
         </div>
-        <div className="aek-fr">
+        <div className="lkc-fr">
           {downloadBtn}
           {scopeBtn}
           <a
@@ -304,7 +304,7 @@ function OrganInfo({ organInfo, addressList, loading }) {
       <div className="content" style={{ height: 'auto' }}>
         <div>
           <Spin spinning={getLoading('getOrgDetail')}>
-            <div className="aek-content-title">机构信息</div>
+            <div className="lkc-content-title">机构信息</div>
             <Row>
               <Col span={12}>
                 <PlainForm data={leftData({ LogoProps, data: orgDetail })} itemSpacing="10px" />
@@ -317,8 +317,8 @@ function OrganInfo({ organInfo, addressList, loading }) {
         </div>
         {!includes(['05', '06', '01'], orgTypeCode) && ( // 银行，监管机构， 平台不用编辑证件
           <div>
-            <div className="aek-content-title">
-              <span className="aek-title-left">企业证件</span>
+            <div className="lkc-content-title">
+              <span className="lkc-title-left">企业证件</span>
               <a
                 key="edit"
                 onClick={() => {
@@ -326,7 +326,7 @@ function OrganInfo({ organInfo, addressList, loading }) {
                     type: 'getCertificatesList',
                   })
                 }}
-                className="aek-title-right"
+                className="lkc-title-right"
               >
                 <Icon style={{ marginRight: 8 }} type="edit" />编辑企业证件
               </a>

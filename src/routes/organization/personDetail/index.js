@@ -86,7 +86,7 @@ function IndexPage({ personDetail, loading }) {
     账号锁定状态: islock ? '已锁定' : '未锁定',
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <div>
           <Breadcrumb />
@@ -94,9 +94,9 @@ function IndexPage({ personDetail, loading }) {
       </div>
       <div className="content">
         <Spin spinning={getLoading('changeStatus')}>
-          <div className="aek-content-title">
-            <h3 className="aek-title-left">基本信息</h3>
-            <div className="aek-title-right">
+          <div className="lkc-content-title">
+            <h3 className="lkc-title-left">基本信息</h3>
+            <div className="lkc-title-right">
               {islock ? (
                 <a style={{ marginRight: 20 }} onClick={unlockAccount}>
                   <Icon type="unlock" style={{ marginRight: 8 }} />

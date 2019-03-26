@@ -118,7 +118,7 @@ function IndexPage({ materialDetail, app: { constants: { packageUnit } }, loadin
     dataSource: skuList,
     rowClassName: ({ materialsSkuStatus }) => {
       if (materialsSkuStatus) {
-        return 'aek-text-disable'
+        return 'lkc-text-disable'
       }
       return ''
     },
@@ -206,7 +206,7 @@ function IndexPage({ materialDetail, app: { constants: { packageUnit } }, loadin
       })
     },
     footer: null,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
 
   const packageParam = {
@@ -227,15 +227,15 @@ function IndexPage({ materialDetail, app: { constants: { packageUnit } }, loadin
     loading: getLoading('savePackage', 'queryPackageList'), // 提交loading
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <div>
           <Breadcrumb />
         </div>
       </div>
       <div className="content">
-        <div className="aek-content-title">基本信息</div>
-        <div className="aek-mt20">
+        <div className="lkc-content-title">基本信息</div>
+        <div className="lkc-mt20">
           <PlainForm size={3} data={getDetailData(currentPageData)} />
         </div>
         <div style={{ marginTop: 30 }}>

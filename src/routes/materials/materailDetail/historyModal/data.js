@@ -20,7 +20,7 @@ const genColumns = ({ viewModal }) => [
     title: '操作',
     key: 'action',
     width: 160,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (text, record) => <a onClick={() => viewModal(record)}>查看</a>,
   },
 ]

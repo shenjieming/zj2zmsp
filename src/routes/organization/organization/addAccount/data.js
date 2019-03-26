@@ -38,7 +38,7 @@ const form = ({
     },
   },
   accountExitFlag && (
-    <span className="aek-red" style={{ marginBottom: 24, marginLeft: 86, display: 'inline-block' }}>
+    <span className="lkc-red" style={{ marginBottom: 24, marginLeft: 86, display: 'inline-block' }}>
       提示：检测到该手机已注册，点击提交设置为该机构的管理员
     </span>
   ),

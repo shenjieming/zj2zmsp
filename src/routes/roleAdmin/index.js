@@ -94,10 +94,10 @@ const RoleAdmin = ({ dispatch, roleAdmin, loading }) => {
   }
 
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
-        <div className="aek-fr">
+        <div className="lkc-fr">
           <Button icon="plus" type="primary" onClick={showAddModal}>
             新增角色
           </Button>
@@ -114,7 +114,7 @@ const RoleAdmin = ({ dispatch, roleAdmin, loading }) => {
           pagination={getPagination(onPageChange, pagination)}
           rowClassName={({ roleStatus }) => {
             if (roleStatus) {
-              return 'aek-text-disable'
+              return 'lkc-text-disable'
             }
             return ''
           }}

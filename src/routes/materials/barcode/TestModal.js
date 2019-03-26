@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Modal, Table, Input, Select } from 'antd'
 
-import { AekSelect } from '@components'
+import { LkcSelect } from '@components'
 import SearchForm from '../../../components/SearchFormFilter'
 
 const barcodeRuleReviewStatusList = {
@@ -187,7 +187,7 @@ function TestModal({
           initialValue: undefined,
         },
         component: (
-          <AekSelect
+          <LkcSelect
             url="/organization/option/37-after-review-list"
             placeholder="供应商"
             optionConfig={{
@@ -205,7 +205,7 @@ function TestModal({
       //     initialValue: undefined,
       //   },
       //   component: (
-      //     <AekSelect
+      //     <LkcSelect
       //       url="/organization/option/27-after-review-list"
       //       placeholder="生产厂家"
       //       optionConfig={{
@@ -223,7 +223,7 @@ function TestModal({
           initialValue: undefined,
         },
         component: (
-          <AekSelect
+          <LkcSelect
             url="/organization/option/3-after-review-list"
             placeholder="医疗机构"
             optionConfig={{

@@ -2,7 +2,7 @@
 
 ### 提醒：
 
-下个项目中，此组件整合Form，外部无需再用Form标签包裹，不再是单纯的FormItem组件，将改名为AekForm，获取form的方法为`AekForm.create()(PageComponent)`，也可提供`getPropsForm`函数（参照`SearchFormFilter`组件，当页面组价已被其他`Form.create`占用时使用）。
+下个项目中，此组件整合Form，外部无需再用Form标签包裹，不再是单纯的FormItem组件，将改名为LkcForm，获取form的方法为`LkcForm.create()(PageComponent)`，也可提供`getPropsForm`函数（参照`SearchFormFilter`组件，当页面组价已被其他`Form.create`占用时使用）。
 
 ### API
 

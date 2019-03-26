@@ -30,18 +30,18 @@ const popoverPhotoList = ({
       urls: mortgageUrl,
       isFirstFlag: true,
     }
-    retDomList.push(<div className={Styles['aek-photo-list']} key={mortgageId}>
-      <div className={Styles['aek-photo-wall']} >
+    retDomList.push(<div className={Styles['lkc-photo-list']} key={mortgageId}>
+      <div className={Styles['lkc-photo-wall']} >
         <PhotoWall {...photoProps} />
         {checkChange ? <Checkbox
-          className={Styles['aek-photo-check']}
+          className={Styles['lkc-photo-check']}
           onChange={(e) => {
             checkChange(e, obj)
           }}
         /> : ''
         }
         {deleteClick ? <a
-          className={Styles['aek-photo-delete']}
+          className={Styles['lkc-photo-delete']}
           onClick={() => {
             deleteClick(mortgageId)
           }}
@@ -49,7 +49,7 @@ const popoverPhotoList = ({
           <Icon type="delete" style={{ fontSize: '16px' }} />
         </a> : ''}
       </div>
-      <div className={Styles['aek-photo-title']}>
+      <div className={Styles['lkc-photo-title']}>
         {photoType[mortgageType - 1]}
       </div>
     </div>)

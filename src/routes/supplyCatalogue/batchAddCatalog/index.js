@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Modal, Spin, Button, Table, Form, Input, Select, Row, Col } from 'antd'
 import { cloneDeep, debounce, trim } from 'lodash'
 import { getBasicFn } from '../../../utils'
-import { AekInputNumber, AekSelect } from '../../../components'
+import { LkcInputNumber, LkcSelect } from '../../../components'
 import Styles from '../detail.less'
 
 const FormItem = Form.Item
@@ -177,7 +177,7 @@ class BatchAddCatalog extends React.Component {
       title: getTtile(modalType),
       visible: true,
       maskClosable: false,
-      wrapClassName: 'aek-modal',
+      wrapClassName: 'lkc-modal',
       afterClose() {
         resetFields()
         handleBack()
@@ -388,7 +388,7 @@ class BatchAddCatalog extends React.Component {
           //       key: text,
           //     } : undefined,
           //   })(
-          // <AekSelect
+          // <LkcSelect
           //   {...props}
           // />
           //   )}
@@ -444,7 +444,7 @@ class BatchAddCatalog extends React.Component {
         )
       },
     }, {
-      title: <span><span className="aek-red">*</span>价格</span>,
+      title: <span><span className="lkc-red">*</span>价格</span>,
       key: 'price',
       dataIndex: 'price',
       width: 100,
@@ -466,7 +466,7 @@ class BatchAddCatalog extends React.Component {
                 message: '必填项不能为空',
               }],
             })(
-              <AekInputNumber
+              <LkcInputNumber
                 {...props}
               />,
             )}
@@ -474,7 +474,7 @@ class BatchAddCatalog extends React.Component {
         )
       },
     }, {
-      title: <span><span className="aek-red">*</span>单位</span>,
+      title: <span><span className="lkc-red">*</span>单位</span>,
       key: 'materialsUnit',
       dataIndex: 'materialsUnit',
       width: 120,
@@ -656,7 +656,7 @@ class BatchAddCatalog extends React.Component {
       pagination: false,
       // size: 'small',
       // scroll: { x: true },
-      // className: Styles['aek-modal-table'],
+      // className: Styles['lkc-modal-table'],
       bordered: true,
       style: { width: 1100, paddingRight: '16px' },
     }

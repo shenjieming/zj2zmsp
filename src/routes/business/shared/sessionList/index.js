@@ -27,12 +27,12 @@ const SessionList = ({ data, loading }) => (
             className={`${styles.sessionItem} ${replayOrgType === 1 ? 'publish' : ''}`}
             key={replaySessionId}
           >
-            <span className="aek-text-bold">
+            <span className="lkc-text-bold">
               {replayOrgName} - {addName}:{' '}
             </span>
             {replayContent}
             <PhotoWall urls={replayImageUrls} />
-            <div className="aek-gray" style={{ clear: 'both' }}>
+            <div className="lkc-gray" style={{ clear: 'both' }}>
               {moment(new Date(addTime)).format('YYYY年MMMD日 HH:mm:ss')}
             </div>
           </div>

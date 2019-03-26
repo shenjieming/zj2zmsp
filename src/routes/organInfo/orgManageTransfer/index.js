@@ -48,13 +48,13 @@ function OrgManageTransfer({
       title: '部门',
       dataIndex: 'deptName',
       key: 'deptName',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
     },
     {
       title: '手机号码',
       dataIndex: 'mobile',
       key: 'mobile',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
     },
   ]
   const modalProps = {
@@ -94,7 +94,7 @@ function OrgManageTransfer({
     loading,
     pagination: orgPersonListPagination,
     border: true,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     onChange(pagination) {
       dispatch({
         type: 'organInfo/getOrgPerson',

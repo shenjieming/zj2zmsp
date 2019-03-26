@@ -12,22 +12,22 @@ function UserCard(props) {
     <Card className={Styles.card} key={item.userId}>
       <div className={Styles.content}>
         <Avatar
-          className={classnames(Styles.avatar, 'aek-avatar-border')}
+          className={classnames(Styles.avatar, 'lkc-avatar-border')}
           icon="user"
           src={getImgCompress(item.userImageUrl)}
           size="large"
         />
-        <div className={classnames('aek-ptb10', 'aek-font-large', 'aek-text-overflow')}>
+        <div className={classnames('lkc-ptb10', 'lkc-font-large', 'lkc-text-overflow')}>
           {item.userRealName}
         </div>
-        <div className="aek-font-small aek-text-overflow" title={item.userMobile}>
+        <div className="lkc-font-small lkc-text-overflow" title={item.userMobile}>
           联系电话: {item.userMobile}
         </div>
-        <div className="aek-font-small aek-text-overflow" title={item.deptName}>
+        <div className="lkc-font-small lkc-text-overflow" title={item.deptName}>
           部门: {item.deptName}
         </div>
-        <div className={classnames('aek-ptb10', 'aek-font-small', 'aek-text-overflow')}>
-          拥有客户数: <span className="aek-orange">{item.customerQty}</span>
+        <div className={classnames('lkc-ptb10', 'lkc-font-small', 'lkc-text-overflow')}>
+          拥有客户数: <span className="lkc-orange">{item.customerQty}</span>
         </div>
         <Button
           type="primary"

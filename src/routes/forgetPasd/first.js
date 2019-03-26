@@ -72,7 +72,7 @@ const First = ({ imageCaptchaUrl, dispatch, form: { getFieldDecorator, validateF
           <Col span="6" />
           <Col span="13">
             <Button
-              className={`${styles.loginButton} aek-mt20`}
+              className={`${styles.loginButton} lkc-mt20`}
               type="primary"
               htmlType="submit"
               size="large"

@@ -74,7 +74,7 @@ function CustomModal(props) {
     width: 600,
     footer: null,
     onCancel: props.onClose,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
 
   return (

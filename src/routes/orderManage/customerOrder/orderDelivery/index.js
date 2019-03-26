@@ -9,7 +9,7 @@ import { cloneDeep, debounce, delay, isEmpty } from 'lodash'
 import Breadcrumb from '../../../../components/Breadcrumb'
 import APanel from '../../../../components/APanel'
 import PlainForm from '../../../../components/PlainForm'
-import AekForm from '../../../../components/AekForm'
+import LkcForm from '../../../../components/LkcForm'
 import { getBasicFn, formatNum } from '../../../../utils'
 
 import PrintPurchase from '../../customerOrder/printPurchaseList'
@@ -376,7 +376,7 @@ class OrderDelivery extends React.Component {
         {
           title: '序号',
           key: 'index',
-          className: 'aek-text-center',
+          className: 'lkc-text-center',
           fixed: 'left',
           width: 50,
           render: (value, row, index) => {
@@ -780,10 +780,10 @@ class OrderDelivery extends React.Component {
           width: 100,
           fixed: 'right',
           render: (text, row, index) => (
-            <div className="aek-text-center" style={{ wordBreak: 'keep-all' }}>
+            <div className="lkc-text-center" style={{ wordBreak: 'keep-all' }}>
               {row.indexInSame ? (
                 <a
-                  className="aek-red"
+                  className="lkc-red"
                   onClick={() => {
                     Modal.confirm({
                       content: '确定要删除该批次?',
@@ -819,7 +819,7 @@ class OrderDelivery extends React.Component {
                     录入RFID
                   </a>
                   {row.rfids &&
-                    row.rfids.length > 0 && <span className="aek-red">({row.rfids.length})</span>}
+                    row.rfids.length > 0 && <span className="lkc-red">({row.rfids.length})</span>}
                 </div>
               ) : (
                 ''
@@ -870,9 +870,9 @@ class OrderDelivery extends React.Component {
         <Row key={index} style={{ marginTop: '10px' }}>
           <div>
             收货地址：{ele.receiveAddress}
-            <span className="aek-fill-15" />
+            <span className="lkc-fill-15" />
             {ele.receiveName}
-            <span className="aek-fill-15" />
+            <span className="lkc-fill-15" />
             {ele.receivePhone}
           </div>
           <Table
@@ -964,7 +964,7 @@ class OrderDelivery extends React.Component {
       spin: getLoading('analysisBarcode'),
     }
     return (
-      <div className="aek-layout">
+      <div className="lkc-layout">
         <div className="bread">
           <Breadcrumb />
         </div>
@@ -972,7 +972,7 @@ class OrderDelivery extends React.Component {
           <Spin spinning={getLoading('getOrderDetail', 'fetchDeliveryCompany', 'getTempInfo')}>
             <div className={styles.deliveryInfo}>
               <PlainForm size={3} data={getDetailTopData(orderBean)} />
-              <AekForm
+              <LkcForm
                 getFieldDecorator={getFieldDecorator}
                 formData={getFormData({
                   chooseDeliverType,
@@ -987,10 +987,10 @@ class OrderDelivery extends React.Component {
         </APanel>
         <APanel title={'发货明细'}>
           <Spin spinning={getLoading('getOrderDetail', 'fetchDeliveryCompany', 'getTempInfo')}>
-            <div className={`${styles.shipDetail} ${fullScreen ? 'aek-fullScreen' : ''}`}>
-              <div className="aek-pb10">
+            <div className={`${styles.shipDetail} ${fullScreen ? 'lkc-fullScreen' : ''}`}>
+              <div className="lkc-pb10">
                 <Input
-                  className="aek-barcode"
+                  className="lkc-barcode"
                   ref={(input) => {
                     barcodeInput = input
                   }}
@@ -1074,9 +1074,9 @@ class OrderDelivery extends React.Component {
                 </Button>
               </div>
               {materialsInfo()}
-              <div style={{ textAlign: 'right' }} className="aek-ptb15">
+              <div style={{ textAlign: 'right' }} className="lkc-ptb15">
                 配送金额共计：
-                <span className="aek-red aek-font-large aek-pl10">{formatNum(totalMoney)}</span>
+                <span className="lkc-red lkc-font-large lkc-pl10">{formatNum(totalMoney)}</span>
               </div>
               <div className="bottomBtn">
                 <Button onClick={tempSave} loading={getLoading('tempSave')}>

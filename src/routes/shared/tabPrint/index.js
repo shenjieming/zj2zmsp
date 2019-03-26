@@ -58,11 +58,11 @@ const ModalPrint = ({
         trackCode,
       } = item
       return [
-        <div key="materialsName" className={'aek-text-overflow'}>名称：{materialsName}</div>,
-        <div key="materialsSku" className="aek-text-overflow">规格：{materialsSku}</div>,
-        <div key="batchNo" className="aek-text-overflow">批号：{batchNo}</div>,
-        <span key="expiredDate" style={{ display: 'inline-block', width: '50%' }} className="aek-text-overflow">效期：{expiredDate}</span>,
-        <span key="trackCode" style={{ display: 'inline-block', width: '50%' }} className="aek-text-overflow">跟踪码：{trackCode}</span>,
+        <div key="materialsName" className={'lkc-text-overflow'}>名称：{materialsName}</div>,
+        <div key="materialsSku" className="lkc-text-overflow">规格：{materialsSku}</div>,
+        <div key="batchNo" className="lkc-text-overflow">批号：{batchNo}</div>,
+        <span key="expiredDate" style={{ display: 'inline-block', width: '50%' }} className="lkc-text-overflow">效期：{expiredDate}</span>,
+        <span key="trackCode" style={{ display: 'inline-block', width: '50%' }} className="lkc-text-overflow">跟踪码：{trackCode}</span>,
       ]
     }
 
@@ -122,7 +122,7 @@ const ModalPrint = ({
   const modalOpts = {
     title: '打印预览',
     visible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel,
     okText: '打印',
@@ -150,7 +150,7 @@ const ModalPrint = ({
       },
     },
 
-  }, <div className="aek-mb10">
+  }, <div className="lkc-mb10">
     {printType === 1 && '推荐使用长宽大于等于80MM*50MM标签纸进行打印，过小可能导致打印内容超出'}
   </div>]
 
@@ -169,7 +169,7 @@ const ModalPrint = ({
       <div style={{ overflowY: 'scroll', maxHeight: '500px' }}>
         {content}
       </div>
-      {pagination && <Pagination className="aek-mt10" size="small" {...paginationProps} />}
+      {pagination && <Pagination className="lkc-mt10" size="small" {...paginationProps} />}
     </Spin>
   </Modal>)
 }

@@ -81,7 +81,7 @@ const Supplier = ({
     captchaSuffix = (<div>{
       captchaClearIcon
     }<Button><CountDown
-      className="aek-text-disable"
+      className="lkc-text-disable"
       start={59}
       end={0}
       duration={60}
@@ -90,7 +90,7 @@ const Supplier = ({
       onComplete={handleCountDownComplete}
     /></Button></div>)
   } else if (checkCodeStatus) {
-    captchaSuffix = (<div className="aek-ml20">{
+    captchaSuffix = (<div className="lkc-ml20">{
       captchaClearIcon
     }<Button
       size="large"
@@ -318,10 +318,10 @@ const Supplier = ({
         </Row>
         <FormItem>
           <Row>
-            <Col span="24" className="aek-pt10">
+            <Col span="24" className="lkc-pt10">
               <Button loading={!!effects['regist/postResist']} className={styles.loginButton} htmlType="submit" type="primary" size="large">注册账户</Button>
-              {/*<span className="aek-text-left aek-ml10 aek-font-small">点击注册，表示同意我们的<Link to="/useClause" target="_blank">使用条款</Link></span>*/}
-              {/*<p className="aek-mt20"><Link to="/login">已有账户？请登录</Link></p>*/}
+              {/*<span className="lkc-text-left lkc-ml10 lkc-font-small">点击注册，表示同意我们的<Link to="/useClause" target="_blank">使用条款</Link></span>*/}
+              {/*<p className="lkc-mt20"><Link to="/login">已有账户？请登录</Link></p>*/}
             </Col>
           </Row>
         </FormItem>

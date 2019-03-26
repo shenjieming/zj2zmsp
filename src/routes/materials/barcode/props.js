@@ -1,6 +1,6 @@
 import React from 'react'
 import { Select, Input } from 'antd'
-import { AekSelect } from '@components'
+import { LkcSelect } from '@components'
 
 const Option = Select.Option
 const barcodeRuleReviewStatusList = {
@@ -75,7 +75,7 @@ export default {
     {
       field: 'supplierOrgId',
       component: (
-        <AekSelect
+        <LkcSelect
           url="/organization/option/37-after-review-list"
           placeholder="供应商"
           optionConfig={{
@@ -90,7 +90,7 @@ export default {
     {
       field: 'customerOrgId',
       component: (
-        <AekSelect
+        <LkcSelect
           url="/organization/option/3-after-review-list"
           placeholder="医疗机构"
           optionConfig={{
@@ -105,7 +105,7 @@ export default {
     {
       field: 'factoryOrgId',
       component: (
-        <AekSelect
+        <LkcSelect
           url="/organization/option/27-after-review-list"
           placeholder="生产厂商"
           optionConfig={{
@@ -127,7 +127,7 @@ export default {
       title: '序号',
       key: 'index',
       render: (_, $, i) => i + 1,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       fixed: true,
     },
@@ -143,7 +143,7 @@ export default {
       width: 140,
       fixed: true,
       key: 'action',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (_, row) => {
         const id = row.barcodeRuleId
         return (

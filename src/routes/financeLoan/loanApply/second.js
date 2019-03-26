@@ -29,7 +29,7 @@ const Second = ({ loanApply, loading }) => {
     dataIndex: 'index',
     key: 'index',
     title: '序号',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 50,
     render(value, record, index) {
       return index + 1
@@ -42,22 +42,22 @@ const Second = ({ loanApply, loading }) => {
     dataIndex: 'stockInTime',
     key: 'stockInTime',
     title: '入库时间',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   }, {
     dataIndex: 'formAmount',
     key: 'formAmount',
     title: '入库单金额（元）',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
   }, {
     dataIndex: 'balance',
     key: 'balance',
     title: '可贷金额（元）',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
   }, {
     dataIndex: 'formId',
     key: 'formId',
     title: '操作',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 60,
     render(value) {
       const review = () => {
@@ -209,10 +209,10 @@ const Second = ({ loanApply, loading }) => {
       <Table
         {...tableProps}
       />
-      <div className="aek-mt30">
-        <Button onClick={secondNextClick} className="aek-mr20" type="primary">下一步</Button>
+      <div className="lkc-mt30">
+        <Button onClick={secondNextClick} className="lkc-mr20" type="primary">下一步</Button>
         <Button onClick={firstPrevClick} >上一步</Button>
-        <span className="aek-ml20">共选择<span className={`${Styles['aek-info']}`}>{receivableOrderSelected.length || 0}</span>笔订单，可贷金额<span className={`${Styles['aek-info']}`}>{receivableOrderMoney || 0}</span>元</span>
+        <span className="lkc-ml20">共选择<span className={`${Styles['lkc-info']}`}>{receivableOrderSelected.length || 0}</span>笔订单，可贷金额<span className={`${Styles['lkc-info']}`}>{receivableOrderMoney || 0}</span>元</span>
       </div>
     </div>
   )

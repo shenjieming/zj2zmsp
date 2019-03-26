@@ -79,7 +79,7 @@ function SupplierTable({
     }
     const retArr = arr.map((item, index) => [
       <Element
-        className={`${style.title} aek-text-help`}
+        className={`${style.title} lkc-text-help`}
         name={item.index}
         key={index}
       >
@@ -88,7 +88,7 @@ function SupplierTable({
     ].concat(
       item.data.map((itm, idx) => (
         <Element
-          className={classnames(style.item, 'aek-text-overflow', { [style.seled]: getClass(itm, selectId) })}
+          className={classnames(style.item, 'lkc-text-overflow', { [style.seled]: getClass(itm, selectId) })}
           name={itm.supplierOrgId}
           key={`${index}-${idx}`}
           onClick={() => { clickRow(itm) }}

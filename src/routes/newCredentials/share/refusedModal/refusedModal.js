@@ -21,7 +21,7 @@ const RefusedModal = ({
   const addModalProp = {
     title: '拒绝原因',
     visible: refusedReasonVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel() {
       handleCancel()
@@ -100,7 +100,7 @@ const RefusedModal = ({
         <div className={Styles['checkbox-list']}>
           {refusedReasonVisible ? checkboxList() : ''}
         </div>
-        <Form className="aek-mt20">
+        <Form className="lkc-mt20">
           <GetFormItem
             formData={formData}
           />

@@ -33,7 +33,7 @@ const EditBrandModal = (
     onCancel: hideHandler,
     onOk: okHandler,
     width: 500,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const formItemLayout = {
     labelCol: { span: 5 },

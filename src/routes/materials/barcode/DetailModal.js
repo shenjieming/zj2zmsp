@@ -54,7 +54,7 @@ const DetailForm = ({
   <div className={Styles.wrap}>
     {noBasicInfo || (
       <div>
-        <div className="aek-form-head">版本基本信息</div>
+        <div className="lkc-form-head">版本基本信息</div>
         <div className={Styles.item}>
           <div className={Styles.label}>1.版本号:</div>
           <span>
@@ -87,7 +87,7 @@ const DetailForm = ({
         </div>
       </div>
     )}
-    <div className="aek-form-head">条码区别的特征</div>
+    <div className="lkc-form-head">条码区别的特征</div>
     <div className={Styles.item}>
       <span>
         1.长度共计
@@ -162,7 +162,7 @@ const DetailForm = ({
         固定不变
       </span>
     </div>
-    <div className="aek-form-head">条码基本信息</div>
+    <div className="lkc-form-head">条码基本信息</div>
     <div className={Styles.item}>
       <div className={Styles.label}>1.物资编码:</div>
       <span>
@@ -262,13 +262,13 @@ const DetailForm = ({
         {data[barcodeRuleStatus] === '1' ? '停用' : '启用'}
       </div>
     </div>
-    <div className="aek-form-head">示例图</div>
+    <div className="lkc-form-head">示例图</div>
     <div className={Styles.item}>
       <div className={Styles.first}>
         <PhotoWall urls={data.barcodeImageUrls} />
       </div>
     </div>
-    <div className="aek-form-head">备注信息</div>
+    <div className="lkc-form-head">备注信息</div>
     <div className={Styles.item}>
       <div className={Styles.label}>添加原因:</div>
       <div

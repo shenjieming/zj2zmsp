@@ -2,8 +2,8 @@ import React from 'react'
 import { Modal, Alert, Timeline, Button, Input, Icon, Spin, Form } from 'antd'
 import PropTyps from 'prop-types'
 import { noop, sortBy } from 'lodash'
-import AekLightBox from '../../../../components/AekLightBox'
-import scrollToTop from '../../../../components/AekForm/scrollToTop'
+import LkcLightBox from '../../../../components/LkcLightBox'
+import scrollToTop from '../../../../components/LkcForm/scrollToTop'
 import styles from './index.less'
 import { FORM_ITEM_LAYOUT } from '../../../../utils/constant'
 import { IMG_COMPRESS } from '../../../../utils/config'
@@ -112,7 +112,7 @@ class ViewCertificateModal extends React.Component {
     const renderExpired = (validDate, expireFlag) => (
       <span>
         {validDate}
-        {expireFlag && <span className="aek-red">（已过期）</span>}
+        {expireFlag && <span className="lkc-red">（已过期）</span>}
       </span>
     )
     const descriptionHtml = (item) => {
@@ -131,7 +131,7 @@ class ViewCertificateModal extends React.Component {
         case '厂家/总代三证':
           return (
             <div className={styles.leftBox}>
-              <div className="aek-text-bold aek-text-primary">{superiorAuthFactoryName}</div>
+              <div className="lkc-text-bold lkc-text-primary">{superiorAuthFactoryName}</div>
               <div>国内总代：{agentSupplierName}</div>
               {statusHtml(certificateStatus)}
             </div>
@@ -140,7 +140,7 @@ class ViewCertificateModal extends React.Component {
         case '医疗器械注册证':
           return (
             <div className={styles.leftBox}>
-              <div className="aek-text-bold aek-text-primary">{certificateNo}</div>
+              <div className="lkc-text-bold lkc-text-primary">{certificateNo}</div>
               <div>{productName}</div>
               <div>有效期：{renderExpired(validDate, expireFlag)}</div>
               {statusHtml(certificateStatus)}
@@ -149,7 +149,7 @@ class ViewCertificateModal extends React.Component {
         case '经销授权书':
           return (
             <div className={styles.leftBox}>
-              <div className="aek-text-bold aek-text-primary">{superiorAuthFactoryName}</div>
+              <div className="lkc-text-bold lkc-text-primary">{superiorAuthFactoryName}</div>
               <div>授权给：{supplierOrgName}</div>
               <div>有效期：{renderExpired(validDate, expireFlag)}</div>
               {statusHtml(certificateStatus)}
@@ -158,7 +158,7 @@ class ViewCertificateModal extends React.Component {
         case '供应商企业三证':
           return (
             <div className={styles.leftBox}>
-              <div className="aek-text-bold aek-text-primary">{supplierOrgName}</div>
+              <div className="lkc-text-bold lkc-text-primary">{supplierOrgName}</div>
               <div>
                 <Icon type="phone" />
                 <span style={{ margin: '0px 8px' }}>{supplierContactName}</span>
@@ -170,7 +170,7 @@ class ViewCertificateModal extends React.Component {
         case '法人委托书':
           return (
             <div className={styles.leftBox}>
-              <div className="aek-text-bold aek-text-primary">{supplierOrgName}</div>
+              <div className="lkc-text-bold lkc-text-primary">{supplierOrgName}</div>
               <div>业务员：{supplierContactName}</div>
               <div>有效期：{renderExpired(validDate, expireFlag)}</div>
               {statusHtml(certificateStatus)}
@@ -179,7 +179,7 @@ class ViewCertificateModal extends React.Component {
         default:
           return (
             <div className={styles.leftBox}>
-              <div className="aek-text-bold aek-text-primary">{supplierOrgName}</div>
+              <div className="lkc-text-bold lkc-text-primary">{supplierOrgName}</div>
               <div>有效期：{renderExpired(validDate, expireFlag)}</div>
               {statusHtml(certificateStatus)}
             </div>
@@ -240,7 +240,7 @@ class ViewCertificateModal extends React.Component {
     // }
     const certificateData = (
       <Timeline>
-        <Timeline.Item key="detail" className={'aek-text-bold aek-mt20'}>
+        <Timeline.Item key="detail" className={'lkc-text-bold lkc-mt20'}>
           <div>
             <div>
               <div>{certificateNo}</div>
@@ -252,7 +252,7 @@ class ViewCertificateModal extends React.Component {
                 description={refuseReason}
                 type="info"
                 showIcon
-                className="aek-mt10 aek-word-break"
+                className="lkc-mt10 lkc-word-break"
               />
             )}
           </div>
@@ -264,7 +264,7 @@ class ViewCertificateModal extends React.Component {
           const showImgUrls = showImgUrlValue && showImgUrlValue.split(',')
           return (
             <Timeline.Item key={item.certificateId}>
-              <div className="aek-gray">{item.certificateType}</div>
+              <div className="lkc-gray">{item.certificateType}</div>
               <div
                 className={`${styles.certificateBlock} ${showImgUrls && styles.clickable}`}
                 onClick={() => {
@@ -320,7 +320,7 @@ class ViewCertificateModal extends React.Component {
     )
     const modalProps = {
       visible,
-      wrapClassName: `aek-modal ${styles.modalWrapper}`,
+      wrapClassName: `lkc-modal ${styles.modalWrapper}`,
       width: 600,
       title: getTitle(),
       onCancel: () => {
@@ -330,7 +330,7 @@ class ViewCertificateModal extends React.Component {
       maskClosable: false,
       footer: getFooter,
     }
-    const aekLightBoxProps = {
+    const LkcLightBoxProps = {
       isOpen: this.state.photoWallVisible,
       currentData: this.state.currentData,
       dataSource: this.state.viewData,
@@ -347,7 +347,7 @@ class ViewCertificateModal extends React.Component {
             <div className={styles.listContainer}>{certificateData}</div>
           </Spin>
         </Modal>
-        <AekLightBox {...aekLightBoxProps} />
+        <LkcLightBox {...LkcLightBoxProps} />
       </div>
     )
   }

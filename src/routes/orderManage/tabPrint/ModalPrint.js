@@ -81,9 +81,9 @@ const ModalPrint = ({ onCancel, isbarCode, visible, printData }) => {
       return undefined
     }
     const iofo = verticalContent([
-      materialsName && <div className="aek-text-overflow">{`物资名称：${materialsName}`}</div>,
+      materialsName && <div className="lkc-text-overflow">{`物资名称：${materialsName}`}</div>,
       specification && `规格型号：${specification}`,
-      factory && <div className="aek-text-overflow">{`生产厂家：${factory}`}</div>,
+      factory && <div className="lkc-text-overflow">{`生产厂家：${factory}`}</div>,
       productCode && `产品码：${productCode}`,
       batchNumber && `生产批号：${batchNumber}`,
       validity && `有效期：${validity}`,
@@ -113,7 +113,7 @@ const ModalPrint = ({ onCancel, isbarCode, visible, printData }) => {
   const modalOpts = {
     title: '打印预览',
     visible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel,
     okText: '打印',

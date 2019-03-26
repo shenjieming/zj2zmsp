@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Table } from 'antd'
 import windowNewOpen from '@shared/windowNewOpen'
 import { aekConnect, dispatchUrl } from '../../../../utils'
-import { ContentLayout, PlainForm, AekLightBox } from '../../../../components'
+import { ContentLayout, PlainForm, LkcLightBox } from '../../../../components'
 import { genHeadStatus } from '../../../shared/finance'
 import CheckModal from '../../../shared/finance/checkModal'
 import { popoverPhotoList } from '../../../shared/fianceLoan'
@@ -150,8 +150,8 @@ function LoanOrderDetail({
       )
     },
   }
-  const aekLightBoxProps = {
-    key: 'aekLightBox',
+  const LkcLightBoxProps = {
+    key: 'LkcLightBox',
     isOpen: lightBoxVisible,
     url: lightBoxUrl,
     photoIndex: 0,
@@ -216,8 +216,8 @@ function LoanOrderDetail({
             style={{ textAlign: 'right', height: 40, lineHeight: '60px', fontSize: '15px' }}
             key="all"
           >
-            <span className="aek-ml30">共选择入库单：{stockSummary.totalQty}笔</span>
-            <span className="aek-ml30">共贷款：{stockSummary.totalAmount}元</span>
+            <span className="lkc-ml30">共选择入库单：{stockSummary.totalQty}笔</span>
+            <span className="lkc-ml30">共贷款：{stockSummary.totalAmount}元</span>
           </div>,
           <ModalStock {...modalStockProps} />,
         ],
@@ -232,7 +232,7 @@ function LoanOrderDetail({
         contentType: 'card',
         key: 'operationRecordList',
         title: '操作记录',
-        children: [<Table {...operationRecordListProps} />, <AekLightBox {...aekLightBoxProps} />],
+        children: [<Table {...operationRecordListProps} />, <LkcLightBox {...LkcLightBoxProps} />],
       },
     ],
   }

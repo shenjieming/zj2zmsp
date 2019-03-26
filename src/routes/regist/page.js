@@ -12,7 +12,7 @@ function LoginPage({ children }) {
         {/*<img className={styles.logo} src={logo} alt="医储" />*/}
         {/*<div className={styles.title}>*/}
           {/*<Link to="/login" className={styles.title}>登录</Link>*/}
-          {/*<span className={`aek-mlr15 ${styles.title}`}>|</span>*/}
+          {/*<span className={`lkc-mlr15 ${styles.title}`}>|</span>*/}
           {/*<Link to="/regist" className={styles.title}>注册</Link>*/}
         {/*</div>*/}
       {/*</div>*/}

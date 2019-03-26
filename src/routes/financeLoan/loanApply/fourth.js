@@ -4,7 +4,7 @@ import { Input, Button, Form, Row, Col, Icon, Tooltip, Spin } from 'antd'
 import { getBasicFn, formatNum } from '../../../utils/index'
 import Styles from './index.less'
 import { FORM_ITEM_LAYOUT } from '../../../utils/constant'
-import InputNumber from '../../../components/AekInputNumber'
+import InputNumber from '../../../components/LkcInputNumber'
 
 
 const FormItem = Form.Item
@@ -97,10 +97,10 @@ const Fourth = ({
     <div>
       <Spin spinning={getLoading('setFourthSubmit')}>
 
-        <div className={Styles['aek-fourth-title']}>
+        <div className={Styles['lkc-fourth-title']}>
         应收单款项合计{receivableOrderMoney}元
         </div>
-        <div className={Styles['aek-fourth-content']}>
+        <div className={Styles['lkc-fourth-content']}>
           <Form>
             <FormItem label="应收单款项合计" {...FORM_ITEM_LAYOUT}>
               {getFieldDecorator('receivableAmount')(
@@ -164,10 +164,10 @@ const Fourth = ({
               )}
             </FormItem>
           </Form>
-          <Row span={24} className="aek-mt30">
+          <Row span={24} className="lkc-mt30">
             <Col span={6} />
             <Col>
-              <Button onClick={secondNextClick} className="aek-mr20" type="primary">确认申请</Button>
+              <Button onClick={secondNextClick} className="lkc-mr20" type="primary">确认申请</Button>
               <Button onClick={firstPrevClick} >上一步</Button>
             </Col>
           </Row>

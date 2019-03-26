@@ -97,7 +97,7 @@ function DictionSelect({
         field: 'certificateId',
         width: 220,
         component: {
-          name: 'AekSelect',
+          name: 'LkcSelect',
           props: {
             url: '/materials/register/certificate/option/list',
             optionConfig: { idStr: 'certificateId', nameStr: 'certificateNo' },
@@ -172,7 +172,7 @@ function DictionSelect({
       dataIndex: 'checked',
       title: Title(),
       width: 40,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render(_, record) {
         const { materialsSkuId, catalogFlag } = record
         return (
@@ -248,7 +248,7 @@ function DictionSelect({
       dataIndex: 'operation',
       title: '操作',
       width: 100,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => {
         // 未加入目录
         if (record.catalogFlag === 0) {
@@ -417,7 +417,7 @@ function DictionSelect({
     // },
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <div style={{ float: 'left' }}>
           <Breadcrumb routes={routes} />
@@ -471,12 +471,12 @@ function DictionSelect({
           message={
             <span>
               如果没有找到需要的物料，有注册证、备案证、消毒证的物资请联系客服添加，其他物资请
-              <a className="aek-link" onClick={() => { window.open(IMPORT_TEMPLATE_URL) }}>点击此处下载模板</a>
+              <a className="lkc-link" onClick={() => { window.open(IMPORT_TEMPLATE_URL) }}>点击此处下载模板</a>
               维护好后联系客服添加
             </span>
           }
           showIcon
-          className="aek-mb10"
+          className="lkc-mb10"
         />
         <Table
           // rowSelection={selectProps}

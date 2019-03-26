@@ -41,7 +41,7 @@ const initState = {
 }
 
 const getContent = (data = []) => {
-  (data.map((item, index) => (<span className="aek-mr10" key={`${index + 1}`}>
+  (data.map((item, index) => (<span className="lkc-mr10" key={`${index + 1}`}>
     {index + 1 === data.length ? `${item}` : `${item},`}
   </span>))
   )
@@ -188,7 +188,7 @@ export default modelExtend({
             {
               content.passedCertificates.length ?
                 <div>
-                  <p className="aek-mtb10">如下证件已被审核通过：</p>
+                  <p className="lkc-mtb10">如下证件已被审核通过：</p>
                   <div>
                     {getContent(content.passedCertificates)}
                   </div>
@@ -198,7 +198,7 @@ export default modelExtend({
             {
               content.undoAndDeleteCertificates.length ?
                 <div>
-                  <p className="aek-mtb10">如下证件已被供应商主动撤销或删除推送：</p>
+                  <p className="lkc-mtb10">如下证件已被供应商主动撤销或删除推送：</p>
                   <div>
                     {getContent(content.undoAndDeleteCertificates.concat(content.rejectedCertificates))}
                   </div>
@@ -227,7 +227,7 @@ export default modelExtend({
             {
               content.passedCertificates.length ?
                 <div>
-                  <p className="aek-mtb10">如下证件已被审核拒绝：</p>
+                  <p className="lkc-mtb10">如下证件已被审核拒绝：</p>
                   <div>
                     {getContent(content.passedCertificates)}
                   </div>
@@ -237,7 +237,7 @@ export default modelExtend({
             {
               content.undoAndDeleteCertificates.length ?
                 <div>
-                  <p className="aek-mtb10">如下证件已被供应商主动撤销或删除推送：</p>
+                  <p className="lkc-mtb10">如下证件已被供应商主动撤销或删除推送：</p>
                   <div>
                     {getContent(content.undoAndDeleteCertificates)}
                   </div>

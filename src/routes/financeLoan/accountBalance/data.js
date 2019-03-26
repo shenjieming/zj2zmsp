@@ -38,7 +38,7 @@ const formData = accountDetail => [{
   field: 'settleAccount',
   view: true,
   options: {
-    initialValue: <span>{accountDetail.settleAccount}<span className="aek-ml20">{accountDetail.crossFlag ? '华夏银行' : ''}</span></span>,
+    initialValue: <span>{accountDetail.settleAccount}<span className="lkc-ml20">{accountDetail.crossFlag ? '华夏银行' : ''}</span></span>,
   },
   component: {
     name: 'Input',

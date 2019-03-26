@@ -104,7 +104,7 @@ const checkModal = ({ checkModalType, visible, onCancel, currentDetail, loading 
       dataIndex: 'stockInPrice',
       key: 'stockInPrice',
       width: 80,
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: text => <span>￥ {text}</span>,
     },
     {
@@ -112,7 +112,7 @@ const checkModal = ({ checkModalType, visible, onCancel, currentDetail, loading 
       dataIndex: 'itemAmount',
       key: 'itemAmount',
       width: 80,
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: text => <span>￥ {text}</span>,
     },
     {
@@ -163,9 +163,9 @@ const checkModal = ({ checkModalType, visible, onCancel, currentDetail, loading 
   }
   return (
     <Modal {...modalParam}>
-      <div className="aek-form-head">单据信息</div>
+      <div className="lkc-form-head">单据信息</div>
       <PlainForm data={detailData} size={3} />
-      <div className="aek-form-head">明细信息</div>
+      <div className="lkc-form-head">明细信息</div>
       <Table {...tableParam} />
     </Modal>
   )

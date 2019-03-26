@@ -40,7 +40,7 @@ const RegistDetailModal = ({
   const addModalProp = {
     title: modalTitle,
     visible: registDetailVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     width: 600,
     onCancel() {

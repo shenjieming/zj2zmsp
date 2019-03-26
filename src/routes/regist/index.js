@@ -151,7 +151,7 @@ const Regist = ({ regist, dispatch, effects }) => {
                   <div className={styles.left}>
                     <Button type={`${pageDefaultVisible ? '' +
                       '' : ''}`} onClick={() => { onChange(true) }} key="supplier" className={`${styles.registTabsButton}`}>我是供应商</Button>
-                    <Button type={`${pageDefaultVisible ? '' : 'primary'}`} onClick={() => { onChange(false) }} key="hospital" className={`${styles.registTabsButton} aek-mt10`}>我是医院</Button>
+                    <Button type={`${pageDefaultVisible ? '' : 'primary'}`} onClick={() => { onChange(false) }} key="hospital" className={`${styles.registTabsButton} lkc-mt10`}>我是医院</Button>
                   </div>
                   <div className={styles.right}>
                     {pageDefaultVisible ? <Supplier {...supplierProps} /> : <Hospital {...hospitalProps} />}

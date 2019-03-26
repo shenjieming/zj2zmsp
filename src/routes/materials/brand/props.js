@@ -63,33 +63,33 @@ const getTableColumns = ({ showEditModal, updateSingleBrandStatus }) => [
     title: '序号',
     width: 30,
     render: (_, $, i) => i + 1,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     dataIndex: 'brandStatus',
     key: 'brandStatus',
     title: '状态',
     width: 160,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: txt => (!txt ? '启用' : '停用'),
   },
   {
     dataIndex: 'produceFactoryName',
     key: 'produceFactoryName',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     title: '厂家',
   },
   {
     dataIndex: 'brandName',
     key: 'brandName',
     title: '品牌',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '操作',
     key: 'action',
     width: 160,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (_, row) => (
       <div>
         <a onClick={() => showEditModal(row.brandId)}>编辑</a>

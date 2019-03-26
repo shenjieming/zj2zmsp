@@ -18,7 +18,7 @@ const formData = (
   powerPersonOptions,
   powerPersonSetPhone,
   setFieldsValue,
-) => [<div className="aek-form-head">基础信息</div>, {
+) => [<div className="lkc-form-head">基础信息</div>, {
   label: modalTitle === '查看委托书' ? '医院名称' : '委托客户名称',
   layout: formItemLayout,
   field: 'customerOrgName',
@@ -175,7 +175,7 @@ const formData = (
       children: '长期有效',
     },
   },
-}, <div className="aek-form-head">证件图片信息</div>, {
+}, <div className="lkc-form-head">证件图片信息</div>, {
   label: '法人委托书',
   layout: formItemLayout,
   view: modalTitle === '查看委托书',

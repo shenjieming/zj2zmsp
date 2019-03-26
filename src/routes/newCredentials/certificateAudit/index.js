@@ -63,7 +63,7 @@ const CertificatePush = ({ newCertificateAudit, loading }) => {
         field: 'supplierOrgId',
         width: 220,
         component: {
-          name: 'AekSelect',
+          name: 'LkcSelect',
           props: {
             url: '/contacts/option/suppliers',
             optionConfig: { idStr: 'supplierOrgId', nameStr: 'supplierOrgName' },
@@ -123,10 +123,10 @@ const CertificatePush = ({ newCertificateAudit, loading }) => {
     const retList = dataSource.map((item) => {
       let active = ''
       if (item.supplierOrgId === selectedCustomer.supplierOrgId) {
-        active = Styles['aek-li-active']
+        active = Styles['lkc-li-active']
       }
       return (
-        <li className={`${Styles['aek-li']} ${active}`} key={item.supplierOrgId}>
+        <li className={`${Styles['lkc-li']} ${active}`} key={item.supplierOrgId}>
           <a
             onClick={() => {
               handleClick(item)
@@ -139,7 +139,7 @@ const CertificatePush = ({ newCertificateAudit, loading }) => {
     })
     return (
       <Spin spinning={getLoading('getCustomerDetail')}>
-        <ul>{retList || (<li className={`${Styles['aek-li']}`}>没有待审核的注册证</li>)}</ul>
+        <ul>{retList || (<li className={`${Styles['lkc-li']}`}>没有待审核的注册证</li>)}</ul>
       </Spin>
     )
   }
@@ -284,11 +284,11 @@ const CertificatePush = ({ newCertificateAudit, loading }) => {
     }
     content = (
       <div>
-        <Row className={Styles['aek-content']}>
+        <Row className={Styles['lkc-content']}>
           <Col span="18">
-            <div className={Styles['aek-content-block']}>
-              <p className="aek-text-bold">{selectedCustomer.supplierOrgName}</p>
-              <p className="aek-text-help aek-mt10">
+            <div className={Styles['lkc-content-block']}>
+              <p className="lkc-text-bold">{selectedCustomer.supplierOrgName}</p>
+              <p className="lkc-text-help lkc-mt10">
                 {`${selectedCustomer.contactName || ''}-${selectedCustomer.contactPhone || ''}`}
               </p>
             </div>
@@ -302,12 +302,12 @@ const CertificatePush = ({ newCertificateAudit, loading }) => {
             </Link>
           </Col>
         </Row>
-        <div className="aek-mt20">
+        <div className="lkc-mt20">
           <Row>
             <Col span="18">
               <Button
                 type="primary"
-                className="aek-mr10"
+                className="lkc-mr10"
                 onClick={() => {
                   handleBatchClick()
                 }}
@@ -471,12 +471,12 @@ const CertificatePush = ({ newCertificateAudit, loading }) => {
     searchCustomerList = arr
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
       <div className="content">
-        <div className="aek-layout-hor">
+        <div className="lkc-layout-hor">
           <div>
             <Tabs defaultActiveKey={tabType} onChange={tabChange}>
               <Tabs.TabPane
@@ -500,19 +500,19 @@ const CertificatePush = ({ newCertificateAudit, loading }) => {
                     },
                   })
                 }}
-                className="aek-mb10"
+                className="lkc-mb10"
                 style={{ width: 280 }}
               />
               <List dataSource={searchCustomerList} />
             </div> : undefined
           }
           {
-            tabType === 'review' ? (<div className="right aek-pl10">
+            tabType === 'review' ? (<div className="right lkc-pl10">
               {content}
-              <Table style={{ marginBottom: '40px' }} className="aek-mt10" {...tableProps} />
+              <Table style={{ marginBottom: '40px' }} className="lkc-mt10" {...tableProps} />
             </div>) : (<div className="right" style={{ width: '100%' }}>
               {content}
-              <Table style={{ marginBottom: '40px' }} className="aek-mt10" {...tableProps} />
+              <Table style={{ marginBottom: '40px' }} className="lkc-mt10" {...tableProps} />
             </div>)
           }
         </div>

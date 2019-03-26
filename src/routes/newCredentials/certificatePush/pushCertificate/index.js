@@ -61,7 +61,7 @@ const PushCertificate = ({ pushCertificate, loading }) => {
     {
       title: '序号',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, row, index) => index + 1,
     },
@@ -72,7 +72,7 @@ const PushCertificate = ({ pushCertificate, loading }) => {
         return (
           <span>
             <div>{text}</div>
-            <div className="aek-gray">{row.productName}</div>
+            <div className="lkc-gray">{row.productName}</div>
           </span>
         )
       },
@@ -87,7 +87,7 @@ const PushCertificate = ({ pushCertificate, loading }) => {
       width: 150,
       render(_, record) {
         if (record.pushStatus === 1) {
-          return <span className="aek-gray">已推送</span>
+          return <span className="lkc-gray">已推送</span>
         }
         return (
           <a
@@ -121,7 +121,7 @@ const PushCertificate = ({ pushCertificate, loading }) => {
     dataSource: data,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

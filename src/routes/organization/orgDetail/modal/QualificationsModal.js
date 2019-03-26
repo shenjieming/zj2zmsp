@@ -216,7 +216,7 @@ const modal = ({
       <Spin spinning={qualificationsLoadingStatus}>
         {visible ? (
           <Form layout="horizontal">
-            <div className="aek-form-head">基本信息</div>
+            <div className="lkc-form-head">基本信息</div>
             <Row>
               <Col span={16}>
                 <FormItem label="证件类型" {...formItemLayout}>

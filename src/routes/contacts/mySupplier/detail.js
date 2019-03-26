@@ -55,7 +55,7 @@ function MySupplierDetail({
       [supplierDetail.registeredArea, supplierDetail.registeredAddress],
       ' ',
     ),
-    '经营范围|fill': <div className="aek-word-break">{supplierDetail.businessScope}</div>,
+    '经营范围|fill': <div className="lkc-word-break">{supplierDetail.businessScope}</div>,
   }
   const rightForm = {
     '联系负责人|fill': supplierDetail.contactName,
@@ -114,7 +114,7 @@ function MySupplierDetail({
     title: '申请',
     visible: applyModalVisible,
     confirmLoading: getLoading('recoverRelation'),
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     onCancel() {
       toAction({ applyModalVisible: false })
     },
@@ -186,9 +186,9 @@ function MySupplierDetail({
     breadLeft: [{ name: 'Breadcrumb' }],
     content: [
       <span>
-        <div className="aek-border-bottom aek-mb10">
-          <div className="aek-border-bottom-left"><p>基本信息</p></div>
-          <div className="aek-border-bottom-right">{getButton()}</div>
+        <div className="lkc-border-bottom lkc-mb10">
+          <div className="lkc-border-bottom-left"><p>基本信息</p></div>
+          <div className="lkc-border-bottom-right">{getButton()}</div>
         </div>
         <Row>
           <Col span={12}>
@@ -200,7 +200,7 @@ function MySupplierDetail({
         </Row>
       </span>,
       <span>
-        <div className="aek-border-bottom aek-mb10">
+        <div className="lkc-border-bottom lkc-mb10">
           <p>企业资质证件</p>
         </div>
         <div>
@@ -241,7 +241,7 @@ function MySupplierDetail({
             <Row>
               <Col
                 span="10"
-                className="aek-text-center"
+                className="lkc-text-center"
                 style={{ padding: '10px', borderRight: '1px dashed #e2e2e2' }}
               >
                 <Progress
@@ -254,7 +254,7 @@ function MySupplierDetail({
                   format={percent => `${(percent / 20).toFixed(1)}`}
                 />
                 <p style={{ margin: '10px' }}>综合服务评分</p>
-                <p className="aek-primary-color">
+                <p className="lkc-primary-color">
                   超越{appraise.overStep}的供应商
                 </p>
               </Col>

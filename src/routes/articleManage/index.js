@@ -44,7 +44,7 @@ function ArticleManage({
             placeholder="请选择栏目"
             treeData={treeList}
             getPopupContainer={() => {
-              const layout = document.querySelector('.aek-layout')
+              const layout = document.querySelector('.lkc-layout')
               if (layout) {
                 return layout
               }
@@ -59,7 +59,7 @@ function ArticleManage({
           <Select
             optionLabelProp="title"
             getPopupContainer={() => {
-              const layout = document.querySelector('.aek-layout')
+              const layout = document.querySelector('.lkc-layout')
               if (layout) {
                 return layout
               }
@@ -108,7 +108,7 @@ function ArticleManage({
       dataIndex: 'index',
       title: '序号',
       width: 50,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record, index) => index + 1,
     },
     {
@@ -149,7 +149,7 @@ function ArticleManage({
       key: 'articleStatus',
       dataIndex: 'articleStatus',
       title: '状态',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render(value) {
         if (value) {
           return '停用'
@@ -181,7 +181,7 @@ function ArticleManage({
       dataIndex: 'relation',
       title: '操作',
       width: 120,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render(value, record, index) {
         // 更改状态
         const statusClick = () => {
@@ -267,12 +267,12 @@ function ArticleManage({
     }
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb style={{ float: 'left' }} routes={routes} />
         <div style={{ float: 'right' }}>
           <Button
-            className="aek-mr10"
+            className="lkc-mr10"
             onClick={saveSord}
           >保存排序</Button>
           <Link to={'/websiteManage/articleManage/detail'}>
@@ -292,7 +292,7 @@ function ArticleManage({
           onChange={handleChange}
           rowKey="articleId"
           loading={getLoading('getArticleList')}
-          rowClassName={(record) => { if (record.articleStatus) { return 'aek-text-disable' } }}
+          rowClassName={(record) => { if (record.articleStatus) { return 'lkc-text-disable' } }}
         />
       </div>
     </div>

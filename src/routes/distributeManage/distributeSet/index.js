@@ -176,7 +176,7 @@ function DistributeSet({
     }),
     rowClassName({ customerOrgId }) {
       if (customerOrgId === selectedCustomerId) {
-        return 'aek-tr-selected'
+        return 'lkc-tr-selected'
       }
       return undefined
     },
@@ -220,9 +220,9 @@ function DistributeSet({
     breadLeft: [{ name: 'Breadcrumb' }],
     otherContent: (
       <div className={`full-content ${style.content}`}>
-        <div className="aek-shadow">
-          <div className="aek-content-title">
-            <div className="aek-title-left">需要分销配送的客户</div>
+        <div className="lkc-shadow">
+          <div className="lkc-content-title">
+            <div className="lkc-title-left">需要分销配送的客户</div>
           </div>
           <div className={style.search}>
             <SearchFormFilter
@@ -259,8 +259,8 @@ function DistributeSet({
           </div>
         </div>
         <div>
-          <div className="aek-content-title">
-            <div className="aek-title-left">
+          <div className="lkc-content-title">
+            <div className="lkc-title-left">
               {selectedCustomerName ? `${selectedCustomerName}拥有的配送商` : '配送商'}
             </div>
           </div>

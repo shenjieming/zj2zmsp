@@ -101,7 +101,7 @@ const advancedForm = ({ tabType }) => {
 const tableColumns = ({ tabType }) => [{
   title: '序号',
   key: 'index',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 50,
   render: (value, row, index) => index + 1,
 },
@@ -149,7 +149,7 @@ const tableColumns = ({ tabType }) => [{
 }, {
   title: '置顶状态',
   dataIndex: 'chanceTopFlag',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   render(text) {
     return text ? '是' : '否'
   },
@@ -159,7 +159,7 @@ const tableColumns = ({ tabType }) => [{
 }, {
   title: '操作',
   dataIndex: 'operation',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   render: (_, { chanceId }) => {
     let url = `/businessExamine/${chanceId}`
     if (tabType === 'all') {

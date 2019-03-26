@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { Form, Modal, Icon } from 'antd'
 import { aekConnect, getBasicFn } from '../../../utils'
-import { ContentLayout, AekForm } from '../../../components'
+import { ContentLayout, LkcForm } from '../../../components'
 import { getFormData } from './data'
 import { typeMenu, act } from './style.less'
 import ModalPrint from './ModalPrint'
@@ -106,8 +106,8 @@ function TabPrint({
             } else if (content.checkFlag === 2) {
               Confirm({
                 content: (<div>
-                  {(!!content.barcodes && !!content.barcodes.length) && <p className="aek-word-break">如下院内码未找到配送信息，请检查是否填写有误(请注意，院内码每行填写就一个)：{content.barcodes.join()}</p>}
-                  {(!!content.deleteBarcodes && !!content.deleteBarcodes.length) && <p className="aek-word-break">如下院内码的配送单已作废，无法打印:{content.deleteBarcodes.join()}</p>}
+                  {(!!content.barcodes && !!content.barcodes.length) && <p className="lkc-word-break">如下院内码未找到配送信息，请检查是否填写有误(请注意，院内码每行填写就一个)：{content.barcodes.join()}</p>}
+                  {(!!content.deleteBarcodes && !!content.deleteBarcodes.length) && <p className="lkc-word-break">如下院内码的配送单已作废，无法打印:{content.deleteBarcodes.join()}</p>}
                   <p>单击确定打印剩余部分院内码</p>
                 </div>),
                 onOk() {
@@ -128,8 +128,8 @@ function TabPrint({
               Modal.error({
                 content: (
                   <div>
-                    {(!!content.barcodes && !!content.barcodes.length) && <p className="aek-word-break">如下院内码未找到配送信息，请检查是否填写有误(请注意，院内码每行填写就一个)：{content.barcodes.join()}</p>}
-                    {(!!content.deleteBarcodes && !!content.deleteBarcodes.length) && <p className="aek-word-break">如下院内码的配送单已作废，无法打印:{content.deleteBarcodes.join()}</p>}
+                    {(!!content.barcodes && !!content.barcodes.length) && <p className="lkc-word-break">如下院内码未找到配送信息，请检查是否填写有误(请注意，院内码每行填写就一个)：{content.barcodes.join()}</p>}
+                    {(!!content.deleteBarcodes && !!content.deleteBarcodes.length) && <p className="lkc-word-break">如下院内码的配送单已作废，无法打印:{content.deleteBarcodes.join()}</p>}
                   </div>
                 ),
               })
@@ -205,9 +205,9 @@ function TabPrint({
   const contentLayoutProps = {
     breadLeft: [{ name: 'Breadcrumb' }],
     content: (
-      <div className="aek-layout-hor">
+      <div className="lkc-layout-hor">
         <div className="left" style={{ paddingRight: 10 }}>
-          <div className="aek-content-title">打印类型选择</div>
+          <div className="lkc-content-title">打印类型选择</div>
           <div
             style={{ marginTop: '-10px' }}
             className={classnames(typeMenu, { [act]: isbarCode })}
@@ -235,8 +235,8 @@ function TabPrint({
           </div>
         </div>
         <div className="right" style={{ paddingLeft: 10 }}>
-          <div className="aek-content-title">{getTitle()}</div>
-          <AekForm
+          <div className="lkc-content-title">{getTitle()}</div>
+          <LkcForm
             style={{ marginTop: 40, width: 700 }}
             getFieldDecorator={getFieldDecorator}
             onSubmit={printView}

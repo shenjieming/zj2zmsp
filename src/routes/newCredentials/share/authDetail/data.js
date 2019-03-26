@@ -19,7 +19,7 @@ const formData = (
   produceOptionsSearch,
   modalTitle,
   authTypeInfoOptions,
-) => [<div className="aek-form-head">基础信息</div>, {
+) => [<div className="lkc-form-head">基础信息</div>, {
   label: '供应商',
   layout: formItemLayout,
   field: 'supplierContactName',
@@ -206,7 +206,7 @@ const formData = (
       children: '长期有效',
     },
   },
-}, <div className="aek-form-head">证件图片信息</div>, {
+}, <div className="lkc-form-head">证件图片信息</div>, {
   label: '授权书',
   layout: formItemLayout,
   view: modalTitle === '查看授权书',

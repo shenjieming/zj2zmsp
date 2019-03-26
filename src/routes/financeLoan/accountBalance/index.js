@@ -25,29 +25,29 @@ function AccountBalance({
     })
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
       <div className="content">
         <Spin spinning={getLoading('getBalance')}>
-          <div className="aek-content-title">账户金额</div>
+          <div className="lkc-content-title">账户金额</div>
           <div>
             <Row >
               <Col span={7}>
                 <Row>
-                  <Col className={`${Style.title}`}>总金额<span className="aek-text-disable" style={{ fontSize: '12px' }}>（单位：元）</span></Col>
+                  <Col className={`${Style.title}`}>总金额<span className="lkc-text-disable" style={{ fontSize: '12px' }}>（单位：元）</span></Col>
                 </Row>
                 <Row>
                   <Col className={`${Style.accountNum}`}>{buttonVisible ? '****' : balance.balance}</Col>
                 </Row>
                 <Row>
-                  <Col className="aek-text-disable" style={{ fontSize: '12px' }}>总金额 = 可用金额 + 冻结金额</Col>
+                  <Col className="lkc-text-disable" style={{ fontSize: '12px' }}>总金额 = 可用金额 + 冻结金额</Col>
                 </Row>
               </Col>
               <Col span={7} className={`${Style['list-center']}`} style={{ paddingLeft: '15px' }}>
                 <Row>
-                  <Col className={`${Style.title}`}>可提现金额<span className="aek-text-disable" style={{ fontSize: '12px' }}>（单位：元）</span></Col>
+                  <Col className={`${Style.title}`}>可提现金额<span className="lkc-text-disable" style={{ fontSize: '12px' }}>（单位：元）</span></Col>
                 </Row>
                 <Row>
                   <Col className={`${Style.accountNum}`}>{buttonVisible ? '****' : balance.canUseAmount}</Col>
@@ -63,7 +63,7 @@ function AccountBalance({
                       }}
                     >提现</Button>
                     <a
-                      className="aek-pl10"
+                      className="lkc-pl10"
                       onClick={() => {
                         drawClick()
                       }}
@@ -74,7 +74,7 @@ function AccountBalance({
               <Col span={7} style={{ paddingLeft: '15px' }}>
                 <Row>
                   <Col className={`${Style.title}`}>冻结金额
-                    <span className="aek-text-disable" style={{ fontSize: '12px' }}>（单位：元）</span>
+                    <span className="lkc-text-disable" style={{ fontSize: '12px' }}>（单位：元）</span>
                     <Tooltip
                       placement="bottom"
                       title={() => (<div><p>冻结金额一般会存在以下情况</p>
@@ -83,7 +83,7 @@ function AccountBalance({
                         <p>3、其他银行相关要求</p>
                         <p>温馨提示：金额冻结具体原因以银行具体通知为准。</p>
                       </div>)}
-                    ><Icon className={`${Style.tip} aek-pl10`} type="question-circle" /></Tooltip>
+                    ><Icon className={`${Style.tip} lkc-pl10`} type="question-circle" /></Tooltip>
                   </Col>
                 </Row>
                 <Row>

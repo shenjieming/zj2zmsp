@@ -53,7 +53,7 @@ class PackageSpecifica extends React.Component {
       visible: modalVisible,
       okText: '保存',
       confirmLoading: buttonLoading,
-      wrapClassName: 'aek-modal',
+      wrapClassName: 'lkc-modal',
       onCancel() {
         handleModalCancel()
       },
@@ -106,7 +106,7 @@ class PackageSpecifica extends React.Component {
         dataIndex: 'packageQuantity',
         title: '包装数量',
         width: 150,
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render: (value, record, index) => (
           <div style={{ verticalAlign: 'middle' }}>
             <div style={{ width: 80, marginRight: 8, display: 'inline-block' }}>
@@ -132,7 +132,7 @@ class PackageSpecifica extends React.Component {
         key: 'packageUnitId',
         dataIndex: 'packageUnitId',
         title: '包装单位',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render: (value, { pscId }, index) => (
           <Select
             value={value}
@@ -180,7 +180,7 @@ class PackageSpecifica extends React.Component {
             }}
           />
         </a>,
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render: (value, record, index) => (<a
           onClick={() => {
             packageList.splice(index, 1)
@@ -197,9 +197,9 @@ class PackageSpecifica extends React.Component {
       <Modal {...modalProp}>
         <Spin spinning={loading}>
           <Alert message="示例：例如某耗材一箱是500套，那么包装数量填“500”，单位选择“箱”即可。" type="info" showIcon />
-          <Row className="aek-mtb10">
+          <Row className="lkc-mtb10">
             <Col span={6}>
-              <div className="aek-from-head">
+              <div className="lkc-from-head">
                 基本信息
               </div>
             </Col>

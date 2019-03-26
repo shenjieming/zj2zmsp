@@ -15,10 +15,10 @@ const traceColumns = formId => [
     title: '配送序号',
     dataIndex: 'index',
     width: 100,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, row, index) => (
       <div>
-        第<span className="aek-orange" style={{ fontWeight: 'bold' }}>
+        第<span className="lkc-orange" style={{ fontWeight: 'bold' }}>
           {index + 1}
         </span>次配送
       </div>
@@ -28,13 +28,13 @@ const traceColumns = formId => [
     title: '状态',
     dataIndex: 'formStatus',
     width: 100,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: text => (text === 2 ? '配送中' : '已验收'),
   },
   {
     title: '配送信息',
     key: 'deliverInfo',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, row) => (
       <Link to={`${formId}/logistics/${row.formId}`}>{renderDeliveryInfo(row)}</Link>
     ),
@@ -42,18 +42,18 @@ const traceColumns = formId => [
   {
     title: '配送单号',
     dataIndex: 'formNo',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, row) => <Link to={`${formId}/deliveryDetail/${row.formId}`}>{row.formNo}</Link>,
   },
   {
     title: '发货人',
     dataIndex: 'senderName',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '发货时间',
     dataIndex: 'senderTime',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
 ]
 const materialColumns = [
@@ -66,7 +66,7 @@ const materialColumns = [
         return {
           children: text,
           props: {
-            className: 'aek-disabled',
+            className: 'lkc-disabled',
           },
         }
       }
@@ -78,12 +78,12 @@ const materialColumns = [
     dataIndex: 'materialsSku',
     key: 'materialsSku',
     width: 300,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '采购数量',
     dataIndex: 'purchaseQty',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record) => (
       <div>
         {value}
@@ -97,7 +97,7 @@ const materialColumns = [
   {
     title: '已配送数量',
     dataIndex: 'deliveredQty',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record) => (
       <div>
         {value}
@@ -108,7 +108,7 @@ const materialColumns = [
   {
     title: '待配送数量',
     dataIndex: 'waitDeliverQty',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record) => (
       <div>
         {value}
@@ -119,13 +119,13 @@ const materialColumns = [
   {
     title: '单价',
     dataIndex: 'materialsPrice',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
     render: text => `￥${text}`,
   },
   {
     title: '金额',
     dataIndex: 'materialsAmount',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
     render: text => `￥${text}`,
   },
 ]

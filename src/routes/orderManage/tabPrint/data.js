@@ -189,7 +189,7 @@ const getFormData = ({
           },
         },
       },
-    }, <Row className="aek-mb20">
+    }, <Row className="lkc-mb20">
       <Col offset={4}>
       推荐使用80MM*50MM标签纸进行打印
       </Col>
@@ -247,7 +247,7 @@ const getFormData = ({
     options: {
       // rules: [{ required: true, message: '请选择有效期' }],
     },
-    component: { name: 'AekDatePicker' },
+    component: { name: 'LkcDatePicker' },
   }, {
     label: '序列号SN',
     layout,

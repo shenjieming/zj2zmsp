@@ -38,7 +38,7 @@ const ViewModal = ({ viewCurrentData, viewModalVisible, dispatchAction, getLoadi
     width: 800,
     footer: false,
     maskClosable: true,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const plaintData = {
     '物资编码|fill': materialsCode,

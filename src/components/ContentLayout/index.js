@@ -79,7 +79,7 @@ function ContentLayout({
     } else if (contentType === 'card') {
       return (
         <Card
-          className="aek-card"
+          className="lkc-card"
           bordered={false}
           noHovering
           key={`card${idx}`}
@@ -91,10 +91,10 @@ function ContentLayout({
   })
   const main = (
     leftContent ?
-      (<div className="aek-layout-hor">
+      (<div className="lkc-layout-hor">
         <div className="left">{leftContent}</div>
         <div className="right">
-          <div className="aek-layout">
+          <div className="lkc-layout">
             {bread()}
             {getContent(content)}
             {otherContent}
@@ -102,7 +102,7 @@ function ContentLayout({
           </div>
         </div>
       </div>) :
-      (<div className="aek-layout">
+      (<div className="lkc-layout">
         {bread()}
         {getContent(content)}
         {otherContent}

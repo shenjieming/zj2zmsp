@@ -26,7 +26,7 @@ const OtherDetailModal = ({
   const addModalProp = {
     title: modalTitle,
     visible: otherDetailVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     width: 600,
     maskClosable: false,
     onCancel() {

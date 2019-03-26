@@ -72,7 +72,7 @@ const AddRole = ({
     },
   }
   return (
-    <Modal {...modalProps} className={Styles['aek-add-role']}>
+    <Modal {...modalProps} className={Styles['lkc-add-role']}>
       <Spin spinning={!!effects['personAdminDetail/postPersonRole']}>
         <Form>
           <FormItem {...FORM_ITEM_LAYOUT} label="所属机构">

@@ -487,7 +487,7 @@ function IndexPage({
     getLoading,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <div>
           <Breadcrumb />
@@ -496,11 +496,11 @@ function IndexPage({
       <div className="content">
         <Spin spinning={getLoading('queryDetailPage', 'stopOrganization')}>
           <div className={Style.topContent}>
-            <div className={`aek-content-title ${Style.headline}`}>
-              <div className="aek-title-left">基本信息</div>
-              <div className="aek-title-right">
+            <div className={`lkc-content-title ${Style.headline}`}>
+              <div className="lkc-title-left">基本信息</div>
+              <div className="lkc-title-right">
                 {!(['03', '04', '07'].indexOf(currentOrgDetail.orgTypeCode) < 0) && (
-                  <a className="aek-red aek-mr20" onClick={showChangeType}>
+                  <a className="lkc-red lkc-mr20" onClick={showChangeType}>
                     更改机构类型
                   </a>
                 )}
@@ -535,7 +535,7 @@ function IndexPage({
                 )}
               </div>
             </div>
-            <div className="aek-mt20">
+            <div className="lkc-mt20">
               <Row>
                 <Col span={12}>
                   <PlainForm size={1} data={leftData} />

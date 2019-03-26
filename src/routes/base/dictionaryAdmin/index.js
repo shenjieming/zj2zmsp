@@ -73,7 +73,7 @@ function DictionaryAdmin({ dictionaryAdmin, loading }) {
     }),
     rowClassName: ({ dicStatus }) => {
       if (dicStatus) {
-        return 'aek-text-disable'
+        return 'lkc-text-disable'
       }
       return undefined
     },

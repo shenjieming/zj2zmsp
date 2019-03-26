@@ -50,11 +50,11 @@ const PrintModal = ({
     <div>
       <Spin spinning={getLoading('printCheckOrder')}>
         <div className={styles.listTitle}>
-          <div className="aek-print-title aek-fl" style={{ display: 'inline-block' }}>
+          <div className="lkc-print-title lkc-fl" style={{ display: 'inline-block' }}>
             {orgName}（验收单）
             <img src={PicImg[formType]} className={styles.icon} alt="图片" />
           </div>
-          <div className="aek-fr" style={{ height: 100 }}>
+          <div className="lkc-fr" style={{ height: 100 }}>
             {printDetailData.formNo ? <Barcode height={60} value={printDetailData.formNo} /> : ''}
           </div>
         </div>
@@ -82,7 +82,7 @@ const PrintModal = ({
   const modalOpts = {
     title: '打印预览',
     visible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     onCancel() {
       dispatchAction({
         payload: {

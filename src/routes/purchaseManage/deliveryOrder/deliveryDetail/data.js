@@ -8,7 +8,7 @@ const genColumns = ({ formType }) =>
       title: '序号',
       dataIndex: 'index',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, record, idx) => idx + 1,
     },
     {
@@ -51,7 +51,7 @@ const genColumns = ({ formType }) =>
     {
       title: '单价',
       dataIndex: 'materialsPrice',
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       width: 100,
       key: 'materialsPrice',
       render: text => <span>¥ {text}</span>,
@@ -61,7 +61,7 @@ const genColumns = ({ formType }) =>
       dataIndex: 'concatPrice',
       key: 'concatPrice',
       width: 100,
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: (text, { deliverQty, materialsPrice }) => (
         <span>{formatNum(new Decimal(materialsPrice).times(deliverQty))}</span>
       ),

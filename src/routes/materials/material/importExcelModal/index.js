@@ -52,7 +52,7 @@ const ImportModal = ({
     },
     width: 600,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const downLoadFile = () => {
     window.open(IMPORT_TEMPLATE_URL)
@@ -102,7 +102,7 @@ const ImportModal = ({
             <a onClick={downLoadFile}> 下载模板</a>
           </div>
         </div>
-        <div className="aek-text-disable">
+        <div className="lkc-text-disable">
           <p>备注：</p>
           <p>1、导入功能仅针对新增信息，不覆盖已存在信息。</p>
           <p>2、标“*”的栏位是必填项，不能为空。</p>

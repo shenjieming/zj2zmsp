@@ -73,33 +73,33 @@ const Detail = ({ namespace, loading, type }) => {
       dataIndex: 'index',
       key: 'index',
       width: 50,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, _, idx) => idx + 1,
     },
     {
       title: '贷款到期时间',
       dataIndex: 'loanExpireTime',
       key: 'loanExpireTime',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
     },
     {
       title: '支付申请单号',
       dataIndex: 'formNo',
       key: 'formNo',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
     },
     {
       title: '应还本金',
       dataIndex: 'grantAmount',
       key: 'grantAmount',
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: text => !!text && formatNum(text),
     },
     {
       title: '操作',
       dataIndex: 'action',
       key: 'action',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, { formId }) => <CheckModal formId={formId} />,
     },
   ]
@@ -113,16 +113,16 @@ const Detail = ({ namespace, loading, type }) => {
     rowKey: 'formId',
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
       <div className="full-content" style={{ background: 'transparent' }}>
-        <Card className="aek-card">{genHeadStatus(...statusText[formStatus || 0])}</Card>
-        <Card className="aek-card" title="还款信息">
+        <Card className="lkc-card">{genHeadStatus(...statusText[formStatus || 0])}</Card>
+        <Card className="lkc-card" title="还款信息">
           <PlainForm data={plainData} size={3} />
         </Card>
-        <Card className="aek-card" title="所还贷款">
+        <Card className="lkc-card" title="所还贷款">
           <Table {...tableParam} />
           {loanOrderList &&
             loanOrderList.length > 0 && (
@@ -135,8 +135,8 @@ const Detail = ({ namespace, loading, type }) => {
                   fontWeight: 'bold',
                 }}
               >
-                <span className="aek-ml30">共选择入库单: {totalQty} 笔</span>
-                <span className="aek-ml30">金额： {totalAmount} 元</span>
+                <span className="lkc-ml30">共选择入库单: {totalQty} 笔</span>
+                <span className="lkc-ml30">金额： {totalAmount} 元</span>
               </div>
             )}
         </Card>

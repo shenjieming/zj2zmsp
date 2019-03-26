@@ -148,7 +148,7 @@ function Other({
       render: (value, record) => { // 先判断是否长期有效
         let dom
         const replace = () => (<span>
-          {record.replacedFlag ? <p className="aek-red">(已换证,<a onClick={() => {
+          {record.replacedFlag ? <p className="lkc-red">(已换证,<a onClick={() => {
             const type = record.certificateType === 6 ? '服务承诺书' : '廉政协议书'
             dispatchAction({
               payload: {
@@ -172,7 +172,7 @@ function Other({
           const oldDate = new Date(new Date(value).getTime() + (24 * 60 * 60 * 1000)).getTime()
           const todayDate = new Date().getTime()
           if (oldDate < todayDate) {
-            dom = <span className="aek-text-disable">{`${record.validDateStart}至${record.validDateEnd}`}<span className="aek-red">（已过期）</span></span>
+            dom = <span className="lkc-text-disable">{`${record.validDateStart}至${record.validDateEnd}`}<span className="lkc-red">（已过期）</span></span>
           } else {
             dom = <span >{`${record.validDateStart}至${record.validDateEnd}`}</span>
           }
@@ -193,7 +193,7 @@ function Other({
       dataIndex: 'operation',
       title: '操作',
       width: 150,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => {
         const menuProps = {
           status: record.certificateStatus,

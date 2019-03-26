@@ -200,7 +200,7 @@ const IndexPage = ({ billQuery, loading }) => {
   }
 
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <div style={{ display: 'inline-block', float: 'left' }}>
           <Breadcrumb />
@@ -230,7 +230,7 @@ const IndexPage = ({ billQuery, loading }) => {
         <Spin spinning={getLoading('getBillList')}>
           <Table {...tableParam} />
           {billList.length > 0 && (
-            <div className="aek-mt20 aek-fr">
+            <div className="lkc-mt20 lkc-fr">
               <Pagination {...paginationProps} />,
             </div>
           )}

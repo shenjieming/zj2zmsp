@@ -18,7 +18,7 @@ const ModalCertificate = ({ certificateVisible, loading, toAction, certificateDa
     onCancel() {
       toAction({ certificateVisible: false })
     },
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     footer: false,
   }
   const {

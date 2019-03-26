@@ -93,7 +93,7 @@ function MySupplier({
       resetFields()
       toAction({ modalInitValue: {} })
     },
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     onCancel() {
       toAction({ editModalVisible: false })
     },
@@ -152,7 +152,7 @@ function MySupplier({
       title: '申请',
       visible: applyModalVisible,
       confirmLoading: getLoading('applyAddSuppliers'),
-      wrapClassName: 'aek-modal',
+      wrapClassName: 'lkc-modal',
       onCancel() {
         toAction({ applyModalVisible: false })
       },

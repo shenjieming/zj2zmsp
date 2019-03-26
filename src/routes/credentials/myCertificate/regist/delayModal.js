@@ -27,7 +27,7 @@ const RegistDelayModal = ({
   const addModalProp = {
     title: modalTitle,
     visible: registDelaylVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel() {
       handleCancel()

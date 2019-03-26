@@ -158,7 +158,7 @@ const CompanyModal = ({
       resetFields()
       handleCancel()
     },
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: true,
     closable: true,
     onOk() {

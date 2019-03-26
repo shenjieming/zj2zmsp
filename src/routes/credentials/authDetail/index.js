@@ -30,7 +30,7 @@ const AuthDetailModal = ({
   const addModalProp = {
     title: modalTitle,
     visible: authDetailVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel() {
       handleCancel()

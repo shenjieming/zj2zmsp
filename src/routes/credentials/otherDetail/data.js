@@ -15,7 +15,7 @@ const formData = (
   otherCustOptions,
   checkedLongchange,
   otherOptionsSearch,
-) => [<div className="aek-form-head">基础信息</div>, {
+) => [<div className="lkc-form-head">基础信息</div>, {
   label: '证件类型',
   layout: formItemLayout,
   field: 'certificateType',
@@ -139,7 +139,7 @@ const formData = (
       children: '长期有效',
     },
   },
-}, <div className="aek-form-head">证件图片信息</div>, {
+}, <div className="lkc-form-head">证件图片信息</div>, {
   label: '证件',
   layout: formItemLayout,
   view: modalTitle === '查看服务承诺书' || modalTitle === '查看廉政协议书',

@@ -206,7 +206,7 @@ const getDetailData = (detailPageData, personalColumns) => {
   let purchaseRemarkData = {}
   if (purchaseRemark) {
     purchaseRemarkData = {
-      '采购备注|fill': <span className="aek-word-break">{purchaseRemark}</span>,
+      '采购备注|fill': <span className="lkc-word-break">{purchaseRemark}</span>,
     }
   }
   const commonData = {
@@ -215,8 +215,8 @@ const getDetailData = (detailPageData, personalColumns) => {
     联系电话: senderPhone,
     发货时间: senderTime,
     '发货备注|colspan-2': (
-      <span className="aek-word-break">
-        <span className="aek-mr-20">合计发货数量 （{formQty}）</span>
+      <span className="lkc-word-break">
+        <span className="lkc-mr-20">合计发货数量 （{formQty}）</span>
         {deliverRemark}
       </span>
     ),

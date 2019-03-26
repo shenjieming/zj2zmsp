@@ -65,7 +65,7 @@ const RecruitManage = ({ recruitManage, loading }) => {
           <Select
             optionLabelProp="title"
             getPopupContainer={() => {
-              const layout = document.querySelector('.aek-layout')
+              const layout = document.querySelector('.lkc-layout')
               if (layout) {
                 return layout
               }
@@ -103,7 +103,7 @@ const RecruitManage = ({ recruitManage, loading }) => {
         title: '序号',
         key: 'index',
         width: '50px',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render: (text, record, index) => index + 1,
       },
       {
@@ -117,13 +117,13 @@ const RecruitManage = ({ recruitManage, loading }) => {
       {
         title: '状态',
         dataIndex: 'hirePostStatus',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render: value => (value ? '停用' : '启用'),
       },
       {
         title: '操作',
         key: 'oprate',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render: (_, record) => (
           <span>
             <a
@@ -133,7 +133,7 @@ const RecruitManage = ({ recruitManage, loading }) => {
             >
               编辑
             </a>
-            <span className="aek-fill-15" />
+            <span className="lkc-fill-15" />
             <a
               onClick={() => {
                 changeStatus(record.hireId, record.hirePostStatus)
@@ -150,7 +150,7 @@ const RecruitManage = ({ recruitManage, loading }) => {
     rowKey: 'hireId',
     rowClassName: (record) => {
       if (record.hirePostStatus) {
-        return 'aek-text-disable'
+        return 'lkc-text-disable'
       }
       return undefined
     },
@@ -180,10 +180,10 @@ const RecruitManage = ({ recruitManage, loading }) => {
     },
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
-        <div className="aek-fr">
+        <div className="lkc-fr">
           <Button
             type="primary"
             onClick={() => {

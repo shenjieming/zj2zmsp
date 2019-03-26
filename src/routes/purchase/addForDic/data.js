@@ -86,7 +86,7 @@ const formData = ({ poduceFactoryArr, certificateArr, categoryTree, certificateS
 const columns = openForm => [{
   title: '序号',
   dataIndex: 'order',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 60,
 }, {
   title: '平台标准物料编码',
@@ -99,7 +99,7 @@ const columns = openForm => [{
       logoUrl="nil"
       otherInfo={[
         materialsName,
-        <span className="aek-text-disable">{materialsCommonName}</span>,
+        <span className="lkc-text-disable">{materialsCommonName}</span>,
       ]}
     />)
   },
@@ -121,7 +121,7 @@ const columns = openForm => [{
 }, {
   title: '操作',
   dataIndex: 'catalogFlag',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 120,
   render: (catalogFlag, all) => (
     catalogFlag

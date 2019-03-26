@@ -35,7 +35,7 @@ const getOption = (materialsUnitText, arr = [], addPack) => {
           {materialsUnitText}
           <span
             style={{ float: 'right' }}
-            className="aek-text-disable"
+            className="lkc-text-disable"
           >
             1
           </span>
@@ -54,7 +54,7 @@ const getOption = (materialsUnitText, arr = [], addPack) => {
           {itm.packageUnitText}
           <span
             style={{ float: 'right' }}
-            className="aek-text-disable"
+            className="lkc-text-disable"
           >
             {`${itm.packageQuantity}${materialsUnitText}`}
           </span>
@@ -105,7 +105,7 @@ const columns = ({ selectId, packChange, itemAdd, addPack, changeArr, addArr, de
       logoUrl="nil"
       otherInfo={[
         materialsName,
-        <span className="aek-text-disable">{materialsCommenName}</span>,
+        <span className="lkc-text-disable">{materialsCommenName}</span>,
       ]}
     />)
   },
@@ -128,7 +128,7 @@ const columns = ({ selectId, packChange, itemAdd, addPack, changeArr, addArr, de
 }, {
   title: '采购数量',
   dataIndex: 'purchaseQty',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 100,
   render: (purchaseQty, all) => getComponent({
     name: 'InputNumber',
@@ -172,7 +172,7 @@ const columns = ({ selectId, packChange, itemAdd, addPack, changeArr, addArr, de
 }, {
   title: '单位',
   dataIndex: 'packageUnit',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 120,
   render: (packageUnit, { materialsUnit, materialsUnitText, pscId }) => (
     <span className="hover-select">
@@ -220,7 +220,7 @@ const columns = ({ selectId, packChange, itemAdd, addPack, changeArr, addArr, de
 }, {
   title: '价格',
   dataIndex: 'price',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
   width: 110,
   render: (price, { pscId }) => {
     const findItem = getTreeItem(changeArr, 'pscId', pscId)
@@ -239,7 +239,7 @@ const cartItemColumns = ({ supplierOrgName, itemAdd, deleteCart, addArr }) => [{
   dataIndex: 'materialsName',
   render(materialsName, { materialsSku, materialsCommonName, disabled }) {
     return {
-      props: disabled ? { className: 'aek-disabled' } : undefined,
+      props: disabled ? { className: 'lkc-disabled' } : undefined,
       children: (
         <div style={disabled ? { marginLeft: 16 } : undefined}>
           <CustmTabelInfo
@@ -247,7 +247,7 @@ const cartItemColumns = ({ supplierOrgName, itemAdd, deleteCart, addArr }) => [{
             otherInfo={[
               materialsName,
               materialsSku,
-              <span className="aek-text-disable">{materialsCommonName}</span>,
+              <span className="lkc-text-disable">{materialsCommonName}</span>,
             ]}
           />
         </div>
@@ -286,7 +286,7 @@ const cartItemColumns = ({ supplierOrgName, itemAdd, deleteCart, addArr }) => [{
 }, {
   title: '',
   dataIndex: 'materialsPrice',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
   width: 120,
   render: (materialsPrice, { transformValue }) => {
     const retPrice = new Decimal(materialsPrice)
@@ -295,7 +295,7 @@ const cartItemColumns = ({ supplierOrgName, itemAdd, deleteCart, addArr }) => [{
 }, {
   title: '',
   dataIndex: 'operation',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
   width: 60,
   render: (_, { pscId, supplierOrgId }) => (
     <Popconfirm

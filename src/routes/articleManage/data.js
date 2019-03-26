@@ -42,7 +42,7 @@ const modalFormData = ({
         placeholder: '请选择栏目',
         treeData: treeList,
         getPopupContainer: () => {
-          const layout = document.querySelector('.aek-layout')
+          const layout = document.querySelector('.lkc-layout')
           if (layout) {
             return layout
           }
@@ -130,7 +130,7 @@ const modalFormData = ({
       },
     },
   },
-    (<div className="aek-content-title" style={{ marginBottom: '20px' }}>SEO设置</div>),
+    (<div className="lkc-content-title" style={{ marginBottom: '20px' }}>SEO设置</div>),
     {
       label: '栏目标题',
       layout: formItemLayout,

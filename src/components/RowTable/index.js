@@ -24,14 +24,14 @@ function RowTable({
       title: '字段',
       dataIndex: 'title',
       key: 'title',
-      className: 'aek-bg-columns',
+      className: 'lkc-bg-columns',
       ...columns[0],
     }
     const mainCol = dataSource.map((item, index) => ({
       title: titleRender(item, index),
       dataIndex: `ORDER_${index}`,
       key: `ORDER_${index}`,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       ...columns[index + 1],
     }))
     return [firstCol].concat(mainCol)

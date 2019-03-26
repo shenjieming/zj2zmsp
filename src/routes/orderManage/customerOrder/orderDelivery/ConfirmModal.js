@@ -9,14 +9,14 @@ const ConfirmModal = ({ confirmVisible, confirmfunc: { onOk, onCancel } }) => {
     visible: confirmVisible,
     onCancel,
     width: 500,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     footer: false,
     maskClosable: false,
   }
   return (
     <Modal {...modalOpts}>
       <div className={style.modalInfo}>
-        <Icon className="aek-blue" type="check-circle" />
+        <Icon className="lkc-blue" type="check-circle" />
         <p>您已发货成功，请打印配送单随货送至医院</p>
       </div>
       <div className={style.modalButton}>

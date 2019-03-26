@@ -5,11 +5,11 @@ import { Input, Table, Menu, Dropdown, Icon } from 'antd'
 import { Link } from 'dva/router'
 import Breadcrumb from '../../components/Breadcrumb'
 import SearchForm from '../../components/SearchFormFilter'
-import AekTable from '../../components/AekTable'
+import LkcTable from '../../components/LkcTable'
 
 
 function SupplyCatalogue({ supplyCatalogue, effects, dispatch, routes, user }) {
-  const { searchData, dataSource, pagination, aekTableColumns = [] } = supplyCatalogue
+  const { searchData, dataSource, pagination, LkcTableColumns = [] } = supplyCatalogue
   const searchformPorps = {
     components: [
       {
@@ -38,7 +38,7 @@ function SupplyCatalogue({ supplyCatalogue, effects, dispatch, routes, user }) {
       dataIndex: 'index',
       title: '序号',
       width: 50,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record, index) => index + 1,
     },
     {
@@ -71,7 +71,7 @@ function SupplyCatalogue({ supplyCatalogue, effects, dispatch, routes, user }) {
       dataIndex: 'operation',
       title: '操作',
       width: 100,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => (
         <Link to={`/supplyCatalogue/detail/${record.customerOrgId}`}>查看目录</Link>
       ),
@@ -135,7 +135,7 @@ function SupplyCatalogue({ supplyCatalogue, effects, dispatch, routes, user }) {
    */
   // const getTableColumns = () => {
   //   const retArr = []
-  //   aekTableColumns.forEach((items) => {
+  //   LkcTableColumns.forEach((items) => {
   //     const { dataIndex, key } = items
   //     arr.forEach((item) => {
   //       const storageKey = dataIndex || key
@@ -152,8 +152,8 @@ function SupplyCatalogue({ supplyCatalogue, effects, dispatch, routes, user }) {
   //   return retArr
   // }
 
-  // const aekTableProps = {
-  //   columns: aekTableColumns.length ? getTableColumns() : arr,
+  // const LkcTableProps = {
+  //   columns: LkcTableColumns.length ? getTableColumns() : arr,
   //   dataSource: [
   //     {
   //       name: '张三',
@@ -171,14 +171,14 @@ function SupplyCatalogue({ supplyCatalogue, effects, dispatch, routes, user }) {
   //     dispatch({
   //       type: 'supplyCatalogue/updateState',
   //       payload: {
-  //         aekTableColumns: data,
+  //         LkcTableColumns: data,
   //       },
   //     })
   //   },
   // }
 
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb routes={routes} />
       </div>
@@ -193,7 +193,7 @@ function SupplyCatalogue({ supplyCatalogue, effects, dispatch, routes, user }) {
           loading={!!effects['supplyCatalogue/getCustomerList']}
           rowKey="customerOrgId"
         />
-        {/* <AekTable {...aekTableProps} /> */}
+        {/* <LkcTable {...LkcTableProps} /> */}
       </div>
     </div>
   )

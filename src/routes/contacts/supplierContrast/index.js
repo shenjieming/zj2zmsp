@@ -76,7 +76,7 @@ function SupplierContrast({ supplierContrast, effects, dispatch, routes }) {
       title: '序号',
       dataIndex: 'index',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 30,
       render: (value, record, index) => index + 1,
     },
@@ -94,7 +94,7 @@ function SupplierContrast({ supplierContrast, effects, dispatch, routes }) {
       title: '对照状态',
       dataIndex: 'comparisonStatus',
       key: 'comparisonStatus',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value) => {
         if (value === 2) {
           return '已对照'
@@ -106,7 +106,7 @@ function SupplierContrast({ supplierContrast, effects, dispatch, routes }) {
       title: '操作',
       dataIndex: 'operation',
       key: 'operation',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => {
         if (record.comparisonStatus === 2) {
           return <a onClick={() => { handleClick(true, record) }}>重新对照</a>
@@ -133,7 +133,7 @@ function SupplierContrast({ supplierContrast, effects, dispatch, routes }) {
     orgNameList,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Bread routes={routes} />
       </div>

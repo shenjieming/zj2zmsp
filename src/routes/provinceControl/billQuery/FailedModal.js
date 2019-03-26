@@ -89,7 +89,7 @@ const FailedModal = ({ visible, onCancel, loading, failedList, repeatSend }) => 
       title: '单价',
       dataIndex: 'stockInPrice',
       key: 'stockInPrice',
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       width: 80,
       render: text => <span>￥ {text}</span>,
     },
@@ -98,7 +98,7 @@ const FailedModal = ({ visible, onCancel, loading, failedList, repeatSend }) => 
       dataIndex: 'itemAmount',
       key: 'itemAmount',
       width: 80,
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: text => <span>￥ {text}</span>,
     },
     {
@@ -152,7 +152,7 @@ const FailedModal = ({ visible, onCancel, loading, failedList, repeatSend }) => 
       <Alert
         message="如下明细信息上传至采购平台失败，请查看错误原因，并逐个进行处理，处理完成后点击重发按钮，我们会将信息重发至省平台"
         type="warning"
-        className="aek-mb20"
+        className="lkc-mb20"
       />
       <Table {...tableParam} />
     </Modal>

@@ -55,7 +55,7 @@ const PrintPurchase = ({ purchaseListInfo, visible, hideHandler, getLoading }) =
       <div className={styles.iconWrap}>
         <div className={styles.listTitle}>
           <div
-            className="aek-print-title"
+            className="lkc-print-title"
             style={{ top: '50%', position: 'absolute', transform: 'translateY(-50%)' }}
           >
             {purchaseListInfo.customerOrgName}(采购单)

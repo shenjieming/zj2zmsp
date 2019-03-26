@@ -95,7 +95,7 @@ function IndexPage({ certificate, loading, registTypeList }) {
         payload: { current, pageSize },
       })
     }, pagination),
-    rowClassName: ({ certificateStatus }) => (certificateStatus ? 'aek-text-disable' : ''),
+    rowClassName: ({ certificateStatus }) => (certificateStatus ? 'lkc-text-disable' : ''),
     rowKey: 'certificateId',
     scroll: { x: 1150 },
   }
@@ -231,10 +231,10 @@ function IndexPage({ certificate, loading, registTypeList }) {
     registTypeList,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
-        <div className="aek-fr">
+        <div className="lkc-fr">
           {checkedArr.length > 1 && (
             <Dropdown overlay={menu} disabled={checkedArr.length === 0} trigger={['click']}>
               <Button type="primary" style={{ marginRight: 15 }}>

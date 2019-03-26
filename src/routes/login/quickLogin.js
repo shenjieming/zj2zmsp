@@ -64,7 +64,7 @@ class QuickLogin extends React.Component {
         <div>
           {captchaClearIcon}
           <CountDown
-            className="aek-text-disable"
+            className="lkc-text-disable"
             start={60}
             end={0}
             duration={60}
@@ -96,7 +96,7 @@ class QuickLogin extends React.Component {
           })
         }}
       >
-        <div className="aek-pt15">
+        <div className="lkc-pt15">
           {getFieldDecorator(MOBILE, {
             validateFirst: true,
             validateTrigger: false,
@@ -131,7 +131,7 @@ class QuickLogin extends React.Component {
             />,
           )}
         </div>
-        <div className="aek-pt15">
+        <div className="lkc-pt15">
           {getFieldDecorator(CAPTCHA, {
             validateFirst: true,
             rules: [
@@ -168,7 +168,7 @@ class QuickLogin extends React.Component {
         <div style={{ paddingTop: 5 }}>
           <Link to="/regist">立即注册</Link>
         </div>
-        <div className="aek-mtb20">
+        <div className="lkc-mtb20">
           <Button
             type="primary"
             htmlType="submit"

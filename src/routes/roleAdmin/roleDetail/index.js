@@ -44,7 +44,7 @@ const RoleDetail = ({ dispatch, routes, roleDetail, loading }) => {
   const removeUserHandler = (userId) => {
     confirm({
       title: '确定要将该用户从此角色移除吗？',
-      content: <span className="aek-red">移除后，该用户将失去此角色的所有权限！</span>,
+      content: <span className="lkc-red">移除后，该用户将失去此角色的所有权限！</span>,
       onOk() {
         dispatch({ type: 'roleDetail/removeUser', payload: { roleId, userId } })
       },
@@ -113,12 +113,12 @@ const RoleDetail = ({ dispatch, routes, roleDetail, loading }) => {
     searchHandler,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
         {roleType ?
           '' :
-          <div className="aek-fr" style={{ display: 'inline-block' }}>
+          <div className="lkc-fr" style={{ display: 'inline-block' }}>
             {
               roleStatus ?
                 <a onClick={() => { changeStatus(false) }}><Icon type="minus-circle-o" /> 启用</a> :
@@ -128,14 +128,14 @@ const RoleDetail = ({ dispatch, routes, roleDetail, loading }) => {
         }
       </div>
       <div className="content">
-        <div className="aek-content-title">角色详情</div>
+        <div className="lkc-content-title">角色详情</div>
         <Spin spinning={getLoading('getDetail', 'updateRoleState')}>
           <div className={Style.topContent}>
-            <p className="aek-mb-10">
+            <p className="lkc-mb-10">
               {roleName}
               <span
                 style={{ marginLeft: '20px' }}
-                className="aek-status-on"
+                className="lkc-status-on"
               >
                 {roleStatus ? '停用中' : '启用中'}
               </span>

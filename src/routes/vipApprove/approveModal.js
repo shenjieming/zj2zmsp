@@ -67,7 +67,7 @@ const ApproveModal = ({
     onOk: okHandler,
     maskClosable: false,
     width: 700,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   if (modalType === 'view') {
     modalOpts.footer = null
@@ -133,7 +133,7 @@ const ApproveModal = ({
         initialValue: undefined,
       },
       component: {
-        name: 'AekSelect',
+        name: 'LkcSelect',
         props: {
           url: '/system/dicValue/dicKey',
           optionConfig: { idStr: 'dicValue', nameStr: 'dicValueText' },

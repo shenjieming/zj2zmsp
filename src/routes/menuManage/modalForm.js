@@ -41,7 +41,7 @@ const ModalForm = ({
     confirmLoading: modalLoading,
     onCancel,
     afterClose: resetFields,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const data = [{
     label: '功能名称',

@@ -77,7 +77,7 @@ const RoleModal = ({
     onOk: okHandler,
     maskClosable: false,
     width: 700,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const formItemLayout = {
     labelCol: { span: 5 },

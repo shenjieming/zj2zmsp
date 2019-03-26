@@ -27,7 +27,7 @@ const ModalStock = ({
     maskClosable: false,
     footer: null,
     onCancel,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     width: 1000,
   }
   const tableProps = {

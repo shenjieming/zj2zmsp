@@ -5,7 +5,7 @@ import { stringify } from 'qs'
 import { Link } from 'dva/router'
 import { segmentation } from '../../utils'
 import Styles from './index.less'
-import Logo from '../../assets/aek-org-logo.png'
+import Logo from '../../assets/lkc-org-logo.png'
 
 const propTypes = {
   logoUrl: PropTypes.string,
@@ -49,7 +49,7 @@ const CustmTableInfo = ({
     if (logoUrl !== 'nil' && isShowContact) {
       if (contactName || contactPhone) {
         return (
-          <p className="aek-text-help">
+          <p className="lkc-text-help">
             <Icon type="phone" />
             {segmentation([contactName, contactPhone])}
             {contactEditClick && (
@@ -93,12 +93,12 @@ const CustmTableInfo = ({
         ) : (
           <p>{orgName}</p>
         )}
-        {intranetOrgName && <p className="aek-text-help">{`内网名称：${intranetOrgName}`}</p>}
-        {address && <p className="aek-text-help">{address}</p>}
+        {intranetOrgName && <p className="lkc-text-help">{`内网名称：${intranetOrgName}`}</p>}
+        {address && <p className="lkc-text-help">{address}</p>}
         {getCustomInfo()}
         {otherInfo && getOtherInfo(otherInfo)}
         {status === 2 && (
-          <p className="aek-text-disable">
+          <p className="lkc-text-disable">
             <Icon type="info-circle" style={{ color: '#108ee9' }} />
             对方已解除和你的往来关系
           </p>

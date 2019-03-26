@@ -14,7 +14,7 @@ const getOpera = (status, handleMenuClick, customerDetail) => [
     title: '操作',
     width: 100,
     fixed: 'right',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record) => {
       /** @description 省立同德不允许维护条码
        * true 允许维护；false 不允许维护
@@ -221,7 +221,7 @@ const tableColumns = ({ tabIndex, handleMenuClick, customerDetail }) => {
               }}
             >{value || 0}</a>
             <a
-              className="aek-pl10"
+              className="lkc-pl10"
               onClick={() => {
                 dispatchAction({
                   type: 'supplyCatalogueDetail/updateState',
@@ -260,7 +260,7 @@ const tableColumns = ({ tabIndex, handleMenuClick, customerDetail }) => {
               }}
             >{record.barcodeNumber || 0}</a>
             <a
-              className="aek-pl10"
+              className="lkc-pl10"
               onClick={() => {
                 dispatchAction({
                   type: 'supplyCatalogueDetail/updateState',

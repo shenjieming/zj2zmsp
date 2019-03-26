@@ -1,7 +1,7 @@
 import React from 'react'
 import { Avatar, Upload } from 'antd'
 import { includes } from 'lodash'
-import Logo from '../../assets/aek-org-logo.png'
+import Logo from '../../assets/lkc-org-logo.png'
 import { IMG_COMPRESS } from '../../utils/config'
 
 const leftData = ({ data, LogoProps }) => {
@@ -66,7 +66,7 @@ const leftData = ({ data, LogoProps }) => {
             style={{ float: 'left' }}
           />
           <div style={{ float: 'left' }}>
-            <Upload {...LogoProps} className="aek-plr10">
+            <Upload {...LogoProps} className="lkc-plr10">
               <a>更换LOGO</a>
             </Upload>
           </div>

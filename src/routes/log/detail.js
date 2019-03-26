@@ -15,8 +15,8 @@ function Detail(props) {
     receiveTime: data.receiveTime,
     responseCode: data.responseCode,
     correlationId: data.correlationId,
-    'responseMsg|fill': <div className="aek-word-break">{data.responseMsg}</div>,
-    'responseBody|fill': <div className="aek-word-break">{data.responseBody}</div>,
+    'responseMsg|fill': <div className="lkc-word-break">{data.responseMsg}</div>,
+    'responseBody|fill': <div className="lkc-word-break">{data.responseBody}</div>,
     'apiBody|fill': data.apiBody ? (
       <TextArea value={JSON.stringify(JSON.parse(data.apiBody), undefined, 4)} rows={40} />
     ) : '',

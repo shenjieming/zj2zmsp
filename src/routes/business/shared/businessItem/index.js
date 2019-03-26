@@ -82,7 +82,7 @@ const Item = ({ detail, onClick, optionBtnGroup, isCommon = false }) => {
     <span>
       <span className={styles.iconBlock}>
         <span className={styles.eyesIcon} />
-        <span className="aek-gray aek-ml-10 aek-font-middle">
+        <span className="lkc-gray lkc-ml-10 lkc-font-middle">
           {' '}
           {chanceLookTotalNum > 999
             ? `${(chanceLookTotalNum / 1000).toFixed(1)}K`
@@ -92,7 +92,7 @@ const Item = ({ detail, onClick, optionBtnGroup, isCommon = false }) => {
       <span className={styles.divider} />
       <span className={styles.iconBlock}>
         <span className={styles.replyIcon} />
-        <span className="aek-gray aek-ml-10 aek-font-middle">
+        <span className="lkc-gray lkc-ml-10 lkc-font-middle">
           {' '}
           {chanceReplyTotalNum > 999
             ? `${(chanceReplyTotalNum / 1000).toFixed(1)}K`
@@ -127,11 +127,11 @@ const Item = ({ detail, onClick, optionBtnGroup, isCommon = false }) => {
         <div className={styles.title}>
           <div>
             {chanceTopFlag && <span className={styles.topIcon}>置顶</span>}
-            <span className="aek-primary-color aek-font-large"> 【{chanceTagText}】 </span>
-            <span className="aek-font-large aek-text-bold">{chanceReleaseOrgName}</span>
+            <span className="lkc-primary-color lkc-font-large"> 【{chanceTagText}】 </span>
+            <span className="lkc-font-large lkc-text-bold">{chanceReleaseOrgName}</span>
           </div>
           {rightTop()}
-          <div className="aek-gray aek-font-small">
+          <div className="lkc-gray lkc-font-small">
             {moment(new Date(addTime)).format('YYYY年MMMD日')}
           </div>
         </div>

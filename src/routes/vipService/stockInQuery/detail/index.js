@@ -30,7 +30,7 @@ const StockInQueryDetail = ({ stockInQueryDetail, loading }) => {
       {
         title: '序号',
         key: 'index',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         width: 50,
         render: (value, row, index) => index + 1,
       },
@@ -65,7 +65,7 @@ const StockInQueryDetail = ({ stockInQueryDetail, loading }) => {
       {
         title: '单价',
         dataIndex: 'stockInPrice',
-        className: 'aek-text-right',
+        className: 'lkc-text-right',
         render(data) {
           return formatNum(data)
         },
@@ -73,7 +73,7 @@ const StockInQueryDetail = ({ stockInQueryDetail, loading }) => {
       {
         title: '金额',
         dataIndex: 'itemAmount',
-        className: 'aek-text-right',
+        className: 'lkc-text-right',
         render(data) {
           return formatNum(data)
         },
@@ -100,7 +100,7 @@ const StockInQueryDetail = ({ stockInQueryDetail, loading }) => {
     loading: getLoading('getDetail'),
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

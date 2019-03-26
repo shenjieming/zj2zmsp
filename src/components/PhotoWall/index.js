@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Upload } from 'antd'
 import { IMG_COMPRESS, IMG_WATERMARK } from '../../utils/config'
 import pdfImage from '../../assets/pdf.png'
-import AekLightBox from '../AekLightBox'
+import LkcLightBox from '../LkcLightBox'
 
 class PhotoWall extends React.Component {
   constructor(props) {
@@ -66,7 +66,7 @@ class PhotoWall extends React.Component {
         >
           {null}
         </Upload>
-        <AekLightBox
+        <LkcLightBox
           isOpen={isOpen}
           url={urls}
           onCancel={() => {

@@ -5,7 +5,7 @@ import { get, debounce, isEmpty } from 'lodash'
 import { Table, Button, Modal, Spin, message } from 'antd'
 import Bread from '../../../components/Breadcrumb'
 import SearchForm from '../../../components/SearchFormFilter'
-import scrollToTop from '../../../components/AekForm/scrollToTop'
+import scrollToTop from '../../../components/LkcForm/scrollToTop'
 import { getSearchParams, getBarcodeColumns } from './props'
 import { getBasicFn, getPagination } from '../../../utils/'
 import AddModal from './AddModal'
@@ -270,7 +270,7 @@ function Barcode({ barcode, loading, app }) {
     },
     footer: null,
     width: 800,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
 
   const compareProps = {
@@ -287,7 +287,7 @@ function Barcode({ barcode, loading, app }) {
       })
     },
     footer: null,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
 
   const resolveModalProps = {
@@ -311,10 +311,10 @@ function Barcode({ barcode, loading, app }) {
   }
 
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Bread />
-        <div className="aek-fr">
+        <div className="lkc-fr">
           <Button
             style={{ marginRight: 10 }}
             onClick={() => {

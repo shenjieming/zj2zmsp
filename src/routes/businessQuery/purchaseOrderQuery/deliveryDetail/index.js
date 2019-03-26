@@ -35,7 +35,7 @@ const DeliveryDetail = ({ purchaseDeliveryDetail, loading, app: { orgInfo: { acc
     supplierOrgName,
   } = detailPageData
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

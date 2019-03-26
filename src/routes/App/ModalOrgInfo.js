@@ -177,7 +177,7 @@ const ModalOrgInfo = ({
     title: '信息完善',
     visible: !needCompleteInfo,
     afterClose: resetFields,
-    wrapClassName: 'aek-modal-scroll',
+    wrapClassName: 'lkc-modal-scroll',
     onCancel() {
       toAction({ needCompleteInfo: 1 }, 'organizationInfo')
     },
@@ -199,7 +199,7 @@ const ModalOrgInfo = ({
     <Modal {...modalOpts}>
       <div id={modalTopOrgInfo}>
         {getAlter()}
-        <div className="aek-form-head">基本信息</div>
+        <div className="lkc-form-head">基本信息</div>
         <Form>
           <Spin spinning={bodyLoading}>
             <GetFormItem
@@ -223,9 +223,9 @@ const ModalOrgInfo = ({
               }))}
             />
           </Spin>
-          <div className="aek-form-head">
+          <div className="lkc-form-head">
             <span>扩展信息&nbsp;</span>
-            <span className="aek-red" style={{ fontWeight: 400 }}>
+            <span className="lkc-red" style={{ fontWeight: 400 }}>
               （注意：上传的证件必须要盖本公司红章）
             </span>
           </div>

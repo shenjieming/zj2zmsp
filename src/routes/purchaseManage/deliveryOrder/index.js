@@ -94,7 +94,7 @@ const DeliveryOrder = ({
     orgName,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

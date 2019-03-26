@@ -43,7 +43,7 @@ const ModalAdd = ({
   const modalOpts = {
     title: '添加物料',
     visible: modalVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     footer: null,
     onCancel,
@@ -65,7 +65,7 @@ const ModalAdd = ({
     },
     rowClassName: ({ unAddedFlag }) => {
       if (!unAddedFlag) {
-        return 'aek-text-disable'
+        return 'lkc-text-disable'
       }
       return undefined
     },

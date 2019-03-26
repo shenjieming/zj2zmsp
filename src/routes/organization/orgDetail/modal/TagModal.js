@@ -35,7 +35,7 @@ const TagModal = (
     onCancel,
     onOk: handleOk,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
 
   }
   return (

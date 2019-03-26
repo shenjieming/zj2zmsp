@@ -9,7 +9,7 @@ let config = {
   footerText: '',
   logoText: '零库存',
   publicPath: './',
-  baseURL: '/aek-mspp',
+  baseURL: '/lkc-mspp',
   mockURL: '/api/mock',
   rapMockURL: '/api/rapMock',
   sockURL: 'http://10.18.59.48:9003/endpoint',
@@ -37,9 +37,9 @@ let config = {
   // token
   TOKEN: 'x-auth-token',
   // 请求头系统代号参数名
-  REQUEST_HEADER_SYSTEM_CODE: 'aek-system-code',
+  REQUEST_HEADER_SYSTEM_CODE: 'lkc-system-code',
   // 请求头用户id参数名
-  REQUEST_HEADER_USER_ID: 'aek-user-key',
+  REQUEST_HEADER_USER_ID: 'lkc-user-key',
   // 登陆失效
   LOGIN_TIMEOUT_CODE: 2007,
   // 普通请求成功码
@@ -68,7 +68,7 @@ let config = {
   // 密码
   UPLOAD_PASSWORD: 'aek56.com',
   // 图片上传地址
-  IMG_UPLOAD: 'http://10.3.10.30:9003/aek-mspp/upload',
+  IMG_UPLOAD: 'http://10.3.10.30:9003/lkc-mspp/upload',
   // 原始图片查看地址
   IMG_ORIGINAL: 'https://lkc-pur-image.oss-cn-hangzhou.aliyuncs.com',
   // 缩略图服务名
@@ -113,32 +113,9 @@ let config = {
   AUTO_LOGIN: 'http://localhost:8000/#/login',
 }
 
-// 内部测试环境测试
-if (CONFIG_ENV === 'test') {
-  const target = 'http://192.168.1.83:9003/aek-mspp'
-
-  config = Object.assign({}, config, {
-    baseURL: target,
-    mockURL: target,
-    rapMockURL: target,
-    devModel: false,
-    AUTO_LOGIN: 'http://test.web.aek56.com/#/login',
-  })
-} else if (CONFIG_ENV === 'move') {
-  // 数据迁移测试环境
-  // const target = 'http://192.168.1.89:9003/aek-mspp'
-  const target = 'http://hz.aek56.com:9003/aek-mspp'
-
-  config = Object.assign({}, config, {
-    baseURL: target,
-    mockURL: target,
-    rapMockURL: target,
-    devModel: false,
-    AUTO_LOGIN: 'http://move.web.aek56.com/#/login',
-  })
-} else if (NODE_ENV === 'production') {
+if (NODE_ENV === 'production') {
   // 生产环境
-  const target = 'http://10.18.59.48:9003/aek-mspp'
+  const target = 'http://10.18.59.48:9003/lkc-mspp'
   let publicPath = './'
   // if (THEME === 'yibei') {
   //   publicPath = 'http://fin.prod.youcdn.aek56.com/'

@@ -56,39 +56,39 @@ const tableColumns = [
     title: '序号',
     width: 30,
     render: (_, $, i) => i + 1,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     dataIndex: 'roleName',
     key: 'roleName',
     title: '角色名称',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (text, row) => (text + (row.adminFlag ? '【管】' : '')),
   },
   {
     dataIndex: 'orgType',
     key: 'orgType',
     width: 160,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     title: '机构类型',
   },
   {
     dataIndex: 'roleStatus',
     key: 'roleStatus',
     title: '角色状态',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 120,
     render: (text) => {
       if (!text) {
         return <span>启用</span>
       }
-      return <span className="aek-text-disable">停用</span>
+      return <span className="lkc-text-disable">停用</span>
     },
   },
   {
     title: '操作',
     key: 'action',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (_, row) => <Link to={`/presetRoleAdmin/detail/${row.roleId}`}>查看</Link>,
   },
 ]

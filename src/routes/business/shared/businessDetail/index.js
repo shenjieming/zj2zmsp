@@ -46,15 +46,15 @@ const Detail = ({ detail, loading, replyBtn }) => {
       <Spin spinning={loading}>
         <div className={styles.main}>
           <div className={styles.title}>
-            <span className="aek-primary-color aek-font-large ">
+            <span className="lkc-primary-color lkc-font-large ">
               {chanceTagText ? `【${chanceTagText}】` : ''}
             </span>
-            <span className="aek-font-large aek-text-bold">{chanceReleaseOrgName}</span>
-            <div className="aek-gray aek-font-small">
+            <span className="lkc-font-large lkc-text-bold">{chanceReleaseOrgName}</span>
+            <div className="lkc-gray lkc-font-small">
               {addTime ? moment(new Date(addTime)).format('YYYY年MMMD日') : ''}
             </div>
           </div>
-          <div className={`${styles.content} aek-clearfix`}>
+          <div className={`${styles.content} lkc-clearfix`}>
             <div className={styles.textArea}>{chanceContent}</div>
             <PhotoWall urls={chanceImageUrls} />
             <div style={{ clear: 'both' }}>
@@ -72,7 +72,7 @@ const Detail = ({ detail, loading, replyBtn }) => {
         <div className={styles.footer}>
           <span>
             <span className={styles.eyesIcon} />
-            <span className="aek-gray aek-ml-10 aek-font-middle">
+            <span className="lkc-gray lkc-ml-10 lkc-font-middle">
               {' '}
               {chanceLookTotalNum > 999
                 ? `${(chanceLookTotalNum / 1000).toFixed(1)}K`
@@ -80,7 +80,7 @@ const Detail = ({ detail, loading, replyBtn }) => {
             </span>
             <span className={styles.divider} />
             <span className={styles.replyIcon} />
-            <span className="aek-gray aek-ml-10 aek-font-middle">
+            <span className="lkc-gray lkc-ml-10 lkc-font-middle">
               {' '}
               {chanceReplyTotalNum > 999
                 ? `${(chanceReplyTotalNum / 1000).toFixed(1)}K`

@@ -6,7 +6,7 @@ const baseColumn = () => [{
   render: (value, { productName }) => (
     <span>
       <p>{value}</p>
-      <p className="aek-text-help">{productName || ''}</p>
+      <p className="lkc-text-help">{productName || ''}</p>
     </span>
   ),
 }, {
@@ -15,7 +15,7 @@ const baseColumn = () => [{
   render: (value, { agentSupplierName }) => (
     <span>
       <p>{value}</p>
-      <p>{agentSupplierName ? <span className="aek-text-help">总代:{agentSupplierName}</span> : ''}</p>
+      <p>{agentSupplierName ? <span className="lkc-text-help">总代:{agentSupplierName}</span> : ''}</p>
     </span>
   ),
 }]
@@ -44,7 +44,7 @@ const tableColumns = (type, handleReview) => ({
     {
       title: '序号',
       dataIndex: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, row, index) => index + 1,
     },

@@ -48,7 +48,7 @@ const BarcodeModal = ({
       title={`${status === 'edit' ? '维护' : '新增'}规则`}
       visible={visible}
       width={1000}
-      wrapClassName="aek-modal"
+      wrapClassName="lkc-modal"
       onOk={okHandler}
       onCancel={cancelHandler}
       okText="下一步"
@@ -66,7 +66,7 @@ const BarcodeModal = ({
               ],
             })(
               <Input
-                className={`aek-barcode ${Styles.barcodeInput}`}
+                className={`lkc-barcode ${Styles.barcodeInput}`}
                 maxLength="50"
                 onPressEnter={okHandler}
               />,

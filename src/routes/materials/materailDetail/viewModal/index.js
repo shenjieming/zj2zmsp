@@ -35,7 +35,7 @@ const ViewModal = ({ viewModalVisible, dispatchAction, getLoading, viewCurrentDa
     width: 700,
     footer: false,
     maskClosable: true,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const expandData = {
     '规格编码|fill': materialsSkuCode,

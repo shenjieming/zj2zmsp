@@ -139,7 +139,7 @@ class PrintModal extends React.Component {
       <div>
         <div className={styles.listTitle}>
           <div className={styles.titleArea} style={{ margin: '20px' }}>
-            <div className="aek-inline-block">
+            <div className="lkc-inline-block">
               <div>{detailPageData.currentOrgName}</div>
               <div style={{ textAlign: 'center' }}>（配送单）</div>
             </div>
@@ -196,7 +196,7 @@ class PrintModal extends React.Component {
     const modalOpts = {
       title: '打印预览',
       visible: true,
-      wrapClassName: 'aek-modal',
+      wrapClassName: 'lkc-modal',
       maskClosable: false,
       onCancel,
       okText: '打印配送单',

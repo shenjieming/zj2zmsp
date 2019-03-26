@@ -53,7 +53,7 @@ const genColumns = ({ handleAction, addModalShow }) => [
     dataIndex: 'index',
     key: 'index',
     width: 50,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (text, record, idx) => idx + 1,
   },
   {
@@ -92,7 +92,7 @@ const genColumns = ({ handleAction, addModalShow }) => [
     title: '操作',
     key: 'action',
     width: 80,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     fixed: 'right',
     render: (text, record) => {
       const { materialsSkuStatus: status } = record

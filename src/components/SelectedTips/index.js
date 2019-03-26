@@ -14,7 +14,7 @@ function SelectedTips({ number, onCancel }) {
         closable
         message={
           <div>
-            已选择{<span className="aek-deep-blue">{` ${number} `}</span>}项数据
+            已选择{<span className="lkc-deep-blue">{` ${number} `}</span>}项数据
             {typeof onCancel === 'function' && <span>,<a
               href="#"
               onClick={(e) => {

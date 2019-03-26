@@ -26,7 +26,7 @@ const modal = ({
     onCancel,
     onOk: onOkScope,
     width: 600,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
   }
   const generateList = (data) => {

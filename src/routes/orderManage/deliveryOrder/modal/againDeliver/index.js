@@ -20,7 +20,7 @@ const AgainDeliver = ({
   const modalOpts = {
     title: '再次发货提醒',
     visible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel,
     onOk,
@@ -70,7 +70,7 @@ const AgainDeliver = ({
     dataSource: detail.items || [],
     pagination: false,
     loading: false,
-    className: 'aek-mt20',
+    className: 'lkc-mt20',
     rowKey: 'pscId',
   }
 

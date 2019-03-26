@@ -167,7 +167,7 @@ function Regist({
       render: (value, record) => {
         let dom
         const replace = () => (<span>
-          {record.replacedPlatformAuthStatus === 2 ? <p className="aek-red">(已换证,<a onClick={() => {
+          {record.replacedPlatformAuthStatus === 2 ? <p className="lkc-red">(已换证,<a onClick={() => {
             dispatch({
               type: 'customerCertificate/updateState',
               payload: {
@@ -193,7 +193,7 @@ function Regist({
             const oldDate = new Date(new Date(record.delayedDateEnd).getTime() + (24 * 60 * 60 * 1000)).getTime()
             const todayDate = new Date().getTime()
             if (oldDate < todayDate) {
-              dom = (<p className="aek-text-disable">{`${record.validDateStart}延期至${record.delayedDateEnd}`}<span className="aek-red">（已过期）</span></p>)
+              dom = (<p className="lkc-text-disable">{`${record.validDateStart}延期至${record.delayedDateEnd}`}<span className="lkc-red">（已过期）</span></p>)
             } else {
               dom = <p>{`${record.validDateStart}延期至${record.delayedDateEnd}`}</p>
             }
@@ -202,7 +202,7 @@ function Regist({
             const oldDate = new Date(new Date(record.validDateEnd).getTime() + (24 * 60 * 60 * 1000)).getTime()
             const todayDate = new Date().getTime()
             if (oldDate < todayDate) {
-              dom = <p className="aek-text-disable">{record.validDateEnd}<span className="aek-red">（已过期）</span></p>
+              dom = <p className="lkc-text-disable">{record.validDateEnd}<span className="lkc-red">（已过期）</span></p>
             } else {
               dom = <p>{value}</p>
             }
@@ -233,7 +233,7 @@ function Regist({
       dataIndex: 'operation',
       title: '操作',
       width: 80,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => (
         <span>
           <a

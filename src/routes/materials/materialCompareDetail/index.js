@@ -61,7 +61,7 @@ const IndexPage = ({ materialCompareDetail, app: { constants: { packageUnit } },
     },
     rowClassName({ materialsSkuId }) {
       if (materialsSkuId === selectRowId) {
-        return 'aek-tr-selected'
+        return 'lkc-tr-selected'
       }
       return undefined
     },
@@ -192,7 +192,7 @@ const IndexPage = ({ materialCompareDetail, app: { constants: { packageUnit } },
     currentItem,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
@@ -200,7 +200,7 @@ const IndexPage = ({ materialCompareDetail, app: { constants: { packageUnit } },
         <div className={styles.left}>
           <div className={styles.scroll}>
             <div className={styles.compareTitle}>对照</div>
-            <div className="aek-mt20">
+            <div className="lkc-mt20">
               <Table bordered {...compareTableProps} />
             </div>
           </div>
@@ -220,14 +220,14 @@ const IndexPage = ({ materialCompareDetail, app: { constants: { packageUnit } },
             >
               在所选物质下新增规格
             </Button>
-            <Button className="aek-mt10" onClick={addMaterialSku}>
+            <Button className="lkc-mt10" onClick={addMaterialSku}>
               新增物资和规格
             </Button>
           </div>
         </div>
         <div className={styles.right}>
           <div className={styles.compareTitle}>候选列表</div>
-          <div className="aek-mt20">
+          <div className="lkc-mt20">
             <SearchFormFilter {...searchParams} />
           </div>
           <Table bordered {...tableParam} />

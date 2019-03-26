@@ -76,7 +76,7 @@ const form = (initValue = {}, eventFun = {}, currentItem = {}) => {
     certificateBlur,
   } = eventFun
   return [
-    <div className="aek-form-head">基本信息</div>,
+    <div className="lkc-form-head">基本信息</div>,
     {
       label: '证件类型',
       layout: formItemLayoutHalf,
@@ -297,7 +297,7 @@ const form = (initValue = {}, eventFun = {}, currentItem = {}) => {
         },
       },
     },
-    !certSortShow && <div className="aek-form-head">延期信息</div>,
+    !certSortShow && <div className="lkc-form-head">延期信息</div>,
     {
       label: '延期标识',
       layout: formItemLayoutHalf,
@@ -316,7 +316,7 @@ const form = (initValue = {}, eventFun = {}, currentItem = {}) => {
         },
       },
     },
-    !certSortShow && <div className="aek-form-head">换证信息</div>,
+    !certSortShow && <div className="lkc-form-head">换证信息</div>,
     {
       label: '换证标识',
       layout: formItemLayoutHalf,
@@ -350,7 +350,7 @@ const form = (initValue = {}, eventFun = {}, currentItem = {}) => {
         },
       },
     },
-    !certSortShow && <div className="aek-form-head">其他信息</div>,
+    !certSortShow && <div className="lkc-form-head">其他信息</div>,
     {
       label: '产品英文名称',
       layout: formItemLayout,
@@ -591,7 +591,7 @@ const form = (initValue = {}, eventFun = {}, currentItem = {}) => {
         props: {},
       },
     },
-    <div className="aek-form-head">证件图片信息</div>,
+    <div className="lkc-form-head">证件图片信息</div>,
     {
       label: '图片',
       layout: {

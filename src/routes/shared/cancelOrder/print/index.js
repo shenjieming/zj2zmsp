@@ -58,7 +58,7 @@ const CancelPrint = ({ namespace, orderBean, visible, hideHandler }) => {
       <div className={styles.iconWrap}>
         <div className={styles.listTitle}>
           <div
-            className="aek-print-title"
+            className="lkc-print-title"
             style={{ top: '50%', position: 'absolute', transform: 'translateY(-50%)' }}
           >
             {namespace === 'cancelDetail' ? baseInfo.supplierOrgName : baseInfo.customerOrgName}(退货单)

@@ -39,7 +39,7 @@ const PurchaseDetail = ({ purchaseDetail, loading }) => {
       }
     }
     return (
-      <Steps className="aek-p30" current={current}>
+      <Steps className="lkc-p30" current={current}>
         {steps.map(item => <Step key={item.key} title={item.name} />)}
       </Steps>
     )
@@ -109,11 +109,11 @@ const PurchaseDetail = ({ purchaseDetail, loading }) => {
       <Row key={index}>
         <div style={{ marginBottom: '6px' }}>
           <span className={styles.gray}>{`收货地址${tableList.length > 1 ? index + 1 : ''}: `}</span>
-          <span className="aek-fill-15" />
+          <span className="lkc-fill-15" />
           {ele.receiveAddress}
-          <span className="aek-fill-15" />
+          <span className="lkc-fill-15" />
           {ele.receiveName}
-          <span className="aek-fill-15" />
+          <span className="lkc-fill-15" />
           {ele.receivePhone}
         </div>
         <Table
@@ -122,7 +122,7 @@ const PurchaseDetail = ({ purchaseDetail, loading }) => {
           size="middle"
           rowClassName={({ itemStatus }) => {
             if (itemStatus === 2) {
-              return 'aek-text-disable'
+              return 'lkc-text-disable'
             }
             return ''
           }}
@@ -147,7 +147,7 @@ const PurchaseDetail = ({ purchaseDetail, loading }) => {
     </div>
   )
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
@@ -158,12 +158,12 @@ const PurchaseDetail = ({ purchaseDetail, loading }) => {
         <APanel title="采购单信息">
           <div className={styles.orderInfo}>
             <div className={styles.infoBox}>
-              <div className="aek-gray">供应商信息</div>
+              <div className="lkc-gray">供应商信息</div>
               {supplierInfo()}
             </div>
             {orderBean.saleType === 2 ? (
               <div className={styles.infoBox}>
-                <div className="aek-gray">收货信息</div>
+                <div className="lkc-gray">收货信息</div>
                 <Row>
                   <Col span={8}>
                     <span className={styles.gray}>收货单位：</span>
@@ -175,11 +175,11 @@ const PurchaseDetail = ({ purchaseDetail, loading }) => {
               ''
             )}
             <div className={styles.infoBox}>
-              <div className="aek-gray">订单信息</div>
+              <div className="lkc-gray">订单信息</div>
               {orderInfo()}
             </div>
             <div className={styles.infoBox}>
-              <div className="aek-gray">物资信息</div>
+              <div className="lkc-gray">物资信息</div>
               {materialsInfo()}
             </div>
           </div>

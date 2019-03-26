@@ -15,10 +15,10 @@ const traceColumns = dataLength => [
     title: '配送序号',
     dataIndex: 'index',
     width: 100,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, row, index) => (
       <div>
-        第<span className="aek-orange" style={{ fontWeight: 'bold' }}>
+        第<span className="lkc-orange" style={{ fontWeight: 'bold' }}>
           {dataLength - index}
         </span>次配送
       </div>
@@ -28,7 +28,7 @@ const traceColumns = dataLength => [
     title: '状态',
     dataIndex: 'formStatus',
     width: 100,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value) => {
       const deliverFormTypes = ['', '暂存', '配送中', '已验收', '已作废']
       return deliverFormTypes[value]
@@ -37,7 +37,7 @@ const traceColumns = dataLength => [
   {
     title: '配送信息',
     key: 'deliverInfo',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, row) => (
       <Link to={`/purchaseManage/purchaseOrder/logistics/${row.formId}`}>
         {renderDeliveryInfo(row)}
@@ -47,7 +47,7 @@ const traceColumns = dataLength => [
   {
     title: '配送单号',
     dataIndex: 'formNo',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, row) => (
       <Link to={`/purchaseManage/deliveryOrder/deliveryDetail/${row.formId}`} target="_blank">
         {row.formNo}
@@ -57,17 +57,17 @@ const traceColumns = dataLength => [
   {
     title: '发货人',
     dataIndex: 'senderName',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '发货时间',
     dataIndex: 'senderTime',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '操作',
     key: 'opration',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, row) => {
       if (row.formStatus === 2) {
         return (
@@ -94,7 +94,7 @@ const materialColumns = [
         return {
           children: text,
           props: {
-            className: 'aek-disabled',
+            className: 'lkc-disabled',
           },
         }
       }
@@ -106,12 +106,12 @@ const materialColumns = [
     dataIndex: 'materialsSku',
     key: 'materialsSku',
     width: 300,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '采购数量',
     dataIndex: 'purchaseQty',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record) => (
       <div>
         {value}
@@ -125,7 +125,7 @@ const materialColumns = [
   {
     title: '已配送数量',
     dataIndex: 'deliveredQty',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record) => (
       <div>
         {value}
@@ -136,7 +136,7 @@ const materialColumns = [
   {
     title: '待配送数量',
     dataIndex: 'waitDeliverQty',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record) => (
       <div>
         {value}
@@ -147,13 +147,13 @@ const materialColumns = [
   {
     title: '单价',
     dataIndex: 'materialsPrice',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
     render: text => `￥${text}`,
   },
   {
     title: '金额',
     dataIndex: 'materialsAmount',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
     render: text => `￥${text}`,
   },
 ]

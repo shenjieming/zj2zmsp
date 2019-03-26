@@ -81,7 +81,7 @@ const PurchaseOrder = ({ purchaseOrder, loading, routes }) => {
     confirm({
       // 特殊需求，将确认取消做反
       title: '订单终止后，该订单剩余未配送物资供应商将不再发货，是否确定终止订单？',
-      content: <div className="aek-red ">请您仔细核对一下此订单未配送的剩余物资！</div>,
+      content: <div className="lkc-red ">请您仔细核对一下此订单未配送的剩余物资！</div>,
       width: 500,
       okText: '取消',
       cancelText: '确定',
@@ -124,7 +124,7 @@ const PurchaseOrder = ({ purchaseOrder, loading, routes }) => {
           >
             催单
           </a>
-          <span className="aek-fill-15" />
+          <span className="lkc-fill-15" />
           <Dropdown overlay={voidMenu} trigger={['click']}>
             <a>更多</a>
           </Dropdown>
@@ -141,7 +141,7 @@ const PurchaseOrder = ({ purchaseOrder, loading, routes }) => {
           >
             催单
           </a>
-          <span className="aek-fill-15" />
+          <span className="lkc-fill-15" />
           <Dropdown overlay={terminateMenu} trigger={['click']}>
             <a>更多</a>
           </Dropdown>
@@ -153,7 +153,7 @@ const PurchaseOrder = ({ purchaseOrder, loading, routes }) => {
         <div>
           {row.saleType === 1 ? (
             <a
-              className="aek-link"
+              className="lkc-link"
               onClick={() => {
                 purchaseAgain(row.formId)
               }}
@@ -172,7 +172,7 @@ const PurchaseOrder = ({ purchaseOrder, loading, routes }) => {
         <div>
           {row.saleType === 1 ? (
             <a
-              className="aek-link"
+              className="lkc-link"
               onClick={() => {
                 purchaseAgain(row.formId)
               }}
@@ -189,17 +189,17 @@ const PurchaseOrder = ({ purchaseOrder, loading, routes }) => {
         <div>
           {row.canAppraiseFlag ? (
             <span>
-              <Link className="aek-link" to={`/purchaseManage/purchaseOrder/rate/${orderId}`}>
+              <Link className="lkc-link" to={`/purchaseManage/purchaseOrder/rate/${orderId}`}>
                 评价
               </Link>
-              <span className="aek-fill-15" />
+              <span className="lkc-fill-15" />
             </span>
           ) : (
             ''
           )}
           {row.saleType === 1 ? (
             <a
-              className="aek-link"
+              className="lkc-link"
               onClick={() => {
                 purchaseAgain(row.formId)
               }}
@@ -233,13 +233,13 @@ const PurchaseOrder = ({ purchaseOrder, loading, routes }) => {
     },
   ]
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb routes={routes} />
       </div>
       <div className="content">
         <SearchFormFillter {...searchParam} />
-        {searchSaveParams.materialsInfo ? <div className="aek-red">*在检索结果里，以下订单包含该物资。</div> : ''}
+        {searchSaveParams.materialsInfo ? <div className="lkc-red">*在检索结果里，以下订单包含该物资。</div> : ''}
         <Table
           bordered
           rowKey="formId"

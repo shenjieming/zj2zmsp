@@ -42,7 +42,7 @@ function Edit({
     },
   }
   return (
-    <Modal {...modalProps} wrapClassName="aek-modal" confirmLoading={loading}>
+    <Modal {...modalProps} wrapClassName="lkc-modal" confirmLoading={loading}>
       <Spin spinning={loading}>
         <Form>
           <GetFormItem formData={form({ dispatch, orgDetail, addressList })} />

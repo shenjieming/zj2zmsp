@@ -237,7 +237,7 @@ const ModalOrgInfo = ({
     title: '编辑企业证件',
     visible: modalVisible,
     afterClose: resetFields,
-    wrapClassName: ['03', '04', '07'].includes(orgType) ? 'aek-modal-scroll' : '',
+    wrapClassName: ['03', '04', '07'].includes(orgType) ? 'lkc-modal-scroll' : '',
     maskClosable: true,
     closable: true,
     footer,
@@ -258,7 +258,7 @@ const ModalOrgInfo = ({
       <div id={['03', '04', '07'].includes(orgType) ? modalTopOrgInfoChange : undefined}>
         <Spin spinning={loading}>
           {getAlter()}
-          <Form className="aek-mt10">
+          <Form className="lkc-mt10">
             {['03', '04', '07'].includes(orgType) && (
               <FormItem {...formItemLayout} label="证件类型">
                 <RadioGroup

@@ -94,7 +94,7 @@ function Purchase({ purchase, loading, packageUnit, functionList = {} }) {
     )
   }
   const tableProps = {
-    className: 'aek-table-shadow',
+    className: 'lkc-table-shadow',
     key: tableKey,
     // loading: getLoading('suppliers'),
     dataSource: addOrder(tableData || []),

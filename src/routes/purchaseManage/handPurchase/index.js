@@ -208,7 +208,7 @@ function HandPurchase({
             },
             rowClassName: ({ disabled }) => {
               if (disabled) {
-                return 'aek-text-disable'
+                return 'lkc-text-disable'
               }
               return undefined
             },

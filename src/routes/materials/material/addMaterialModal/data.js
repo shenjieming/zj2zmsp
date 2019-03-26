@@ -57,7 +57,7 @@ const form = (initValue = {}, eventFun) => {
   } = initValue
   const { asyncRegList, asyncProductList, asyncBrandList } = eventFun
   return [
-    <div className="aek-form-head">基础信息</div>,
+    <div className="lkc-form-head">基础信息</div>,
     {
       label: '物资编码',
       layout: formItemLayoutHalf,
@@ -277,7 +277,7 @@ const form = (initValue = {}, eventFun) => {
         },
       },
     },
-    <div className="aek-form-head">其他信息</div>,
+    <div className="lkc-form-head">其他信息</div>,
   ]
 }
 export default {

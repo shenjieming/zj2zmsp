@@ -31,7 +31,7 @@ const MyReply = ({ myReply, app, loading }) => {
     pagination,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

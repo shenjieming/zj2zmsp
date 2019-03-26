@@ -91,7 +91,7 @@ const RightContent = ({
       title: '序号',
       dataIndex: 'index',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 30,
       render: (value, record, index) => index + 1,
     },
@@ -115,7 +115,7 @@ const RightContent = ({
       title: '性别',
       dataIndex: 'gender',
       key: 'gender',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 30,
       render: (value) => {
         if (value === 0) {
@@ -145,7 +145,7 @@ const RightContent = ({
       title: '账号状态',
       dataIndex: 'status',
       key: 'status',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value) => {
         if (!value) {
@@ -158,7 +158,7 @@ const RightContent = ({
       title: '操作',
       dataIndex: 'operation',
       key: 'operation',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 30,
       render: (value, record) => <Link to={`/personAdmin/detail/${record.userId}`}>查看</Link>,
     },
@@ -223,8 +223,8 @@ const RightContent = ({
   return (
     <div>
       <div className={Styles.bread}>
-        <div className={Styles['aek-bread-left']}>{deptName}</div>
-        <div className={Styles['aek-bread-right']}>
+        <div className={Styles['lkc-bread-left']}>{deptName}</div>
+        <div className={Styles['lkc-bread-right']}>
           <Button
             onClick={() => {
               if (deptTreeList && !deptTreeList[0].children.length && deptId === '-1') {
@@ -250,7 +250,7 @@ const RightContent = ({
           loading={!!effects['personAdmin/getPersonTableData']}
           rowClassName={({ status }) => {
             if (status) {
-              return 'aek-text-disable'
+              return 'lkc-text-disable'
             }
           }}
         />

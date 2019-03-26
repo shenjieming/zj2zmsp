@@ -30,7 +30,7 @@ const formStatusInfo = {
 const refundColumns = view => [{
   title: '创建时间',
   dataIndex: 'addTime',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
 }, {
   title: '还款申请编号',
   dataIndex: 'formNo',
@@ -38,12 +38,12 @@ const refundColumns = view => [{
 }, {
   title: '还款金额',
   dataIndex: 'repayAmount',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
   render: text => formatNum(text),
 }, {
   title: '状态',
   dataIndex: 'formStatus',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   render: status => ({
     1: '还款申请中',
     2: '申请失败',
@@ -56,7 +56,7 @@ const refundColumns = view => [{
 const stockListColumns = view => [{
   title: '序号',
   dataIndex: 'order',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 60,
   render: (_, __, idx) => idx + 1,
 }, {
@@ -65,21 +65,21 @@ const stockListColumns = view => [{
 }, {
   title: '入库时间',
   dataIndex: 'stockInTime',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
 }, {
   title: '入库单金额',
   dataIndex: 'formAmount',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
   render: text => formatNum(text),
 }, {
   title: '可贷金额',
   dataIndex: 'balance',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
   render: text => formatNum(text),
 }, {
   title: '明细',
   dataIndex: 'formId',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 100,
   render: formId => (
     <a onClick={() => view(formId)}>查看</a>
@@ -99,7 +99,7 @@ const getName = (urlStr = '') => {
 const invoiceColumns = view => [{
   title: '序号',
   dataIndex: 'order',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 60,
   render: (_, __, idx) => idx + 1,
 }, {
@@ -108,12 +108,12 @@ const invoiceColumns = view => [{
 }, {
   title: '发票金额',
   dataIndex: 'invoiceAmount',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
   render: text => formatNum(text),
 }, {
   title: '发票日期',
   dataIndex: 'invoiceDate',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
 }, {
   title: '发票名称',
   dataIndex: 'invoiceUrl',
@@ -130,12 +130,12 @@ const modalColumns = [{
 }, {
   title: '单价',
   dataIndex: 'stockInPrice',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
   render: text => formatNum(text),
 }, {
   title: '数量/单位',
   dataIndex: 'stockInQty',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   render: (stockInQty, { specUnit }) => segmentation([stockInQty, specUnit], '/'),
 }, {
   title: '厂家',
@@ -155,11 +155,11 @@ const operationRecordListColumns = [{
 }, {
   title: '操作人',
   dataIndex: 'operationByName',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
 }, {
   title: '操作时间',
   dataIndex: 'operationTime',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
 }, {
   title: '备注',
   dataIndex: 'remark',

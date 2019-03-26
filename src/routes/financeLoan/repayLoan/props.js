@@ -7,7 +7,7 @@ const genColumns = () => [
     title: '序号',
     dataIndex: 'index',
     key: 'index',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (text, _, idx) => idx + 1,
   },
   {
@@ -39,7 +39,7 @@ const genColumns = () => [
         return (
           <span>
             {text}
-            <span className="aek-red">( 已逾期 )</span>
+            <span className="lkc-red">( 已逾期 )</span>
           </span>
         )
       }
@@ -52,7 +52,7 @@ const genColumns = () => [
     key: 'action',
     // render: (_, { formId }) => <a onClick={() => payMoney([formId])}>还款</a>,
     render: (_, { formId }) => (
-      <Link className="aek-link" to={`/financeLoan/repayLoan/repayApplyDetail/${formId}`}>
+      <Link className="lkc-link" to={`/financeLoan/repayLoan/repayApplyDetail/${formId}`}>
         还款
       </Link>
     ),

@@ -132,7 +132,7 @@ const CustomerManage = ({
     splDetail,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb style={{ float: 'left' }} />
         <div style={{ float: 'right' }}>

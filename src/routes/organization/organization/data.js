@@ -19,10 +19,10 @@ const asyFun = asyncValidate({
 const auditStatusText = [
   <span>待完善</span>,
   <span>待审核</span>,
-  <span className="aek-text-help">已审核</span>,
-  <span className="aek-text-disable">已拒绝</span>,
+  <span className="lkc-text-help">已审核</span>,
+  <span className="lkc-text-disable">已拒绝</span>,
 ]
-const orgStatusText = [<span>启用中</span>, <span className="aek-text-disable">已停用</span>]
+const orgStatusText = [<span>启用中</span>, <span className="lkc-text-disable">已停用</span>]
 const form = ({
   organizeTypeComp,
   hideItems: { sort1, sort2, sort3, sort4 },
@@ -343,7 +343,7 @@ const columns = ({ onCheckOrg, turnOther }) => [
     dataIndex: 'index',
     key: 'index',
     width: 50,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (text, record, idx) => idx + 1,
   },
   {
@@ -351,7 +351,7 @@ const columns = ({ onCheckOrg, turnOther }) => [
     dataIndex: 'orgName',
     key: 'orgName',
     render: (text, { orgIdSign }) => (
-      <a className="aek-link" onClick={() => turnOther(orgIdSign)}>
+      <a className="lkc-link" onClick={() => turnOther(orgIdSign)}>
         {text}
       </a>
     ),

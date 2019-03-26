@@ -20,7 +20,7 @@ const render = item => ({
       <span className={Styles.title}>
         <div>{item.title}</div>
         {item.customerQty > 0 && (
-          <span className="aek-text-disable aek-font-small">(已有{item.customerQty}个业务员)</span>
+          <span className="lkc-text-disable lkc-font-small">(已有{item.customerQty}个业务员)</span>
         )}
       </span>
     </span>
@@ -43,8 +43,8 @@ function EditModal(props) {
     render,
     targetKeys: props.targetKeys,
     titles: [
-      <span className="aek-font-large">未选择客户</span>,
-      <span className="aek-font-large">已选择客户</span>,
+      <span className="lkc-font-large">未选择客户</span>,
+      <span className="lkc-font-large">已选择客户</span>,
     ],
     operations: ['移入', '移出'],
     notFoundContent: '',
@@ -60,7 +60,7 @@ function EditModal(props) {
     confirmLoading: props.loading,
     width: 700,
     onCancel: props.handleCancel,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     onOk: props.handleOk,
     maskClosable: false,
   }

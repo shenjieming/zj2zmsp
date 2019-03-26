@@ -5,7 +5,7 @@ const columns = [
     title: '序号',
     dataIndex: 'index',
     key: 'index',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 50,
     render: (text, _, idx) => idx + 1,
   },

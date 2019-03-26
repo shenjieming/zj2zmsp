@@ -38,7 +38,7 @@ const ModalForm = ({
     visible,
     onCancel,
     confirmLoading,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     footer: null,
     maskClosable: false,
     width: 600,

@@ -104,7 +104,7 @@ function ProdFactory({
       key: 'importedFlag',
       dataIndex: 'importedFlag',
       title: '厂家类型',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value) => {
         if (value) {
           return '进口'
@@ -116,19 +116,19 @@ function ProdFactory({
       key: 'maintainStatus',
       dataIndex: 'maintainStatus',
       title: '维护状态',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value) => {
         if (value === 1) {
           return '已维护'
         }
-        return <span className="aek-red">未维护</span>
+        return <span className="lkc-red">未维护</span>
       },
     },
     {
       key: 'certificateStatus',
       dataIndex: 'certificateStatus',
       title: '状态',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value) => {
         let str = ''
         if (value) {
@@ -144,7 +144,7 @@ function ProdFactory({
       dataIndex: 'operation',
       title: '操作',
       width: 150,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => {
         // 下拉按钮点击事件 TODO
         const handleMenuClick = (val) => {

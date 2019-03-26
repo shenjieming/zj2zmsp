@@ -32,7 +32,7 @@ const AddCustomer = ({
     width: 600,
     footer: false,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     onCancel() {
       dispatch({ type: 'myCustomer/updateState', payload: { addCustomerVisible: false, addCustSearchData: {} } })
     },

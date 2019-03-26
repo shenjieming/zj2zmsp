@@ -24,7 +24,7 @@ const genColumns = ({ formType }) =>
       title: '单价',
       dataIndex: 'materialsPrice',
       key: 'materialsPrice',
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       width: 100,
       exclude: Number(formType) === 3,
       render: text => <span>¥{text}</span>,
@@ -54,7 +54,7 @@ const genColumns = ({ formType }) =>
       title: '配送金额/验收金额',
       dataIndex: 'concatPrice',
       key: 'concatPrice',
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: (text, { deliverQty, acceptQty, materialsPrice }) => (
         <span>
           <p>{formatNum(new Decimal(materialsPrice).times(deliverQty)) || <span>&nbsp;</span>}</p>
@@ -137,7 +137,7 @@ const getDetailData = (detailPageData) => {
         订单编号: originalFormNo,
         合计金额: <span>¥ {formAmount}</span>,
         发货时间: senderTime,
-        '发货备注|fill': <span className="aek-word-break">{deliverRemark}</span>,
+        '发货备注|fill': <span className="lkc-word-break">{deliverRemark}</span>,
       }
     } else if (saleType === 2) {
       return {
@@ -149,7 +149,7 @@ const getDetailData = (detailPageData) => {
         原采购单号: initialFormNo,
         合计金额: <span>¥ {formAmount}</span>,
         发货时间: senderTime,
-        '发货备注|fill': <span className="aek-word-break">{deliverRemark}</span>,
+        '发货备注|fill': <span className="lkc-word-break">{deliverRemark}</span>,
       }
     }
   }
@@ -160,7 +160,7 @@ const getDetailData = (detailPageData) => {
     联系电话: senderPhone,
     合计金额: <span>¥ {formAmount}</span>,
     发货时间: senderTime,
-    '发货备注|fill': <span className="aek-word-break">{deliverRemark}</span>,
+    '发货备注|fill': <span className="lkc-word-break">{deliverRemark}</span>,
   }
 }
 export default {

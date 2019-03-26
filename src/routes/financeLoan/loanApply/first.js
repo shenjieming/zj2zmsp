@@ -90,7 +90,7 @@ const First = ({ loanApply, loading }) => {
         <Table
           {...tableProps}
         />
-        <Button onClick={firstNextClick} className="aek-mt30" type="primary">下一步</Button>
+        <Button onClick={firstNextClick} className="lkc-mt30" type="primary">下一步</Button>
       </div>
     </div>
   )

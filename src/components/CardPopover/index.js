@@ -20,12 +20,12 @@ function CardPopover({ data = {}, children }) {
         )}
       </div>
       <div
-        className="aek-text-overflow"
+        className="lkc-text-overflow"
         style={{ display: 'inline-block', verticalAlign: 'middle', width: '200px' }}
       >
         <h3>{data.goodsName}</h3>
         <p>{data.skuModel}</p>
-        <div className="aek-text-disable aek-text-overflow">
+        <div className="lkc-text-disable lkc-text-overflow">
           <p title={data.registerCode}>{data.registerCode}</p>
           <p>{data.factoryName}</p>
           <p>{`${data.brandName}/${data.origin}`}</p>

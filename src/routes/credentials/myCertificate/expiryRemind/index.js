@@ -60,7 +60,7 @@ function ExpiryRemind({
         } else {
           const diff = todayDate - oldDate
           const diffDay = Math.ceil(diff / (1000 * 60 * 60 * 24))
-          ret.children = <span>已过期<span className="aek-red">{diffDay}</span>天</span>
+          ret.children = <span>已过期<span className="lkc-red">{diffDay}</span>天</span>
         }
         return ret
       },
@@ -70,7 +70,7 @@ function ExpiryRemind({
       dataIndex: 'operation',
       title: '操作',
       width: 150,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, { validDateEnd, orgCertificate, certificateId }) => {
         const handleClick = (index) => {
           let url = ''
@@ -164,7 +164,7 @@ function ExpiryRemind({
   return (
     <div key={tabIndex}>
       <div>
-        <div className={`${Style['aek-row-title']} ${Style.left}`}>
+        <div className={`${Style['lkc-row-title']} ${Style.left}`}>
           过期时间：
         </div>
         <div style={{ height: '50px', lineHeight: '50px' }}>

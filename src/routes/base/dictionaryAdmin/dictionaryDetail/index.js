@@ -81,7 +81,7 @@ function DictionaryDetail({ dictionaryDetail, loading }) {
     }),
     rowClassName: ({ dicValueStatus }) => {
       if (dicValueStatus) {
-        return 'aek-text-disable'
+        return 'lkc-text-disable'
       }
     },
   }

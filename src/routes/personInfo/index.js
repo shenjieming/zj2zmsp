@@ -13,7 +13,7 @@ import {
   IMG_SIZE_LIMIT,
   IMG_COMPRESS,
 } from '../../utils/config'
-import UserHead from '../../assets/aek-user-head.png'
+import UserHead from '../../assets/lkc-user-head.png'
 
 const propTypes = {
   personInfo: PropTypes.object,
@@ -111,7 +111,7 @@ function PersonInfo({ personInfo, loading }) {
           </div>
         </div>
         <div style={{ float: 'left' }}>
-          <Upload {...LogoProps} className="aek-plr10">
+          <Upload {...LogoProps} className="lkc-plr10">
             <a>{imageUrl ? '更换' : '上传'}</a>
           </Upload>
         </div>
@@ -123,7 +123,7 @@ function PersonInfo({ personInfo, loading }) {
           {email || '无'}
           {email ? (
             <a
-              className="aek-ml10"
+              className="lkc-ml10"
               onClick={() => {
                 toAction({
                   modalType: 'reMail',
@@ -138,7 +138,7 @@ function PersonInfo({ personInfo, loading }) {
             </a>
           ) : (
             <a
-              className="aek-ml10"
+              className="lkc-ml10"
               onClick={() => {
                 toAction({
                   modalType: 'mailForm',
@@ -160,7 +160,7 @@ function PersonInfo({ personInfo, loading }) {
         <div>
           {mobile}
           <a
-            className="aek-ml10"
+            className="lkc-ml10"
             onClick={() => {
               toAction({
                 modalType: 'rePhone',
@@ -241,7 +241,7 @@ function PersonInfo({ personInfo, loading }) {
   }
   const content = (
     <Spin spinning={getLoading('getPersonInfo')}>
-      <div className="aek-content-title">个人信息</div>
+      <div className="lkc-content-title">个人信息</div>
       <Row>
         <Col span={12}>
           <PlainForm data={leftData} />

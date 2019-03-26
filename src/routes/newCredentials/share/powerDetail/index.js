@@ -30,7 +30,7 @@ const PowerDetailModal = ({
   const addModalProp = {
     title: modalTitle,
     visible: powerDetailVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel() {
       handleCancel()

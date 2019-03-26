@@ -17,7 +17,7 @@ const PrintModal = ({
   const modalOpts = {
     title: '条码绑定的物资',
     visible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     width: 550,
     maskClosable: false,
     footer: null,
@@ -33,7 +33,7 @@ const PrintModal = ({
       key: 'index',
       dataIndex: 'index',
       title: '序号',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, record, index) => index + 1,
     },
@@ -51,7 +51,7 @@ const PrintModal = ({
   ]
   return (<Modal {...modalOpts}>
     <Spin spinning={spin}>
-      <p className="aek-mtb10">请至“供货目录”找到该物资，删除其中一个条码，再重新扫码！</p>
+      <p className="lkc-mtb10">请至“供货目录”找到该物资，删除其中一个条码，再重新扫码！</p>
       <Table
         style={{ marginTop: '20px' }}
         columns={columns}

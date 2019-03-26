@@ -19,7 +19,7 @@ function CfgPanel({ data, onSwitch, onToggle }) {
         <div className={Styles.content} key={item.msgTemplateId}>
           <div className={Styles.name}>
             <div>{item.msgTemplateName}</div>
-            <div className="aek-text-disable aek-text-overflow">{item.msgDescription}</div>
+            <div className="lkc-text-disable lkc-text-overflow">{item.msgDescription}</div>
           </div>
           <div className={Styles.switch}>
             <Switch

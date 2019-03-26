@@ -21,7 +21,7 @@ const PrintModal = ({
   const modalOpts = {
     title: '批量录入发票信息',
     visible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel() {
       onCancel()
@@ -42,7 +42,7 @@ const PrintModal = ({
   return (
     <Modal {...modalOpts}>
       <div
-        className="aek-text-bold aek-font-mid"
+        className="lkc-text-bold lkc-font-mid"
         style={{ textAlign: 'center', marginBottom: '16px' }}
       >
         在下面输入发票信息，单击确定后自动填充所有配送明细

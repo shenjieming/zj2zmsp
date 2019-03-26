@@ -50,7 +50,7 @@ const ModalAdd = ({
   const modalOpts = {
     title: getTitle(),
     visible: modalVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     footer: null,
     onCancel,

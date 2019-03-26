@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Modal, Spin, Button, Table, Form, Input, Select, Row, Col } from 'antd'
 import { cloneDeep } from 'lodash'
 // import { getBasicFn, getOption } from '../../../utils'
-import { AekInputNumber, AekSelect } from '../../../components'
+import { LkcInputNumber, LkcSelect } from '../../../components'
 import Styles from '../detail.less'
 
 // const namespace = 'dictionSelect'
@@ -84,7 +84,7 @@ const BatchAddCatalog = ({
     title: getTtile(modalType),
     visible: batchAddModalVisible,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     afterClose() {
       resetFields()
       handleBack()
@@ -258,7 +258,7 @@ const BatchAddCatalog = ({
               key: text,
             } : undefined,
           })(
-            <AekSelect
+            <LkcSelect
               {...props}
             />,
           )}
@@ -310,7 +310,7 @@ const BatchAddCatalog = ({
       )
     },
   }, {
-    title: <span><span className="aek-red">*</span>价格</span>,
+    title: <span><span className="lkc-red">*</span>价格</span>,
     key: 'price',
     dataIndex: 'price',
     width: 100,
@@ -328,7 +328,7 @@ const BatchAddCatalog = ({
               message: '必填项不能为空',
             }],
           })(
-            <AekInputNumber
+            <LkcInputNumber
               {...props}
             />,
           )}
@@ -336,7 +336,7 @@ const BatchAddCatalog = ({
       )
     },
   }, {
-    title: <span><span className="aek-red">*</span>单位</span>,
+    title: <span><span className="lkc-red">*</span>单位</span>,
     key: 'materialsUnit',
     dataIndex: 'materialsUnit',
     width: 120,
@@ -479,7 +479,7 @@ const BatchAddCatalog = ({
     pagination: false,
     // size: 'small',
     // scroll: { x: true },
-    // className: Styles['aek-modal-table'],
+    // className: Styles['lkc-modal-table'],
     bordered: true,
     style: { width: 1100, paddingRight: '16px' },
   }

@@ -11,14 +11,14 @@ const orderFormColumns = ({ changeItem, deleteItem }) => [{
   dataIndex: 'materialsName',
   render(materialsName, { materialsCommonName, disabled }) {
     return {
-      props: disabled ? { className: 'aek-disabled' } : undefined,
+      props: disabled ? { className: 'lkc-disabled' } : undefined,
       children: (
         <div style={disabled ? { marginLeft: 16 } : undefined}>
           <CustmTabelInfo
             logoUrl="nil"
             otherInfo={[
               materialsName,
-              <span className="aek-text-disable">{materialsCommonName}</span>,
+              <span className="lkc-text-disable">{materialsCommonName}</span>,
             ]}
           />
         </div>
@@ -42,7 +42,7 @@ const orderFormColumns = ({ changeItem, deleteItem }) => [{
 }, {
   title: '采购数量',
   dataIndex: 'purchaseQty',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 100,
   render: (purchaseQty, all) => getComponent({
     name: 'InputNumber',
@@ -68,13 +68,13 @@ const orderFormColumns = ({ changeItem, deleteItem }) => [{
 }, {
   title: '单位',
   dataIndex: 'packageUnitText',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 80,
   render: (packageUnitText, { skuUnitText, materialsUnitText }) => (packageUnitText || skuUnitText || materialsUnitText),
 }, {
   title: '单价',
   dataIndex: 'materialsPrice',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
   width: 100,
   render: (materialsPrice, { transformValue = 1 }) => {
     const retPrice = new Decimal(materialsPrice)
@@ -83,13 +83,13 @@ const orderFormColumns = ({ changeItem, deleteItem }) => [{
 }, {
   title: '金额',
   dataIndex: 'materialsAmount',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
   width: 100,
   render: materialsAmount => formatNum(materialsAmount),
 }, {
   title: '操作',
   dataIndex: 'operation',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 60,
   render: (_, { pscId }) => (
     <Popconfirm
@@ -107,33 +107,33 @@ const orderFormColumns = ({ changeItem, deleteItem }) => [{
 
 const render = (text, { formId }) => {
   if (formId === 'all') {
-    return <span className="aek-primary-color">{text}</span>
+    return <span className="lkc-primary-color">{text}</span>
   }
   return text
 }
 const orderFormInfoColumns = [{
   title: '订单编号',
   dataIndex: 'formNo',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   render,
 }, {
   title: '供应商',
   dataIndex: 'supplierOrgName',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   render,
 }, {
   title: '数量',
   dataIndex: 'formQty',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   render,
 }, {
   title: '金额',
   dataIndex: 'formAmount',
-  className: 'aek-text-right',
+  className: 'lkc-text-right',
   render: (formAmount, { formId }) => {
     const ret = formatNum(formAmount)
     if (formId === 'all') {
-      return <span className="aek-primary-color">{ret}</span>
+      return <span className="lkc-primary-color">{ret}</span>
     }
     return ret
   },

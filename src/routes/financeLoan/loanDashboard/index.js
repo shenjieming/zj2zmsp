@@ -25,10 +25,10 @@ const LoanDashboard = ({ loanDashboard, loading }) => {
             {item.statistics.map((line) => {
               const dom = (<div className={styles.statisticsItem}>
                 <span style={{ marginRight: '10px' }}>{line.name}</span>
-                <span className={line.redFlag ? 'aek-red' : ''}>({line.number})</span>
+                <span className={line.redFlag ? 'lkc-red' : ''}>({line.number})</span>
                 {line.amount ? (
                   <div className={styles.expandAmount}>
-                    {line.amount.name}:<span className="aek-fill-15" />
+                    {line.amount.name}:<span className="lkc-fill-15" />
                     {line.amount.number}
                   </div>
                 ) : (
@@ -49,11 +49,11 @@ const LoanDashboard = ({ loanDashboard, loading }) => {
     </Row>
   )
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
-      <Card className="aek-full-card" title="贷款首页" bordered={false}>
+      <Card className="lkc-full-card" title="贷款首页" bordered={false}>
         <Row className={styles.topContainer}>
           <Col span={16}>
             <Spin spinning={getLoading('queryData')}>{statisticsContent(data)}</Spin>
@@ -87,7 +87,7 @@ const LoanDashboard = ({ loanDashboard, loading }) => {
         <Card title="贷款流程" className={styles.loanFlow}>
           <Row>
             <Col span={8} style={{ padding: '0px 20px' }}>
-              <span className="aek-primary-color">阶段一</span>
+              <span className="lkc-primary-color">阶段一</span>
               <div className={styles.stepBox}>
                 <div className={styles.stepTitle}>
                   {/* <Avatar className={styles.stepTitleIcon} icon="user" /> */}
@@ -103,7 +103,7 @@ const LoanDashboard = ({ loanDashboard, loading }) => {
               </div>
             </Col>
             <Col span={8} style={{ padding: '0px 20px' }}>
-              <span className="aek-primary-color">阶段二</span>
+              <span className="lkc-primary-color">阶段二</span>
               <div className={styles.stepBox}>
                 <div className={styles.stepTitle}>
                   {/* <Avatar className={styles.stepTitleIcon} icon="user" /> */}
@@ -117,7 +117,7 @@ const LoanDashboard = ({ loanDashboard, loading }) => {
               </div>
             </Col>
             <Col span={8} style={{ padding: '0px 20px' }}>
-              <span className="aek-primary-color">阶段三</span>
+              <span className="lkc-primary-color">阶段三</span>
               <div className={styles.stepBox} style={{ border: 'none' }}>
                 <div className={styles.stepTitle}>
                   {/* <Avatar className={styles.stepTitleIcon} icon="user" /> */}

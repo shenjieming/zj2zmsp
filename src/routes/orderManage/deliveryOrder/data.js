@@ -13,9 +13,9 @@ const FORM_ITEM_LAYOUT = {
 const formStatusArr = [
   '',
   <span>暂存</span>,
-  <span className="aek-green">配送中</span>,
+  <span className="lkc-green">配送中</span>,
   <span>已验收</span>,
-  <span className="aek-red">已作废</span>,
+  <span className="lkc-red">已作废</span>,
 ]
 const invoiceStatusArr = ['', '尚未开票', '部分开票', '开票完结']
 const formTypeArr = ['', '普耗', '寄销', '跟台']
@@ -294,12 +294,12 @@ const genColumns = ({ printDeliverOrder, againDeliver, changeLogisInfo }) =>
       title: '序号',
       dataIndex: 'index',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, { urgentFlag, originalFormStatus }, idx) => {
         if (urgentFlag && originalFormStatus < 3) {
           return {
             children: <span>{idx + 1}</span>,
-            props: { className: 'aek-urgent aek-text-center' },
+            props: { className: 'lkc-urgent lkc-text-center' },
           }
         }
         return <span>{idx + 1}</span>
@@ -310,7 +310,7 @@ const genColumns = ({ printDeliverOrder, againDeliver, changeLogisInfo }) =>
       dataIndex: 'formNo',
       key: 'formNo',
       render: (text, { formId }) => (
-        <Link className="aek-link" to={`/orderManage/deliveryOrder/deliveryDetail/${formId}`}>
+        <Link className="lkc-link" to={`/orderManage/deliveryOrder/deliveryDetail/${formId}`}>
           {text}
         </Link>
       ),
@@ -336,7 +336,7 @@ const genColumns = ({ printDeliverOrder, againDeliver, changeLogisInfo }) =>
     {
       title: '配送金额',
       dataIndex: 'formAmount',
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render(text) {
         return formatNum(text, { format: true })
       },
@@ -352,7 +352,7 @@ const genColumns = ({ printDeliverOrder, againDeliver, changeLogisInfo }) =>
       dataIndex: 'originalFormNo',
       key: 'originalFormNo',
       render: (text, { originalFormId }) => (
-        <Link className="aek-link" to={`/orderManage/customerOrder/detail/${originalFormId}`}>
+        <Link className="lkc-link" to={`/orderManage/customerOrder/detail/${originalFormId}`}>
           {text}
         </Link>
       ),
@@ -411,7 +411,7 @@ const genColumns = ({ printDeliverOrder, againDeliver, changeLogisInfo }) =>
           <span>
             {Number(formType) === 1 && [
               <Link
-                className="aek-link"
+                className="lkc-link"
                 key={1}
                 to={`/orderManage/deliveryOrder/deliveryDetail/${formId}`}
               >

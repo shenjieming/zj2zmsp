@@ -25,7 +25,7 @@ const CompareModal = ({ versionDoubleList, compareModalVisible, dispatchAction, 
     // onOk: handleOk,
     width: 1050,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     footer: <Button onClick={shutDownModal}>关闭</Button>,
   }
   const [
@@ -42,7 +42,7 @@ const CompareModal = ({ versionDoubleList, compareModalVisible, dispatchAction, 
         title: '字段',
         dataIndex: 'title',
         key: 'title',
-        className: 'aek-bg-columns',
+        className: 'lkc-bg-columns',
         render: (text, { editNo, editNo2 }) => {
           if (editNo === editNo2 || !!editNo + !!editNo2 === 0) {
             return <Badge status="1" text={text} />
@@ -60,7 +60,7 @@ const CompareModal = ({ versionDoubleList, compareModalVisible, dispatchAction, 
         ),
         dataIndex: 'editNo',
         key: 'editNo',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         width: 400,
         render: (text, { imgUrlsFlag }) => {
           if (imgUrlsFlag) {
@@ -79,7 +79,7 @@ const CompareModal = ({ versionDoubleList, compareModalVisible, dispatchAction, 
         ),
         dataIndex: 'editNo2',
         key: 'editNo2',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         width: 400,
         render: (text, { imgUrlsFlag }) => {
           if (imgUrlsFlag) {
@@ -92,7 +92,7 @@ const CompareModal = ({ versionDoubleList, compareModalVisible, dispatchAction, 
     dataSource: genList(versionDoubleList, registTypeList).filter(({ exclude }) => Number(exclude) === 1),
     pagination: false,
     rowClassName: ({ editNo, editNo2 }) =>
-      (editNo === editNo2 || !!editNo + !!editNo2 === 0 ? '' : 'aek-bg-difference'),
+      (editNo === editNo2 || !!editNo + !!editNo2 === 0 ? '' : 'lkc-bg-difference'),
     rowKey: (record, idx) => idx,
   }
   return (

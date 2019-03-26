@@ -94,7 +94,7 @@ const CustomerOrder = ({ customerOrder, location, loading }) => {
             <Link to={`${pathname}/delivery/${orderId}`}>
               <Button type="primary">发货</Button>
             </Link>
-            <span className="aek-fill-15" />
+            <span className="lkc-fill-15" />
             <a
               onClick={() => {
                 showConfirm(orderId)
@@ -124,7 +124,7 @@ const CustomerOrder = ({ customerOrder, location, loading }) => {
     } else {
       // 完成配送以及后续阶段都有打印采购单
       operation = (
-        <Link className="aek-link" to={`/orderManage/customerOrder/detail/${orderId}`}>
+        <Link className="lkc-link" to={`/orderManage/customerOrder/detail/${orderId}`}>
           查看采购单
         </Link>
       )
@@ -164,13 +164,13 @@ const CustomerOrder = ({ customerOrder, location, loading }) => {
     getLoading,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
       <div className="content">
         <SearchFormFillter {...searchParam} />
-        {searchSaveParams.materialsInfo ? <div className="aek-red">*在检索结果里，以下订单包含该物资。</div> : ''}
+        {searchSaveParams.materialsInfo ? <div className="lkc-red">*在检索结果里，以下订单包含该物资。</div> : ''}
         <Table
           bordered
           rowKey="formId"

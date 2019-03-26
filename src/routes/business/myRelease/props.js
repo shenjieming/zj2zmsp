@@ -86,7 +86,7 @@ const formData =
       component: {
         name: 'Checkbox',
         props: {
-          className: 'aek-ml10',
+          className: 'lkc-ml10',
           children: '公开',
         },
       },
@@ -104,7 +104,7 @@ const formData =
         }],
       },
       component: {
-        name: 'AekDatePicker',
+        name: 'LkcDatePicker',
         props: {
           disabledDate: current => current &&
             (new Date(new Date(moment(current).format('YYYY-MM-DD')).getTime() + (24 * 60 * 60 * 1000)).getTime() <
@@ -129,7 +129,7 @@ const formData =
         ],
       },
       component: {
-        name: 'AekRadioButton',
+        name: 'LkcRadioButton',
         props: {
           options: typeList.map(item => ({
             label: item.dicValueText,

@@ -38,7 +38,7 @@ const ScanAcceptancePage = ({ scanAcceptance, loading }) => {
     formStatus,
   } = detailPageData
   const tableParam = {
-    className: 'aek-mt15',
+    className: 'lkc-mt15',
     scroll: { x: 1300 },
     bordered: true,
     loading: getLoading('queryScanList'),
@@ -66,7 +66,7 @@ const ScanAcceptancePage = ({ scanAcceptance, loading }) => {
   }
 
   const barcodeInputProps = {
-    className: 'aek-barcode',
+    className: 'lkc-barcode',
     ref: (input) => {
       barcodeInput = input
     },
@@ -190,17 +190,17 @@ const ScanAcceptancePage = ({ scanAcceptance, loading }) => {
       </Row>
     )
   return (
-    <div className="aek-layout" style={{ paddingRight: 0, paddingBottom: 0 }}>
+    <div className="lkc-layout" style={{ paddingRight: 0, paddingBottom: 0 }}>
       <div className="bread">
         <Breadcrumb />
       </div>
-      <div className="aek-full-height">
+      <div className="lkc-full-height">
         <div className={style.scrollWrap}>
-          <div className={`${style.top} aek-shadow-bottom`}>
+          <div className={`${style.top} lkc-shadow-bottom`}>
             <div>
               <Input {...barcodeInputProps} />
             </div>
-            <p className={classnames('aek-primary-color', ' aek-font-small', style.helpText)}>
+            <p className={classnames('lkc-primary-color', ' lkc-font-small', style.helpText)}>
               扫描配送单条形码或者输入配送单号按下回车键开始验收
             </p>
           </div>
@@ -228,7 +228,7 @@ const ScanAcceptancePage = ({ scanAcceptance, loading }) => {
                       <Col span={8}>
                         <p>配送单号：</p>
                         <span>
-                          {formNo} {formStatus === 3 && <span className="aek-red">（已验收）</span>}
+                          {formNo} {formStatus === 3 && <span className="lkc-red">（已验收）</span>}
                         </span>
                       </Col>
                       <Col span={8}>
@@ -266,11 +266,11 @@ const ScanAcceptancePage = ({ scanAcceptance, loading }) => {
             </div>
           </div>
           {formStatus === 3 ? (
-            <div className={`${style.bottom} aek-shadow-top`}>
+            <div className={`${style.bottom} lkc-shadow-top`}>
               <a>已验收</a>
             </div>
           ) : (
-            <div className={`${style.bottom} aek-shadow-top`}>
+            <div className={`${style.bottom} lkc-shadow-top`}>
               <a onClick={confirmReceipt}>确认验收</a>
             </div>
           )}

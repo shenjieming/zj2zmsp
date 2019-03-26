@@ -40,7 +40,7 @@ const RecruitModal = ({
     onCancel: onHide,
     onOk: submitHandler,
     width: 500,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   return (
     <Modal {...modalOpts}>

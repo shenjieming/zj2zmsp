@@ -63,12 +63,12 @@ function MsgConfig({ msgConfig, loading, routes }) {
   }
 
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb routes={routes} />
       </div>
       <Spin spinning={getLoading('getMsgConfigList', 'changeConfigStatus')}>
-        <div className="aek-shadow">
+        <div className="lkc-shadow">
           {configList.map(data => (
             <CfgPanel
               data={data}

@@ -27,12 +27,12 @@ const IndexPage = ({ accountBoard, loading }) => {
     return `${year}年${month}月`
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
       <div className="content">
-        <div className="aek-layout-hor">
+        <div className="lkc-layout-hor">
           <div className={styles.left}>
             <div className={styles.title}>对账日期</div>
             {data.map((item) => {
@@ -60,43 +60,43 @@ const IndexPage = ({ accountBoard, loading }) => {
           </div>
           <div className={styles.center}>
             <Spin spinning={getLoading('queryData')}>
-              <div className="aek-content-title">对账详情</div>
+              <div className="lkc-content-title">对账详情</div>
               <div className={styles.cardArea}>
                 <div className={styles.aekCard}>
                   <div>
-                    <span className="aek-orange">零库存</span>-省招入库金额
+                    <span className="lkc-orange">零库存</span>-省招入库金额
                   </div>
-                  <div className={`aek-orange ${styles.bigFont}`}>
+                  <div className={`lkc-orange ${styles.bigFont}`}>
                     {currentData.stockinAmount || '0.00'}
                   </div>
                 </div>
                 <div className={styles.card}>
                   <div>
-                    <span className="aek-orange">省采购平台</span>-采购金额
+                    <span className="lkc-orange">省采购平台</span>-采购金额
                   </div>
-                  <div className={`aek-gray ${styles.bigFont}`}>
+                  <div className={`lkc-gray ${styles.bigFont}`}>
                     {currentData.apiPurchaseAmount || '0.00'}
                   </div>
                 </div>
                 <div className={styles.card}>
                   <div>
-                    <span className="aek-orange">省采购平台</span>-已发货
+                    <span className="lkc-orange">省采购平台</span>-已发货
                   </div>
-                  <div className={`aek-gray ${styles.bigFont}`}>
+                  <div className={`lkc-gray ${styles.bigFont}`}>
                     {currentData.apiSendAmount || '0.00'}
                   </div>
                 </div>
                 <div className={styles.card}>
                   <div>
-                    <span className="aek-orange">省采购平台</span>-已入库
+                    <span className="lkc-orange">省采购平台</span>-已入库
                   </div>
-                  <div className={`aek-gray ${styles.bigFont}`}>
+                  <div className={`lkc-gray ${styles.bigFont}`}>
                     {currentData.apiStockinAmount || '0.00'}
                   </div>
                 </div>
               </div>
               <div className={styles.graphContainer}>
-                <div className="aek-fr">对账日期：{slicePeriodNo(currentData.periodNo)}</div>
+                <div className="lkc-fr">对账日期：{slicePeriodNo(currentData.periodNo)}</div>
                 <Graph
                   data={[
                     { name: '零库存-省招入库金额', value: Number(currentData.stockinAmount) },
@@ -109,7 +109,7 @@ const IndexPage = ({ accountBoard, loading }) => {
             </Spin>
           </div>
           <div className={styles.right}>
-            <div className="aek-content-title">本期数据问题</div>
+            <div className="lkc-content-title">本期数据问题</div>
             {currentData.status.length > 0 ? (
               <div className={styles.errorArea}>
                 <div>

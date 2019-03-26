@@ -17,7 +17,7 @@ const ModalBarcode = ({ barcodeVisible, loading, toAction, barcodeList }) => {
     onCancel() {
       toAction({ barcodeVisible: false })
     },
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     footer: false,
   }
   const columns = [
@@ -25,7 +25,7 @@ const ModalBarcode = ({ barcodeVisible, loading, toAction, barcodeList }) => {
       key: 'index',
       dataIndex: 'index',
       title: '序号',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, record, index) => index + 1,
     },

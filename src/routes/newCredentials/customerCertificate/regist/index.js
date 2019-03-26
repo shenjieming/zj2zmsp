@@ -191,7 +191,7 @@ function Regist({
       render: (value, record) => {
         let dom
         const replace = () => (<span>
-          {record.replacedFlag ? <p className="aek-red">(已换证,<a onClick={() => {
+          {record.replacedFlag ? <p className="lkc-red">(已换证,<a onClick={() => {
             dispatchAction({
               payload: {
                 modalTitle: '查看注册证',
@@ -217,7 +217,7 @@ function Regist({
               (24 * 60 * 60 * 1000)).getTime()
             const todayDate = new Date().getTime()
             if (oldDate < todayDate) {
-              dom = (<p className="aek-text-disable">{`${record.validDateStart}延期至${record.delayedDateEnd}`}<span className="aek-red">（已过期）</span></p>)
+              dom = (<p className="lkc-text-disable">{`${record.validDateStart}延期至${record.delayedDateEnd}`}<span className="lkc-red">（已过期）</span></p>)
             } else {
               dom = <p>{`${record.validDateStart}延期至${record.delayedDateEnd}`}</p>
             }
@@ -227,7 +227,7 @@ function Regist({
               (24 * 60 * 60 * 1000)).getTime()
             const todayDate = new Date().getTime()
             if (oldDate < todayDate) {
-              dom = <p className="aek-text-disable">{record.validDateEnd}<span className="aek-red">（已过期）</span></p>
+              dom = <p className="lkc-text-disable">{record.validDateEnd}<span className="lkc-red">（已过期）</span></p>
             } else {
               dom = <p>{value}</p>
             }
@@ -263,7 +263,7 @@ function Regist({
       dataIndex: 'operation',
       title: '操作',
       width: 120,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => {
         const menuProps = {
           status: record.certificateStatus,

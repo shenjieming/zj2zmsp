@@ -44,28 +44,28 @@ const LoanApply = ({ loanApply, loading }) => {
   const breadList = () => {
     const retCol = []
     list.map((item, index) => {
-      retCol.push(<Col span={6} key={index} className={`${Styles['aek-breadcrumb-title-list']} ${index === (stepIndex - 1) ? Styles['aek-title-selected'] : ''}`}>
+      retCol.push(<Col span={6} key={index} className={`${Styles['lkc-breadcrumb-title-list']} ${index === (stepIndex - 1) ? Styles['lkc-title-selected'] : ''}`}>
         {item.title}
       </Col>)
     })
     return retCol
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
       <div className="full-content">
-        <div className={`${Styles['aek-title']}`}>
-          <Row span={24} className={`${Styles['aek-breadcrumb-title']}`}>
+        <div className={`${Styles['lkc-title']}`}>
+          <Row span={24} className={`${Styles['lkc-breadcrumb-title']}`}>
             {breadList()}
           </Row>
         </div>
-        <div className={`${Styles['aek-content']}`}>
-          <div className={`${Styles['aek-content-title']}`}>
+        <div className={`${Styles['lkc-content']}`}>
+          <div className={`${Styles['lkc-content-title']}`}>
             {list[stepIndex - 1].title}
           </div>
-          <div className={`${Styles['aek-content-main']}`}>
+          <div className={`${Styles['lkc-content-main']}`}>
             {list[stepIndex - 1].content}
           </div>
         </div>

@@ -57,7 +57,7 @@ const ImportModal = (
     },
     width: 600,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   return (
     <Modal {...modalOpts}>
@@ -98,7 +98,7 @@ const ImportModal = (
           >导入</Button>
           <a onClick={() => { window.open(`${EXCEL_DOWNLOAD}/excel/template/PurchaseCatalogImportTemplate.xls`) }}> 下载模板</a>
         </div>
-        <div className="aek-text-disable">
+        <div className="lkc-text-disable">
           <p>备注：</p>
           <p>1、导入功能仅针对新增信息，不覆盖已存在信息。</p>
           <p>2、标“*”的栏位是必填项，不能为空。</p>

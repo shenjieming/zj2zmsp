@@ -53,7 +53,7 @@ const ModalRefuse = ({
       toAction({ refuseModalVisible: false })
     },
     onOk,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   return (
     <Modal {...modalOpts}>

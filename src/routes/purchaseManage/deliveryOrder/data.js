@@ -13,9 +13,9 @@ const FORM_ITEM_LAYOUT = {
 const formStatusArr = [
   '',
   <span>暂存</span>,
-  <span className="aek-green">配送中</span>,
+  <span className="lkc-green">配送中</span>,
   <span>已验收</span>,
-  <span className="aek-red">已作废</span>,
+  <span className="lkc-red">已作废</span>,
 ]
 const formTypeArr = ['', '普耗', '寄销', '跟台']
 
@@ -276,12 +276,12 @@ const genColumns = ({ printDeliverOrder, orgId }) =>
       title: '序号',
       dataIndex: 'index',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, { urgentFlag, originalFormStatus }, idx) => {
         if (urgentFlag && originalFormStatus < 3) {
           return {
             children: <span>{idx + 1}</span>,
-            props: { className: 'aek-urgent aek-text-center' },
+            props: { className: 'lkc-urgent lkc-text-center' },
           }
         }
         return <span>{idx + 1}</span>
@@ -293,7 +293,7 @@ const genColumns = ({ printDeliverOrder, orgId }) =>
       key: 'formNo',
       render: (text, { formId }) => (
         <Link
-          className="aek-text-overflow  aek-link"
+          className="lkc-text-overflow  lkc-link"
           to={`/purchaseManage/deliveryOrder/deliveryDetail/${formId}`}
         >
           {text}
@@ -321,7 +321,7 @@ const genColumns = ({ printDeliverOrder, orgId }) =>
         if (deliverType === 1 && formType !== 3) {
           return (
             <Link
-              className="aek-link"
+              className="lkc-link"
               to={`/purchaseManage/deliveryOrder/purchaseLogistics/${formId}`}
             >
               {deliverCompany}-{deliverNo}
@@ -330,7 +330,7 @@ const genColumns = ({ printDeliverOrder, orgId }) =>
         } else if (deliverType === 2 && formType !== 3) {
           return (
             <Link
-              className="aek-link"
+              className="lkc-link"
               to={`/purchaseManage/deliveryOrder/purchaseLogistics/${formId}`}
             >
               自送{deliverName && <span>-{deliverName}</span>}
@@ -344,7 +344,7 @@ const genColumns = ({ printDeliverOrder, orgId }) =>
     {
       title: '订单金额',
       dataIndex: 'formAmount',
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: text => `￥${text}`,
     },
     {
@@ -368,7 +368,7 @@ const genColumns = ({ printDeliverOrder, orgId }) =>
       title: '发货时间',
       dataIndex: 'deliverTime',
       key: 'deliverTime',
-      render: text => <span className="aek-text-overflow">{text}</span>,
+      render: text => <span className="lkc-text-overflow">{text}</span>,
     },
     {
       title: '操作',
@@ -380,7 +380,7 @@ const genColumns = ({ printDeliverOrder, orgId }) =>
         if (status && Number(status) === 2 && receiveOrgId === orgId) {
           return (
             <Link
-              className="aek-link"
+              className="lkc-link"
               key={1}
               to={`/purchaseManage/scanAcceptance?${stringify({ formNo })}`}
             >
@@ -389,7 +389,7 @@ const genColumns = ({ printDeliverOrder, orgId }) =>
           )
         } else if (status && Number(status) === 3 && receiveOrgId === orgId) {
           return (
-            <a className="aek-link" onClick={() => printDeliverOrder(record)}>
+            <a className="lkc-link" onClick={() => printDeliverOrder(record)}>
               打印验收单
             </a>
           )

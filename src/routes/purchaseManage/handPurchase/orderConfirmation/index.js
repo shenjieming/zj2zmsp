@@ -112,7 +112,7 @@ function OrderConfirmation({ orderConfirmation, loading, addressList }) {
         title: (
           <div className={style.orderItemTitle}>
             <div>{item.supplierOrgName}</div>
-            <div className="aek-text-help">
+            <div className="lkc-text-help">
               {segmentation([item.supplierContactName, item.supplierContactPhone], ' - ')}
             </div>
           </div>
@@ -154,7 +154,7 @@ function OrderConfirmation({ orderConfirmation, loading, addressList }) {
           key: index,
           rowClassName: ({ disabled }) => {
             if (disabled) {
-              return 'aek-text-disable'
+              return 'lkc-text-disable'
             }
             return undefined
           },
@@ -221,9 +221,9 @@ function OrderConfirmation({ orderConfirmation, loading, addressList }) {
     breadLeft: [{ name: 'Breadcrumb' }],
     content: [
       <div>
-        <div className="aek-content-title">
-          <div className="aek-title-left">选择收货地址</div>
-          <div className="aek-title-right">
+        <div className="lkc-content-title">
+          <div className="lkc-title-left">选择收货地址</div>
+          <div className="lkc-title-right">
             <a
               onClick={() => {
                 dispatchUrl({ pathname: '/purchaseManage/receiptAddress' })
@@ -237,8 +237,8 @@ function OrderConfirmation({ orderConfirmation, loading, addressList }) {
         <ModalForm {...modalProps} />
       </div>,
       <span>
-        <div className="aek-content-title">
-          <div className="aek-title-left">确认订单信息</div>
+        <div className="lkc-content-title">
+          <div className="lkc-title-left">确认订单信息</div>
         </div>
         {getAPanelArr(orderFormData)}
         <ModalOrderForm {...modalOrderFormProps} />
@@ -247,10 +247,10 @@ function OrderConfirmation({ orderConfirmation, loading, addressList }) {
     otherContent: (
       <span>
         <div style={{ height: 60 }} />
-        <div className={`${style.bottomInfo} aek-shadow-top`}>
-          <div>合计品规：<span className="aek-red">{classNum}</span></div>
-          <div>合计数量：<span className="aek-red">{sumNum}</span></div>
-          <div>合计金额：<span className="aek-red">{formatNum(sumMoney)}</span></div>
+        <div className={`${style.bottomInfo} lkc-shadow-top`}>
+          <div>合计品规：<span className="lkc-red">{classNum}</span></div>
+          <div>合计数量：<span className="lkc-red">{sumNum}</span></div>
+          <div>合计金额：<span className="lkc-red">{formatNum(sumMoney)}</span></div>
           <div
             className={butDisabled ? style.hover : undefined}
             onClick={() => {

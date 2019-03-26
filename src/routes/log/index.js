@@ -59,14 +59,14 @@ function Log(props) {
     {
       title: '序号',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (_, $, i) => i + 1,
     },
     {
       title: '主键',
       key: 'apiId',
       dataIndex: 'apiId',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
     },
     {
       title: '消息类型',
@@ -77,22 +77,22 @@ function Log(props) {
       title: '响应编码',
       key: 'responseCode',
       dataIndex: 'responseCode',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
     },
     {
       title: '发送时间',
       key: 'sendTime',
       dataIndex: 'sendTime',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
     },
     {
       title: '操作',
       key: 'action',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (_, row) => (
         <div>
           <Button
-            className="aek-mr20"
+            className="lkc-mr20"
             type="primary"
             onClick={() => {
               dispatchAction({ type: RESEND, payload: row.apiId }).then(() => {
@@ -152,7 +152,7 @@ function Log(props) {
   }
 
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

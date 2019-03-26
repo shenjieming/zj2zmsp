@@ -32,7 +32,7 @@ const ConfirmModal = ({
     },
     okText: '提交采购单',
     width: 1100,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const columns = [
     {
@@ -64,13 +64,13 @@ const ConfirmModal = ({
     {
       title: '单价',
       dataIndex: 'distributorPrice',
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: text => `￥${text}`,
     },
     {
       title: '金额',
       key: 'materialsAmount',
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: (text, row) => formatNum(new Decimal(row.distributorPrice).times(row.purchaseQty)),
     },
   ]
@@ -126,17 +126,17 @@ const ConfirmModal = ({
         {content}
         <div style={{ textAlign: 'right', marginTop: '10px' }}>
           <div>
-            合计品规：<span className="aek-red" style={{ marginLeft: '5px' }}>
+            合计品规：<span className="lkc-red" style={{ marginLeft: '5px' }}>
               {allTotalPsc}
             </span>
           </div>
           <div>
-            合计数量：<span className="aek-red" style={{ marginLeft: '5px' }}>
+            合计数量：<span className="lkc-red" style={{ marginLeft: '5px' }}>
               {allTotalQty}
             </span>
           </div>
           <div>
-            合计金额：<span className="aek-red" style={{ marginLeft: '5px' }}>
+            合计金额：<span className="lkc-red" style={{ marginLeft: '5px' }}>
               {formatNum(allTotalAmount)}
             </span>
           </div>

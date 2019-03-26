@@ -5,7 +5,7 @@ import axios from '../../../../utils/axiosInstance'
 import { baseURL } from '../../../../utils/config'
 import { columns, columnsInner } from './props'
 import style from './index.less'
-import AekLightBox from '../../../../components/AekLightBox'
+import LkcLightBox from '../../../../components/LkcLightBox'
 
 const handleUrl = (list) => {
   const urlList = []
@@ -111,8 +111,8 @@ class CheckModal extends React.Component {
           {stockIns.length > 0 && (
             <div className={style.footer}>
               合计共
-              <span className={`aek-red ${style.textRed}`}>{stockInStatistics}</span>笔入库单 共贷款
-              <span className={`aek-red ${style.textRed}`}>{grantAmount}</span> 元
+              <span className={`lkc-red ${style.textRed}`}>{stockInStatistics}</span>笔入库单 共贷款
+              <span className={`lkc-red ${style.textRed}`}>{grantAmount}</span> 元
             </div>
           )}
         </div>
@@ -120,7 +120,7 @@ class CheckModal extends React.Component {
     )
     const invoiceItem = invoices[index] || {}
     const imageHeadDetail = (
-      <Row className="aek-text-center" gutter={8}>
+      <Row className="lkc-text-center" gutter={8}>
         <Col span={8}>发票号码：{invoiceItem.invoiceNo}</Col>
         <Col span={8}>发票金额：{invoiceItem.invoiceAmount}</Col>
         <Col span={8}>发票日期：{invoiceItem.invoiceDate}</Col>
@@ -129,7 +129,7 @@ class CheckModal extends React.Component {
     const urls = handleUrl(invoices)
     return (
       <div>
-        <AekLightBox
+        <LkcLightBox
           isOpen={visible}
           url={urls}
           onCancel={() => {

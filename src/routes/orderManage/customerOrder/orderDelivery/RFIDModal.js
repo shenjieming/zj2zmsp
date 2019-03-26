@@ -36,7 +36,7 @@ const RFIDModal = ({
     onCancel: hideHandler,
     onOk: submitHandler,
     width: 500,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const content = () => {
     const deliverNum = Number(deliverQty)

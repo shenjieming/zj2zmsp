@@ -11,13 +11,13 @@ function UseClause() {
         <img className={styles.logo} src={logo} alt="医储" />
         <div className={styles.title}>
           <Link to="/login" className={styles.title}>登录</Link>
-          <span className={`aek-mlr15 ${styles.title}`}>|</span>
+          <span className={`lkc-mlr15 ${styles.title}`}>|</span>
           <Link to="/regist" className={styles.title}>注册</Link>
         </div>
       </div>
       <div className={styles.content} style={{ overflowY: 'scroll' }}>
         <div className={styles.notesContent}>
-          <h1 className="aek-text-center">使用条款</h1>
+          <h1 className="lkc-text-center">使用条款</h1>
           <p />
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 请您认真阅读并充分理解本协议中各条款，包括免除或者限制零库存责任的免责条款及对用户的权利限制条款，并选择接受或不接受本协议。如您完成了注册、登录、 使用等行为，则将视为对本协议的接受，并同意接受本协议各项条款的约束。本协议由零库存进行修订，修订后的协议条款经网站公布，即代替原协议条款，用户继续接受平台服务，即视为已接受了修改后的协议。
             <br />&nbsp;

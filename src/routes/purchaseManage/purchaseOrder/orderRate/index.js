@@ -59,7 +59,7 @@ const OrderRate = ({
   }
   const appraiseList = ['配送速度', '服务态度']
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb routes={routes} />
       </div>
@@ -73,10 +73,10 @@ const OrderRate = ({
                 icon="user"
               />
               <div className={styles.dealerBasic}>
-                <div className="aek-font-large">{supplierInfo.supplierOrgName}</div>
+                <div className="lkc-font-large">{supplierInfo.supplierOrgName}</div>
                 <div>
                   {supplierInfo.contactName}
-                  <span className="aek-fill-15" />
+                  <span className="lkc-fill-15" />
                   {supplierInfo.contactPhone}
                 </div>
               </div>
@@ -85,7 +85,7 @@ const OrderRate = ({
           <div className={styles.rateFrom}>
             <Row>
               <Col span="12" style={{ padding: '10px' }}>
-                <span className="aek-font-large">评价内容</span>
+                <span className="lkc-font-large">评价内容</span>
                 {getFieldDecorator('appraiseContent')(
                   <TextArea className={styles.textArea} rows={10} spellCheck="false" />,
                 )}

@@ -116,14 +116,14 @@ const Authority = ({ personAdmin, dispatch, effects, orgType, routes }) => {
     deptId,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Bread routes={routes} />
       </div>
       <div className="content">
-        <div className="aek-layout-hor">
+        <div className="lkc-layout-hor">
           <div className={Style.sider}>
-            <div className="aek-text-center aek-ptb10" style={{ lineHeight: 0, borderBottom: '1px solid #bebebe' }}>
+            <div className="lkc-text-center lkc-ptb10" style={{ lineHeight: 0, borderBottom: '1px solid #bebebe' }}>
               <Button
                 style={{ width: '60%' }}
                 onClick={() => {

@@ -154,7 +154,7 @@ function RegistModal({
     title: getTitle(status),
     visible: modalVisible,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     width: 600,
     onCancel() {
       resetFields()
@@ -197,28 +197,28 @@ function RegistModal({
         message: '无证号资质无需平台审核，提交后即可使用',
         type: 'info',
         showIcon: true,
-        className: 'aek-mb20',
+        className: 'lkc-mb20',
       }
     } else if (step === 2 && detail.standardCertificateId && !detail.platformAuthStatus) {
       props = {
         message: '平台已经存在这本证件，请上传证件扫描件或图片信息',
         type: 'info',
         showIcon: true,
-        className: 'aek-mb20',
+        className: 'lkc-mb20',
       }
     } else if (step === 2 && status === 1) {
       props = {
         message: '平台尚未添加此证件，请填写好证件信息，并将证件的首页及附页图片或扫描件上传，提交至客服进行审核。',
         type: 'info',
         showIcon: true,
-        className: 'aek-mb20',
+        className: 'lkc-mb20',
       }
     } else if (detail.platformAuthStatus === 1) {
       props = {
         message: '证件信息已提交至客服进行审核，如果您发现有误，可以立即更改后重新提交',
         type: 'info',
         showIcon: true,
-        className: 'aek-mb20',
+        className: 'lkc-mb20',
       }
     } else if (detail.platformAuthStatus === 3) {
       if (detail.refuseReason || detail.refuseType) {
@@ -227,7 +227,7 @@ function RegistModal({
           description: retRefuse(),
           type: 'warning',
           showIcon: true,
-          className: 'aek-mb20 aek-word-break',
+          className: 'lkc-mb20 lkc-word-break',
         }
       } else {
         return undefined

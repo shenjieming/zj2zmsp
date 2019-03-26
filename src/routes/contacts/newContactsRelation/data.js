@@ -24,7 +24,7 @@ const formItemData = [{
 const columns = ({ relationStatus }) => [{
   title: '序号',
   dataIndex: 'order',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 60,
 }, {
   title: '名称',
@@ -66,12 +66,12 @@ const columns = ({ relationStatus }) => [{
 }, {
   title: '申请时间',
   dataIndex: 'applyDate',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 160,
 }, {
   title: '操作',
   dataIndex: 'operation',
-  className: 'aek-text-center aek-gray',
+  className: 'lkc-text-center lkc-gray',
   width: 150,
   render: (text, { id, status }) => ({
     2: '已通过',

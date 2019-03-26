@@ -143,7 +143,7 @@ const funStatus = {
 const columns = update => [{
   title: '序号',
   key: 'order',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 50,
   render: (_, $, i) => i + 1,
 }, {
@@ -156,12 +156,12 @@ const columns = update => [{
   title: '状态',
   dataIndex: 'status',
   width: 80,
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   render: text => funStatus[text],
 }, {
   title: '操作',
   dataIndex: 'operation',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 120,
   render(text, record) {
     return (<span>

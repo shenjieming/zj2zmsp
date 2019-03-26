@@ -159,7 +159,7 @@ const ProdFactoryModal = ({
       resetFields()
       handleCancel()
     },
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     closable: true,
     footer,

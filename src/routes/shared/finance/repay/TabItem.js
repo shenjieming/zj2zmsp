@@ -32,7 +32,7 @@ const ItemTable = ({
       title: '序号',
       dataIndex: 'index',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, _, idx) => idx + 1,
     },
     {
@@ -70,12 +70,12 @@ const ItemTable = ({
       title: '操作',
       dataIndex: 'action',
       key: 'action',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, { formId }) => {
         // 供应商
         if (type === 'supplier') {
           return (
-            <Link className="aek-link" to={`/financeLoan/repayLoan/repayLoanDetail/${formId}`}>
+            <Link className="lkc-link" to={`/financeLoan/repayLoan/repayLoanDetail/${formId}`}>
               明细
             </Link>
           )
@@ -83,7 +83,7 @@ const ItemTable = ({
         // 银行
         if (type === 'bank') {
           return (
-            <Link className="aek-link" to={`/financeAudit/repayAudit/repayAuditDetail/${formId}`}>
+            <Link className="lkc-link" to={`/financeAudit/repayAudit/repayAuditDetail/${formId}`}>
               明细
             </Link>
           )
@@ -92,7 +92,7 @@ const ItemTable = ({
         if (type === 'manage') {
           return (
             <Link
-              className="aek-link"
+              className="lkc-link"
               to={`/financeManage/repayManage/repayManageDetail/${formId}`}
             >
               明细

@@ -78,13 +78,13 @@ function ArticleManageDetail({
     }
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb routes={routes} />
       </div>
       <div className="content">
         <Spin spinning={getLoading('setArticleAdd', 'setArticleEdit')}>
-          <h2 className="aek-mb20">{articleId ? '编辑文章' : '新增文章'}</h2>
+          <h2 className="lkc-mb20">{articleId ? '编辑文章' : '新增文章'}</h2>
           <Form className={`${Styles['article-content']}`}>
             <GetFormItem formData={modalFormData(
               {

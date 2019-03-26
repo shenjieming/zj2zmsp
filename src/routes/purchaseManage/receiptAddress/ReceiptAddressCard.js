@@ -40,7 +40,7 @@ function ReceiptAddressCard({
             {item.receiptContactName}
             <span>{item.receiptContactPhone}</span>
           </div>
-          <p className="aek-text-help" style={{ fontSize: 12 }}>
+          <p className="lkc-text-help" style={{ fontSize: 12 }}>
             {getAddressStr(item.receiptMasterAddress)} {item.receiptDetailAddress}
           </p>
         </div>

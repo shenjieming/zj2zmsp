@@ -88,7 +88,7 @@ const EditMaterial = ({
   const addModalProp = {
     title: '编辑物料',
     visible: editMaterialVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     width: 800,
     onCancel() {

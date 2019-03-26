@@ -191,7 +191,7 @@ const PushDetail = ({ pushDetail, loading }) => {
     {
       title: '序号',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, row, index) => index + 1,
     },
@@ -202,7 +202,7 @@ const PushDetail = ({ pushDetail, loading }) => {
         return (
           <span>
             <div>{text}</div>
-            <div className="aek-gray">{row.productName}</div>
+            <div className="lkc-gray">{row.productName}</div>
           </span>
         )
       },
@@ -235,7 +235,7 @@ const PushDetail = ({ pushDetail, loading }) => {
     return (
       <span>
         {title}
-        <span className="aek-red aek-ml10 aek-font-small">({num})</span>
+        <span className="lkc-red lkc-ml10 lkc-font-small">({num})</span>
       </span>
     )
   }
@@ -257,7 +257,7 @@ const PushDetail = ({ pushDetail, loading }) => {
     certificateList: certificateDetail.certificates,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
         <div style={{ float: 'right' }}>
@@ -269,8 +269,8 @@ const PushDetail = ({ pushDetail, loading }) => {
         </div>
       </div>
       <div className="content">
-        <div className="aek-content-title">
-          <span className="aek-font-middle">{customerInfo.customerOrgName}</span>
+        <div className="lkc-content-title">
+          <span className="lkc-font-middle">{customerInfo.customerOrgName}</span>
           <Icon type="phone" style={{ margin: '0px 10px' }} />
           <span>{customerInfo.contactName}</span>-<span>{customerInfo.contactPhone}</span>
         </div>

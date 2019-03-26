@@ -125,7 +125,7 @@ const baseColumns = ({ excludeArr = [], showCerticafite, tabStatus, showCerticaA
             logoUrl="nil"
             otherInfo={[
               materialsName,
-              <span className="aek-text-disable">{materialsCommenName}</span>,
+              <span className="lkc-text-disable">{materialsCommenName}</span>,
             ]}
           />
         )
@@ -229,7 +229,7 @@ const baseColumns = ({ excludeArr = [], showCerticafite, tabStatus, showCerticaA
 const barcodeCol = ({ showBarcode }) => ({
   title: '条码数量',
   dataIndex: 'barcodeNumber',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   render(text, { pscId }) {
     if (!!text && Number(text) > 0) {
       return <a onClick={() => showBarcode(pscId)}>{text}条</a>
@@ -253,7 +253,7 @@ const inUseColumns = ({
   {
     title: '平台认证',
     dataIndex: 'platformAuthStatus',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 150,
     render(platformAuthStatus) {
       return {
@@ -266,13 +266,13 @@ const inUseColumns = ({
   {
     title: '最后修改时间',
     dataIndex: 'lastEditTime',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 200,
   },
   {
     title: '操作',
     dataIndex: 'operation',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 120,
     render: (text, all) => (
       <span>
@@ -346,10 +346,10 @@ const pendingReviewColumns = ({
           logoUrl="nil"
           otherInfo={
             changeType < 2 ? (
-              <p className="aek-green">新增</p>
+              <p className="lkc-green">新增</p>
             ) : (
               [
-                <p className="aek-orange">修改</p>,
+                <p className="lkc-orange">修改</p>,
                 <a
                   onClick={() => {
                     seeChange(pscId)
@@ -396,7 +396,7 @@ const pendingReviewColumns = ({
   {
     title: '招标信息',
     dataIndex: 'inviteType',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render(inviteType, { inviteNo, pscId }) {
       return (
         <span>
@@ -461,14 +461,14 @@ const pendingReviewColumns = ({
   {
     title: (
       <span>
-        <span className="aek-red">*</span>单价
+        <span className="lkc-red">*</span>单价
       </span>
     ),
     dataIndex: 'price',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (price, { pscId }) =>
       getComponent({
-        name: 'AekInputNumber',
+        name: 'LkcInputNumber',
         props: {
           value: price,
           placeholder: '请输入',
@@ -486,13 +486,13 @@ const pendingReviewColumns = ({
   barcodeCol({ showBarcode }),
   {
     title: '修改时间',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     dataIndex: 'lastEditTime',
   },
   {
     title: '操作',
     dataIndex: 'operation',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 120,
     render: (
       text,
@@ -544,7 +544,7 @@ const refusedColumns = ({ showBarcode, showCerticafite, tabStatus, showCerticaAu
   {
     title: '序号',
     dataIndex: 'order',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 60,
   },
   ...baseColumns({ excludeArr: ['inviteType'], showCerticafite, tabStatus, showCerticaAudit }),
@@ -564,7 +564,7 @@ const refusedColumns = ({ showBarcode, showCerticafite, tabStatus, showCerticaAu
   {
     title: '拒绝时间',
     dataIndex: 'refuseTime',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 200,
   },
   {
@@ -598,7 +598,7 @@ const historyColumns = viewModal => [
     title: '操作',
     key: 'action',
     width: 100,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (text, record) => <a onClick={() => viewModal(record)}>查看</a>,
   },
 ]

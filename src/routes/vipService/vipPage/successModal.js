@@ -11,7 +11,7 @@ const SuccessModal = ({ visible, orderDetail, onCancel }) => {
     onCancel,
     maskClosable: false,
     width: 600,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     footer: null,
   }
   const tableParam = {
@@ -29,7 +29,7 @@ const SuccessModal = ({ visible, orderDetail, onCancel }) => {
       {
         title: '价格',
         dataIndex: 'serviceAmount',
-        className: 'aek-text-right',
+        className: 'lkc-text-right',
         render(data) {
           return formatNum(data)
         },
@@ -41,17 +41,17 @@ const SuccessModal = ({ visible, orderDetail, onCancel }) => {
   return (
     <Modal {...modalOpts}>
       <div className={styles.modalContainer}>
-        <div className="aek-font-mid aek-text-bold">
+        <div className="lkc-font-mid lkc-text-bold">
           VIP会员订单 (订单号: {orderDetail.orderNo})
         </div>
-        <div className="aek-clearfix">
+        <div className="lkc-clearfix">
           <Table {...tableParam} />
-          <div className="aek-fr aek-font-mid">
+          <div className="lkc-fr lkc-font-mid">
             合计:
-            <span className="aek-red">{formatNum(orderDetail.serviceAmount)}</span>
+            <span className="lkc-red">{formatNum(orderDetail.serviceAmount)}</span>
           </div>
         </div>
-        <div className="aek-font-mid aek-text-bold">支付会员费用</div>
+        <div className="lkc-font-mid lkc-text-bold">支付会员费用</div>
         <div>
           请扫描下方二维码 「支付」{' '}
           <span className={styles.importantinfo}>{formatNum(orderDetail.serviceAmount)}</span>
@@ -59,7 +59,7 @@ const SuccessModal = ({ visible, orderDetail, onCancel }) => {
           ，支付成功后， 请拨打客户服务热线：400-052-5256（工作日 9:00 至 17:30）
           告知付款信息，并为您开通VIP服务。
         </div>
-        <div className="aek-mt20">
+        <div className="lkc-mt20">
           <div className={styles.qrCodeWeChatPay} />
           <div className={styles.qrCodeAliPay} />
         </div>

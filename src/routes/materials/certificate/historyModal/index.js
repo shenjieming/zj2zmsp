@@ -44,7 +44,7 @@ const HistoryModal = (
       type="primary"
     >版本对比</Button>,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const columns = [
     {
@@ -66,7 +66,7 @@ const HistoryModal = (
       title: '操作',
       key: 'action',
       width: 160,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, { certificateVersionId }) => (<a
         onClick={
           () => {
@@ -106,7 +106,7 @@ const HistoryModal = (
       <div style={{ marginBottom: 15 }}>
         <Alert message="可选择其中两个版本进行对比" type="info" showIcon />
       </div>
-      <Table bordered {...tableParam} className="aek-table-no-allcheck" />
+      <Table bordered {...tableParam} className="lkc-table-no-allcheck" />
     </Modal>
   )
 }

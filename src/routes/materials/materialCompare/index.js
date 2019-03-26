@@ -23,7 +23,7 @@ const IndexPage = ({ materialCompare, loading }) => {
       dataIndex: 'index',
       key: 'index',
       width: 50,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, record, idx) => idx + 1,
     },
     {
@@ -145,7 +145,7 @@ const IndexPage = ({ materialCompare, loading }) => {
         field: 'customerOrgId',
         width: 220,
         component: {
-          name: 'AekSelect',
+          name: 'LkcSelect',
           props: {
             url: '/organization/option/2347-after-review-list',
             optionConfig: { idStr: 'orgId', nameStr: 'orgName', prefix: '买方' },
@@ -158,7 +158,7 @@ const IndexPage = ({ materialCompare, loading }) => {
         field: 'supplierOrgId',
         width: 220,
         component: {
-          name: 'AekSelect',
+          name: 'LkcSelect',
           props: {
             url: '/organization/option/2347-after-review-list',
             optionConfig: { idStr: 'orgId', nameStr: 'orgName', prefix: '卖方' },
@@ -193,7 +193,7 @@ const IndexPage = ({ materialCompare, loading }) => {
     scroll: { x: 1150 },
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

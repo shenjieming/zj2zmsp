@@ -6,19 +6,19 @@ const tableColumns = [
     title: '物资名称',
     dataIndex: 'materialsName',
     key: 'materialsName',
-    className: 'aek-word-break',
+    className: 'lkc-word-break',
   },
   {
     title: '规格型号',
     width: 400,
     dataIndex: 'materialsSku',
     key: 'materialsSku',
-    className: 'aek-word-break',
+    className: 'lkc-word-break',
   },
   {
     title: '采购数量',
     dataIndex: 'purchaseQty',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record) => (
       <div>
         {value}
@@ -29,7 +29,7 @@ const tableColumns = [
   {
     title: '已配送数量',
     dataIndex: 'deliveredQty',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record) => (
       <div>
         {value}
@@ -40,7 +40,7 @@ const tableColumns = [
   {
     title: '待配送数量',
     dataIndex: 'waitDeliverQty',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record) => (
       <div>
         {value}
@@ -51,13 +51,13 @@ const tableColumns = [
   {
     title: '单价',
     dataIndex: 'materialsPrice',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
     render: text => `￥${text}`,
   },
   {
     title: '金额',
     dataIndex: 'materialsAmount',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
     render: text => `￥${text}`,
   },
 ]
@@ -88,7 +88,7 @@ const getDetailData = (detailPageData) => {
         联系电话: customerContactPhone,
         合计金额: `￥${formAmount}`,
         是否加急: urgentFlag ? '是' : '否',
-        '采购备注|fill': <span className="aek-word-break">{purchaseRemark}</span>,
+        '采购备注|fill': <span className="lkc-word-break">{purchaseRemark}</span>,
       }
     }
     return {
@@ -99,7 +99,7 @@ const getDetailData = (detailPageData) => {
       联系电话: customerContactPhone,
       合计金额: `￥${formAmount}`,
       是否加急: urgentFlag ? '是' : '否',
-      '采购备注|fill': <span className="aek-word-break">{purchaseRemark}</span>,
+      '采购备注|fill': <span className="lkc-word-break">{purchaseRemark}</span>,
     }
   }
 }

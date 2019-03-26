@@ -47,11 +47,11 @@ class EditModal extends React.PureComponent {
 
   getColumns = () => [
     {
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       key: 'orgLogoUrl',
       dataIndex: 'orgLogoUrl',
-      render: text => <Avatar src={getImgCompress(text)} className="aek-avatar-border" />,
+      render: text => <Avatar src={getImgCompress(text)} className="lkc-avatar-border" />,
     },
     {
       title: '客户名称',
@@ -61,7 +61,7 @@ class EditModal extends React.PureComponent {
         <div>
           {text}
           {row.customerQty > 0 && (
-            <span className="aek-text-disable aek-font-small">(已有{row.customerQty}个业务员)</span>
+            <span className="lkc-text-disable lkc-font-small">(已有{row.customerQty}个业务员)</span>
           )}
         </div>
       ),
@@ -71,7 +71,7 @@ class EditModal extends React.PureComponent {
       dataIndex: 'smsFlag',
       key: 'smsFlag',
       width: 80,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, row, i) => {
         if (!includes(this.state.selectedRowKeys, row.orgId)) {
           return null

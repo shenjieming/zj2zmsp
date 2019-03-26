@@ -136,7 +136,7 @@ function Power({
       render: (value, record) => {
         let dom
         const replace = () => (<span>
-          {record.replacedPlatformAuthStatus === 2 ? <p className="aek-red">(已换证,<a onClick={() => {
+          {record.replacedPlatformAuthStatus === 2 ? <p className="lkc-red">(已换证,<a onClick={() => {
             dispatch({
               type: 'myCertificate/updateState',
               payload: {
@@ -160,7 +160,7 @@ function Power({
           const oldDate = new Date(new Date(value).getTime() + (24 * 60 * 60 * 1000)).getTime()
           const todayDate = new Date().getTime()
           if (oldDate < todayDate) {
-            dom = <span className="aek-text-disable">{`${record.validDateStart}至${record.validDateEnd}`}<span className="aek-red">（已过期）</span></span>
+            dom = <span className="lkc-text-disable">{`${record.validDateStart}至${record.validDateEnd}`}<span className="lkc-red">（已过期）</span></span>
           } else {
             dom = <span >{`${record.validDateStart}至${record.validDateEnd}`}</span>
           }
@@ -175,7 +175,7 @@ function Power({
       key: 'certificateStatus',
       dataIndex: 'certificateStatus',
       title: '状态',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value) => {
         let str = ''
         if (value) {
@@ -190,7 +190,7 @@ function Power({
       key: 'platformAuthStatus',
       dataIndex: 'platformAuthStatus',
       title: '平台认证状态',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value) => {
         let str = ''
         switch (value) {
@@ -212,7 +212,7 @@ function Power({
       dataIndex: 'operation',
       title: '操作',
       width: 150,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => {
         // 下拉按钮点击事件
         const handleMenuClick = (val) => {

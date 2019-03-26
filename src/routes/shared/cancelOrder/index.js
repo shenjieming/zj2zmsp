@@ -50,7 +50,7 @@ const CancelOrderList = ({ namespace, orderListBean, loading }) => {
     onSearch: searchHandler,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

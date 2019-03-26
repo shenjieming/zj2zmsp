@@ -39,29 +39,29 @@ const DistributeSuccess = ({ visible, resultForm, dataLength, hideHandler }) => 
     bordered: true,
     rowClassName: (record) => {
       if (record.formId === 'total') {
-        return 'aek-primary-color'
+        return 'lkc-primary-color'
       }
       return ''
     },
     columns: [
       {
         title: '订单编号',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         dataIndex: 'formNo',
       },
       {
         title: '配送商',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         dataIndex: 'supplierOrgName',
       },
       {
         title: '数量',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         dataIndex: 'formQty',
       },
       {
         title: '金额',
-        className: 'aek-text-right',
+        className: 'lkc-text-right',
         dataIndex: 'formAmount',
         render: value => `￥${value}`,
       },
@@ -75,17 +75,17 @@ const DistributeSuccess = ({ visible, resultForm, dataLength, hideHandler }) => 
     title: null,
     footer: null,
     width: 800,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   return (
     <Modal {...modalOpts}>
       <div className={style.modalInfo}>
-        <Icon className="aek-blue" type="check-circle" />
+        <Icon className="lkc-blue" type="check-circle" />
         <p>订单提交成功</p>
-        <p className="aek-text-help">稍后供应商会收到短信提醒</p>
+        <p className="lkc-text-help">稍后供应商会收到短信提醒</p>
       </div>
       <div className={style.modalTable}>
-        <p className="aek-text-help">根据您的采购物资，本次生成如下订单：</p>
+        <p className="lkc-text-help">根据您的采购物资，本次生成如下订单：</p>
         <Table {...tableProps} />
       </div>
       <div className={style.modalButton}>

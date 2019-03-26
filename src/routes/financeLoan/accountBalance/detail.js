@@ -31,13 +31,13 @@ function AccountBalance({
     })
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
       <div className="content">
         <Spin spinning={getLoading('getBalanceDetail', 'submitApply')}>
-          <div className="aek-content-title">提现申请</div>
+          <div className="lkc-content-title">提现申请</div>
           <Form>
             <GetFormItem
               formData={formData(accountDetail)}
@@ -47,7 +47,7 @@ function AccountBalance({
               <Col span={14}><Button loading={getLoading('submitApply')} onClick={handleSubmit} type="primary">提交申请</Button></Col>
             </Row>
           </Form>
-          <div className={`${Styles.border} aek-mtb30`} />
+          <div className={`${Styles.border} lkc-mtb30`} />
           <div>
             <p className={`${Styles['detail-title']}`}>温馨提示：</p>
             <p>1、提现申请提交后，请耐心等待银行审核。</p>

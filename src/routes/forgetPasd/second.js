@@ -55,7 +55,7 @@ const Second = ({
   // 验证码
   let captchaSuffix = (
     <Button
-      className="aek-font-small"
+      className="lkc-font-small"
       onClick={() => {
         let url = 'forgetPasd/getSecondMobileCaptcha'
         if (Number(selectType) === 1) {
@@ -77,7 +77,7 @@ const Second = ({
       <Button>
         <CountDown
           key={selectType}
-          className="aek-text-disable aek-font-small"
+          className="lkc-text-disable lkc-font-small"
           start={59}
           end={0}
           duration={60}
@@ -226,7 +226,7 @@ const Second = ({
           })
         }}
       >
-        <p style={{ padding: '40px 0' }} className="aek-text-center">
+        <p style={{ padding: '40px 0' }} className="lkc-text-center">
           如果需要帮助，请联系客服人员：{CONSUMER_HOTLINE}
         </p>
       </Modal>

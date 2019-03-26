@@ -12,7 +12,7 @@ const BatchCancelCatalog = ({
     title: '撤销提醒',
     visible: batchCancelModalVisible,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     afterClose() {
       handleCancel()
     },

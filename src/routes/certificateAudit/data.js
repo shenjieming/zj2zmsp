@@ -113,7 +113,7 @@ const baseColumns = ({
 }) => [{
   title: '类型',
   dataIndex: 'certificateReviewType',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 80,
   render(certificateReviewType) {
     return {
@@ -127,7 +127,7 @@ const baseColumns = ({
 }, {
   title: '认证状态',
   dataIndex: 'platformAuthStatus',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 100,
   render(type) {
     return {
@@ -139,7 +139,7 @@ const baseColumns = ({
 }, {
   title: '提交时间',
   dataIndex: 'addTime',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 120,
 }, {
   title: '审核人',
@@ -147,12 +147,12 @@ const baseColumns = ({
 }, {
   title: '审核时间',
   dataIndex: 'reviewTime',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 120,
 }, {
   title: '操作',
   dataIndex: 'operation',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 80,
   render: (_, { platformAuthStatus, certificateId }) => (
     platformAuthStatus === 1
@@ -164,7 +164,7 @@ const baseColumns = ({
 const orderData = {
   title: '序号',
   dataIndex: 'order',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 60,
 }
 
@@ -172,7 +172,7 @@ const orderData = {
 const registerColumns = registTypeList => [orderData, {
   title: '证件类型',
   dataIndex: 'certificateType',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 150,
   render(type) {
     const obj = find(registTypeList, item => item.dicValue === `${type}`)

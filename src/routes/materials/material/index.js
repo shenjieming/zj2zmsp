@@ -94,7 +94,7 @@ function IndexPage({ material, loading }) {
     dataSource: materialList,
     rowClassName: ({ materialsStatus }) => {
       if (materialsStatus) {
-        return 'aek-text-disable'
+        return 'lkc-text-disable'
       }
       return ''
     },
@@ -235,11 +235,11 @@ function IndexPage({ material, loading }) {
     getLoading,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
-        <div className="aek-fr">
-          <Dropdown.Button type="primary" className="aek-mr15" onClick={importExcel} overlay={menu}>
+        <div className="lkc-fr">
+          <Dropdown.Button type="primary" className="lkc-mr15" onClick={importExcel} overlay={menu}>
             Excel导入
           </Dropdown.Button>
           <Button type="primary" onClick={addModalShow} icon="plus">

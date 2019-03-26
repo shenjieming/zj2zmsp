@@ -4,7 +4,7 @@ export default [
   {
     title: '序号',
     key: 'index',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: ($, _, i) => i + 1,
   },
   {
@@ -14,7 +14,7 @@ export default [
     render: (text, row) => (
       <div>
         {text}
-        <div className="aek-text-help">{row.materialsCommonName}</div>
+        <div className="lkc-text-help">{row.materialsCommonName}</div>
       </div>
     ),
   },

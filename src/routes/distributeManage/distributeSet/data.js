@@ -3,7 +3,7 @@ import { Button, Avatar, Switch } from 'antd'
 import { Link } from 'dva/router'
 import style from './style.less'
 import { IMG_COMPRESS } from '../../../utils/config'
-import Logo from '../../../assets/aek-org-logo.png'
+import Logo from '../../../assets/lkc-org-logo.png'
 
 const searchLeft = [
   {
@@ -47,7 +47,7 @@ const getLeftColumns = ({
           }}
         >
           <span>{customerOrgName}</span>
-          <span className="aek-orange">
+          <span className="lkc-orange">
             {distributorOrgQty ? `（已拥有${distributorOrgQty}个配送商）` : null}
           </span>
         </span>
@@ -58,7 +58,7 @@ const getLeftColumns = ({
     title: '分发开关',
     key: 'distributeSwitch',
     width: 100,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render(_, row) {
       return (
         <Switch
@@ -74,7 +74,7 @@ const getLeftColumns = ({
     title: '分发模式',
     key: 'distributeMode',
     width: 100,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render(_, row) {
       return (
         <Switch
@@ -177,7 +177,7 @@ const getModalColumns = add => [
   {
     dataIndex: 'unAddedFlag',
     width: 80,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render(unAddedFlag, { orgId }) {
       if (unAddedFlag) {
         return (
@@ -191,7 +191,7 @@ const getModalColumns = add => [
           </Button>
         )
       }
-      return <span className="aek-text-help">已添加</span>
+      return <span className="lkc-text-help">已添加</span>
     },
   },
 ]

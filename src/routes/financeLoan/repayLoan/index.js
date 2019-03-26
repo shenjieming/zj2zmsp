@@ -112,7 +112,7 @@ const IndexPage = ({ repayLoan, loading }) => {
     formData,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
@@ -125,7 +125,7 @@ const IndexPage = ({ repayLoan, loading }) => {
                 // repayWillList &&
                 // repayWillList.length > 0 && (
                 //   <Button
-                //     className="aek-mb10"
+                //     className="lkc-mb10"
                 //     disabled={checkedList.length === 0}
                 //     onClick={() => turnUrl(checkedList.join(','))}
                 //   >
@@ -136,7 +136,7 @@ const IndexPage = ({ repayLoan, loading }) => {
               {repayWillList &&
                 repayWillList.length > 0 && (
                   <Alert
-                    className="aek-mb10"
+                    className="lkc-mb10"
                     message={
                       <span>
                         共需还款情况：共{repayQty}笔 {repayAmount}

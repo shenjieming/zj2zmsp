@@ -41,7 +41,7 @@ const form = (initValue = {}, eventFun) => {
   } = initValue
   const { asyncSkuList } = eventFun
   return [
-    <div className="aek-form-head">基础信息</div>,
+    <div className="lkc-form-head">基础信息</div>,
     {
       label: '规格编码',
       layout: formItemLayoutHalf,
@@ -143,7 +143,7 @@ const form = (initValue = {}, eventFun) => {
         },
       },
     },
-    <div className="aek-form-head">其他信息</div>,
+    <div className="lkc-form-head">其他信息</div>,
     {
       label: '备注',
       layout: formItemLayoutFilled,

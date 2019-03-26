@@ -30,7 +30,7 @@ const PresetRoleDetail = ({ dispatch, routes, presetRoleDetail, loading }) => {
   const changeStatus = (e, admin) => {
     confirm({
       title: e ? '您确定要停用该角色吗？' : '您确定要启用该角色吗？',
-      content: (admin && e) ? <span className="aek-red">机构管理员角色有且只有一个，请慎重停用！</span> : '',
+      content: (admin && e) ? <span className="lkc-red">机构管理员角色有且只有一个，请慎重停用！</span> : '',
       onOk() {
         dispatchAction({
           type: 'presetRoleDetail/updateRoleState',
@@ -87,10 +87,10 @@ const PresetRoleDetail = ({ dispatch, routes, presetRoleDetail, loading }) => {
     showEditModal,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
-        <div className="aek-fr" style={{ display: 'inline-block' }}>
+        <div className="lkc-fr" style={{ display: 'inline-block' }}>
           {
             roleStatus ?
               <a onClick={() => { changeStatus(false, adminFlag) }}><Icon type="minus-circle-o" /> 启用</a> :
@@ -99,14 +99,14 @@ const PresetRoleDetail = ({ dispatch, routes, presetRoleDetail, loading }) => {
         </div>
       </div>
       <div className="content">
-        <div className="aek-content-title">预设角色详情</div>
+        <div className="lkc-content-title">预设角色详情</div>
         <Spin spinning={getLoading('getDetail', 'updateRoleState')}>
           <div className={Style.topContent}>
-            <p className="aek-mb10">
+            <p className="lkc-mb10">
               {roleName}
               <span
                 style={{ marginLeft: '20px' }}
-                className="aek-status-on"
+                className="lkc-status-on"
               >
                 {roleStatus ? '停用中' : '启用中'}
               </span>

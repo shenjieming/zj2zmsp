@@ -22,7 +22,7 @@ const DetailModal = ({
     width: 1000,
     title: 'API SQL详情',
     visible: detailModalVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel() {
       handleCancel()
@@ -86,7 +86,7 @@ const DetailModal = ({
   return (
     <Modal {...addModalProp} >
       <Spin spinning={spining}>
-        <PlainForm {...plainProps} className="aek-mb20" />
+        <PlainForm {...plainProps} className="lkc-mb20" />
         <Form>
           <Form.Item label="sql" labelCol={{ span: 2 }} wrapperCol={{ span: 18 }}>
             {getFieldDecorator('sql', {
@@ -97,7 +97,7 @@ const DetailModal = ({
             )}
           </Form.Item>
         </Form>
-        <div className="aek-mt20" />
+        <div className="lkc-mt20" />
         <div className={Styles['table-scroll']}>
           <Table {...tableProps} style={{ overFlowX: 'scroll' }} />
         </div>

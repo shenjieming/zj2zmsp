@@ -93,17 +93,17 @@ const VipPage = ({ vipPage, loading }) => {
   }
   const rightForm = () => (
     <div>
-      <div className="aek-mb10">
-        <span className="aek-font-large">
+      <div className="lkc-mb10">
+        <span className="lkc-font-large">
           医院客户:
           {selectedCustomer.hplName}
         </span>
       </div>
-      <p className="aek-font-large">服务时长:</p>
+      <p className="lkc-font-large">服务时长:</p>
       <div className={styles.timeChoose}>{timeChoose()}</div>
       <Button
         type="primary"
-        className="aek-mt20"
+        className="lkc-mt20"
         disabled={!selectedCustomer.hplId}
         onClick={buyCombination}
       >
@@ -131,8 +131,8 @@ const VipPage = ({ vipPage, loading }) => {
       orders = purchasedVips.map(item => (
         <div key={item.orderId} className={styles.line}>
           <span>{item.hplName}</span>
-          <span className="aek-fr">
-            <span className="aek-orange">{item.endDate}</span>
+          <span className="lkc-fr">
+            <span className="lkc-orange">{item.endDate}</span>
             到期
           </span>
         </div>
@@ -141,7 +141,7 @@ const VipPage = ({ vipPage, loading }) => {
     return orders
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

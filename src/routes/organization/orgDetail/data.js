@@ -4,11 +4,11 @@ import { manageFlag } from '../../../utils/index'
 
 const arr = ['03', '04', '07']
 const auditStatusText = [
-  <span className="aek-red">待完善</span>,
-  <span className="aek-red">待审核</span>,
-  <span className="aek-green">已审核</span>,
-  <span className="aek-red">已拒绝</span>,
-  <span className="aek-red">无账号</span>,
+  <span className="lkc-red">待完善</span>,
+  <span className="lkc-red">待审核</span>,
+  <span className="lkc-green">已审核</span>,
+  <span className="lkc-red">已拒绝</span>,
+  <span className="lkc-red">无账号</span>,
 ]
 let leftData = {}
 let rightData = {}
@@ -60,7 +60,7 @@ const data = (currentOrgDetail) => {
       邮箱: email,
       注册地址: `${regArr && regArr.slice(3).join('')}  ${registeredAddress || ''}`,
       办公地址: `${officeArr && officeArr.slice(3).join('')}  ${officeAddress || ''}`,
-      经营范围: <span className="aek-word-break">{businessScope}</span>,
+      经营范围: <span className="lkc-word-break">{businessScope}</span>,
     }
     rightData = {
       来源: Number(registerSource) === 1 ? '后台创建' : '前台创建',
@@ -82,7 +82,7 @@ const data = (currentOrgDetail) => {
       邮箱: email,
       注册地址: `${regArr && regArr.slice(3).join('')}  ${registeredAddress || ''}`,
       办公地址: `${officeArr && officeArr.slice(3).join('')}  ${officeAddress || ''}`,
-      诊疗科目: <span className="aek-word-break">{businessScope}</span>,
+      诊疗科目: <span className="lkc-word-break">{businessScope}</span>,
     }
     rightData = {
       来源: Number(registerSource) === 1 ? '后台创建' : '前台创建',

@@ -52,7 +52,7 @@ const formItemData = [{
 const columns = ({ editContact, relationChange }) => [{
   title: '序号',
   dataIndex: 'order',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 60,
 }, {
   title: '名称',
@@ -86,12 +86,12 @@ const columns = ({ editContact, relationChange }) => [{
 }, {
   title: '关系建立日期',
   dataIndex: 'relationBuildDate',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 160,
 }, {
   title: '操作',
   dataIndex: 'operation',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 150,
   render: (text, { supplierOrgId, supplierStatus }) => (<span>
     <Link

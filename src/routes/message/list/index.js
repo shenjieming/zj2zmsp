@@ -22,20 +22,20 @@ const columns = [
     key: 'menuIconBig',
     dataIndex: 'menuIconBig',
     width: 60,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: text => <Avatar src={text} shape="square" style={{ verticalAlign: 'middle' }} />,
   },
   {
     key: 'menuName',
     dataIndex: 'menuName',
     width: 100,
-    className: 'aek-text-help',
+    className: 'lkc-text-help',
   },
   {
     key: 'msgTemplateName',
     dataIndex: 'msgTemplateName',
     width: 200,
-    className: 'aek-text-help',
+    className: 'lkc-text-help',
   },
   {
     key: 'msgContent',
@@ -43,7 +43,7 @@ const columns = [
     render: (text, row) => {
       if (row.msgUrl) {
         return (
-          <Link to={row.msgUrl} className="aek-link">
+          <Link to={row.msgUrl} className="lkc-link">
             {text}
           </Link>
         )
@@ -55,7 +55,7 @@ const columns = [
     key: 'msgTime',
     width: 150,
     dataIndex: 'msgTime',
-    className: 'aek-text-help',
+    className: 'lkc-text-help',
   },
 ]
 
@@ -112,7 +112,7 @@ function MessageList({ routes, messageList, loading }) {
   }
 
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Bread routes={routes} />
         <a

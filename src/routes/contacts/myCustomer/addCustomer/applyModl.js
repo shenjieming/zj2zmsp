@@ -45,7 +45,7 @@ const ApplyModalProp = ({
     title: '申请',
     zIndex: 1100,
     visible: applyVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel() {
       dispatch({ type: 'myCustomer/updateState', payload: { applyVisible: false, customerId: '' } })

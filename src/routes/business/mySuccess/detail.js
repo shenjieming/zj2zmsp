@@ -72,7 +72,7 @@ const MySuccessDetail = ({ mySuccessDetail, loading }) => {
     },
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

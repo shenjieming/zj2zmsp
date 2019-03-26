@@ -48,7 +48,7 @@ const AddCertificateModal = ({
     onOk: handleOk,
     width: 800,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const onSearchSkuList = debounce((val) => {
     dispatchAction({

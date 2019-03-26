@@ -141,7 +141,7 @@ const AddCertificateModal = ({
     onOk: handleOk,
     width: 1000,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const initObj = {
     addModalType,

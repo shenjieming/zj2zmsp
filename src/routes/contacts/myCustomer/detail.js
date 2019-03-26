@@ -53,9 +53,9 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
     ),
   }
   if (customerDetail.orgTypeValue === '02') {
-    leftForm['诊疗科目|fill'] = <div className="aek-word-break">{customerDetail.businessScope}</div>
+    leftForm['诊疗科目|fill'] = <div className="lkc-word-break">{customerDetail.businessScope}</div>
   } else {
-    leftForm['经营范围|fill'] = <div className="aek-word-break">{customerDetail.businessScope}</div>
+    leftForm['经营范围|fill'] = <div className="lkc-word-break">{customerDetail.businessScope}</div>
   }
   const rightForm = {
     '联系负责人|fill': customerDetail.contactName,
@@ -97,7 +97,7 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
 
   if (!isNewRelation && contactsType === '1') {
     buttonName = (
-      <div className="aek-border-bottom-right">
+      <div className="lkc-border-bottom-right">
         <a
           onClick={() => {
             showConfirm()
@@ -110,7 +110,7 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
     rightForm['关系建立时间|fill'] = customerDetail.buildDate
   } else if (!isNewRelation && contactsType === '2') {
     buttonName = (
-      <div className="aek-border-bottom-right">
+      <div className="lkc-border-bottom-right">
         <a
           onClick={() => {
             showConfirm()
@@ -168,7 +168,7 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
         if (index !== 5) {
           return value
         }
-        return <span className="aek-red">{value}</span>
+        return <span className="lkc-red">{value}</span>
       },
     },
     {
@@ -179,7 +179,7 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
         if (index !== 5) {
           return value
         }
-        return <span className="aek-red">{value}</span>
+        return <span className="lkc-red">{value}</span>
       },
     },
     {
@@ -190,7 +190,7 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
         if (index !== 5) {
           return value
         }
-        return <span className="aek-red">{value}</span>
+        return <span className="lkc-red">{value}</span>
       },
     },
     {
@@ -201,7 +201,7 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
         if (index !== 5) {
           return value
         }
-        return <span className="aek-red">{value}</span>
+        return <span className="lkc-red">{value}</span>
       },
     },
     {
@@ -212,7 +212,7 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
         if (index !== 5) {
           return value
         }
-        return <span className="aek-red">{value}</span>
+        return <span className="lkc-red">{value}</span>
       },
     },
     {
@@ -232,18 +232,18 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
       title: '星级',
       dataIndex: 'starLevel',
       key: 'starLevel',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: value => <Rate disabled defaultValue={value} />,
     },
     {
       title: '评价内容',
       dataIndex: 'appraiseContent',
       key: 'appraiseContent',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => (
         <span>
           <p>{value || '无'}</p>
-          <p className="aek-text-disable">[{record.addTime}]</p>
+          <p className="lkc-text-disable">[{record.addTime}]</p>
         </span>
       ),
     },
@@ -320,15 +320,15 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
     })
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <div>
           <Bread routes={routes} />
         </div>
       </div>
       <div className="content" style={{ minHeight: '0px', marginBottom: '10px' }}>
-        <div className="aek-border-bottom aek-mb10">
-          <div className="aek-border-bottom-left">
+        <div className="lkc-border-bottom lkc-mb10">
+          <div className="lkc-border-bottom-left">
             <p>基本信息</p>
           </div>
           {buttonName}
@@ -343,8 +343,8 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
         </Row>
       </div>
       <div className="content" style={{ minHeight: '0px', marginBottom: '10px' }}>
-        <div className="aek-border-bottom aek-mb10">
-          <div className="aek-border-bottom-left">
+        <div className="lkc-border-bottom lkc-mb10">
+          <div className="lkc-border-bottom-left">
             <p>企业资质证件</p>
           </div>
         </div>
@@ -363,7 +363,7 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
               <Row style={{ paddingTop: '40px' }}>
                 <Col
                   span="10"
-                  className="aek-text-center"
+                  className="lkc-text-center"
                   style={{ padding: '10px', borderRight: '1px dashed #e2e2e2' }}
                 >
                   <Progress
@@ -378,7 +378,7 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
                     format={percent => `${((percent / 100) * 5).toFixed(1)}`}
                   />
                   <p style={{ margin: '10px' }}>综合服务评分</p>
-                  <p className="aek-primary-color">
+                  <p className="lkc-primary-color">
                     超越{customerDetail && customerDetail.appraise ? (
                       customerDetail.appraise.overStep
                     ) : (
@@ -440,7 +440,7 @@ function MyCustomerDetail({ myCustomerDetail, effects, dispatch, routes, orgId }
                 }
                 rowClassName={(record, index) => {
                   if (index === 5) {
-                    return 'aek-primary-color'
+                    return 'lkc-primary-color'
                   }
                 }}
               />

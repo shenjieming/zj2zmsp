@@ -29,7 +29,7 @@ const formData = (
   otherTypeOptions,
 ) => {
   const options = typeOptions(otherTypeOptions)
-  return [<div className="aek-form-head">基础信息</div>, {
+  return [<div className="lkc-form-head">基础信息</div>, {
     label: '证件类型',
     layout: formItemLayout,
     field: 'certificateType',
@@ -147,7 +147,7 @@ const formData = (
         children: '长期有效',
       },
     },
-  }, <div className="aek-form-head">证件图片信息</div>, {
+  }, <div className="lkc-form-head">证件图片信息</div>, {
     label: '证件',
     layout: formItemLayout,
     view: modalTitle.includes('查看'),

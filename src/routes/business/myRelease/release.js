@@ -86,7 +86,7 @@ const Release = ({ releaseDetail, loading, form: { validateFields } }) => {
     })
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
@@ -94,9 +94,9 @@ const Release = ({ releaseDetail, loading, form: { validateFields } }) => {
         <Spin spinning={getLoading('getData', 'releaseSubmit', 'saveSubmit', 'getTagTypeList')}>
           {data &&
             data.showRemarkFlag && (
-              <Alert description={data.chanceRemark} type="warning" showIcon className="aek-mt20 aek-word-break" />
+              <Alert description={data.chanceRemark} type="warning" showIcon className="lkc-mt20 lkc-word-break" />
             )}
-          <Form className="aek-mt20">
+          <Form className="lkc-mt20">
             <GetFormItem
               formData={formData({
                 typeList,
@@ -142,7 +142,7 @@ const Release = ({ releaseDetail, loading, form: { validateFields } }) => {
             <Col offset={3} span={12}>
               <Button
                 type="primary"
-                className="aek-mr30"
+                className="lkc-mr30"
                 onClick={() => {
                   handleSubmit()
                 }}
@@ -150,7 +150,7 @@ const Release = ({ releaseDetail, loading, form: { validateFields } }) => {
                 提交审核
               </Button>
               <a
-                className="aek-ml10"
+                className="lkc-ml10"
                 onClick={() => {
                   handleSubmit('save')
                 }}

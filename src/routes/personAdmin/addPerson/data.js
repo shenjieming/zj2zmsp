@@ -140,7 +140,7 @@ const form = ({
     field: 'realName',
     otherProps: {
       help: personRegistFlag ? (
-        <span className="aek-red">系统检测出该员工已注册，请填写其真实姓名进行验证</span>
+        <span className="lkc-red">系统检测出该员工已注册，请填写其真实姓名进行验证</span>
       ) : (
         undefined
       ),

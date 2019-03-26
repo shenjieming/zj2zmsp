@@ -63,7 +63,7 @@ const AddCatalog = ({
     title: '加入目录',
     visible: addModalVisible,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     onCancel() {
       dispatch({
         type: 'dictionSelect/updateState',

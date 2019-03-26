@@ -77,7 +77,7 @@ const DeliveryDetail = ({
       confirm({
         content: (
           <div>
-            <p className="aek-text-disable">作废当前配送单以后：</p>
+            <p className="lkc-text-disable">作废当前配送单以后：</p>
             <p>1、对应采购单中已发货数量会被还原。</p>
             <p>2、医院无法扫描被作废的配货单入库。</p>
             <p>客户名称：{detailPageData.customerOrgName}</p>
@@ -178,7 +178,7 @@ const DeliveryDetail = ({
   }
 
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
@@ -235,7 +235,7 @@ const DeliveryDetail = ({
                     },
                   })
                 }}
-                className="aek-mr10"
+                className="lkc-mr10"
               >
             打印标签
               </Button>}

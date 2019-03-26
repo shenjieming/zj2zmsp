@@ -6,7 +6,7 @@ const render = (value, record, index) => {
   if (index !== 5) {
     return value
   }
-  return <span className="aek-primary-color">{value}</span>
+  return <span className="lkc-primary-color">{value}</span>
 }
 // 星级评价
 const columns = [
@@ -14,42 +14,42 @@ const columns = [
     title: '总计',
     dataIndex: 'totalEvaluation',
     key: 'totalEvaluation',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render,
   },
   {
     title: '最近一年',
     dataIndex: 'oneYear',
     key: 'oneYear',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render,
   },
   {
     title: '最近半年',
     dataIndex: 'halfYear',
     key: 'halfYear',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render,
   },
   {
     title: '最近三个月',
     dataIndex: 'threeMonth',
     key: 'threeMonth',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render,
   },
   {
     title: '最近一个月',
     dataIndex: 'oneMonth',
     key: 'oneMonth',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render,
   },
   {
     title: '星级',
     dataIndex: 'starLevel',
     key: 'starLevel',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record, index) => {
       if (index !== 5) {
         return <Rate disabled defaultValue={5 - index} />
@@ -65,7 +65,7 @@ const detailColumns = [
     dataIndex: 'starLevel',
     key: 'starLevel',
     width: 180,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: value => <Rate disabled value={value} />,
   },
   {
@@ -75,7 +75,7 @@ const detailColumns = [
     render: (value, record) => (
       <span>
         <p>{value || '无'}</p>
-        <p className="aek-text-disable">{record.addTime}</p>
+        <p className="lkc-text-disable">{record.addTime}</p>
       </span>
     ),
   },

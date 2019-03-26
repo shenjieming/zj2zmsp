@@ -48,7 +48,7 @@ const HistoryModal = ({
       </Button>
     ),
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const onPageChange = (page) => {
     dispatch({
@@ -86,7 +86,7 @@ const HistoryModal = ({
       title: '操作',
       key: 'action',
       width: 160,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, record) => (
         <a
           onClick={() => {
@@ -135,7 +135,7 @@ const HistoryModal = ({
     },
     width: 1050,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     footer: (
       <Button
         onClick={() => {
@@ -224,7 +224,7 @@ const HistoryModal = ({
       dataIndex: 'first',
       key: 'first',
       title: '字段',
-      className: 'aek-bg-columns',
+      className: 'lkc-bg-columns',
       render(value, record) {
         if (record.second === record.third || !!record.first + !!record.second === 0) {
           return <Badge status="1" text={value} />
@@ -235,7 +235,7 @@ const HistoryModal = ({
     {
       dataIndex: 'second',
       key: 'second',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       title: (
         <div>
           <p>版本号:{first.historyId}</p>
@@ -251,7 +251,7 @@ const HistoryModal = ({
     {
       dataIndex: 'third',
       key: 'third',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       title: (
         <div>
           <p>版本号:{comparaInfo.historyId}</p>
@@ -278,7 +278,7 @@ const HistoryModal = ({
       })
     },
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     footer: (
       <Button
         onClick={() => {
@@ -299,12 +299,12 @@ const HistoryModal = ({
       dataIndex: 'first',
       key: 'first',
       title: '字段',
-      className: 'aek-bg-columns',
+      className: 'lkc-bg-columns',
     },
     {
       dataIndex: 'second',
       key: 'second',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       title: (
         <div>
           <p>版本号:{singleCompareList.historyId}</p>
@@ -364,10 +364,10 @@ const HistoryModal = ({
     <div>
       <Modal {...modalOpts}>
         <Spin spinning={!!effects['supplyCatalogueDetail/getHistoryList']}>
-          <div className="aek-mb10">
+          <div className="lkc-mb10">
             <Alert message="可选择其中两个版本进行对比" type="info" showIcon />
           </div>
-          <Table bordered {...tableParam} className="aek-table-no-allcheck" />
+          <Table bordered {...tableParam} className="lkc-table-no-allcheck" />
         </Spin>
       </Modal>
       <Modal {...compareProps}>
@@ -375,7 +375,7 @@ const HistoryModal = ({
           pagination={false}
           columns={compareColumns}
           dataSource={compareSource}
-          rowClassName={record => ((record.first === record.second || !!record.first + !!record.second === 0) ? '' : 'aek-bg-difference')}
+          rowClassName={record => ((record.first === record.second || !!record.first + !!record.second === 0) ? '' : 'lkc-bg-difference')}
         />
       </Modal>
       <Modal {...singleCompareProps}>

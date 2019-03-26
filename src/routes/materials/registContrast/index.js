@@ -6,7 +6,7 @@ import { Table, Input, Select } from 'antd'
 import Breadcrumb from '../../../components/Breadcrumb'
 import SearchFormFilter from '../../../components/SearchFormFilter'
 import { getBasicFn } from '../../../utils/index'
-import AekSelect from '../../../components/AekSelect'
+import LkcSelect from '../../../components/LkcSelect'
 
 
 const Option = Select.Option
@@ -38,7 +38,7 @@ function RegistIndex({ registContrast, loading, dispatch }) {
       },
       {
         field: 'supplier',
-        component: <AekSelect
+        component: <LkcSelect
           url="/organization/getAllTypeInfo"
           optionConfig={{ idStr: 'supplierId', nameStr: 'supplierName' }}
           transformPayload={keywords => ({
@@ -76,7 +76,7 @@ function RegistIndex({ registContrast, loading, dispatch }) {
       dataIndex: 'index',
       title: '序号',
       width: 50,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record, index) => index + 1,
     },
     {
@@ -104,7 +104,7 @@ function RegistIndex({ registContrast, loading, dispatch }) {
       key: 'compareFlag',
       dataIndex: 'compareFlag',
       title: '状态',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value) => {
         if (value) {
           return '已对照'
@@ -122,7 +122,7 @@ function RegistIndex({ registContrast, loading, dispatch }) {
       dataIndex: 'operation',
       title: '操作',
       width: 100,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => (
         <Link
           to={!record.compareFlag ? `/materials/registContrast/detail/${record.supplierCertificateId}` : `/materials/registContrast/detail/${record.supplierCertificateId}?id=${record.standardCertificateId}`}
@@ -150,7 +150,7 @@ function RegistIndex({ registContrast, loading, dispatch }) {
     rowKey: 'supplierCertificateId',
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

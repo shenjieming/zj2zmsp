@@ -956,14 +956,14 @@ function MyCertificate({
           message: '与平台标准库中不存在差异，无需更新',
           type: 'info',
           showIcon: true,
-          className: 'aek-mb20',
+          className: 'lkc-mb20',
         }
       } else {
         props = {
           message: '与平台标准库中的证件信息存在如下差异，如果要使用标准注册证信息，请单击更新',
           type: 'warning',
           showIcon: true,
-          className: 'aek-mb20',
+          className: 'lkc-mb20',
         }
       }
       return (
@@ -1413,7 +1413,7 @@ function MyCertificate({
     },
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <div style={{ float: 'left' }}>
           <Breadcrumb routes={routes} />

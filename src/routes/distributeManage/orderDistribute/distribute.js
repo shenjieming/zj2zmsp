@@ -8,7 +8,7 @@ import { getBasicFn } from '../../../utils'
 import Breadcrumb from '../../../components/Breadcrumb'
 import ConfirmModal from './confirmModal'
 import DistributeSuccess from './distributeSuccess'
-import AekSelect from '../../../components/AekSelect'
+import LkcSelect from '../../../components/LkcSelect'
 
 const propTypes = {
   loading: PropTypes.object,
@@ -79,7 +79,7 @@ class OrderDistribute extends React.Component {
         title: '单价',
         dataIndex: 'distributorPrice',
         width: 150,
-        className: 'aek-text-right',
+        className: 'lkc-text-right',
         render: text => `￥${text}`,
       },
       {
@@ -89,7 +89,7 @@ class OrderDistribute extends React.Component {
         render: (text, row) => {
           if (detail.distributeType === 2) {
             return (
-              <AekSelect
+              <LkcSelect
                 style={{ width: '100%' }}
                 allowClear={false}
                 modeType="select"
@@ -190,14 +190,14 @@ class OrderDistribute extends React.Component {
       dataLength: detail.orderItems.length || 0,
     }
     return (
-      <div className="aek-layout">
+      <div className="lkc-layout">
         <div className="bread">
           <Breadcrumb />
         </div>
         <div className="content">
           <Button
             type="primary"
-            className="aek-mb10"
+            className="lkc-mb10"
             disabled={checkedItems.length === 0}
             onClick={() => {
               dispatchAction({ type: 'groupUpData' })

@@ -31,10 +31,10 @@ const formData = ({
   } = rowSelectData
   return [
     <div style={{ clear: 'both' }}>
-      <div style={{ display: 'inline-block' }} className="aek-form-head">基础信息</div>
+      <div style={{ display: 'inline-block' }} className="lkc-form-head">基础信息</div>
       <div style={{ display: 'inline-block', float: 'right' }}>
         <Button
-          className="aek-mr30"
+          className="lkc-mr30"
           icon="reload"
           size="small"
           disabled={!materialsSkuId}
@@ -100,7 +100,7 @@ const formData = ({
         } : undefined,
       },
       component: {
-        name: 'AekSelect',
+        name: 'LkcSelect',
         props: {
           placeholder: '请输入',
           url: '/certificate/my/register/options',
@@ -156,7 +156,7 @@ const formData = ({
         },
       },
     },
-    <div className="aek-form-head aek-mb10">补充信息</div>,
+    <div className="lkc-form-head lkc-mb10">补充信息</div>,
     {
       label: '单价',
       field: 'price',
@@ -170,7 +170,7 @@ const formData = ({
         }],
       },
       component: {
-        name: 'AekInputNumber',
+        name: 'LkcInputNumber',
         props: {
           placeholder: '请输入单价',
         },

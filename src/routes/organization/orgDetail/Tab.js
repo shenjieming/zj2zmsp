@@ -100,7 +100,7 @@ const Tab = ({
       dataIndex: 'index',
       key: 'index',
       width: 50,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, record, idx) => idx + 1,
     },
     {
@@ -137,7 +137,7 @@ const Tab = ({
     {
       title: '操作',
       key: 'action',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 160,
       render: (text, { orgIdSign: orgId }) => <a onClick={() => openNewPage(orgId)}>查看</a>,
     },
@@ -148,7 +148,7 @@ const Tab = ({
       dataIndex: 'index',
       key: 'index',
       width: 50,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, record, idx) => idx + 1,
     },
     {
@@ -169,14 +169,14 @@ const Tab = ({
       // render: (text, { adminFlag, userId }) => {
       //   if (adminFlag) {
       //     return (
-      //       <a className="aek-link" onClick={() => turnOther(userId)}>
+      //       <a className="lkc-link" onClick={() => turnOther(userId)}>
       //         <span style={{ fontWeight: 'bold' }}>【管】</span>
       //         {text}
       //       </a>
       //     )
       //   }
       //   return (
-      //     <a className="aek-link" onClick={() => turnOther(userId)}>
+      //     <a className="lkc-link" onClick={() => turnOther(userId)}>
       //       {text}
       //     </a>
       //   )
@@ -234,7 +234,7 @@ const Tab = ({
     {
       title: '操作',
       key: 'action',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 160,
       render: (text, record) => (
         <span>
@@ -258,7 +258,7 @@ const Tab = ({
       dataIndex: 'index',
       key: 'index',
       width: 50,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, record, idx) => idx + 1,
     },
     {
@@ -290,7 +290,7 @@ const Tab = ({
     {
       title: '操作',
       key: 'action',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 160,
       render: (text, record) => (
         <span>
@@ -330,7 +330,7 @@ const Tab = ({
             }}
             rowClassName={({ orgStatus }) => {
               if (orgStatus) {
-                return 'aek-text-disable'
+                return 'lkc-text-disable'
               }
               return ''
             }}
@@ -357,7 +357,7 @@ const Tab = ({
             }}
             rowClassName={({ status }) => {
               if (status) {
-                return 'aek-text-disable'
+                return 'lkc-text-disable'
               }
               return ''
             }}

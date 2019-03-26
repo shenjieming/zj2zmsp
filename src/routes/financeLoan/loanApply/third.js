@@ -18,7 +18,7 @@ import moment from 'moment'
 import { cloneDeep, debounce } from 'lodash'
 import { getBasicFn, digitUppercase, getUploadAuth } from '../../../utils/index'
 import Styles from './index.less'
-import InputNumber from '../../../components/AekInputNumber'
+import InputNumber from '../../../components/LkcInputNumber'
 import { FORM_ITEM_LAYOUT } from '../../../utils/constant'
 import SelectModal from './certificateSelect'
 import {
@@ -68,7 +68,7 @@ const Third = ({
     dataIndex: 'index',
     key: 'index',
     title: '序号',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 50,
     render(value, record, index) {
       return index + 1
@@ -81,22 +81,22 @@ const Third = ({
     dataIndex: 'stockInTime',
     key: 'stockInTime',
     title: '入库时间',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   }, {
     dataIndex: 'formAmount',
     key: 'formAmount',
     title: '入库单金额（元）',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
   }, {
     dataIndex: 'balance',
     key: 'balance',
     title: '可贷金额（元）',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
   }, {
     dataIndex: 'formId',
     key: 'formId',
     title: '操作',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 60,
     render(value) {
       const review = () => {
@@ -258,8 +258,8 @@ const Third = ({
     const retList = []
     invoiceCapitalList.forEach((item, index) => {
       retList.push(
-        <div key={item.radomKey} className={Styles['aek-invoice-content']}>
-          <Form className={Styles['aek-invoice-list']}>
+        <div key={item.radomKey} className={Styles['lkc-invoice-content']}>
+          <Form className={Styles['lkc-invoice-list']}>
             <Row span={24}>
               <Col span={8}>
                 <FormItem label="发票号码" {...FORM_ITEM_LAYOUT}>
@@ -356,7 +356,7 @@ const Third = ({
               </Col>
             </Row>
           </Form>
-          <div className={`${Styles['aek-invoice-delete']}`}>
+          <div className={`${Styles['lkc-invoice-delete']}`}>
             <a
               onClick={() => {
                 deleteInvoice(index, item.radomKey)
@@ -477,7 +477,7 @@ const Third = ({
         <p>一、我是供应商--所需要提前准备证件</p>
         <div style={{ width: '330px' }}>
           {supplier.map(item => (
-            <div className={Styles['aek-tooltip-list']} key={item.name}>
+            <div className={Styles['lkc-tooltip-list']} key={item.name}>
               <img src={item.src} alt={item.name} />
               <p>{item.name}</p>
             </div>
@@ -486,7 +486,7 @@ const Third = ({
         <p>一、我是配送商--所需要提前准备证件</p>
         <div style={{ width: '330px' }}>
           {distributor.map(item => (
-            <div className={Styles['aek-tooltip-list']} key={item.name}>
+            <div className={Styles['lkc-tooltip-list']} key={item.name}>
               <img src={item.src} alt={item.name} />
               <p>{item.name}</p>
             </div>
@@ -507,7 +507,7 @@ const Third = ({
       <Table
         {...tableProps}
       />
-      <Row span={24} className={`aek-mt20 ${Styles['aek-total']}`}>
+      <Row span={24} className={`lkc-mt20 ${Styles['lkc-total']}`}>
         <Col span={2}>
           总计
         </Col>
@@ -518,23 +518,23 @@ const Third = ({
           可贷金额{receivableOrderMoney || 0}元
         </Col>
       </Row>
-      <div className={`${Styles['aek-content-title']} aek-mt20`}>
+      <div className={`${Styles['lkc-content-title']} lkc-mt20`}>
         发票信息
       </div>
       <div>
         {invoiceList()}
       </div>
-      <div className={Styles['aek-invoice-add']}>
+      <div className={Styles['lkc-invoice-add']}>
         <a
           onClick={onSearchOrgDelay}
         >
-          <Icon type="plus-circle-o" /><span style={{ fontSize: 'initial' }} className="aek-ml10">添加发票</span>
+          <Icon type="plus-circle-o" /><span style={{ fontSize: 'initial' }} className="lkc-ml10">添加发票</span>
         </a>
       </div>
-      <div className={`${Styles['aek-content-title']} aek-mt20`}>
+      <div className={`${Styles['lkc-content-title']} lkc-mt20`}>
         供货资质
       </div>
-      <div className="aek-mt30">
+      <div className="lkc-mt30">
         <Form>
           <FormItem
             label="供货资质"
@@ -545,10 +545,10 @@ const Third = ({
               <Button onClick={handleVisibleChange}>选择证件</Button>,
             )}
           </FormItem>
-          <Row className="aek-mb20" span={24}>
+          <Row className="lkc-mb20" span={24}>
             <Col span={6} />
             <Col span={18}>
-              <div className={Styles['aek-photo-content']}>
+              <div className={Styles['lkc-photo-content']}>
                 {popoverPhotoList({
                   imageList: photoSelectedList,
                 })}
@@ -570,8 +570,8 @@ const Third = ({
           </FormItem>
         </Form>
       </div>
-      <div className="aek-mt30">
-        <Button onClick={secondNextClick} className="aek-mr20" type="primary">下一步</Button>
+      <div className="lkc-mt30">
+        <Button onClick={secondNextClick} className="lkc-mr20" type="primary">下一步</Button>
         <Button onClick={firstPrevClick} >上一步</Button>
       </div>
       <SelectModal {...modalProps} />

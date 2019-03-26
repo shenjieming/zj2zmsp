@@ -9,7 +9,7 @@ function Panel(props) {
 
   return (
     <div className={Styles.wrap}>
-      <div className="aek-text-help">
+      <div className="lkc-text-help">
         <div className={Styles.circle} />
         <span>
           今日
@@ -19,12 +19,12 @@ function Panel(props) {
       <div className={Styles.today}>{today}</div>
       <Row>
         <Col span="12">
-          <div className="aek-text-disable">昨日</div>
-          <div className="aek-text-help">{yesterday}</div>
+          <div className="lkc-text-disable">昨日</div>
+          <div className="lkc-text-help">{yesterday}</div>
         </Col>
         <Col span="12">
-          <div className="aek-text-disable">上周同期</div>
-          <div className="aek-text-help">{lastWeek}</div>
+          <div className="lkc-text-disable">上周同期</div>
+          <div className="lkc-text-help">{lastWeek}</div>
         </Col>
       </Row>
     </div>

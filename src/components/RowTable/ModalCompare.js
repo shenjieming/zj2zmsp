@@ -85,7 +85,7 @@ function ModalCompare({
     onCancel,
     width: dataSource.length ? 120 + (dataSource.length * 400) : 520,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     footer: footer || null,
     zIndex,
   }
@@ -112,7 +112,7 @@ function ModalCompare({
     }],
     tableProps: {
       rowClassName(all) {
-        return isEquality(all) ? '' : 'aek-bg-difference'
+        return isEquality(all) ? '' : 'lkc-bg-difference'
       },
     },
   }

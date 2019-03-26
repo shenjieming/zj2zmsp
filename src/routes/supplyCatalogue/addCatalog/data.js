@@ -26,7 +26,7 @@ const formData = ({
     productCode,
   } = rowData
   return [
-    <div className="aek-form-head">基础信息</div>,
+    <div className="lkc-form-head">基础信息</div>,
     {
       label: '物料名称',
       field: 'materialsName',
@@ -82,7 +82,7 @@ const formData = ({
         initialValue: certificateNo,
       },
       component: {
-        name: 'AekSelect',
+        name: 'LkcSelect',
         props: {
           placeholder: '请输入',
           url: '/certificate/my/register/options',
@@ -138,7 +138,7 @@ const formData = ({
         },
       },
     },
-    <div className="aek-form-head aek-mb10">补充信息</div>,
+    <div className="lkc-form-head lkc-mb10">补充信息</div>,
     {
       label: '单价',
       field: 'price',
@@ -152,7 +152,7 @@ const formData = ({
         }],
       },
       component: {
-        name: 'AekInputNumber',
+        name: 'LkcInputNumber',
         props: {
           placeholder: '请输入单价',
         },

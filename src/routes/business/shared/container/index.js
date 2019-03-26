@@ -20,7 +20,7 @@ const Container = ({ data = [], children, loading, pageChange, pagination }) => 
       {!loading && data.length === 0 && <div className={styles.empty} />}
       {children}
     </Spin>
-    <span className="aek-fr">
+    <span className="lkc-fr">
       {data.length > 0 && <Pagination {...getPagination(pageChange, pagination)} />}
     </span>
   </div>

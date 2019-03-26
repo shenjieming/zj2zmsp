@@ -223,12 +223,12 @@ const MenuAdmin = ({ menuManage, loading, routes }) => {
   }
   const TreeItemForm = () => <TreeForm {...treeFormProps} />
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb routes={routes} />
       </div>
       <div className="content">
-        <div className="aek-layout-hor">
+        <div className="lkc-layout-hor">
           <div className="left">
             <SearchTree {...searchTreeProps} />
           </div>

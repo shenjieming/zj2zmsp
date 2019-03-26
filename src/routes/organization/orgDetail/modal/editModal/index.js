@@ -105,7 +105,7 @@ const EditOrgModal = (
     onOk: handleOk,
     width: 700,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
 
   }
   return (

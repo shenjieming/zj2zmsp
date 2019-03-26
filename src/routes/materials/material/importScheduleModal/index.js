@@ -31,7 +31,7 @@ const ScheduleModal = ({
     },
     width: 1000,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const columns = [
     {
@@ -40,7 +40,7 @@ const ScheduleModal = ({
       key: 'fileName',
       width: 200,
       render: text => (
-        <div className="aek-text-overflow" title={text} style={{ width: 200 }}>
+        <div className="lkc-text-overflow" title={text} style={{ width: 200 }}>
           {text}
         </div>
       ),

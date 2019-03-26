@@ -32,7 +32,7 @@ const AgainDeliver = ({
   const modalOpts = {
     title: '修改配送信息',
     visible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel() {
       resetFields()

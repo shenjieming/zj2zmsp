@@ -22,7 +22,7 @@ function PlainForm({ data = {}, size = 2, itemStyle = {} }) {
       } else if (wrapFlag) {
         content = (
           <Tooltip title={value}>
-            <p className="aek-text-overflow">{value}</p>
+            <p className="lkc-text-overflow">{value}</p>
           </Tooltip>
         )
       } else {

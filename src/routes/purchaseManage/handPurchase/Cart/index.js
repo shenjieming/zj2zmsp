@@ -50,7 +50,7 @@ function Cart({
                       <div>
                         <div>
                           <img src={img} alt="购物车为空" />
-                          <span className="aek-text-disable">
+                          <span className="lkc-text-disable">
                             购物车里神马也没有，赶快去采购吧~
                           </span>
                         </div>
@@ -74,8 +74,8 @@ function Cart({
                 {
                   selectedNum ? (
                     <div>
-                      <div>已选 <span className="aek-red">{selectedNum}</span> 个品规</div>
-                      <div>合计数量：<span className="aek-red">{sunSelectNum}</span></div>
+                      <div>已选 <span className="lkc-red">{selectedNum}</span> 个品规</div>
+                      <div>合计数量：<span className="lkc-red">{sunSelectNum}</span></div>
                       <div onClick={onOrder}>立即下单</div>
                     </div>
                   ) : null

@@ -19,7 +19,7 @@ const ReachModal = ({
   const modalProp = {
     title: '达成合作',
     visible: modalVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel() {
       resetFields()

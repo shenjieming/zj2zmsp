@@ -41,7 +41,7 @@ const DownModal = ({
       onCancel()
     },
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
 
   const formData = [

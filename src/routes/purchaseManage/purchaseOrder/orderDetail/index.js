@@ -41,7 +41,7 @@ const PurchaseDetail = ({ purchaseDetail, loading, location }) => {
     confirm({
       // 特殊需求，将确认取消做反
       title: '订单终止后，该订单剩余未配送物资供应商将不再发货，是否确定终止订单？',
-      content: <div className="aek-red ">请您仔细核对一下此订单未配送的剩余物资！</div>,
+      content: <div className="lkc-red ">请您仔细核对一下此订单未配送的剩余物资！</div>,
       width: 500,
       okText: '取消',
       cancelText: '确定',
@@ -90,7 +90,7 @@ const PurchaseDetail = ({ purchaseDetail, loading, location }) => {
       }
     }
     return (
-      <Steps className="aek-p30" current={current}>
+      <Steps className="lkc-p30" current={current}>
         {steps.map(item => <Step key={item.key} title={item.name} />)}
       </Steps>
     )
@@ -104,7 +104,7 @@ const PurchaseDetail = ({ purchaseDetail, loading, location }) => {
           {orderBean.canRemindFlag ? (
             <span>
               <Button onClick={remindOrder}>催单</Button>
-              <span className="aek-fill-15" />
+              <span className="lkc-fill-15" />
             </span>
           ) : (
             ''
@@ -116,7 +116,7 @@ const PurchaseDetail = ({ purchaseDetail, loading, location }) => {
       operation = (
         <div>
           <Button onClick={remindOrder}>催单</Button>
-          <span className="aek-fill-15" />
+          <span className="lkc-fill-15" />
           <Button onClick={terminateOrder}>终止</Button>
         </div>
       )
@@ -154,7 +154,7 @@ const PurchaseDetail = ({ purchaseDetail, loading, location }) => {
               <Link to={`${location.pathname.replace('detail', 'rate')}`}>
                 <Button>评价</Button>
               </Link>
-              <span className="aek-fill-15" />
+              <span className="lkc-fill-15" />
             </span>
           ) : (
             ''
@@ -246,11 +246,11 @@ const PurchaseDetail = ({ purchaseDetail, loading, location }) => {
       <Row key={index}>
         <div style={{ marginBottom: '6px' }}>
           <span className={styles.gray}>{`收货地址${tableList.length > 1 ? index + 1 : ''}: `}</span>
-          <span className="aek-fill-15" />
+          <span className="lkc-fill-15" />
           {ele.receiveAddress}
-          <span className="aek-fill-15" />
+          <span className="lkc-fill-15" />
           {ele.receiveName}
-          <span className="aek-fill-15" />
+          <span className="lkc-fill-15" />
           {ele.receivePhone}
         </div>
         <Table
@@ -259,7 +259,7 @@ const PurchaseDetail = ({ purchaseDetail, loading, location }) => {
           size="middle"
           rowClassName={({ itemStatus }) => {
             if (itemStatus === 2) {
-              return 'aek-text-disable'
+              return 'lkc-text-disable'
             }
             return ''
           }}
@@ -284,7 +284,7 @@ const PurchaseDetail = ({ purchaseDetail, loading, location }) => {
     </div>
   )
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
@@ -298,12 +298,12 @@ const PurchaseDetail = ({ purchaseDetail, loading, location }) => {
         <APanel title="采购单信息">
           <div className={styles.orderInfo}>
             <div className={styles.infoBox}>
-              <div className="aek-gray">供应商信息</div>
+              <div className="lkc-gray">供应商信息</div>
               {supplierInfo()}
             </div>
             {/* {orderBean.saleType === 2 ? (
               <div className={styles.infoBox}>
-                <div className="aek-gray">收货信息</div>
+                <div className="lkc-gray">收货信息</div>
                 <Row>
                   <Col span={8}>
                     <span className={styles.gray}>收货单位：</span>
@@ -315,11 +315,11 @@ const PurchaseDetail = ({ purchaseDetail, loading, location }) => {
               ''
             )} */}
             <div className={styles.infoBox}>
-              <div className="aek-gray">订单信息</div>
+              <div className="lkc-gray">订单信息</div>
               {orderInfo()}
             </div>
             <div className={styles.infoBox}>
-              <div className="aek-gray">物资信息</div>
+              <div className="lkc-gray">物资信息</div>
               {materialsInfo()}
             </div>
           </div>

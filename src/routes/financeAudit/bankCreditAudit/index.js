@@ -6,7 +6,7 @@ import { Link } from 'dva/router'
 
 import { getBasicFn, getPagination } from '../../../utils/index'
 import { NO_LABEL_LAYOUT } from '../../../utils/constant'
-import { Breadcrumb, SearchFormFilter, AekSelect } from '../../../components'
+import { Breadcrumb, SearchFormFilter, LkcSelect } from '../../../components'
 
 const namespace = 'bankCreditAudit'
 const propTypes = {
@@ -48,7 +48,7 @@ const BankCreditAudit = ({ bankCreditAudit, loading }) => {
           initialValue: null,
         },
         component: (
-          <AekSelect
+          <LkcSelect
             url="/finance/loan-audit/loan-apply-org/list-option"
             optionConfig={{ idStr: 'key', nameStr: 'label' }}
             placeholder="签约机构"
@@ -65,7 +65,7 @@ const BankCreditAudit = ({ bankCreditAudit, loading }) => {
         title: '序号',
         key: 'index',
         width: '50px',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render: (text, record, index) => index + 1,
       },
       {
@@ -83,12 +83,12 @@ const BankCreditAudit = ({ bankCreditAudit, loading }) => {
       {
         title: '提交时间',
         dataIndex: 'submitDate',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
       },
       {
         title: '操作',
         key: 'oprate',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render: (text, record) => (
           <span>
             <Link to={`/financeAudit/bankCreditAudit/detail/${record.creditId}`}>查看</Link>
@@ -103,7 +103,7 @@ const BankCreditAudit = ({ bankCreditAudit, loading }) => {
     pagination: getPagination(pageChange, pagination),
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

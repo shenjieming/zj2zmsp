@@ -180,7 +180,7 @@ const EntrustApprove = ({
     onOk: submitHandler,
     maskClosable: false,
     width: 1100,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const getFormData = () => {
     if (!detailData.oldFlag) {

@@ -8,7 +8,7 @@ const initState = {
   searchData: { current: 1, pageSize: 10 }, // 搜索条件
   dataSource: [], // 客户列表
   pagination: {}, // 客户列表分页
-  aekTableColumns: [], //
+  LkcTableColumns: [], //
 }
 
 export default dvaModelExtend({
@@ -63,7 +63,7 @@ export default dvaModelExtend({
       const obj = JSON.parse(localStorage.getItem(user.userId))
       if (!isEmpty(obj) && !isEmpty(obj.config) && obj.config.supplyCatalogue.length) {
         yield update({
-          aekTableColumns: obj.config.supplyCatalogue,
+          LkcTableColumns: obj.config.supplyCatalogue,
         })
       }
     },

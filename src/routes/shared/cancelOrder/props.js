@@ -2,7 +2,7 @@ import React from 'react'
 import { Select, Input } from 'antd'
 import { Link } from 'dva/router'
 
-import AekRangePicker from '../../../components/AekDatePicker/AekRangePicker'
+import AekRangePicker from '../../../components/LkcDatePicker/LkcRangePicker'
 import { NO_LABEL_LAYOUT, MANAGE_MODEL, CANCEL_STATUS } from '../../../utils/constant'
 
 const Option = Select.Option
@@ -94,7 +94,7 @@ const tableColumns = namespace => [
   {
     title: '序号',
     key: 'index',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 50,
     render: (value, row, index) => {
       const obj = {
@@ -102,9 +102,9 @@ const tableColumns = namespace => [
         props: {},
       }
       if (row.urgentFlag && row.formStatus < 3) {
-        obj.props.className = 'aek-text-center aek-urgent'
+        obj.props.className = 'lkc-text-center lkc-urgent'
       } else {
-        obj.props.className = 'aek-text-center'
+        obj.props.className = 'lkc-text-center'
       }
       return obj
     },
@@ -115,7 +115,7 @@ const tableColumns = namespace => [
       dataIndex: 'formNo',
       key: 'formNo',
       render: (_, row) => (
-        <Link className="aek-link" to={`/orderManage/cancelOrder/detail/${row.formId}`}>
+        <Link className="lkc-link" to={`/orderManage/cancelOrder/detail/${row.formId}`}>
           {row.formNo}
         </Link>
       ),
@@ -125,7 +125,7 @@ const tableColumns = namespace => [
       dataIndex: 'formNo',
       key: 'formNo',
       render: (_, row) => (
-        <Link className="aek-link" to={`/purchaseManage/purchaseCancel/detail/${row.formId}`}>
+        <Link className="lkc-link" to={`/purchaseManage/purchaseCancel/detail/${row.formId}`}>
           {row.formNo}
         </Link>
       ),
@@ -144,43 +144,43 @@ const tableColumns = namespace => [
   {
     title: '类型',
     dataIndex: 'formType',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: value => MANAGE_MODEL[value],
     sorter: true,
   },
   {
     title: '金额',
     dataIndex: 'formAmount',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
     render: value => `￥${value}`,
   },
   {
     title: '退货时间',
     dataIndex: 'submitTime',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     sorter: true,
   },
   {
     title: '状态',
     dataIndex: 'formStatus',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: value => CANCEL_STATUS[value],
   },
   namespace === 'cancelOrder'
     ? {
       title: '操作',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, row) => (
-        <Link className="aek-link" to={`/orderManage/cancelOrder/detail/${row.formId}`}>
+        <Link className="lkc-link" to={`/orderManage/cancelOrder/detail/${row.formId}`}>
             查看
         </Link>
       ),
     }
     : {
       title: '操作',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, row) => (
-        <Link className="aek-link" to={`/purchaseManage/purchaseCancel/detail/${row.formId}`}>
+        <Link className="lkc-link" to={`/purchaseManage/purchaseCancel/detail/${row.formId}`}>
             查看
         </Link>
       ),

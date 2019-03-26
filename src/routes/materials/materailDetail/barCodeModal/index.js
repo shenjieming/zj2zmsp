@@ -80,7 +80,7 @@ const BarCodeModal = ({
       key: 'index',
       dataIndex: 'index',
       title: '序号',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, record, index) => index + 1,
     },
@@ -98,7 +98,7 @@ const BarCodeModal = ({
       key: 'operation',
       dataIndex: 'operation',
       title: '操作',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 120,
       render: (value, record, index) => (
         <span>
@@ -140,7 +140,7 @@ const BarCodeModal = ({
           <FormItem>
             {getFieldDecorator('barcode')(
               <Input
-                className="aek-barcode"
+                className="lkc-barcode"
                 ref={(input) => {
                   inputRef = input
                 }}

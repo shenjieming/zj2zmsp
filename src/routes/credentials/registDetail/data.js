@@ -28,7 +28,7 @@ const formData = ({
   handleReplaced,
   setFieldsValue,
 }) => [
-  <div className="aek-form-head">基础信息</div>,
+  <div className="lkc-form-head">基础信息</div>,
   {
     label: '证件类型',
     layout: formItemLayout,
@@ -371,7 +371,7 @@ const formData = ({
       },
     },
   },
-  <div className="aek-form-head">
+  <div className="lkc-form-head">
     证件图片信息
     <div
       style={{
@@ -408,7 +408,7 @@ const formData = ({
       },
     },
   },
-  registDetail.delayedFlag && <div className="aek-form-head">延期信息</div>,
+  registDetail.delayedFlag && <div className="lkc-form-head">延期信息</div>,
   {
     options: {
       initialValue: registDetail.delayedCertificateNo,
@@ -430,7 +430,7 @@ const formData = ({
     exclude: !registDetail.delayedFlag,
   },
   registDetail.delayedFlag && (
-    <div className="aek-form-head">
+    <div className="lkc-form-head">
       证件图片信息
       <div
         style={{
@@ -469,7 +469,7 @@ const formData = ({
       },
     },
   },
-  registDetail.replacedCertificateNo && <div className="aek-form-head">新证信息</div>,
+  registDetail.replacedCertificateNo && <div className="lkc-form-head">新证信息</div>,
   {
     options: {
       initialValue: (

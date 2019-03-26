@@ -462,8 +462,8 @@ const CreditManage = ({ creditManage, loading, addressList, form: { validateFiel
       component: (
         <span>
           <span>{detail.applyDataName}</span>
-          <span className="aek-fill-15" />
-          <a className="aek-link" href={detail.applyDataUrl} download={detail.applyDataName}>
+          <span className="lkc-fill-15" />
+          <a className="lkc-link" href={detail.applyDataUrl} download={detail.applyDataName}>
             点击下载
           </a>
         </span>
@@ -477,7 +477,7 @@ const CreditManage = ({ creditManage, loading, addressList, form: { validateFiel
           <Alert
             type="warning"
             showIcon
-            className="aek-font-large"
+            className="lkc-font-large"
             style={{ marginBottom: '10px' }}
             message="【您提交的授信资料正在审核，请耐心等待】"
           />
@@ -487,7 +487,7 @@ const CreditManage = ({ creditManage, loading, addressList, form: { validateFiel
           <Alert
             type="success"
             showIcon
-            className="aek-font-large"
+            className="lkc-font-large"
             style={{ marginBottom: '10px' }}
             message="审核通过"
           />
@@ -497,7 +497,7 @@ const CreditManage = ({ creditManage, loading, addressList, form: { validateFiel
           <Alert
             type="warning"
             showIcon
-            className="aek-font-large"
+            className="lkc-font-large"
             style={{ marginBottom: '10px' }}
             message={`审核拒绝${creditFailRemark ? `【${creditFailRemark}】` : ''}`}
           />
@@ -541,12 +541,12 @@ const CreditManage = ({ creditManage, loading, addressList, form: { validateFiel
       <Alert
         type="warning"
         showIcon
-        className="aek-font-large"
+        className="lkc-font-large"
         style={{ marginBottom: '10px' }}
         message={
           <span>
             您需要完善以下信息来完成授信工作，其中包括一些您企业、结算账户的一些基本信息，以及您需要提前准备的授信资料电子档，
-            <a className="aek-link" onClick={scrollTo}>
+            <a className="lkc-link" onClick={scrollTo}>
               点这里查看
             </a>需要准备的资料
           </span>
@@ -580,7 +580,7 @@ const CreditManage = ({ creditManage, loading, addressList, form: { validateFiel
                     <Icon type="upload" /> 选择本地文件
                   </Button>
                 </Upload>
-                <a className="aek-link" href={CREDIT_TEMPLATE_URL} download="授信资料模板.rar">
+                <a className="lkc-link" href={CREDIT_TEMPLATE_URL} download="授信资料模板.rar">
                   下载模板
                 </a>
               </Col>
@@ -623,12 +623,12 @@ const CreditManage = ({ creditManage, loading, addressList, form: { validateFiel
     )
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
       {info}
-      <Card className="aek-full-card" title="基本信息" bordered={false}>
+      <Card className="lkc-full-card" title="基本信息" bordered={false}>
         <Spin style={{ height: '100%' }} spinning={getLoading('queryData', 'submitInfo')}>
           {content}
         </Spin>

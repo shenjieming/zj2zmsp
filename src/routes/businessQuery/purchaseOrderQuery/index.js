@@ -46,7 +46,7 @@ const PlatPurchaseOrder = ({ platPurchaseOrder, loading, routes }) => {
     onSearch: searchHandler
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb routes={routes} />
       </div>

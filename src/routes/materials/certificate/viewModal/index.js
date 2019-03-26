@@ -75,7 +75,7 @@ const ViewModal = (
     width: 800,
     footer: false,
     maskClosable: true,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   let timeStr = ''
   if (validDateLongFlag) {

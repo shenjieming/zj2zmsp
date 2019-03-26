@@ -53,7 +53,7 @@ const AddSkuModal = ({
     onOk: handleOk,
     width: 800,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const initObj = {
     addModalType,

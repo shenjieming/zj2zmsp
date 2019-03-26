@@ -41,7 +41,7 @@ const ModalForm = ({
     onOk: handleOk,
     confirmLoading: modalButtonLoading,
     onCancel,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     afterClose: resetFields,
   }
   return (

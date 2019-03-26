@@ -40,26 +40,26 @@ const DetailPage = ({ repayApplyDetail, loading }) => {
         dataIndex: 'index',
         key: 'index',
         width: 50,
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render: (text, _, idx) => idx + 1,
       },
       {
         title: '贷款到期时间',
         dataIndex: 'loanExpireTime',
         key: 'loanExpireTime',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
       },
       {
         title: '支付申请单号',
         dataIndex: 'formNo',
         key: 'formNo',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
       },
       {
         title: '应还本金',
         dataIndex: 'grantAmount',
         key: 'grantAmount',
-        className: 'aek-text-right',
+        className: 'lkc-text-right',
         render: text => !!text && formatNum(text),
       },
     ],
@@ -69,7 +69,7 @@ const DetailPage = ({ repayApplyDetail, loading }) => {
     rowKey: 'formId',
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
@@ -82,7 +82,7 @@ const DetailPage = ({ repayApplyDetail, loading }) => {
           <div className={style.totalSub}>
             金额大写：<span className={style.color}>{repayAmountCapital}</span>
           </div>
-          <Button className="aek-ml30" type="primary" onClick={() => payMoney(loanFormIds)}>
+          <Button className="lkc-ml30" type="primary" onClick={() => payMoney(loanFormIds)}>
             提交申请
           </Button>
         </div>
@@ -93,8 +93,8 @@ const DetailPage = ({ repayApplyDetail, loading }) => {
             {loanOrderList &&
               loanOrderList.length > 0 && (
                 <div className={style.tableFooter}>
-                  <span className="aek-ml30">共选择入库单: {total} 笔</span>
-                  <span className="aek-ml30">金额： {repayAmount} 元</span>
+                  <span className="lkc-ml30">共选择入库单: {total} 笔</span>
+                  <span className="lkc-ml30">金额： {repayAmount} 元</span>
                 </div>
               )}
           </div>

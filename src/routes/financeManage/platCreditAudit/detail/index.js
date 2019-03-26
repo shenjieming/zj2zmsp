@@ -379,8 +379,8 @@ const PlatCreditDetail = ({ platCreditDetail, loading, addressList }) => {
       component: (
         <span>
           <span>{detail.applyDataName}</span>
-          <span className="aek-fill-15" />
-          <a className="aek-link" href={detail.applyDataUrl} download={detail.applyDataName}>
+          <span className="lkc-fill-15" />
+          <a className="lkc-link" href={detail.applyDataUrl} download={detail.applyDataName}>
             点击下载
           </a>
         </span>
@@ -393,11 +393,11 @@ const PlatCreditDetail = ({ platCreditDetail, loading, addressList }) => {
     </Form>
   )
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
-      <Card className="aek-full-card" title="基本信息" bordered={false}>
+      <Card className="lkc-full-card" title="基本信息" bordered={false}>
         <Spin spinning={getLoading('queryData')}>{content}</Spin>
       </Card>
     </div>

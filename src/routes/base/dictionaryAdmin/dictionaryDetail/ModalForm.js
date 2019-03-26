@@ -104,7 +104,7 @@ const ModalForm = ({
     // confirmLoading: loading,
     onCancel,
     afterClose: resetFields,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     footer: getButton(modalType),
     maskClosable: modalType === 'view',
   }

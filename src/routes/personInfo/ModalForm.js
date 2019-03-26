@@ -113,7 +113,7 @@ const ModalForm = ({
         emailTime: true,
       })
     },
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
   }
 

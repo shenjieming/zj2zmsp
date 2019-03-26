@@ -60,10 +60,10 @@ const PurchaseDetail = ({
   })
   // 第一次审核
   const firstButton = (
-    <div className="aek-m20">
+    <div className="lkc-m20">
       <Button
         type="primary"
-        className="aek-mr20"
+        className="lkc-mr20"
         disabled={!detail.canReview}
         onClick={() => {
           validateFields((error, values) => {
@@ -87,7 +87,7 @@ const PurchaseDetail = ({
       >审核未通过</Button>
       <Button
         type="primary"
-        className="aek-mr20"
+        className="lkc-mr20"
         disabled={!detail.canReview}
         onClick={() => {
           validateFields((error, values) => {
@@ -111,7 +111,7 @@ const PurchaseDetail = ({
       >审核通过</Button>
       <Button
         type="primary"
-        className="aek-mr20"
+        className="lkc-mr20"
         disabled={detail.canReview}
         onClick={() => {
           submit('nextSubmit').then((content) => {
@@ -227,18 +227,18 @@ const PurchaseDetail = ({
           buttons.forEach((items) => {
             if (key === items.type && value) {
               if (key === 'canTopFlag') {
-                retArr.push(<Button className="aek-mr20" key={items.type} type="primary" onClick={items.handleClick}>
+                retArr.push(<Button className="lkc-mr20" key={items.type} type="primary" onClick={items.handleClick}>
                   {detail.chanceTopFlag ? '取消置顶' : '置顶'}
                 </Button>)
               } else {
-                retArr.push(<Button className="aek-mr20" key={items.type} type="primary" onClick={items.handleClick}>
+                retArr.push(<Button className="lkc-mr20" key={items.type} type="primary" onClick={items.handleClick}>
                   {items.name}
                 </Button>)
               }
             }
           })
         }
-        return (<div className="aek-m20">
+        return (<div className="lkc-m20">
           {retArr}
         </div>)
       }
@@ -297,7 +297,7 @@ const PurchaseDetail = ({
     },
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
@@ -322,7 +322,7 @@ const PurchaseDetail = ({
               ])
             }
             >
-              <Form className="aek-p10">
+              <Form className="lkc-p10">
                 <GetFormItem
                   formData={detailForm(detail.chanceRemark)}
                 />

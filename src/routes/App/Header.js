@@ -59,7 +59,7 @@ function Header({ user, orgInfo, orgList, logout, switchOrg, messagePanelProps, 
                         {orgId === orgInfo.orgId && <Badge status="success" />}
                       </div>
                       <Avatar
-                        className="aek-avatar-border"
+                        className="lkc-avatar-border"
                         src={orgLogo}
                         style={{ verticalAlign: 'middle' }}
                       />

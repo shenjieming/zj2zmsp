@@ -44,14 +44,14 @@ const ReviewModal = ({
     onCancel,
     width: 650,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   return (
     <Modal {...modalOpts}>
       <Form>
-        <div className="aek-form-head">基本信息</div>
+        <div className="lkc-form-head">基本信息</div>
         <PlainForm size={1} data={topData} />
-        <div className="aek-form-head">扩展信息</div>
+        <div className="lkc-form-head">扩展信息</div>
         {certificates &&
           certificates.length > 0 &&
           certificates.map(

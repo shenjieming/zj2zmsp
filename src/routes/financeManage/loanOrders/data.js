@@ -103,7 +103,7 @@ const getFormData = ({ tabType, pageType }) => [{
   width: 220,
   exclude: pageType === 'financeLoan',
   component: {
-    name: 'AekSelect',
+    name: 'LkcSelect',
     props: {
       url: getUrl(pageType),
       optionConfig: { prefix: '贷款机构' },
@@ -131,7 +131,7 @@ const getColumns = ({
 }) => [{
   title: '序号',
   dataIndex: 'readFlag',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 60,
   render: (readFlag, __, idx) => {
     if (pageType === 'financeLoan'
@@ -144,13 +144,13 @@ const getColumns = ({
 }, {
   title: '贷款时间',
   dataIndex: 'loanTime',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
 }, {
   title: '支付申请编号',
   dataIndex: 'formNo',
 }, {
   title: [tabInfoArr[1].tabKey, tabInfoArr[2].tabKey].includes(tabType) ? '申请金额' : '放款金额',
-  className: [tabInfoArr[1].tabKey, tabInfoArr[2].tabKey].includes(tabType) ? 'aek-text-right' : undefined,
+  className: [tabInfoArr[1].tabKey, tabInfoArr[2].tabKey].includes(tabType) ? 'lkc-text-right' : undefined,
   dataIndex: 'loanAmount',
   render(loanAmount, { grantAmount }) {
     if ([tabInfoArr[1].tabKey, tabInfoArr[2].tabKey].includes(tabType)) {
@@ -164,7 +164,7 @@ const getColumns = ({
   render: (text, { overDueFlag }) => (
     !overDueFlag
       ? <span>{text}</span>
-      : <span className="aek-red">{text}（已逾期）</span>
+      : <span className="lkc-red">{text}（已逾期）</span>
   ),
 }, {
   title: '贷款机构',
@@ -172,7 +172,7 @@ const getColumns = ({
 }, {
   title: '操作',
   dataIndex: 'formId',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 100,
   render: formId => <a onClick={() => view(formId)}>查看</a>,
 }].filter(({ dataIndex }) => {

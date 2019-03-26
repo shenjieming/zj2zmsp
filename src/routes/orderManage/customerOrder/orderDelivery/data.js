@@ -38,7 +38,7 @@ const getDetailTopData = (orderBean) => {
       订单金额: `￥${formAmount}`,
       // '收货单位|fill': orderBean.receiveOrgName,
       '原订单号|fill': orderBean.originalFormNo,
-      '采购备注|fill': <span className="aek-word-break">{purchaseRemark}</span>,
+      '采购备注|fill': <span className="lkc-word-break">{purchaseRemark}</span>,
     }
   }
   return {
@@ -51,7 +51,7 @@ const getDetailTopData = (orderBean) => {
     订单类型: `${SALE_TYPE[saleType]}-${MANAGE_MODEL[formType]}`,
     是否加急: `${urgentFlag ? '是' : '否'}`,
     订单金额: `￥${formAmount}`,
-    '采购备注|fill': <span className="aek-word-break">{purchaseRemark}</span>,
+    '采购备注|fill': <span className="lkc-word-break">{purchaseRemark}</span>,
   }
 }
 

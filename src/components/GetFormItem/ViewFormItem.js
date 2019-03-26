@@ -48,14 +48,14 @@ const ViewFormItem = ({
       labelCol && (
         <Col
           {...labelCol}
-          className="ant-form-item-label aek-text-help"
+          className="ant-form-item-label lkc-text-help"
           style={subside ? { lineHeight: 'normal' } : undefined}
         >
           {label}<span style={{ margin: '0 8px 0 2px' }}>:</span>
         </Col>
       )
     }
-    <Col {...wrapperCol} className="ant-form-item-control-wrapper aek-word-break">
+    <Col {...wrapperCol} className="ant-form-item-control-wrapper lkc-word-break">
       <div className={subside ? undefined : 'ant-form-item-control'}>
         {typeJudge(viewRender(initialValue, initValueObj), viewType)}
       </div>

@@ -64,14 +64,14 @@ function Page(props) {
     <Radio.Group value={formType} onChange={handleTypeChange}>
       {typesGroupData.map(({ value, name }) => (
         <RadioButton key={value} value={value}>
-          <span className="aek-plr15">{name}</span>
+          <span className="lkc-plr15">{name}</span>
         </RadioButton>
       ))}
     </Radio.Group>
   )
 
   const numRadios = (
-    <div className="aek-text-center aek-mtb20">
+    <div className="lkc-text-center lkc-mtb20">
       <Radio.Group size="large" value={statisticsType} onChange={handleStatisticsTypeChange}>
         {numTypesData.map(({ name, value }) => (
           <Radio key={value} value={value}>
@@ -87,7 +87,7 @@ function Page(props) {
   const rangerPick = (
     <span style={{ float: 'right' }}>
       <a onClick={handleClick7days}>近七天</a>
-      <a className="aek-mlr20" onClick={handleClick30days}>
+      <a className="lkc-mlr20" onClick={handleClick30days}>
         近三十天
       </a>
       <DatePicker.RangePicker

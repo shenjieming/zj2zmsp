@@ -20,7 +20,7 @@ const RegistModal = ({
     title: '绑定注册证',
     visible: registVisible,
     maskClosable: false,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     width: 600,
     onCancel() {
       dispatch({ type: 'supplyCatalogueDetail/updateState', payload: { registVisible: false } })
@@ -49,7 +49,7 @@ const RegistModal = ({
       render: (value, record) => (
         <div>
           <p style={{ fontWeight: 100 }}>{value}</p>
-          <p className="aek-text-help">{record.productName}</p>
+          <p className="lkc-text-help">{record.productName}</p>
         </div>
       ),
     },
@@ -57,7 +57,7 @@ const RegistModal = ({
       key: 'operation',
       dataIndex: 'operation',
       title: '操作',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, record) => (<a
         onClick={() => {
@@ -89,7 +89,7 @@ const RegistModal = ({
           message="只有通过平台审核的的注册证才可以绑定注册证，如果找不到注册证，请先前往“证件档案>我的证件>注册证”中查看是否添加了注册证，并且已经通过了平台审核"
           type="info"
           showIcon
-          className="aek-mb10"
+          className="lkc-mb10"
         />
         <Row>
           <Col span="24">

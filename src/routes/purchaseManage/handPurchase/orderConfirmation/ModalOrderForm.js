@@ -30,17 +30,17 @@ const ModalOrderForm = ({
     title: null,
     footer: null,
     width: 800,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   return (
     <Modal {...modalOpts}>
       <div className={style.modalInfo}>
-        <Icon className="aek-blue" type="check-circle" />
+        <Icon className="lkc-blue" type="check-circle" />
         <p>订单提交成功</p>
-        <p className="aek-text-help">稍后供应商会收到短信提醒</p>
+        <p className="lkc-text-help">稍后供应商会收到短信提醒</p>
       </div>
       <div className={style.modalTable}>
-        <p className="aek-text-help">根据您的采购物资，本次生成如下订单：</p>
+        <p className="lkc-text-help">根据您的采购物资，本次生成如下订单：</p>
         <Table {...tableProps} />
       </div>
       <div className={style.modalButton}>

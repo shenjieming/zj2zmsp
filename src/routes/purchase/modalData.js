@@ -217,7 +217,7 @@ const editFormData = ({
       rules: [{ required: true, message: '必填项不能为空' }],
     },
     component: {
-      name: 'AekInputNumber',
+      name: 'LkcInputNumber',
       props: {
         placeholder: '请输入',
         min: 0,

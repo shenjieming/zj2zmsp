@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon } from 'antd'
 import { verticalContent, segmentation } from '../../../../utils'
-import AekInputNumber from '../../../../components/AekInputNumber'
+import LkcInputNumber from '../../../../components/LkcInputNumber'
 import styles from './style.less'
 
 const searchForm = [
@@ -23,12 +23,12 @@ const commonColumns = [
     render(materialsName, { materialsCommonName, unAddedFlag }) {
       return unAddedFlag === false
         ? {
-          props: { className: 'aek-added' },
+          props: { className: 'lkc-added' },
           children: verticalContent([materialsName, materialsCommonName]),
         }
         : verticalContent([
           materialsName,
-          <span className="aek-text-help">{materialsCommonName}</span>,
+          <span className="lkc-text-help">{materialsCommonName}</span>,
         ])
     },
   },
@@ -54,7 +54,7 @@ const getColumns = ({ delPsc, distributeType, startEditing, changePrice }) =>
       title: '序号',
       dataIndex: 'order',
       width: 60,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render(_, __, index) {
         return index + 1
       },
@@ -69,7 +69,7 @@ const getColumns = ({ delPsc, distributeType, startEditing, changePrice }) =>
       render(distributorPrice, row) {
         if (row.editing) {
           return (
-            <AekInputNumber
+            <LkcInputNumber
               defaultValue={distributorPrice}
               onBlur={(e) => {
                 changePrice(row, e.target.value)
@@ -86,7 +86,7 @@ const getColumns = ({ delPsc, distributeType, startEditing, changePrice }) =>
                 startEditing(row)
               }}
             />
-            <span className="aek-fr">{`￥${distributorPrice}`}</span>
+            <span className="lkc-fr">{`￥${distributorPrice}`}</span>
           </span>
         )
       },
@@ -95,7 +95,7 @@ const getColumns = ({ delPsc, distributeType, startEditing, changePrice }) =>
       title: '操作',
       dataIndex: 'pscId',
       width: 100,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render(pscId) {
         return (
           <a
@@ -119,7 +119,7 @@ const getModalColumns = ({ distributeType, priceChange }) =>
       exclude: distributeType === 1,
       render(distributorPrice, row) {
         return (
-          <AekInputNumber
+          <LkcInputNumber
             disabled={!row.unAddedFlag}
             value={distributorPrice}
             onChange={(value) => {

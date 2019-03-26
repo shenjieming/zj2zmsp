@@ -8,17 +8,17 @@ function Items(props) {
   const { list = [] } = props
 
   if (!list.length) {
-    return <div className="aek-text-disable aek-mt10">暂无待办</div>
+    return <div className="lkc-text-disable lkc-mt10">暂无待办</div>
   }
 
   return (
     <div>
       {list.map(({ number, name, url, flag }, idx) => (
-        <div className="aek-mt10" key={idx}>
+        <div className="lkc-mt10" key={idx}>
           <Link to={url} className={Styles.link}>
             {name}
               (
-            <span className={classnames(Styles.number, { 'aek-red': flag })}>{number}</span>
+            <span className={classnames(Styles.number, { 'lkc-red': flag })}>{number}</span>
               )
           </Link>
         </div>

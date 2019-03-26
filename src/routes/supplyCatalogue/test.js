@@ -427,14 +427,14 @@ function SupplyCatalogueDetail({
           message: '与平台标准库中不存在差异，无需更新',
           type: 'info',
           showIcon: true,
-          className: 'aek-mb20',
+          className: 'lkc-mb20',
         }
       } else {
         props = {
           message: '与平台标准库中的物料信息存在如下差异，如果要使用标准物料信息，请单击更新',
           type: 'warning',
           showIcon: true,
-          className: 'aek-mb20',
+          className: 'lkc-mb20',
         }
       }
       return (
@@ -445,7 +445,7 @@ function SupplyCatalogueDetail({
   }
 
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <div style={{ float: 'left' }}>
           <Breadcrumb routes={routes} />
@@ -468,7 +468,7 @@ function SupplyCatalogueDetail({
         </div>
       </div>
       <div className="content">
-        <div className="aek-border-bottom aek-mb10">
+        <div className="lkc-border-bottom lkc-mb10">
           <div>
             <h3 style={{ fontWeight: '600', color: '#757575' }}>
               {customerDetail.customerOrgName}

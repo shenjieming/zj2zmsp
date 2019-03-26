@@ -66,7 +66,7 @@ const form = (initValue = {}, eventFun) => {
   } = initValue
   const { asyncRegList, asyncProductList, asyncBrandList, asyncSkuList } = eventFun
   return [
-    <div className="aek-form-head">待对照数据</div>,
+    <div className="lkc-form-head">待对照数据</div>,
     {
       label: '物资名称',
       layout: formItemLayout,
@@ -151,7 +151,7 @@ const form = (initValue = {}, eventFun) => {
         name: 'Input',
       },
     },
-    <div className="aek-form-head">物资信息</div>,
+    <div className="lkc-form-head">物资信息</div>,
     // {
     //   field: 'materialsCode',
     //   otherProps: {
@@ -360,7 +360,7 @@ const form = (initValue = {}, eventFun) => {
     //     },
     //   },
     // },
-    <div className="aek-form-head">规格信息</div>,
+    <div className="lkc-form-head">规格信息</div>,
     {
       label: '产品编号',
       col: 12,

@@ -57,7 +57,7 @@ const PaymentQuery = ({ paymentQuery, loading }) => {
       lis = <div className={styles.noSupplier}>—— 暂无可选择客户 ——</div>
     } else {
       lis = (
-        <ul className="aek-mt10">
+        <ul className="lkc-mt10">
           {customerListData.filter(item => item.hplName.indexOf(keywords) > -1).map(item => (
             <li
               key={item.hplId}
@@ -153,7 +153,7 @@ const PaymentQuery = ({ paymentQuery, loading }) => {
   }
   const tableParams = {
     style: { marginBottom: '40px' },
-    className: 'aek-mt10',
+    className: 'lkc-mt10',
     bordered: true,
     dataSource: tableData,
     pagination: getPagination(onPageChange, pagination),
@@ -162,7 +162,7 @@ const PaymentQuery = ({ paymentQuery, loading }) => {
       {
         title: '序号',
         key: 'index',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         width: 50,
         render: (value, row, index) => index + 1,
       },
@@ -173,7 +173,7 @@ const PaymentQuery = ({ paymentQuery, loading }) => {
       {
         title: '金额',
         dataIndex: 'formAmount',
-        className: 'aek-text-right',
+        className: 'lkc-text-right',
         render(data) {
           return formatNum(data)
         },
@@ -190,7 +190,7 @@ const PaymentQuery = ({ paymentQuery, loading }) => {
         title: '操作',
         key: 'oprate',
         width: 150,
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render(_, row) {
           return <Link to={`/vipService/paymentQuery/detail/${row.formId}`}>查看</Link>
         },
@@ -202,7 +202,7 @@ const PaymentQuery = ({ paymentQuery, loading }) => {
     if (status === 1) {
       return (
         <div className={styles.noPermissionBg}>
-          <div className="aek-font-large aek-mb20">{`您尚未开通“${
+          <div className="lkc-font-large lkc-mb20">{`您尚未开通“${
             selectedCustomer.hplName
           }”增值服务`}</div>
           <Link to={`/vipPage/${selectedCustomer.hplId}`}>
@@ -216,7 +216,7 @@ const PaymentQuery = ({ paymentQuery, loading }) => {
         剩余
         {day}
         天到期
-        <span className="aek-fr">
+        <span className="lkc-fr">
           <Link to={`/vipPage/${selectedCustomer.hplId}`}>立即续费</Link>
         </span>
       </div>
@@ -230,12 +230,12 @@ const PaymentQuery = ({ paymentQuery, loading }) => {
     )
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
       <div className="content">
-        <div className="aek-layout-hor">
+        <div className="lkc-layout-hor">
           <div className="left">
             <Search
               placeholder="客户名称检索"
@@ -250,7 +250,7 @@ const PaymentQuery = ({ paymentQuery, loading }) => {
             />
             {customerList()}
           </div>
-          <div className="right aek-pl10">
+          <div className="right lkc-pl10">
             <Spin spinning={getLoading('getCustomerData', 'getVipStatus', 'getData')}>
               {getContetByStatus()}
             </Spin>

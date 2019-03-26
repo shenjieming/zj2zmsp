@@ -44,7 +44,7 @@ const ConfirmOrder = ({
     onCancel: hideHandler,
     onOk: submitHandler,
     width: 500,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
   }
   const remarkTags = ['由于某种特殊原因，我们需要延迟发货！', '我们已收到您的订单，请您耐心等候，我们会尽快发货']
   const tagClick = (text) => {

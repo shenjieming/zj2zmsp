@@ -139,7 +139,7 @@ const CertificatePush = ({ businessExamine, loading }) => {
     dataSource: data,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
@@ -152,18 +152,18 @@ const CertificatePush = ({ businessExamine, loading }) => {
         <Spin spinning={getLoading('getAccount')}>
           <div className={Styles['examine-account']}>
             <p>
-              <span className="aek-text-bold aek-font-mid">今日新增</span>
-              <span>：求购信息/<span className="aek-text-bold aek-font-mid">{getDigital(accountNum.todayChanceNum)}条</span></span>
-              <span className="aek-ml20">需求回复/<span className="aek-text-bold aek-font-mid">{getDigital(accountNum.todayReplayNum)}条</span></span>
+              <span className="lkc-text-bold lkc-font-mid">今日新增</span>
+              <span>：求购信息/<span className="lkc-text-bold lkc-font-mid">{getDigital(accountNum.todayChanceNum)}条</span></span>
+              <span className="lkc-ml20">需求回复/<span className="lkc-text-bold lkc-font-mid">{getDigital(accountNum.todayReplayNum)}条</span></span>
             </p>
             <p>
-              <span className="aek-text-bold aek-font-mid">历史汇总</span>
-              <span>：求购信息/<span className="aek-text-bold aek-font-mid">{getDigital(accountNum.historyChanceNum)}条</span></span>
-              <span className="aek-ml20">需求回复/
-                <span className="aek-text-bold aek-font-mid">{getDigital(accountNum.historyReplayNum)}条</span>
+              <span className="lkc-text-bold lkc-font-mid">历史汇总</span>
+              <span>：求购信息/<span className="lkc-text-bold lkc-font-mid">{getDigital(accountNum.historyChanceNum)}条</span></span>
+              <span className="lkc-ml20">需求回复/
+                <span className="lkc-text-bold lkc-font-mid">{getDigital(accountNum.historyReplayNum)}条</span>
                 <Button
                   size="small"
-                  className="aek-ml20"
+                  className="lkc-ml20"
                   onClick={() => {
                     dispatchAction({
                       type: 'refresh',

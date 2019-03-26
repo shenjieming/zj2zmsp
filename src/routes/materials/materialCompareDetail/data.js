@@ -64,7 +64,7 @@ const genColumns = () => [
     dataIndex: 'index',
     key: 'index',
     width: 50,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (text, record, idx) => idx + 1,
   },
   {
@@ -107,19 +107,19 @@ const getColumns = () => [
     title: '项目',
     dataIndex: 'title',
     key: 'title',
-    className: 'aek-bg-columns',
+    className: 'lkc-bg-columns',
   },
   {
     title: '待对照数据',
     dataIndex: 'contrast',
     key: 'contrast',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '选择的标准数据',
     dataIndex: 'standard',
     key: 'standard',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
 ]
 

@@ -15,9 +15,9 @@ const propTypes = {
 const render = item => ({
   label: (
     <div className={Styles['product-item']}>
-      <p className={'aek-word-break'}>{item.firstTitle}</p>
-      <p className={`aek-text-help aek-word-break ${Styles['text-over']}`}>{item.secondTitle}</p>
-      <p className={`aek-text-help aek-word-break ${Styles['text-over']}`}>{ item.thirdTitle }</p>
+      <p className={'lkc-word-break'}>{item.firstTitle}</p>
+      <p className={`lkc-text-help lkc-word-break ${Styles['text-over']}`}>{item.secondTitle}</p>
+      <p className={`lkc-text-help lkc-word-break ${Styles['text-over']}`}>{ item.thirdTitle }</p>
     </div>
   ),
   value: item.title,
@@ -41,8 +41,8 @@ function EditModal(props) {
     render,
     targetKeys: props.targetKeys,
     titles: [
-      <span className="aek-font-large">未选择产品</span>,
-      <span className="aek-font-large">已选择注册证</span>,
+      <span className="lkc-font-large">未选择产品</span>,
+      <span className="lkc-font-large">已选择注册证</span>,
     ],
     operations: ['移入', '移出'],
     notFoundContent: '',
@@ -61,7 +61,7 @@ function EditModal(props) {
     confirmLoading: props.loading,
     width: 700,
     onCancel: props.handleCancel,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     onOk: props.handleOk,
     maskClosable: false,
   }

@@ -4,25 +4,25 @@ import { getOption } from '../../../utils'
 const statusText = [
   '',
   <span>
-    <span className="aek-green">生成采购单</span>
+    <span className="lkc-green">生成采购单</span>
     {' > '}
     <span>已发货</span>
     {' > '}
     <span>已入库</span>
   </span>,
   <span>
-    <span className="aek-green">生成采购单</span>
+    <span className="lkc-green">生成采购单</span>
     {' > '}
-    <span className="aek-green">已发货</span>
+    <span className="lkc-green">已发货</span>
     {' > '}
     <span>已入库</span>
   </span>,
   <span>
-    <span className="aek-green">生成采购单</span>
+    <span className="lkc-green">生成采购单</span>
     {' > '}
-    <span className="aek-green">已发货</span>
+    <span className="lkc-green">已发货</span>
     {' > '}
-    <span className="aek-green">已入库</span>
+    <span className="lkc-green">已入库</span>
   </span>,
 ]
 
@@ -34,10 +34,10 @@ const genColumns = ({ modalShow, purchaseModal, failedModal }) => [
         title: '入库单号',
         dataIndex: 'formNo',
         key: 'formNo',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render: (text, { formId, rowSpan }) => ({
           children: (
-            <a className="aek-link" onClick={() => modalShow(formId)}>
+            <a className="lkc-link" onClick={() => modalShow(formId)}>
               {text}
             </a>
           ),
@@ -89,7 +89,7 @@ const genColumns = ({ modalShow, purchaseModal, failedModal }) => [
         title: '采购单号',
         dataIndex: 'orderId',
         key: 'orderId',
-        className: 'aek-text-center',
+        className: 'lkc-text-center',
         render: (text, { colSpan, orderStatus, formId, orderId }) => {
           const orderStatusText = [
             <span>还未上传，请等待</span>,
@@ -98,7 +98,7 @@ const genColumns = ({ modalShow, purchaseModal, failedModal }) => [
               onClick={() => {
                 failedModal(formId)
               }}
-              className="aek-link"
+              className="lkc-link"
             >
               入库单中有物资上传至省平台失败，请点击这里处理
             </a>,
@@ -106,7 +106,7 @@ const genColumns = ({ modalShow, purchaseModal, failedModal }) => [
               onClick={() => {
                 failedModal(formId)
               }}
-              className="aek-link"
+              className="lkc-link"
             >
               入库单中有物资不符合上传规则，请点击这里处理
             </a>,
@@ -120,7 +120,7 @@ const genColumns = ({ modalShow, purchaseModal, failedModal }) => [
             }
           }
           return (
-            <a className="aek-link" onClick={() => purchaseModal(orderId)}>
+            <a className="lkc-link" onClick={() => purchaseModal(orderId)}>
               {text}
             </a>
           )
@@ -181,7 +181,7 @@ const formData = [
   {
     field: 'periodNo',
     component: {
-      name: 'AekSelect',
+      name: 'LkcSelect',
       props: {
         url: '/organization/accounting-period/list',
         contentRender: ({ items }) => items,

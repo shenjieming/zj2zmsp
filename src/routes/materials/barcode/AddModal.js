@@ -6,7 +6,7 @@ import { inRange, last, get } from 'lodash'
 import Styles from './addModal.less'
 import { dateFormat } from './props'
 import MoveButton from './MoveButton'
-import AekSelect from '../../../components/AekSelect'
+import LkcSelect from '../../../components/LkcSelect'
 import {
   uploadProps,
   uploadButtonContent,
@@ -479,7 +479,7 @@ class AddModal extends React.Component {
         title={`${status === 'edit' ? '维护' : '新增'}规则`}
         visible={visible}
         width={1200}
-        wrapClassName="aek-modal"
+        wrapClassName="lkc-modal"
         onOk={this.handleOk}
         footer={footerContent}
         onCancel={this.handleCancel}
@@ -490,9 +490,9 @@ class AddModal extends React.Component {
         maskClosable={false}
       >
         <Spin spinning={props.loading}>
-          <div className="aek-sub-head">条码</div>
+          <div className="lkc-sub-head">条码</div>
           <div style={{ display: !inputVisible ? 'inherit' : 'none' }}>
-            <div className={classnames('aek-barcode', Styles.barcode)}>
+            <div className={classnames('lkc-barcode', Styles.barcode)}>
               {!!details.barcodeExample &&
                 details.barcodeExample.split('').map((x, i) => (
                   <span key={i} className={`${generateBarcodeClassName(i)} ${Styles.idx}`}>
@@ -513,7 +513,7 @@ class AddModal extends React.Component {
                   ))}
             </div>
           </div>
-          <div className="aek-sub-head">请输入条码区别的特征</div>
+          <div className="lkc-sub-head">请输入条码区别的特征</div>
           <div className={Styles.wrap} style={{ width: '54%', display: 'inline-block' }}>
             <div>
               1.长度共计
@@ -619,7 +619,7 @@ class AddModal extends React.Component {
             <div>17：有效期，后面固定6位长度，标准格式YYMMDD</div>
             <div>21：序列号，可变长度，一般位于条码最后</div>
           </div>
-          <div className="aek-sub-head">请输入条码基本信息</div>
+          <div className="lkc-sub-head">请输入条码基本信息</div>
           <div className={Styles.wrap}>
             <div>
               1.物资编码
@@ -775,11 +775,11 @@ class AddModal extends React.Component {
               </Radio.Group>
             </div>
           </div>
-          <div className="aek-sub-head">优先级特征</div>
+          <div className="lkc-sub-head">优先级特征</div>
           <div className={Styles.wrap}>
             <div>
               <span className={Styles.label}>供应商</span>
-              <AekSelect
+              <LkcSelect
                 style={{ width: '500px', marginLeft: '5px' }}
                 url="/organization/option/37-after-review-list"
                 placeholder="供应商"
@@ -796,7 +796,7 @@ class AddModal extends React.Component {
             </div>
             <div>
               生产厂家
-              <AekSelect
+              <LkcSelect
                 style={{ width: '500px', marginLeft: '5px' }}
                 url="/organization/option/27-after-review-list"
                 placeholder="生产厂家"
@@ -813,7 +813,7 @@ class AddModal extends React.Component {
             </div>
             <div>
               医疗机构
-              <AekSelect
+              <LkcSelect
                 style={{ width: '500px', marginLeft: '5px' }}
                 url="/organization/option/3-after-review-list"
                 placeholder="医疗机构"
@@ -829,7 +829,7 @@ class AddModal extends React.Component {
               />
             </div>
           </div>
-          <div className="aek-sub-head">条码标签、包装信息、说明书等,越多越好</div>
+          <div className="lkc-sub-head">条码标签、包装信息、说明书等,越多越好</div>
           <div>
             <Upload
               {...uploadProps}
@@ -839,9 +839,9 @@ class AddModal extends React.Component {
               {uploadButtonContent}
             </Upload>
           </div>
-          <div className="aek-sub-head">
+          <div className="lkc-sub-head">
             备注信息
-            <span className="aek-red aek-font-small">
+            <span className="lkc-red lkc-font-small">
               （以下信息如果有，请一定要填写，方便后期整理条码规则）
             </span>
           </div>

@@ -17,7 +17,7 @@ const ModalSelsect = ({
   const modalOpts = {
     visible,
     title: '选择新增物料的方式',
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     footer: null,
     width: 640,
     onCancel,

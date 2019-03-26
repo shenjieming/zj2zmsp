@@ -19,7 +19,7 @@ const AddSql = ({
   const addModalProp = {
     title: '添加apiSQL',
     visible: addModalVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     maskClosable: false,
     onCancel() {
       handleCancel()
@@ -47,7 +47,7 @@ const AddSql = ({
           </div>)}
           type="warning"
         />
-        <div className="aek-mt20">
+        <div className="lkc-mt20">
           <Button
             type="primary"
             onClick={() => {

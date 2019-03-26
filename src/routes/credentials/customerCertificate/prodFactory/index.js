@@ -109,7 +109,7 @@ function ProdFactory({
       key: 'importedFlag',
       dataIndex: 'importedFlag',
       title: '厂家类型',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value) => {
         if (value) {
           return '进口'
@@ -122,7 +122,7 @@ function ProdFactory({
       dataIndex: 'operation',
       title: '操作',
       width: 150,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => {
         // 下拉按钮点击事件 TODO
         const handleMenuClick = (val) => {

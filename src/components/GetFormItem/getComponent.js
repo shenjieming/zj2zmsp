@@ -18,17 +18,17 @@ import {
 } from 'antd'
 import AekUpload from 'aek-upload'
 import Breadcrumb from '../Breadcrumb'
-import { AekDatePicker, AekRangePicker, TimeQuantum } from '../AekDatePicker'
-import AekSelect from '../AekSelect'
-import AekInputNumber from '../AekInputNumber'
-import AekRadioButton from '../AekRadioButton'
+import { LkcDatePicker, AekRangePicker, TimeQuantum } from '../LkcDatePicker'
+import LkcSelect from '../LkcSelect'
+import LkcInputNumber from '../LkcInputNumber'
+import LkcRadioButton from '../LkcRadioButton'
 
 
 import { uploadButton } from '../UploadButton'
 import PicturesWall from '../../routes/shared/PicturesWall'
 
 const strComponent = {
-  AekInputNumber,
+  LkcInputNumber,
   AutoComplete,
   Input,
   Search: Input.Search,
@@ -44,7 +44,7 @@ const strComponent = {
   Slider,
   TimePicker,
   DatePicker,
-  AekDatePicker,
+  LkcDatePicker,
   MonthPicker: DatePicker.MonthPicker,
   RangePicker: DatePicker.RangePicker,
   AekRangePicker,
@@ -52,7 +52,7 @@ const strComponent = {
   Upload,
   Cascader,
   Select,
-  AekSelect,
+  LkcSelect,
   Option: Select.Option,
   OptGroup: Select.OptGroup,
   TreeSelect,
@@ -60,7 +60,7 @@ const strComponent = {
   Breadcrumb,
   UploadButton: uploadButton,
   PicturesWall,
-  AekRadioButton,
+  LkcRadioButton,
   AekUpload,
 }
 

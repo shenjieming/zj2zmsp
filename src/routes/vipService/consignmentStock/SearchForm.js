@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Select, Form, Radio, Checkbox } from 'antd'
-import AekSelect from '../../../components/AekSelect'
+import LkcSelect from '../../../components/LkcSelect'
 
 const FormItem = Form.Item
 const Option = Select.Option
@@ -22,7 +22,7 @@ function SearchForm(props) {
       <div style={{ display: 'inline-block' }}>
         <FormItem>
           {getFieldDecorator('customerOrgId')(
-            <AekSelect
+            <LkcSelect
               style={{ width: 200 }}
               url="/account/vip/list"
               optionConfig={{ idStr: 'hplId', nameStr: 'hplName' }}

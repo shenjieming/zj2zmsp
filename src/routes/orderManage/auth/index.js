@@ -48,7 +48,7 @@ function Auth(props) {
   }
 
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Bread />
       </div>

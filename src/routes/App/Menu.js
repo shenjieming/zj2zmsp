@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { AekIcon } from '@components'
+import { LkcIcon } from '@components'
 import classnames from 'classnames'
 import { Menu } from 'antd'
 import { NavLink } from 'dva/router'
@@ -21,8 +21,8 @@ function Menus({ collapsed, pathname, menuData = [], selectedKeys, handleSelect 
         const path = `/${key}`
         const title = (
           <div>
-            <AekIcon type={key} />
-            {key === 'vipService' ? <span className="aek-orange">{name}</span> : name}
+            <LkcIcon type={key} />
+            {key === 'vipService' ? <span className="lkc-orange">{name}</span> : name}
           </div>
         )
 
@@ -32,7 +32,7 @@ function Menus({ collapsed, pathname, menuData = [], selectedKeys, handleSelect 
               key={path}
               title={
                 <NavLink
-                  className={classnames(styles.link, 'aek-font-mid')}
+                  className={classnames(styles.link, 'lkc-font-mid')}
                   to={path}
                   activeClassName={styles.activeLink}
                   onClick={e => e.preventDefault()}
@@ -61,7 +61,7 @@ function Menus({ collapsed, pathname, menuData = [], selectedKeys, handleSelect 
         }
         const linkProps = {
           to: path,
-          className: classnames(styles.link, 'aek-font-mid'),
+          className: classnames(styles.link, 'lkc-font-mid'),
           activeClassName: styles.activeLink,
           onClick: pathname === path ? e => e.preventDefault() : undefined,
         }

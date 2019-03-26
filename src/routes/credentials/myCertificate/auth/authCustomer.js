@@ -17,7 +17,7 @@ const render = item => ({
   label: (
     <span className={Styles.item}>
       <Avatar className={Styles.left} src={item.imgUrl} icon="user" />
-      <div style={{ width: '170px' }} className={`aek-ml10 ${Styles.left} aek-word-break`}>{item.title}</div>
+      <div style={{ width: '170px' }} className={`lkc-ml10 ${Styles.left} lkc-word-break`}>{item.title}</div>
     </span>
   ),
   value: item.title,
@@ -38,8 +38,8 @@ function EditModal(props) {
     render,
     targetKeys: props.targetKeys,
     titles: [
-      <span className="aek-font-large">未选择客户</span>,
-      <span className="aek-font-large">已选择客户</span>,
+      <span className="lkc-font-large">未选择客户</span>,
+      <span className="lkc-font-large">已选择客户</span>,
     ],
     operations: ['移入', '移出'],
     notFoundContent: '',
@@ -55,7 +55,7 @@ function EditModal(props) {
     confirmLoading: props.loading,
     width: 700,
     onCancel: props.handleCancel,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     onOk: props.handleOk,
     maskClosable: false,
   }

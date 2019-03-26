@@ -11,14 +11,14 @@ function LoginPage({ children }) {
       {/*<div className={styles.header}>*/}
         {/*<img className={styles.logo} src={logo} alt="爱怡康" />*/}
         {/*<span className={styles.title}>*/}
-          {/*<Link to="/login">登录</Link><span className="aek-plr15">|</span><Link to="/regist">注册</Link>*/}
+          {/*<Link to="/login">登录</Link><span className="lkc-plr15">|</span><Link to="/regist">注册</Link>*/}
         {/*</span>*/}
       {/*</div>*/}
       <div className={styles.content}>
         <div className={styles.contentWrap}>
           <div className={styles.innerWrap}>
             {/*<div className={styles.text}>*/}
-              {/*<div className="aek-pb20">用智慧服务优化医疗产业链</div>*/}
+              {/*<div className="lkc-pb20">用智慧服务优化医疗产业链</div>*/}
               {/*<div>通过“互联网+”时代的“医疗智慧服务”</div>*/}
               {/*<div>采用信息和通信技术手段感测、分析、整合医疗产业运行核心的关键信息</div>*/}
               {/*<div>从而为医疗机构、企业提供全方位医疗物资供应链信息服务</div>*/}

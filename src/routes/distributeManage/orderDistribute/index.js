@@ -9,7 +9,7 @@ import { getBasicFn, getPagination } from '../../../utils'
 import { SALE_TYPE, MANAGE_MODEL, NO_LABEL_LAYOUT } from '../../../utils/constant'
 import Breadcrumb from '../../../components/Breadcrumb'
 import SearchFormFilter from '../../../components/SearchFormFilter'
-import AekSelect from '../../../components/AekSelect'
+import LkcSelect from '../../../components/LkcSelect'
 
 const propTypes = {
   distributeList: PropTypes.object,
@@ -40,7 +40,7 @@ const DistributeList = ({ loading, distributeList }) => {
           initialValue: undefined,
         },
         component: (
-          <AekSelect
+          <LkcSelect
             url="/distribute/customer/option-list"
             optionConfig={{
               idStr: 'customerOrgId',
@@ -68,7 +68,7 @@ const DistributeList = ({ loading, distributeList }) => {
     {
       title: '序号',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, row, index) => index + 1,
     },
@@ -77,7 +77,7 @@ const DistributeList = ({ loading, distributeList }) => {
       dataIndex: 'formNo',
       render: (_, row) => (
         <Link
-          className="aek-link"
+          className="lkc-link"
           to={`/orderManage/customerOrder/detail/${row.formId}`}
           target="_blank"
         >
@@ -88,7 +88,7 @@ const DistributeList = ({ loading, distributeList }) => {
     {
       title: '订单类型',
       key: 'type',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (_, record) => {
         const saleType = SALE_TYPE[record.saleType]
         const formType = MANAGE_MODEL[record.formType]
@@ -106,16 +106,16 @@ const DistributeList = ({ loading, distributeList }) => {
     {
       title: '金额',
       dataIndex: 'formAmount',
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: text => `￥${text}`,
     },
     {
       title: '操作',
       key: 'operation',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (_, row) => (
         <Link
-          className="aek-link"
+          className="lkc-link"
           to={`/distributeManage/orderDistribute/distribute/${row.formId}`}
         >
           分发
@@ -124,7 +124,7 @@ const DistributeList = ({ loading, distributeList }) => {
     },
   ]
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

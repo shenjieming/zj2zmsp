@@ -12,7 +12,7 @@ const OtherBarCode = ({
   const addModalProp = {
     title: '条码绑定的物资',
     visible: otherCodeVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     width: 550,
     maskClosable: false,
     footer: null,
@@ -27,7 +27,7 @@ const OtherBarCode = ({
       key: 'index',
       dataIndex: 'index',
       title: '序号',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, record, index) => index + 1,
     },
@@ -46,7 +46,7 @@ const OtherBarCode = ({
       key: 'operation',
       dataIndex: 'operation',
       title: '操作',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record, index) => (<Button
         value={record.barcode}
         size="small"
@@ -69,7 +69,7 @@ const OtherBarCode = ({
   return (
     <Modal {...addModalProp} >
       <Spin spinning={!!effects['supplyCatalogueDetail/delSkuBarcode']}>
-        <p className="aek-mtb10">该条码绑定的物资如下</p>
+        <p className="lkc-mtb10">该条码绑定的物资如下</p>
         <Table
           style={{ marginTop: '20px' }}
           columns={columns}

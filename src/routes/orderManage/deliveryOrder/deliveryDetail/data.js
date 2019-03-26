@@ -11,7 +11,7 @@ const genColumns = ({ formType, invoiceChange }) =>
       title: '序号',
       dataIndex: 'index',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (text, record, idx) => idx + 1,
     },
     {
@@ -99,7 +99,7 @@ const genColumns = ({ formType, invoiceChange }) =>
       dataIndex: 'materialsPrice',
       key: 'materialsPrice',
       width: 100,
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: text => <span>¥{text}</span>,
     },
     {
@@ -107,7 +107,7 @@ const genColumns = ({ formType, invoiceChange }) =>
       dataIndex: 'concatPrice',
       key: 'concatPrice',
       width: 100,
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render: (text, { deliverQty, materialsPrice }) => (
         <span>{formatNum(new Decimal(materialsPrice).times(deliverQty))}</span>
       ),
@@ -167,7 +167,7 @@ const getDetailTopData = (detailPageData) => {
       客户订单号: originalFormNo,
       采购时间: purchaseTime,
       合计金额: <span>¥{formAmount}</span>,
-      '采购备注|fill': <span className="aek-word-break">{purchaseRemark}</span>,
+      '采购备注|fill': <span className="lkc-word-break">{purchaseRemark}</span>,
     }
   }
   // 跟台--配送明细
@@ -197,7 +197,7 @@ const getDetailBottomData = (detailData) => {
     发货人: senderName,
     发货时间: senderTime,
     '配送方式|fill': (
-      <Link to={`/orderManage/deliveryOrder/logistics/${formId}`} className="aek-link">
+      <Link to={`/orderManage/deliveryOrder/logistics/${formId}`} className="lkc-link">
         {Number(deliverType) === 1 ? (
           <span>
             {deliverNo} {deliverCompany}
@@ -210,7 +210,7 @@ const getDetailBottomData = (detailData) => {
         )}
       </Link>
     ),
-    '发货备注|fill': <span className="aek-word-break">{deliverRemark}</span>,
+    '发货备注|fill': <span className="lkc-word-break">{deliverRemark}</span>,
   }
 }
 export default {

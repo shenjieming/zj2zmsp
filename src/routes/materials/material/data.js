@@ -253,7 +253,7 @@ const genColumns = ({ handleAction, addModalShow }) => [
     dataIndex: 'index',
     key: 'index',
     width: 50,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (text, record, idx) => idx + 1,
   }, {
     title: '物资编码',

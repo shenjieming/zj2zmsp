@@ -69,7 +69,7 @@ const DeliveryDetail = ({
     orgName,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
@@ -124,7 +124,7 @@ const DeliveryDetail = ({
               <p>配送方式：</p>
               <span>
                 <Link
-                  className="aek-link"
+                  className="lkc-link"
                   to={`/purchaseManage/deliveryOrder/purchaseLogistics/${formId}`}
                 >
                   {Number(deliverType) === 1 ? (
@@ -173,7 +173,7 @@ const DeliveryDetail = ({
           orgId === receiveOrgId && (
             <div style={{ height: 40, marginBottom: 12 }}>
               <div style={{ height: 40, lineHeight: '40px' }}>
-                <Button className="aek-mr15 aek-fr" onClick={printDeliverOrder}>
+                <Button className="lkc-mr15 lkc-fr" onClick={printDeliverOrder}>
                   打印验收单
                 </Button>
               </div>

@@ -5,27 +5,27 @@ const operationItemColumns = [
     title: '企业名称',
     dataIndex: 'customerOrgName',
     width: 300,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '人员',
     dataIndex: 'submitName',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '操作时间',
     dataIndex: 'submitTime',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '操作',
     dataIndex: 'operation',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '备注',
     dataIndex: 'remark',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
 ]
 const returnItemColumns = [
@@ -33,7 +33,7 @@ const returnItemColumns = [
     title: '序号',
     key: 'index',
     width: 50,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, row, index) => <div>{index + 1}</div>,
   },
   {
@@ -43,13 +43,13 @@ const returnItemColumns = [
   {
     title: '规格',
     dataIndex: 'materialsSku',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '批次/有效期',
     key: 'batchNo',
     width: 200,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (_, record) => (
       <div>
         <div>{record.batchNo}</div>
@@ -60,13 +60,13 @@ const returnItemColumns = [
   {
     title: '跟踪码',
     dataIndex: 'trackCode',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
   },
   {
     title: '发票信息',
     key: 'invoiceInfo',
     width: 200,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (_, record) => (
       <div>
         <div>{record.invoiceNo}</div>
@@ -77,19 +77,19 @@ const returnItemColumns = [
   {
     title: '退货数量',
     dataIndex: 'returnQty',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (text, record) => `${text}${record.packageUnitText}`,
   },
   {
     title: '单价',
     dataIndex: 'materialsPrice',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
     render: text => `￥${text}`,
   },
   {
     title: '金额小计',
     dataIndex: 'materialsAmount',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
     render: text => `￥${text}`,
   },
 ]

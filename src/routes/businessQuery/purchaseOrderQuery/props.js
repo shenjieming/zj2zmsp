@@ -17,9 +17,9 @@ const renderStatus = (text) => {
   const statusText = filter(ORDER_STATUS, { value: String(text) })[0].label
   if (text < 4) {
     if (text < 2) {
-      return <div className="aek-orange">{statusText}</div>
+      return <div className="lkc-orange">{statusText}</div>
     }
-    return <div className="aek-green">{statusText}</div>
+    return <div className="lkc-green">{statusText}</div>
   }
   return statusText
 }
@@ -133,7 +133,7 @@ const tableColumns = [
   {
     title: '序号',
     key: 'index',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     width: 50,
     render: (value, row, index) => {
       const obj = {
@@ -141,9 +141,9 @@ const tableColumns = [
         props: {},
       }
       if (row.urgentFlag && row.formStatus < 3) {
-        obj.props.className = 'aek-text-center aek-urgent'
+        obj.props.className = 'lkc-text-center lkc-urgent'
       } else {
-        obj.props.className = 'aek-text-center'
+        obj.props.className = 'lkc-text-center'
       }
       return obj
     },
@@ -153,7 +153,7 @@ const tableColumns = [
     dataIndex: 'formNo',
     key: 'formNo',
     render: (value, row) => (
-      <Link className="aek-link" to={`/businessQuery/purchaseOrderQuery/detail/${row.formId}`}>
+      <Link className="lkc-link" to={`/businessQuery/purchaseOrderQuery/detail/${row.formId}`}>
         {value}
       </Link>
     ),
@@ -162,7 +162,7 @@ const tableColumns = [
     title: '订单类型',
     dataIndex: 'formType',
     key: 'type',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (value, record) => {
       const saleType = SALE_TYPE[record.saleType]
       const formType = MANAGE_MODEL[record.formType]
@@ -173,7 +173,7 @@ const tableColumns = [
     title: '订单金额',
     dataIndex: 'formAmount',
     key: 'formAmount',
-    className: 'aek-text-right',
+    className: 'lkc-text-right',
     render: text => `￥${text}`,
   },
   {

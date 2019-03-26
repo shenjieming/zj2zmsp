@@ -13,7 +13,7 @@ const fromData = searData => [
     field: 'hplId',
     width: 350,
     component: {
-      name: 'AekSelect',
+      name: 'LkcSelect',
       props: {
         url: 'organization/option/3-after-review-list',
         optionConfig: { idStr: 'orgId', nameStr: 'orgName' },
@@ -32,7 +32,7 @@ const fromData = searData => [
     component: {
       name: 'RangePicker',
       props: {
-        className: 'aek-mr20',
+        className: 'lkc-mr20',
       },
     },
     options: {
@@ -44,7 +44,7 @@ const getColumns = handleDetailClick => [{
   title: '序号',
   dataIndex: 'index',
   key: 'index',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 80,
   render: (text, _, idx) => idx + 1,
 }, {
@@ -97,7 +97,7 @@ const modalForm = () => [
     },
     field: 'hplId',
     component: {
-      name: 'AekSelect',
+      name: 'LkcSelect',
       props: {
         url: 'organization/option/3-after-review-list',
         optionConfig: { idStr: 'orgId', nameStr: 'orgName' },

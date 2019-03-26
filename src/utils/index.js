@@ -257,7 +257,7 @@ const dispatchUrl = ({ query = {}, pathname, state, clear = true } = {}) => {
 const pointColumn = tableData => ({
   title: '',
   key: 'point-column',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 30,
   render: (text, record, index) => {
     const length = tableData.length
@@ -528,7 +528,7 @@ const getTabName = (name = '', num = 0) => {
     return (
       <span>
         {name}
-        <span className="aek-red aek-ml10 aek-font-small">{`(${num})`}</span>
+        <span className="lkc-red lkc-ml10 lkc-font-small">{`(${num})`}</span>
       </span>
     )
   }

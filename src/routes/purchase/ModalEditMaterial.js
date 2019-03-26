@@ -94,7 +94,7 @@ const ModalEditMaterial = ({
   const modalOpts = {
     title: getTitle(),
     visible: editModalVisible,
-    wrapClassName: 'aek-modal',
+    wrapClassName: 'lkc-modal',
     confirmLoading: loading,
     maskClosable: false,
     afterClose() {
@@ -111,7 +111,7 @@ const ModalEditMaterial = ({
   return (
     <Modal {...modalOpts}>
       {getAlter(modalInitValue.platformAuthStatus === 1)}
-      <div className="aek-form-head">基本信息</div>
+      <div className="lkc-form-head">基本信息</div>
       <Form>
         <GetFormItem
           formData={viewFormData({
@@ -128,7 +128,7 @@ const ModalEditMaterial = ({
           allView={viewFlag}
         />
       </Form>
-      <div className="aek-form-head">补充信息</div>
+      <div className="lkc-form-head">补充信息</div>
       <Form>
         <GetFormItem
           formData={editFormData({

@@ -15,7 +15,7 @@ function MessagePanel(props) {
     <div>
       <span>
         消息
-        {!!length && <span className="aek-orange">({length}条未读)</span>}
+        {!!length && <span className="lkc-orange">({length}条未读)</span>}
       </span>
       {!!length && (
         <a onClick={handleSetAllRead} style={{ float: 'right' }}>
@@ -44,15 +44,15 @@ function MessagePanel(props) {
                 <Col span="18">
                   {x.msgUrl ? (
                     <Link to={x.msgUrl}>
-                      <span className="aek-link aek-word-break">{x.msgContent}</span>
-                      <div className={classnames(styles.msgTime, 'aek-text-disable')}>
+                      <span className="lkc-link lkc-word-break">{x.msgContent}</span>
+                      <div className={classnames(styles.msgTime, 'lkc-text-disable')}>
                         {x.msgTime}
                       </div>
                     </Link>
                   ) : (
                     <div>
-                      <div className="aek-word-break">{x.msgContent}</div>
-                      <div className={classnames(styles.msgTime, 'aek-text-disable')}>
+                      <div className="lkc-word-break">{x.msgContent}</div>
+                      <div className={classnames(styles.msgTime, 'lkc-text-disable')}>
                         {x.msgTime}
                       </div>
                     </div>
@@ -70,7 +70,7 @@ function MessagePanel(props) {
       ) : (
         <div className={styles.noMsg}>
           <img src={emptyMsg} alt="没有消息" />
-          <div className="aek-text-disable">暂无未读消息</div>
+          <div className="lkc-text-disable">暂无未读消息</div>
         </div>
       )}
       <div className={styles.msgContentFooter}>

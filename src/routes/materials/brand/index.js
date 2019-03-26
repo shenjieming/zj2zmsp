@@ -173,7 +173,7 @@ const Brand = ({ brand, routes, loading }) => {
     },
     rowClassName: ({ brandStatus }) => {
       if (brandStatus) {
-        return 'aek-text-disable'
+        return 'lkc-text-disable'
       }
       return ''
     },
@@ -198,12 +198,12 @@ const Brand = ({ brand, routes, loading }) => {
     currentBrandDetail,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <div style={{ display: 'inline-block' }}>
           <Breadcrumb routes={routes} />
         </div>
-        <div className="aek-fr">
+        <div className="lkc-fr">
           <Dropdown disabled={checkedArr.length === 0} overlay={menu} trigger={['click']}>
             <Button style={{ marginRight: 15 }}>
               批量操作<Icon type="down" />

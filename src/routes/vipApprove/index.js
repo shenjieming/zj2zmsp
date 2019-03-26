@@ -64,7 +64,7 @@ function VipApprove({ vipApprove, loading }) {
     {
       title: '序号',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 50,
       render: (value, row, index) => index + 1,
     },
@@ -83,7 +83,7 @@ function VipApprove({ vipApprove, loading }) {
     {
       title: '金额',
       dataIndex: 'serviceAmount',
-      className: 'aek-text-right',
+      className: 'lkc-text-right',
       render(data) {
         return formatNum(data)
       },
@@ -111,7 +111,7 @@ function VipApprove({ vipApprove, loading }) {
       title: '操作',
       key: 'oprate',
       width: 150,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render(_, row) {
         if (row.status > 1) {
           return (
@@ -143,7 +143,7 @@ function VipApprove({ vipApprove, loading }) {
         layout: noLabelLayout,
         field: 'orgId',
         component: {
-          name: 'AekSelect',
+          name: 'LkcSelect',
           props: {
             url: 'organization/getAllTypeInfo',
             optionConfig: { idStr: 'supplierId', nameStr: 'supplierName' },
@@ -240,7 +240,7 @@ function VipApprove({ vipApprove, loading }) {
     },
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>

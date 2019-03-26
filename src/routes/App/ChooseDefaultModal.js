@@ -7,8 +7,8 @@ const columns = [
   {
     key: 'orgLogoUrl',
     dataIndex: 'orgLogoUrl',
-    render: text => <Avatar size="large" src={getImgCompress(text)} className="aek-avatar-border" />,
-    className: 'aek-text-center',
+    render: text => <Avatar size="large" src={getImgCompress(text)} className="lkc-avatar-border" />,
+    className: 'lkc-text-center',
   },
   {
     dataIndex: 'orgName',
@@ -76,7 +76,7 @@ class ChooseDefaultModal extends React.PureComponent {
           pagination={false}
           showHeader={false}
         />
-        <div className="aek-text-right aek-pt10">
+        <div className="lkc-text-right lkc-pt10">
           <Button
             onClick={() => {
               handleOk(selectedRowKeys.toString())

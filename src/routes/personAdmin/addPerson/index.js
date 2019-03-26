@@ -102,7 +102,7 @@ const AddPerson = ({
           !!effects['personAdmin/postRegistPerson'] || !!effects['personAdmin/postNoRegistPerson']
         }
       >
-        <Alert message="手机号确保是公司员工本人的，否则将会添加无相关人员" type="info" showIcon className="aek-mb10" />
+        <Alert message="手机号确保是公司员工本人的，否则将会添加无相关人员" type="info" showIcon className="lkc-mb10" />
         <Form>
           <GetFormItem
 

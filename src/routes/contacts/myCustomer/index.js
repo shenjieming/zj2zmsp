@@ -123,7 +123,7 @@ function MyCustomer({ myCustomer, effects, dispatch, routes, addressList }) {
       title: '序号',
       dataIndex: 'index',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 30,
       render: (value, record, index) => index + 1,
     },
@@ -239,7 +239,7 @@ function MyCustomer({ myCustomer, effects, dispatch, routes, addressList }) {
     applyType,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Bread style={{ float: 'left' }} routes={routes} />
         <div style={{ float: 'right' }}>

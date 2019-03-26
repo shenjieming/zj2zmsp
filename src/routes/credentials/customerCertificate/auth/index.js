@@ -119,7 +119,7 @@ function Auth({
       render: (value, record) => { // 先判断是否长期有效
         let dom
         const replace = () => (<span>
-          {record.replacedPlatformAuthStatus === 2 ? <p className="aek-red">(已换证,<a onClick={() => {
+          {record.replacedPlatformAuthStatus === 2 ? <p className="lkc-red">(已换证,<a onClick={() => {
             dispatch({
               type: 'customerCertificate/updateState',
               payload: {
@@ -143,7 +143,7 @@ function Auth({
           const oldDate = new Date(new Date(value).getTime() + (24 * 60 * 60 * 1000)).getTime()
           const todayDate = new Date().getTime()
           if (oldDate < todayDate) {
-            dom = <p className="aek-text-disable">{`${record.validDateStart}至${record.validDateEnd}`}<span className="aek-red">（已过期）</span></p>
+            dom = <p className="lkc-text-disable">{`${record.validDateStart}至${record.validDateEnd}`}<span className="lkc-red">（已过期）</span></p>
           } else {
             dom = <p>{`${record.validDateStart}至${record.validDateEnd}`}</p>
           }
@@ -159,7 +159,7 @@ function Auth({
       dataIndex: 'operation',
       title: '操作',
       width: 150,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => (
         <span>
           <a

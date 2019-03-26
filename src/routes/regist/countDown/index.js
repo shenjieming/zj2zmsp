@@ -27,9 +27,9 @@ class Success extends React.Component {
           <img src={success} alt="注册成功" />
         </div>
         <div className={Styles.right}>
-          <h1 className="aek-text-left aek-ptb10">恭喜您注册成功</h1>
-          <p className="aek-font-small aek-text-help">请牢记用户名及密码，用户名就是下次登录的登录账号</p>
-          <p style={{ marginTop: '20px' }} className="aek-text-help aek-font-small">
+          <h1 className="lkc-text-left lkc-ptb10">恭喜您注册成功</h1>
+          <p className="lkc-font-small lkc-text-help">请牢记用户名及密码，用户名就是下次登录的登录账号</p>
+          <p style={{ marginTop: '20px' }} className="lkc-text-help lkc-font-small">
             <Button
               type="primary"
               onClick={() => {

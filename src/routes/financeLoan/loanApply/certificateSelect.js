@@ -57,7 +57,7 @@ const CertificateSelect = ({
     afterClose() {
       resetFields()
     },
-    // wrapClassName: 'aek-modal',
+    // wrapClassName: 'lkc-modal',
     footer: null,
     maskClosable: false,
   }
@@ -129,10 +129,10 @@ const CertificateSelect = ({
     <Modal {...modalProps}>
       <Spin spinning={getLoading('getAddMortgage', 'getDeleteMortgage')}>
         {photoListDetail && photoListDetail.length ? <div>
-          <div className={Styles['aek-modal-title']}>
+          <div className={Styles['lkc-modal-title']}>
             已上传证件
           </div>
-          <div className={Styles['aek-popover-photo-content']}>
+          <div className={Styles['lkc-popover-photo-content']}>
             {popoverPhotoList({
               imageList: photoListDetail,
               checkChange,
@@ -140,7 +140,7 @@ const CertificateSelect = ({
             })}
           </div>
         </div> : ''}
-        <div className={`${Styles['aek-modal-title']} aek-mt10`}>
+        <div className={`${Styles['lkc-modal-title']} lkc-mt10`}>
           添加证件
         </div>
         <div>

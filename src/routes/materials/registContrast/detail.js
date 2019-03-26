@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PDF from '../../../components/AekLightBox/pdf'
+import PDF from '../../../components/LkcLightBox/pdf'
 import { connect } from 'dva'
 import { Table, Input, Select, Button, message, Modal } from 'antd'
 import { debounce } from 'lodash'
@@ -9,7 +9,7 @@ import Breadcrumb from '../../../components/Breadcrumb'
 import SearchFormFilter from '../../../components/SearchFormFilter'
 import PhotoWall from '../../../components/PhotoWall'
 import Addcertificate from './addCertificate'
-import AekLightBox from '../../../components/AekLightBox'
+import LkcLightBox from '../../../components/LkcLightBox'
 import Styles from './detail.less'
 
 const confirm = Modal.confirm
@@ -98,19 +98,19 @@ function RegistDetail({ registContrastDetail, loading, dispatch }) {
       title: '字段',
       dataIndex: 'title',
       key: 'title',
-      className: 'aek-bg-columns',
+      className: 'lkc-bg-columns',
     },
     {
       title: '待对照数据',
       dataIndex: 'contrast',
       key: 'contrast',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
     },
     {
       title: '选择的标准数据',
       dataIndex: 'standard',
       key: 'standard',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
     },
   ]
   // 对照表格dataSource
@@ -209,7 +209,7 @@ function RegistDetail({ registContrastDetail, loading, dispatch }) {
       render: (value, record) => (
         <div>
           <p>{value}</p>
-          <p className="aek-text-disable">{record.productName}</p>
+          <p className="lkc-text-disable">{record.productName}</p>
         </div>
       ),
     },
@@ -260,7 +260,7 @@ function RegistDetail({ registContrastDetail, loading, dispatch }) {
     },
     rowClassName(record) {
       if (record.certificateId === standardCertificateId) {
-        return 'aek-tr-selecterd'
+        return 'lkc-tr-selecterd'
       }
       return ''
     },
@@ -312,17 +312,17 @@ function RegistDetail({ registContrastDetail, loading, dispatch }) {
     getLoading,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <Breadcrumb />
       </div>
       <div className={`full-content ${Styles.content}`} style={{ padding: 0 }}>
-        <div className={Styles['aek-shadow']}>
-          <div className="aek-border-bottom">对照</div>
-          <div className="aek-pt20">
+        <div className={Styles['lkc-shadow']}>
+          <div className="lkc-border-bottom">对照</div>
+          <div className="lkc-pt20">
             <Table {...compaerTablePorps} />
           </div>
-          <div className="aek-mt30">
+          <div className="lkc-mt30">
             <Button
               type="primary"
               style={{ float: 'left', marginRight: '20px' }}
@@ -352,8 +352,8 @@ function RegistDetail({ registContrastDetail, loading, dispatch }) {
           </div>
         </div>
         <div>
-          <div className="aek-border-bottom">候选列表</div>
-          <div className="aek-pt20">
+          <div className="lkc-border-bottom">候选列表</div>
+          <div className="lkc-pt20">
             <SearchFormFilter {...searchFilterProps} />
           </div>
           <div>

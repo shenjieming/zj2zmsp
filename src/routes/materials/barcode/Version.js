@@ -45,7 +45,7 @@ class Version extends React.Component {
       title: '操作',
       key: 'action',
       render: (_, row) => <a onClick={() => this.props.viewDetail(row)}>查看</a>,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
     },
   ]
 
@@ -69,7 +69,7 @@ class Version extends React.Component {
         </Button>
       ),
       width: 700,
-      wrapClassName: 'aek-modal',
+      wrapClassName: 'lkc-modal',
     }
 
     const tableProps = {
@@ -85,12 +85,12 @@ class Version extends React.Component {
         selectedRowKeys: selectedKeys,
       },
       loading: props.tableLoading,
-      className: 'aek-table-no-allcheck',
+      className: 'lkc-table-no-allcheck',
     }
 
     return (
       <Modal {...modalProps}>
-        <Alert message="可选择其中两个版本进行对比" type="info" showIcon className="aek-mb15" />
+        <Alert message="可选择其中两个版本进行对比" type="info" showIcon className="lkc-mb15" />
         <Table {...tableProps} />
       </Modal>
     )

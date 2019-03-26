@@ -31,7 +31,7 @@ const AccountLogin = ({
       })
     }}
   >
-    <div className="aek-pt15">
+    <div className="lkc-pt15">
       {getFieldDecorator(USERNAME, {
         validateTrigger: false,
         rules: [
@@ -61,7 +61,7 @@ const AccountLogin = ({
         />,
       )}
     </div>
-    <div className="aek-pt15">
+    <div className="lkc-pt15">
       {getFieldDecorator(PASSWORD, {
         validateTrigger: false,
         validateFirst: true,
@@ -116,7 +116,7 @@ const AccountLogin = ({
         />,
       )}
     </div>
-    <div className="aek-space-between" style={{ paddingTop: 20 }}>
+    <div className="lkc-space-between" style={{ paddingTop: 20 }}>
       <Row>
         <Col span={12}>
           <Link to="/forgetPasd" style={{
@@ -141,7 +141,7 @@ const AccountLogin = ({
         {/*忘记密码?*/}
       {/*</Link>*/}
     </div>
-    {/*<div className="aek-mtb20">*/}
+    {/*<div className="lkc-mtb20">*/}
       {/*<Button*/}
         {/*className={styles.loginButton}*/}
         {/*type="primary"*/}

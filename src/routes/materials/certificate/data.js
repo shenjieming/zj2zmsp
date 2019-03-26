@@ -282,7 +282,7 @@ const genColumns = ({ handleAction, editAction, registTypeList }) => [
     dataIndex: 'index',
     key: 'index',
     width: 50,
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (text, record, idx) => idx + 1,
   },
   {
@@ -345,7 +345,7 @@ const genColumns = ({ handleAction, editAction, registTypeList }) => [
     key: 'action',
     width: 80,
     fixed: 'right',
-    className: 'aek-text-center',
+    className: 'lkc-text-center',
     render: (text, record) => {
       const { certificateStatus: status, certificateId, certificateNo } = record
       const menu = (

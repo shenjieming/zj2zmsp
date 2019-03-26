@@ -49,7 +49,7 @@ const formItemData = [{
 const columns = ({ updateDicValue, stopDicValue }) => [{
   title: '顺序',
   dataIndex: 'dicValueIndex',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 60,
 }, {
   title: 'ID',
@@ -63,12 +63,12 @@ const columns = ({ updateDicValue, stopDicValue }) => [{
 }, {
   title: '状态',
   dataIndex: 'dicValueStatus',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 120,
   render: dicValueStatus => (dicValueStatus ? '已停用' : '启用中'),
 }, {
   title: '操作',
-  className: 'aek-text-center',
+  className: 'lkc-text-center',
   width: 120,
   render: (text, record) => (<span>
     <a onClick={() => { updateDicValue(record) }}>修改</a>

@@ -59,7 +59,7 @@ const Tab = ({
       key: 'index',
       title: '序号',
       render: (_, $, i) => i + 1,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
     },
     {
       dataIndex: 'userName',
@@ -113,7 +113,7 @@ const Tab = ({
     {
       title: '操作',
       key: 'action',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: row => (
         <div>
           <Link to={`/personAdmin/detail/${row.userId}`} target="_blank">查看</Link>
@@ -175,7 +175,7 @@ const Tab = ({
             }}
             rowClassName={({ status }) => {
               if (status) {
-                return 'aek-text-disable'
+                return 'lkc-text-disable'
               }
               return ''
             }}

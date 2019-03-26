@@ -79,7 +79,7 @@ const PersonDetail = ({ personAdminDetail, routes, dispatch, effects }) => {
   function roleConfirm(record) {
     confirm({
       title: '确定要移除该用户的此角色吗？',
-      content: <span className="aek-red">移除后，该人员将不再拥有此角色所包含权限！</span>,
+      content: <span className="lkc-red">移除后，该人员将不再拥有此角色所包含权限！</span>,
       okText: '确认',
       closable: false,
       cancelText: '取消',
@@ -96,7 +96,7 @@ const PersonDetail = ({ personAdminDetail, routes, dispatch, effects }) => {
       title: '序号',
       dataIndex: 'index',
       key: 'index',
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       width: 30,
       render: (value, record, index) => index + 1,
     },
@@ -121,7 +121,7 @@ const PersonDetail = ({ personAdminDetail, routes, dispatch, effects }) => {
       dataIndex: 'operation',
       key: 'operation',
       width: 100,
-      className: 'aek-text-center',
+      className: 'lkc-text-center',
       render: (value, record) => (
         <span>
           <Link to={`/roleAdmin/detail/${record.roleId}`} target="_blank">
@@ -143,7 +143,7 @@ const PersonDetail = ({ personAdminDetail, routes, dispatch, effects }) => {
   function personConfirm() {
     confirm({
       title: '确定要将该人员从本组织机构移除吗？',
-      content: <span className="aek-red">移除后，该员工将不能再登录到本组织机构进行操作！</span>,
+      content: <span className="lkc-red">移除后，该员工将不能再登录到本组织机构进行操作！</span>,
       okText: '确认',
       closable: false,
       cancelText: '取消',
@@ -173,7 +173,7 @@ const PersonDetail = ({ personAdminDetail, routes, dispatch, effects }) => {
     deptId,
   }
   return (
-    <div className="aek-layout">
+    <div className="lkc-layout">
       <div className="bread">
         <div style={{ float: 'left' }}>
           <Bread routes={routes} />
@@ -189,10 +189,10 @@ const PersonDetail = ({ personAdminDetail, routes, dispatch, effects }) => {
         )}
       </div>
       <div className="content">
-        <div className="aek-content-title">人员详情</div>
+        <div className="lkc-content-title">人员详情</div>
         <p>
           {realName}
-          <span className="aek-status-on aek-ml20">
+          <span className="lkc-status-on lkc-ml20">
             {status ? '停用中' : '启用中'}
           </span>
         </p>
@@ -206,7 +206,7 @@ const PersonDetail = ({ personAdminDetail, routes, dispatch, effects }) => {
         </Row>
         <div style={{ borderBottom: '1px solid #ccc', margin: '20px 0px' }}>
           <span
-            className={Style['aek-person-title']}
+            className={Style['lkc-person-title']}
           >
             此用户拥有的角色
           </span>

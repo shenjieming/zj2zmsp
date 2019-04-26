@@ -23,7 +23,7 @@ const getStatus = (tabType = 'all') => {
   if (tabType === 'pending') {
     return [{
       id: '2',
-      name: '待审核',
+      name: '待审核',  
     }]
   }
   const arr = []

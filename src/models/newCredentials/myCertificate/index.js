@@ -401,7 +401,7 @@ export default dvaModelExtend({
       const { searchData, tabIndex } = yield select(({ newMyCertificate }) => newMyCertificate)
       const { content: { status, certificateNo } } = yield call(setRegistReplaceData, payload)
       if (status === 0) {
-        message.success('已提交至客服进行审核，请耐心等待，如果紧急请联系客服：400-052-5256')
+        message.success('已提交至客服进行审核，请耐心等待，如果紧急请联系客服：0571-28834114')
         let url = 'getRegistList'
         if (tabIndex === '1') {
           url = 'getCertificateList'
@@ -445,7 +445,7 @@ export default dvaModelExtend({
         if (payload.platformAuthStatus === 2) {
           message.success('操作成功')
         } else {
-          message.success('已提交至客服进行审核，请耐心等待，如果紧急请联系客服：400-052-5256')
+          message.success('已提交至客服进行审核，请耐心等待，如果紧急请联系客服：0571-28834114')
         }
         yield put({
           type: 'updateState',

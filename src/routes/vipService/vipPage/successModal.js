@@ -56,7 +56,7 @@ const SuccessModal = ({ visible, orderDetail, onCancel }) => {
           请扫描下方二维码 「支付」{' '}
           <span className={styles.importantinfo}>{formatNum(orderDetail.serviceAmount)}</span>
           ，支付时请备注 <span className={styles.importantinfo}>您的企业名称，会员订单号</span>
-          ，支付成功后， 请拨打客户服务热线：400-052-5256（工作日 9:00 至 17:30）
+          ，支付成功后， 请拨打客户服务热线：0571-28834114（工作日 9:00 至 17:30）
           告知付款信息，并为您开通VIP服务。
         </div>
         <div className="lkc-mt20">

@@ -56,7 +56,7 @@ function UseClause() {
           <p>
             <br />
           最近修订 2015年1月14日。</p>
-          <p>杭州爱怡康科技有限公司&nbsp;保留一切权利。</p>
+          <p>上海零库存科技有限公司&nbsp;保留一切权利。</p>
         </div>
       </div>
       <div className={styles.footer}>

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Table } from 'antd'
 import windowNewOpen from '@shared/windowNewOpen'
-import { aekConnect, dispatchUrl } from '../../../../utils'
+import { lkcConnect, dispatchUrl } from '../../../../utils'
 import { ContentLayout, PlainForm, LkcLightBox } from '../../../../components'
 import { genHeadStatus } from '../../../shared/finance'
 import CheckModal from '../../../shared/finance/checkModal'
@@ -239,4 +239,4 @@ function LoanOrderDetail({
   return <ContentLayout {...contentLayoutProps} />
 }
 LoanOrderDetail.propTypes = propTypes
-export default aekConnect()(LoanOrderDetail)
+export default lkcConnect()(LoanOrderDetail)

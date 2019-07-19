@@ -17,7 +17,7 @@ module.exports = {
       changeOrigin: true,
       secure: false,
       pathRewrite: {
-        [baseURL]: '/aek-mspp',
+        [baseURL]: '/lkc-mspp',
       },
     },
     [rapMockURL]: {

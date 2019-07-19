@@ -551,7 +551,7 @@ const modifier = (fun = () => undefined) => (all) => {
   }
 }
 // 替换connect
-const aekConnect = fun => connect(modifier(fun))
+const lkcConnect = fun => connect(modifier(fun))
 
 // 纵向排列多条信息
 const verticalContent = (...props) => {
@@ -802,7 +802,7 @@ export default {
   getServices,
   addRowspanField,
   getTabName,
-  aekConnect,
+  lkcConnect,
   verticalContent,
   formatNum,
   getImgCompress,

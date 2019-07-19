@@ -501,7 +501,7 @@ export default {
   },
   mockOrgInfo: {
     orgId: 'C26E2359251E413EB90D7006274D8B25',
-    orgName: '爱怡康',
+    orgName: '零库存',
     accuracy: 2,
     accuracyDecimal: 0.01,
     orgType: '02',
@@ -510,7 +510,7 @@ export default {
     {
       orgAccuracy: '4',
       orgId: 'C26E2359251E413EB90D7006274D8B25',
-      orgName: '爱怡康',
+      orgName: '零库存',
       orgType: '02',
       isDefaultOrg: true,
     },

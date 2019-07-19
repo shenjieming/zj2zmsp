@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Modal, Form, Row, Col } from 'antd'
-import { getOptions } from 'aek-upload'
+import { getOptions } from 'lkc-upload'
 
 import { FORM_ITEM_LAYOUT } from '../../../../utils/constant'
 import GetFormItem from '../../../../components/GetFormItem'
@@ -74,7 +74,7 @@ const ReplyModal = ({
               col: 22,
               options: getOptions(),
               component: {
-                name: 'AekUpload',
+                name: 'LkcUpload',
                 props: {
                   amountLimit: 9,
                   sizeLimit: IMG_SIZE_LIMIT,

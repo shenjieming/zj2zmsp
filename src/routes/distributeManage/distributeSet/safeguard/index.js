@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Button, Table, Modal } from 'antd'
-import { aekConnect, getPagination, getCurrent } from '../../../../utils'
+import { lkcConnect, getPagination, getCurrent } from '../../../../utils'
 import { SearchFormFilter, ContentLayout } from '../../../../components'
 import { searchForm, getColumns } from './data'
 import ModalAdd from './ModalAdd'
@@ -190,4 +190,4 @@ function Safeguard({
 }
 
 Safeguard.propTypes = propTypes
-export default aekConnect()(Safeguard)
+export default lkcConnect()(Safeguard)

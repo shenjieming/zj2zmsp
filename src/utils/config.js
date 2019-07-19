@@ -5,7 +5,7 @@ const THEME = process.env.THEME
 // 开发环境默认配置
 let config = {
   name: '零库存',
-  prefix: 'aek',
+  prefix: 'lkc',
   footerText: '',
   logoText: '零库存',
   publicPath: './',
@@ -66,9 +66,9 @@ let config = {
   // 用户名
   UPLOAD_USERNAME: 'chenrui',
   // 密码
-  UPLOAD_PASSWORD: 'aek56.com',
+  UPLOAD_PASSWORD: 'lkc56.com',
   // 图片上传地址
-  IMG_UPLOAD: 'http://10.3.10.30:9003/lkc-mspp/upload',
+  IMG_UPLOAD: 'http://10.18.59.48:9003/lkc-mspp/upload',
   // 原始图片查看地址
   IMG_ORIGINAL: 'https://lkc-pur-image.oss-cn-hangzhou.aliyuncs.com',
   // 缩略图服务名
@@ -78,7 +78,7 @@ let config = {
   // 上传密钥
   UPLOAD_KEY: '/rmfhYt8ZWiCPAPlVcTfHW1R7HI=',
   // 又拍云服务名
-  UPYUN_BUCKET: 'aek-image-test',
+  UPYUN_BUCKET: 'lkc-image-test',
   // 图片保存路径
   UPYUN_SAVE_KEY: 'userImage/{year}_{mon}_{day}/{hour}_{min}_{sec}_{random32}.{suffix}',
 
@@ -88,7 +88,7 @@ let config = {
   // 保存路径
   UPYUN_SAVE_KEY_EXCEL: '/excel/{year}_{mon}_{day}/{hour}_{min}_{sec}_{random32}.{suffix}',
   // 服务名
-  UPYUN_BUCKET_EXCEL: 'aek-doc-test',
+  UPYUN_BUCKET_EXCEL: 'lkc-doc-test',
   // 帐号
   UPLOAD_USERNAME_EXCEL: 'zhengfeng',
   // 密码
@@ -104,11 +104,11 @@ let config = {
   // 保存路径
   UPYUN_SAVE_KEY_ZIP: '/zip/{year}_{mon}_{day}/{hour}_{min}_{sec}_{random32}.{suffix}',
   // 服务名
-  UPYUN_BUCKET_ZIP: 'aek-finance-test',
+  UPYUN_BUCKET_ZIP: 'lkc-finance-test',
   // 上传密钥
   UPLOAD_KEY_ZIP: 'FjyBYes93mi1/UTA3ddmny/YP50=',
   // 下载地址
-  ZIP_DOWNLOAD: 'http://fin.test.youcdn.aek56.com',
+  ZIP_DOWNLOAD: 'http://fin.test.youcdn.lkc56.com',
   // 自动登录跳转域名
   AUTO_LOGIN: 'http://localhost:8000/#/login',
 }
@@ -118,9 +118,9 @@ if (NODE_ENV === 'production') {
   const target = 'http://10.18.59.48:9003/lkc-mspp'
   let publicPath = './'
   // if (THEME === 'yibei') {
-  //   publicPath = 'http://fin.prod.youcdn.aek56.com/'
+  //   publicPath = 'http://fin.prod.youcdn.lkc56.com/'
   // } else {
-  //   publicPath = 'http://10.3.10.30:9003/'
+  //   publicPath = 'http://10.18.59.48:9003/'
   // }
 
   config = Object.assign({}, config, {
@@ -138,7 +138,7 @@ if (NODE_ENV === 'production') {
     // UPLOAD_KEY_EXCEL: 'ssKyym8pFmk6rfIrUU1wtU7xRzc=',
     // UPLOAD_KEY_ZIP: 'QLOlnvpb7yDNUqO1IsRorze6XVc=',
     ZIP_DOWNLOAD: target + '/download-temp',
-    // sockURL: 'http://notify.aek56.com:8082/endpoint', 11/30 删除
+    // sockURL: 'http://notify.lkc56.com:8082/endpoint', 11/30 删除
     AUTO_LOGIN: 'http://10.18.59.48:9003/#/login',
     EXCEL_DOWNLOAD: 'http://lkc-pur.oss-cn-hangzhou.aliyuncs.com',
   })

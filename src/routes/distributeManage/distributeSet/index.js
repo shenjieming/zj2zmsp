@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Button, Table, Modal, Checkbox } from 'antd'
 import style from './style.less'
-import { aekConnect, getPagination, getCurrent } from '../../../utils'
+import { lkcConnect, getPagination, getCurrent } from '../../../utils'
 import { SearchFormFilter, ContentLayout } from '../../../components'
 import { searchLeft, searchRight, getLeftColumns, getRightColumns } from './data'
 import ModalAdd from './ModalAdd'
@@ -310,4 +310,4 @@ function DistributeSet({
 }
 
 DistributeSet.propTypes = propTypes
-export default aekConnect()(DistributeSet)
+export default lkcConnect()(DistributeSet)

@@ -1,7 +1,7 @@
 import React from 'react'
 import moment from 'moment'
 import { Row, Col } from 'antd'
-import { getOptions } from 'aek-upload'
+import { getOptions } from 'lkc-upload'
 import { FORM_ITEM_LAYOUT, REGEXP_PHONE } from '../../../utils/constant'
 
 import { IMG_SIZE_LIMIT } from '../../../utils/config'
@@ -179,7 +179,7 @@ const formData =
       col: 14,
       options: getOptions(chanceImageUrls),
       component: {
-        name: 'AekUpload',
+        name: 'LkcUpload',
         props: {
           amountLimit: 9,
           sizeLimit: IMG_SIZE_LIMIT,

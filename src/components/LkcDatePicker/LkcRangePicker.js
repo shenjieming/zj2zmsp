@@ -28,7 +28,7 @@ const getValue = (value) => {
   return [momentValueArr, strValueArr]
 }
 
-class AekRangePicker extends React.Component {
+class LkcRangePicker extends React.Component {
   constructor(props) {
     super(props)
 
@@ -87,5 +87,5 @@ class AekRangePicker extends React.Component {
   }
 }
 
-AekRangePicker.propTypes = propTypes
-export default AekRangePicker
+LkcRangePicker.propTypes = propTypes
+export default LkcRangePicker

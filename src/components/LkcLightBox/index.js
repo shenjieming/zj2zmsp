@@ -4,7 +4,7 @@ import { isEmpty } from 'lodash'
 import LkcLightBox from './lkc-light-box'
 import { IMG_WATERMARK } from '../../utils/config'
 
-class AekLightIndex extends React.Component {
+class LkcLightIndex extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -175,7 +175,7 @@ class AekLightIndex extends React.Component {
     </div>)
   }
 }
-AekLightIndex.propTypes = {
+LkcLightIndex.propTypes = {
   photoIndex: PropTypes.number,
   url: PropTypes.string,
   isOpen: PropTypes.bool.isRequired,
@@ -190,4 +190,4 @@ AekLightIndex.propTypes = {
     value: PropTypes.string,
   }),
 }
-export default AekLightIndex
+export default LkcLightIndex

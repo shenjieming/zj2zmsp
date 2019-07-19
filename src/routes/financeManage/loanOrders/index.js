@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Table, Tabs, Alert } from 'antd'
-import { getPagination, getTabName, aekConnect } from '../../../utils'
+import { getPagination, getTabName, lkcConnect } from '../../../utils'
 import SearchFormFilter from '../../../components/SearchFormFilter/'
 import ContentLayout from '../../../components/ContentLayout'
 import { getColumns, getFormData, tabInfoArr } from './data'
@@ -107,4 +107,4 @@ function LoanOrders({ toAction, getLoading, loanOrders: {
   return <ContentLayout {...contentLayoutProps} />
 }
 LoanOrders.propTypes = propTypes
-export default aekConnect()(LoanOrders)
+export default lkcConnect()(LoanOrders)

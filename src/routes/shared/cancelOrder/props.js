@@ -2,7 +2,7 @@ import React from 'react'
 import { Select, Input } from 'antd'
 import { Link } from 'dva/router'
 
-import AekRangePicker from '../../../components/LkcDatePicker/LkcRangePicker'
+import LkcRangePicker from '../../../components/LkcDatePicker/LkcRangePicker'
 import { NO_LABEL_LAYOUT, MANAGE_MODEL, CANCEL_STATUS } from '../../../utils/constant'
 
 const Option = Select.Option
@@ -18,7 +18,7 @@ const formData = namespace => [
     options: {
       initialValue: null,
     },
-    component: <AekRangePicker style={{ display: 'inline' }} />,
+    component: <LkcRangePicker style={{ display: 'inline' }} />,
   },
   {
     layout: NO_LABEL_LAYOUT,

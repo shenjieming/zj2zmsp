@@ -14,7 +14,7 @@
 
 其他参数同考antd的`DatePicker`
 
-## AekRangePicker
+## LkcRangePicker
 
 同`RangePicker`组件，作用同上。
 

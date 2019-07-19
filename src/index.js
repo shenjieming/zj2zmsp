@@ -5,7 +5,7 @@ import { message, Modal } from 'antd'
 import { inRange } from 'lodash'
 import createLoading from 'dva-loading'
 import moment from 'moment'
-import { config as uploadConfig } from 'aek-upload'
+import { config as uploadConfig } from 'lkc-upload'
 import momentLocale from './utils/momentLocale'
 import effectsEnhancer from './utils/effectsEnhancer'
 import {

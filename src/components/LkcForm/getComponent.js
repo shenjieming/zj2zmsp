@@ -17,7 +17,7 @@ import {
   Icon,
 } from 'antd'
 import Breadcrumb from '../Breadcrumb'
-import { LkcDatePicker, AekRangePicker, TimeQuantum } from '../LkcDatePicker'
+import { LkcDatePicker, LkcRangePicker, TimeQuantum } from '../LkcDatePicker'
 import LkcSelect from '../LkcSelect'
 import LkcInputNumber from '../LkcInputNumber'
 
@@ -43,7 +43,7 @@ const strComponent = {
   LkcDatePicker,
   MonthPicker: DatePicker.MonthPicker,
   RangePicker: DatePicker.RangePicker,
-  AekRangePicker,
+  LkcRangePicker,
   TimeQuantum,
   Upload,
   Cascader,

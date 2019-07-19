@@ -44,7 +44,7 @@ export default modelExtend({
             commodityCode: 'magna Ut minim in',
             commodityId: 'Ut Exc',
             commodityImageUrl:
-              'http://img.test.youcdn.aek56.com/userImage/2018_07_04/07_52_18_1jjdi91bk523el0p2evk92k5f8nccxvr.jpg!watermark',
+              'http://img.test.youcdn.lkc56.com/userImage/2018_07_04/07_52_18_1jjdi91bk523el0p2evk92k5f8nccxvr.jpg!watermark',
             commodityInventory: 23,
             commodityName: '100元话费充值',
             commodityOriginalIntegral: 'proident velit fugiat',
@@ -61,7 +61,7 @@ export default modelExtend({
             commodityCode: 'magna cillum est dolor',
             commodityId: 'nostrud dolore',
             commodityImageUrl:
-              'http://img.test.youcdn.aek56.com/userImage/2018_07_04/10_19_39_m8705dt1ci7xp2mfo7gpp8vjbosvn9ge.png!watermark',
+              'http://img.test.youcdn.lkc56.com/userImage/2018_07_04/10_19_39_m8705dt1ci7xp2mfo7gpp8vjbosvn9ge.png!watermark',
             commodityInventory: 232,
             commodityName: '50元话费充值',
             commodityOriginalIntegral: 'dolore in velit reprehenderi',
@@ -78,7 +78,7 @@ export default modelExtend({
             commodityCode: 'pariatur Duis id',
             commodityId: 'mollit id aliquip in',
             commodityImageUrl:
-              'http://img.test.youcdn.aek56.com/userImage/2018_07_04/10_19_45_c51g8rtkei59kxko0med6gpm82to0xwo.png',
+              'http://img.test.youcdn.lkc56.com/userImage/2018_07_04/10_19_45_c51g8rtkei59kxko0med6gpm82to0xwo.png',
             commodityInventory: 0,
             commodityName: '自动折叠伞',
             commodityOriginalIntegral: 'sed Ut',
@@ -95,7 +95,7 @@ export default modelExtend({
             commodityCode: 'do consequat ipsum',
             commodityId: 'deserunt occaecat adipisicing',
             commodityImageUrl:
-              'http://img.test.youcdn.aek56.com/userImage/2018_07_04/10_21_57_hj1wdeq5263fu6b5nrsdt89c7os0tin6.png',
+              'http://img.test.youcdn.lkc56.com/userImage/2018_07_04/10_21_57_hj1wdeq5263fu6b5nrsdt89c7os0tin6.png',
             commodityInventory: 0,
             commodityName: '移动电源',
             commodityOriginalIntegral: 'ullamco velit',
@@ -112,7 +112,7 @@ export default modelExtend({
             commodityCode: 'esse tempor irure',
             commodityId: 'velit cu',
             commodityImageUrl:
-              'http://img.test.youcdn.aek56.com/userImage/2018_07_04/10_22_00_phytzbn9qfwoc83skd8aba098pe7ve0q.png',
+              'http://img.test.youcdn.lkc56.com/userImage/2018_07_04/10_22_00_phytzbn9qfwoc83skd8aba098pe7ve0q.png',
             commodityInventory: 12,
             commodityName: '多功能护颈枕',
             commodityOriginalIntegral: 'sint magna sit',
@@ -129,7 +129,7 @@ export default modelExtend({
             commodityCode: 'esse tempor irure',
             commodityId: 'velit222 cu',
             commodityImageUrl:
-              'http://img.test.youcdn.aek56.com/userImage/2018_07_05/02_58_02_xx9o0ogkgsrw9oan7d9bwxdxppbgu0kw.png',
+              'http://img.test.youcdn.lkc56.com/userImage/2018_07_05/02_58_02_xx9o0ogkgsrw9oan7d9bwxdxppbgu0kw.png',
             commodityInventory: 12,
             commodityName: '小米手环3',
             commodityOriginalIntegral: 'sint magna sit',
@@ -146,7 +146,7 @@ export default modelExtend({
             commodityCode: 'esse tempor irure',
             commodityId: 'velit 1212cu',
             commodityImageUrl:
-              'http://img.test.youcdn.aek56.com/userImage/2018_07_05/03_09_25_loz1ek83axayl0w8kqr3orgrnsljx6jm.png',
+              'http://img.test.youcdn.lkc56.com/userImage/2018_07_05/03_09_25_loz1ek83axayl0w8kqr3orgrnsljx6jm.png',
             commodityInventory: 12,
             commodityName: '小米手环3',
             commodityOriginalIntegral: 'sint magna sit',
@@ -163,7 +163,7 @@ export default modelExtend({
             commodityCode: 'esse tempor irure',
             commodityId: 'velit cu234',
             commodityImageUrl:
-              'http://img.test.youcdn.aek56.com/userImage/2018_07_05/03_09_28_zubzv73oagpxosuh0l3gxqzts35qhp41.png',
+              'http://img.test.youcdn.lkc56.com/userImage/2018_07_05/03_09_28_zubzv73oagpxosuh0l3gxqzts35qhp41.png',
             commodityInventory: 12,
             commodityName: '电动牙刷',
             commodityOriginalIntegral: 'sint magna sit',
@@ -180,7 +180,7 @@ export default modelExtend({
             commodityCode: 'esse tempor irure',
             commodityId: '222velit cu',
             commodityImageUrl:
-              'http://img.test.youcdn.aek56.com/userImage/2018_07_05/03_09_33_dmcirml8ot8v78go5a0ai9ysjarb7pe4.png',
+              'http://img.test.youcdn.lkc56.com/userImage/2018_07_05/03_09_33_dmcirml8ot8v78go5a0ai9ysjarb7pe4.png',
             commodityInventory: 12,
             commodityName: '小米手电筒',
             commodityOriginalIntegral: 'sint magna sit',

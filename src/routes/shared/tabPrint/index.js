@@ -76,7 +76,7 @@ const ModalPrint = ({
           <div className={style.print} key={item} style={tabStyle()}>
             <div>
               <img
-                alt="爱怡康"
+                alt="零库存"
                 src={`${baseURL}/generate-barcode?code=${item}`}
               />
               <p>{item}</p>

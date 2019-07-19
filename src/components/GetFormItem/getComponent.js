@@ -16,9 +16,9 @@ import {
   TreeSelect,
   Icon,
 } from 'antd'
-import AekUpload from 'aek-upload'
+import LkcUpload from 'lkc-upload'
 import Breadcrumb from '../Breadcrumb'
-import { LkcDatePicker, AekRangePicker, TimeQuantum } from '../LkcDatePicker'
+import { LkcDatePicker, LkcRangePicker, TimeQuantum } from '../LkcDatePicker'
 import LkcSelect from '../LkcSelect'
 import LkcInputNumber from '../LkcInputNumber'
 import LkcRadioButton from '../LkcRadioButton'
@@ -47,7 +47,7 @@ const strComponent = {
   LkcDatePicker,
   MonthPicker: DatePicker.MonthPicker,
   RangePicker: DatePicker.RangePicker,
-  AekRangePicker,
+  LkcRangePicker,
   TimeQuantum,
   Upload,
   Cascader,
@@ -61,7 +61,7 @@ const strComponent = {
   UploadButton: uploadButton,
   PicturesWall,
   LkcRadioButton,
-  AekUpload,
+  LkcUpload,
 }
 
 const getComponent = (compData, key = '0') => {

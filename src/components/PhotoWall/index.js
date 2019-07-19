@@ -15,14 +15,14 @@ class PhotoWall extends React.Component {
     }
   }
   // 关闭图片查看器
-  onCloseAekLight() {
+  onCloseLkcLight() {
     this.setState({
       isOpen: false,
       photoIndex: 0,
     })
   }
   // 打开图片查看器
-  onOpenAekLight(data) {
+  onOpenLkcLight(data) {
     this.setState({
       isOpen: true,
       photoIndex: data.index,
@@ -61,7 +61,7 @@ class PhotoWall extends React.Component {
           }}
           fileList={isFirstFlag ? defaultFileList.slice(0, 1) : defaultFileList}
           onPreview={(data) => {
-            this.onOpenAekLight(data)
+            this.onOpenLkcLight(data)
           }}
         >
           {null}
@@ -70,7 +70,7 @@ class PhotoWall extends React.Component {
           isOpen={isOpen}
           url={urls}
           onCancel={() => {
-            this.onCloseAekLight()
+            this.onCloseLkcLight()
           }}
           photoIndex={photoIndex}
           imageDetail={imageDetail}

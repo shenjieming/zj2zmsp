@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { Form, Modal, Icon } from 'antd'
-import { aekConnect, getBasicFn } from '../../../utils'
+import { lkcConnect, getBasicFn } from '../../../utils'
 import { ContentLayout, LkcForm } from '../../../components'
 import { getFormData } from './data'
 import { typeMenu, act } from './style.less'
@@ -263,4 +263,4 @@ function TabPrint({
 }
 
 TabPrint.propTypes = propTypes
-export default aekConnect()(Form.create()(TabPrint))
+export default lkcConnect()(Form.create()(TabPrint))

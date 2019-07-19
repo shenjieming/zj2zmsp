@@ -1,7 +1,7 @@
 import SelectedTips from './SelectedTips'
 import APanel from './APanel'
 import Breadcrumb from './Breadcrumb'
-import { LkcDatePicker, AekRangePicker, TimeQuantum } from './LkcDatePicker'
+import { LkcDatePicker, LkcRangePicker, TimeQuantum } from './LkcDatePicker'
 import LkcInputNumber from './LkcInputNumber'
 import LkcSelect from './LkcSelect'
 import BadgeTextWrap from './BadgeTextWrap'
@@ -31,7 +31,7 @@ export default {
   APanel,
   Breadcrumb,
   LkcDatePicker,
-  AekRangePicker,
+  LkcRangePicker,
   LkcInputNumber,
   LkcSelect,
   BadgeTextWrap,

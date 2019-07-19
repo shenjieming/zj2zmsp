@@ -1,5 +1,5 @@
 import LkcDatePicker from './LkcDatePicker'
-import AekRangePicker from './LkcRangePicker'
+import LkcRangePicker from './LkcRangePicker'
 import TimeQuantum from './TimeQuantum'
 
-export default { LkcDatePicker, AekRangePicker, TimeQuantum }
+export default { LkcDatePicker, LkcRangePicker, TimeQuantum }

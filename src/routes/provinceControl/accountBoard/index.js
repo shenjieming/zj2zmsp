@@ -62,7 +62,7 @@ const IndexPage = ({ accountBoard, loading }) => {
             <Spin spinning={getLoading('queryData')}>
               <div className="lkc-content-title">对账详情</div>
               <div className={styles.cardArea}>
-                <div className={styles.aekCard}>
+                <div className={styles.lkcCard}>
                   <div>
                     <span className="lkc-orange">零库存</span>-省招入库金额
                   </div>
